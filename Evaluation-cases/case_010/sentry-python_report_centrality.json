@@ -1,0 +1,1617 @@
+{
+  "case_id": "case_010",
+  "repo": "sentry-python",
+  "generated": "2026-06-25T05:56:43.093465+00:00",
+  "graph_stats": {
+    "function_nodes": 8256,
+    "function_edges": 32921,
+    "entry_nodes": 1,
+    "external_nodes": 988,
+    "file_nodes": 1464,
+    "file_edges": 5541,
+    "entry_files": 1
+  },
+  "findings": [
+    {
+      "finding_id": "finding_001",
+      "vulnerability_id": "CVE-2025-47273",
+      "component": "setuptools",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::setuptools"
+        ],
+        "in_degree": 4,
+        "fan_in": 2,
+        "fan_out": 0,
+        "transitive_fan_in": 3,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0023,
+        "hub_score": 0.0,
+        "authority_score": 0.0001,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "setup.py",
+          "setup.py::<module>"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "setuptools/package_index.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_002",
+      "vulnerability_id": "CVE-2026-21441",
+      "component": "urllib3",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::urllib3"
+        ],
+        "in_degree": 19,
+        "fan_in": 13,
+        "fan_out": 0,
+        "transitive_fan_in": 3758,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0116,
+        "hub_score": 0.0,
+        "authority_score": 0.004,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "docs/conf.py",
+          "sentry_sdk/integrations/cloud_resource_context.py",
+          "sentry_sdk/integrations/cloud_resource_context.py::CloudResourceContextIntegration",
+          "sentry_sdk/integrations/django/caching.py",
+          "sentry_sdk/integrations/django/caching.py::_get_address_port",
+          "sentry_sdk/integrations/opentelemetry/span_processor.py",
+          "sentry_sdk/integrations/opentelemetry/span_processor.py::SentrySpanProcessor._update_span_with_otel_data",
+          "sentry_sdk/spotlight.py",
+          "sentry_sdk/spotlight.py::SpotlightClient.__init__",
+          "sentry_sdk/transport.py"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "dummyserver/app.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_003",
+      "vulnerability_id": "CVE-2025-66471",
+      "component": "urllib3",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::urllib3"
+        ],
+        "in_degree": 19,
+        "fan_in": 13,
+        "fan_out": 0,
+        "transitive_fan_in": 3758,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0116,
+        "hub_score": 0.0,
+        "authority_score": 0.004,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "docs/conf.py",
+          "sentry_sdk/integrations/cloud_resource_context.py",
+          "sentry_sdk/integrations/cloud_resource_context.py::CloudResourceContextIntegration",
+          "sentry_sdk/integrations/django/caching.py",
+          "sentry_sdk/integrations/django/caching.py::_get_address_port",
+          "sentry_sdk/integrations/opentelemetry/span_processor.py",
+          "sentry_sdk/integrations/opentelemetry/span_processor.py::SentrySpanProcessor._update_span_with_otel_data",
+          "sentry_sdk/spotlight.py",
+          "sentry_sdk/spotlight.py::SpotlightClient.__init__",
+          "sentry_sdk/transport.py"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "docs/advanced-usage.rst",
+          "graph_file": "external::t",
+          "in_degree": 4,
+          "fan_in": 4,
+          "fan_out": 0,
+          "transitive_fan_in": 6,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0178,
+          "hub_score": 0.0,
+          "authority_score": 0.0083,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "tests/integrations/celery/integration_tests/__init__.py",
+            "tests/integrations/google_genai/test_google_genai.py",
+            "tests/integrations/threading/test_threading.py",
+            "tests/utils/test_contextvars.py"
+          ],
+          "direct_callers_count": 4,
+          "internal_callers": [
+            "component",
+            "tests/integrations/celery/integration_tests/__init__.py",
+            "tests/integrations/celery/integration_tests/test_celery_beat_cron_monitoring.py",
+            "tests/integrations/google_genai/test_google_genai.py",
+            "tests/integrations/threading/test_threading.py",
+            "tests/utils/test_contextvars.py"
+          ],
+          "internal_callers_count": 6,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::t (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "docs/user-guide.rst",
+          "graph_file": "external::t",
+          "in_degree": 4,
+          "fan_in": 4,
+          "fan_out": 0,
+          "transitive_fan_in": 6,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0178,
+          "hub_score": 0.0,
+          "authority_score": 0.0083,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "tests/integrations/celery/integration_tests/__init__.py",
+            "tests/integrations/google_genai/test_google_genai.py",
+            "tests/integrations/threading/test_threading.py",
+            "tests/utils/test_contextvars.py"
+          ],
+          "direct_callers_count": 4,
+          "internal_callers": [
+            "component",
+            "tests/integrations/celery/integration_tests/__init__.py",
+            "tests/integrations/celery/integration_tests/test_celery_beat_cron_monitoring.py",
+            "tests/integrations/google_genai/test_google_genai.py",
+            "tests/integrations/threading/test_threading.py",
+            "tests/utils/test_contextvars.py"
+          ],
+          "internal_callers_count": 6,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::t (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "noxfile.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "pyproject.toml",
+          "graph_file": "external::urllib3",
+          "in_degree": 6,
+          "fan_in": 6,
+          "fan_out": 0,
+          "transitive_fan_in": 326,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0205,
+          "hub_score": 0.0,
+          "authority_score": 0.0244,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "docs/conf.py",
+            "sentry_sdk/integrations/cloud_resource_context.py",
+            "sentry_sdk/integrations/django/caching.py",
+            "sentry_sdk/integrations/opentelemetry/span_processor.py",
+            "sentry_sdk/spotlight.py",
+            "sentry_sdk/transport.py"
+          ],
+          "direct_callers_count": 6,
+          "internal_callers": [
+            "component",
+            "docs/conf.py",
+            "scripts/build_aws_lambda_layer.py",
+            "scripts/init_serverless_sdk.py",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/test-lambda-locally/lambda_function.py",
+            "scripts/update_integration_support.py",
+            "sentry_sdk/__init__.py",
+            "sentry_sdk/_batcher.py",
+            "sentry_sdk/_compat.py",
+            "sentry_sdk/_init_implementation.py",
+            "sentry_sdk/_log_batcher.py",
+            "sentry_sdk/_metrics_batcher.py",
+            "sentry_sdk/_span_batcher.py",
+            "sentry_sdk/ai/monitoring.py",
+            "sentry_sdk/ai/utils.py",
+            "sentry_sdk/api.py",
+            "sentry_sdk/attachments.py",
+            "sentry_sdk/client.py",
+            "sentry_sdk/consts.py"
+          ],
+          "internal_callers_count": 326,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::urllib3 (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "src/urllib3/response.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "test/test_response.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "uv.lock",
+          "graph_file": "external::k",
+          "in_degree": 7,
+          "fan_in": 7,
+          "fan_out": 0,
+          "transitive_fan_in": 325,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0216,
+          "hub_score": 0.0,
+          "authority_score": 0.0509,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "sentry_sdk/client.py",
+            "sentry_sdk/integrations/stdlib.py",
+            "sentry_sdk/tracing_utils.py",
+            "sentry_sdk/utils.py",
+            "tests/conftest.py",
+            "tests/integrations/pyreqwest/test_pyreqwest.py",
+            "tests/test_client.py"
+          ],
+          "direct_callers_count": 7,
+          "internal_callers": [
+            "component",
+            "scripts/build_aws_lambda_layer.py",
+            "scripts/init_serverless_sdk.py",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/test-lambda-locally/lambda_function.py",
+            "scripts/update_integration_support.py",
+            "sentry_sdk/__init__.py",
+            "sentry_sdk/_batcher.py",
+            "sentry_sdk/_compat.py",
+            "sentry_sdk/_init_implementation.py",
+            "sentry_sdk/_log_batcher.py",
+            "sentry_sdk/_metrics_batcher.py",
+            "sentry_sdk/_span_batcher.py",
+            "sentry_sdk/ai/monitoring.py",
+            "sentry_sdk/ai/utils.py",
+            "sentry_sdk/api.py",
+            "sentry_sdk/attachments.py",
+            "sentry_sdk/client.py",
+            "sentry_sdk/consts.py",
+            "sentry_sdk/crons/__init__.py"
+          ],
+          "internal_callers_count": 325,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::k (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_004",
+      "vulnerability_id": "CVE-2025-66418",
+      "component": "urllib3",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::urllib3"
+        ],
+        "in_degree": 19,
+        "fan_in": 13,
+        "fan_out": 0,
+        "transitive_fan_in": 3758,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0116,
+        "hub_score": 0.0,
+        "authority_score": 0.004,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "docs/conf.py",
+          "sentry_sdk/integrations/cloud_resource_context.py",
+          "sentry_sdk/integrations/cloud_resource_context.py::CloudResourceContextIntegration",
+          "sentry_sdk/integrations/django/caching.py",
+          "sentry_sdk/integrations/django/caching.py::_get_address_port",
+          "sentry_sdk/integrations/opentelemetry/span_processor.py",
+          "sentry_sdk/integrations/opentelemetry/span_processor.py::SentrySpanProcessor._update_span_with_otel_data",
+          "sentry_sdk/spotlight.py",
+          "sentry_sdk/spotlight.py::SpotlightClient.__init__",
+          "sentry_sdk/transport.py"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/urllib3/response.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_005",
+      "vulnerability_id": "CVE-2024-47081",
+      "component": "requests",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::requests"
+        ],
+        "in_degree": 13,
+        "fan_in": 12,
+        "fan_out": 0,
+        "transitive_fan_in": 27,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0059,
+        "hub_score": 0.0,
+        "authority_score": 0.0047,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "scripts/populate_tox/populate_tox.py",
+          "scripts/populate_tox/populate_tox.py::fetch_url",
+          "scripts/ready_yet/main.py",
+          "scripts/ready_yet/main.py::main",
+          "tests/integrations/aws_lambda/utils.py",
+          "tests/integrations/aws_lambda/utils.py::LocalLambdaStack.wait_for_stack",
+          "tests/integrations/grpc/test_grpc.py::TestService.TestStreamUnary",
+          "tests/integrations/grpc/test_grpc_aio.py::TestService.TestStreamUnary",
+          "tests/integrations/requests/test_requests.py",
+          "tests/integrations/requests/test_requests.py::test_crumb_capture"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/requests/utils.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_006",
+      "vulnerability_id": "CVE-2026-27459",
+      "component": "pyopenssl",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    },
+    {
+      "finding_id": "finding_007",
+      "vulnerability_id": "CVE-2026-44431",
+      "component": "urllib3",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::urllib3"
+        ],
+        "in_degree": 19,
+        "fan_in": 13,
+        "fan_out": 0,
+        "transitive_fan_in": 3758,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0116,
+        "hub_score": 0.0,
+        "authority_score": 0.004,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "docs/conf.py",
+          "sentry_sdk/integrations/cloud_resource_context.py",
+          "sentry_sdk/integrations/cloud_resource_context.py::CloudResourceContextIntegration",
+          "sentry_sdk/integrations/django/caching.py",
+          "sentry_sdk/integrations/django/caching.py::_get_address_port",
+          "sentry_sdk/integrations/opentelemetry/span_processor.py",
+          "sentry_sdk/integrations/opentelemetry/span_processor.py::SentrySpanProcessor._update_span_with_otel_data",
+          "sentry_sdk/spotlight.py",
+          "sentry_sdk/spotlight.py::SpotlightClient.__init__",
+          "sentry_sdk/transport.py"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_008",
+      "vulnerability_id": "CVE-2026-27199",
+      "component": "werkzeug",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::werkzeug"
+        ],
+        "in_degree": 46,
+        "fan_in": 42,
+        "fan_out": 0,
+        "transitive_fan_in": 157,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0176,
+        "hub_score": 0.0,
+        "authority_score": 0.029,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "sentry_sdk/integrations/flask.py",
+          "tests/conftest.py",
+          "tests/conftest.py::CapturingServer.__call__",
+          "tests/integrations/bottle/test_bottle.py",
+          "tests/integrations/bottle/test_bottle.py::get_client.inner",
+          "tests/integrations/bottle/test_bottle.py::test_failed_request_status_codes",
+          "tests/integrations/bottle/test_bottle.py::test_failed_request_status_codes_non_http_exception",
+          "tests/integrations/bottle/test_bottle.py::test_mount",
+          "tests/integrations/django/test_basic.py",
+          "tests/integrations/django/test_basic.py::client"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/werkzeug/security.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "tests/test_security.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_009",
+      "vulnerability_id": "CVE-2025-66221",
+      "component": "werkzeug",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::werkzeug"
+        ],
+        "in_degree": 46,
+        "fan_in": 42,
+        "fan_out": 0,
+        "transitive_fan_in": 157,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0176,
+        "hub_score": 0.0,
+        "authority_score": 0.029,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "sentry_sdk/integrations/flask.py",
+          "tests/conftest.py",
+          "tests/conftest.py::CapturingServer.__call__",
+          "tests/integrations/bottle/test_bottle.py",
+          "tests/integrations/bottle/test_bottle.py::get_client.inner",
+          "tests/integrations/bottle/test_bottle.py::test_failed_request_status_codes",
+          "tests/integrations/bottle/test_bottle.py::test_failed_request_status_codes_non_http_exception",
+          "tests/integrations/bottle/test_bottle.py::test_mount",
+          "tests/integrations/django/test_basic.py",
+          "tests/integrations/django/test_basic.py::client"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/werkzeug/utils.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_010",
+      "vulnerability_id": "CVE-2026-45409",
+      "component": "idna",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    },
+    {
+      "finding_id": "finding_011",
+      "vulnerability_id": "CVE-2025-8869",
+      "component": "pip",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    },
+    {
+      "finding_id": "finding_012",
+      "vulnerability_id": "CVE-2026-21860",
+      "component": "werkzeug",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::werkzeug"
+        ],
+        "in_degree": 46,
+        "fan_in": 42,
+        "fan_out": 0,
+        "transitive_fan_in": 157,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0176,
+        "hub_score": 0.0,
+        "authority_score": 0.029,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "sentry_sdk/integrations/flask.py",
+          "tests/conftest.py",
+          "tests/conftest.py::CapturingServer.__call__",
+          "tests/integrations/bottle/test_bottle.py",
+          "tests/integrations/bottle/test_bottle.py::get_client.inner",
+          "tests/integrations/bottle/test_bottle.py::test_failed_request_status_codes",
+          "tests/integrations/bottle/test_bottle.py::test_failed_request_status_codes_non_http_exception",
+          "tests/integrations/bottle/test_bottle.py::test_mount",
+          "tests/integrations/django/test_basic.py",
+          "tests/integrations/django/test_basic.py::client"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/werkzeug/security.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "tests/test_security.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_013",
+      "vulnerability_id": "CVE-2025-50181",
+      "component": "urllib3",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::urllib3"
+        ],
+        "in_degree": 19,
+        "fan_in": 13,
+        "fan_out": 0,
+        "transitive_fan_in": 3758,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0116,
+        "hub_score": 0.0,
+        "authority_score": 0.004,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "docs/conf.py",
+          "sentry_sdk/integrations/cloud_resource_context.py",
+          "sentry_sdk/integrations/cloud_resource_context.py::CloudResourceContextIntegration",
+          "sentry_sdk/integrations/django/caching.py",
+          "sentry_sdk/integrations/django/caching.py::_get_address_port",
+          "sentry_sdk/integrations/opentelemetry/span_processor.py",
+          "sentry_sdk/integrations/opentelemetry/span_processor.py::SentrySpanProcessor._update_span_with_otel_data",
+          "sentry_sdk/spotlight.py",
+          "sentry_sdk/spotlight.py::SpotlightClient.__init__",
+          "sentry_sdk/transport.py"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/urllib3/poolmanager.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "test/test_poolmanager.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_014",
+      "vulnerability_id": "CVE-2026-24049",
+      "component": "wheel",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/wheel/_commands/unpack.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_015",
+      "vulnerability_id": "CVE-2026-26007",
+      "component": "cryptography",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/rust/src/backend/ec.rs",
+          "graph_file": "external::s",
+          "in_degree": 4,
+          "fan_in": 4,
+          "fan_out": 0,
+          "transitive_fan_in": 68,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0156,
+          "hub_score": 0.0,
+          "authority_score": 0.0216,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "sentry_sdk/integrations/wsgi.py",
+            "tests/conftest.py",
+            "tests/integrations/asyncpg/test_asyncpg.py",
+            "tests/test_scope.py"
+          ],
+          "direct_callers_count": 4,
+          "internal_callers": [
+            "component",
+            "sentry_sdk/integrations/bottle.py",
+            "sentry_sdk/integrations/django/__init__.py",
+            "sentry_sdk/integrations/django/asgi.py",
+            "sentry_sdk/integrations/django/caching.py",
+            "sentry_sdk/integrations/django/middleware.py",
+            "sentry_sdk/integrations/django/signals_handlers.py",
+            "sentry_sdk/integrations/django/tasks.py",
+            "sentry_sdk/integrations/django/templates.py",
+            "sentry_sdk/integrations/django/views.py",
+            "sentry_sdk/integrations/falcon.py",
+            "sentry_sdk/integrations/flask.py",
+            "sentry_sdk/integrations/pyramid.py",
+            "sentry_sdk/integrations/trytond.py",
+            "sentry_sdk/integrations/wsgi.py",
+            "tests/conftest.py",
+            "tests/integrations/aiohttp/test_aiohttp.py",
+            "tests/integrations/ariadne/test_ariadne.py",
+            "tests/integrations/asyncpg/test_asyncpg.py",
+            "tests/integrations/boto3/test_s3.py"
+          ],
+          "internal_callers_count": 68,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::s (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_016",
+      "vulnerability_id": "CVE-2025-50182",
+      "component": "urllib3",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::urllib3"
+        ],
+        "in_degree": 19,
+        "fan_in": 13,
+        "fan_out": 0,
+        "transitive_fan_in": 3758,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0116,
+        "hub_score": 0.0,
+        "authority_score": 0.004,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "docs/conf.py",
+          "sentry_sdk/integrations/cloud_resource_context.py",
+          "sentry_sdk/integrations/cloud_resource_context.py::CloudResourceContextIntegration",
+          "sentry_sdk/integrations/django/caching.py",
+          "sentry_sdk/integrations/django/caching.py::_get_address_port",
+          "sentry_sdk/integrations/opentelemetry/span_processor.py",
+          "sentry_sdk/integrations/opentelemetry/span_processor.py::SentrySpanProcessor._update_span_with_otel_data",
+          "sentry_sdk/spotlight.py",
+          "sentry_sdk/spotlight.py::SpotlightClient.__init__",
+          "sentry_sdk/transport.py"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_017",
+      "vulnerability_id": "CVE-2026-1703",
+      "component": "pip",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/pip/_internal/utils/unpacking.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_018",
+      "vulnerability_id": "CVE-2026-25645",
+      "component": "requests",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::requests"
+        ],
+        "in_degree": 13,
+        "fan_in": 12,
+        "fan_out": 0,
+        "transitive_fan_in": 27,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0059,
+        "hub_score": 0.0,
+        "authority_score": 0.0047,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "scripts/populate_tox/populate_tox.py",
+          "scripts/populate_tox/populate_tox.py::fetch_url",
+          "scripts/ready_yet/main.py",
+          "scripts/ready_yet/main.py::main",
+          "tests/integrations/aws_lambda/utils.py",
+          "tests/integrations/aws_lambda/utils.py::LocalLambdaStack.wait_for_stack",
+          "tests/integrations/grpc/test_grpc.py::TestService.TestStreamUnary",
+          "tests/integrations/grpc/test_grpc_aio.py::TestService.TestStreamUnary",
+          "tests/integrations/requests/test_requests.py",
+          "tests/integrations/requests/test_requests.py::test_crumb_capture"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/requests/utils.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_019",
+      "vulnerability_id": "CVE-2026-6357",
+      "component": "pip",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    },
+    {
+      "finding_id": "finding_020",
+      "vulnerability_id": "CVE-2026-3219",
+      "component": "pip",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    },
+    {
+      "finding_id": "finding_021",
+      "vulnerability_id": "CVE-2026-27448",
+      "component": "pyopenssl",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/OpenSSL/SSL.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_022",
+      "vulnerability_id": "CVE-2026-34073",
+      "component": "cryptography",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [
+        {
+          "patch_path": ".github/actions/fetch-vectors/action.yml",
+          "graph_file": null,
+          "in_degree": 0,
+          "fan_in": 0,
+          "fan_out": 0,
+          "transitive_fan_in": 0,
+          "transitive_fan_out": 0,
+          "impact_radius": 0.0,
+          "eigenvector_centrality": 0.0,
+          "hub_score": 0.0,
+          "authority_score": 0.0,
+          "impact_rating": "UNKNOWN",
+          "importing_files": [],
+          "importing_files_count": 0,
+          "note": "file not found in call graph"
+        },
+        {
+          "patch_path": "pyproject.toml",
+          "graph_file": null,
+          "in_degree": 0,
+          "fan_in": 0,
+          "fan_out": 0,
+          "transitive_fan_in": 0,
+          "transitive_fan_out": 0,
+          "impact_radius": 0.0,
+          "eigenvector_centrality": 0.0,
+          "hub_score": 0.0,
+          "authority_score": 0.0,
+          "impact_rating": "UNKNOWN",
+          "importing_files": [],
+          "importing_files_count": 0,
+          "note": "file not found in call graph"
+        },
+        {
+          "patch_path": "src/cryptography/__about__.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "src/rust/cryptography-x509-verification/src/lib.rs",
+          "graph_file": "external::s",
+          "in_degree": 4,
+          "fan_in": 4,
+          "fan_out": 0,
+          "transitive_fan_in": 68,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0156,
+          "hub_score": 0.0,
+          "authority_score": 0.0216,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "sentry_sdk/integrations/wsgi.py",
+            "tests/conftest.py",
+            "tests/integrations/asyncpg/test_asyncpg.py",
+            "tests/test_scope.py"
+          ],
+          "direct_callers_count": 4,
+          "internal_callers": [
+            "component",
+            "sentry_sdk/integrations/bottle.py",
+            "sentry_sdk/integrations/django/__init__.py",
+            "sentry_sdk/integrations/django/asgi.py",
+            "sentry_sdk/integrations/django/caching.py",
+            "sentry_sdk/integrations/django/middleware.py",
+            "sentry_sdk/integrations/django/signals_handlers.py",
+            "sentry_sdk/integrations/django/tasks.py",
+            "sentry_sdk/integrations/django/templates.py",
+            "sentry_sdk/integrations/django/views.py",
+            "sentry_sdk/integrations/falcon.py",
+            "sentry_sdk/integrations/flask.py",
+            "sentry_sdk/integrations/pyramid.py",
+            "sentry_sdk/integrations/trytond.py",
+            "sentry_sdk/integrations/wsgi.py",
+            "tests/conftest.py",
+            "tests/integrations/aiohttp/test_aiohttp.py",
+            "tests/integrations/ariadne/test_ariadne.py",
+            "tests/integrations/asyncpg/test_asyncpg.py",
+            "tests/integrations/boto3/test_s3.py"
+          ],
+          "internal_callers_count": 68,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::s (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "src/rust/cryptography-x509-verification/src/types.rs",
+          "graph_file": "external::s",
+          "in_degree": 4,
+          "fan_in": 4,
+          "fan_out": 0,
+          "transitive_fan_in": 68,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0156,
+          "hub_score": 0.0,
+          "authority_score": 0.0216,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "sentry_sdk/integrations/wsgi.py",
+            "tests/conftest.py",
+            "tests/integrations/asyncpg/test_asyncpg.py",
+            "tests/test_scope.py"
+          ],
+          "direct_callers_count": 4,
+          "internal_callers": [
+            "component",
+            "sentry_sdk/integrations/bottle.py",
+            "sentry_sdk/integrations/django/__init__.py",
+            "sentry_sdk/integrations/django/asgi.py",
+            "sentry_sdk/integrations/django/caching.py",
+            "sentry_sdk/integrations/django/middleware.py",
+            "sentry_sdk/integrations/django/signals_handlers.py",
+            "sentry_sdk/integrations/django/tasks.py",
+            "sentry_sdk/integrations/django/templates.py",
+            "sentry_sdk/integrations/django/views.py",
+            "sentry_sdk/integrations/falcon.py",
+            "sentry_sdk/integrations/flask.py",
+            "sentry_sdk/integrations/pyramid.py",
+            "sentry_sdk/integrations/trytond.py",
+            "sentry_sdk/integrations/wsgi.py",
+            "tests/conftest.py",
+            "tests/integrations/aiohttp/test_aiohttp.py",
+            "tests/integrations/ariadne/test_ariadne.py",
+            "tests/integrations/asyncpg/test_asyncpg.py",
+            "tests/integrations/boto3/test_s3.py"
+          ],
+          "internal_callers_count": 68,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::s (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "vectors/cryptography_vectors/__about__.py",
+          "graph_file": "external::py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 4,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0137,
+          "hub_score": 0.0,
+          "authority_score": 0.0012,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "scripts/populate_tox/populate_tox.py",
+            "scripts/split_tox_gh_actions/split_tox_gh_actions.py",
+            "scripts/update_integration_support.py"
+          ],
+          "internal_callers_count": 4,
+          "external_callers": [],
+          "external_callers_count": 0,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::py (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "vectors/pyproject.toml",
+          "graph_file": null,
+          "in_degree": 0,
+          "fan_in": 0,
+          "fan_out": 0,
+          "transitive_fan_in": 0,
+          "transitive_fan_out": 0,
+          "impact_radius": 0.0,
+          "eigenvector_centrality": 0.0,
+          "hub_score": 0.0,
+          "authority_score": 0.0,
+          "impact_rating": "UNKNOWN",
+          "importing_files": [],
+          "importing_files_count": 0,
+          "note": "file not found in call graph"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_023",
+      "vulnerability_id": "CVE-2026-4539",
+      "component": "pygments",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    }
+  ]
+}

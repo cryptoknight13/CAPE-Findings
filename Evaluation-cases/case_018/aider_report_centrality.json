@@ -1,0 +1,4576 @@
+{
+  "case_id": "case_018",
+  "repo": "aider",
+  "generated": "2026-06-25T04:07:28.103518+00:00",
+  "graph_stats": {
+    "function_nodes": 122320,
+    "function_edges": 331337,
+    "entry_nodes": 1,
+    "external_nodes": 120440,
+    "file_nodes": 17925,
+    "file_edges": 67000,
+    "entry_files": 1
+  },
+  "findings": [
+    {
+      "finding_id": "finding_001",
+      "vulnerability_id": "CVE-2026-42208",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_002",
+      "vulnerability_id": "CVE-2026-42271",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_003",
+      "vulnerability_id": "CVE-2026-42271",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_004",
+      "vulnerability_id": "CVE-2026-35029",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_005",
+      "vulnerability_id": "CVE-2026-35029",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_006",
+      "vulnerability_id": "CVE-2026-48710",
+      "component": "starlette",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::starlette"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 34,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2639,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0046,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_007",
+      "vulnerability_id": "CVE-2026-42215",
+      "component": "gitpython",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::gitpython"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 37,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2380,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0085,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_008",
+      "vulnerability_id": "CVE-2026-40217",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_009",
+      "vulnerability_id": "CVE-2026-40217",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_010",
+      "vulnerability_id": "CVE-2026-42284",
+      "component": "gitpython",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::gitpython"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 37,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2380,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0085,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_011",
+      "vulnerability_id": "CVE-2026-30922",
+      "component": "pyasn1",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    },
+    {
+      "finding_id": "finding_012",
+      "vulnerability_id": "CVE-2026-33231",
+      "component": "nltk",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [
+        {
+          "patch_path": "nltk/app/wordnet_app.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_013",
+      "vulnerability_id": "CVE-2026-47101",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "litellm/proxy/management_endpoints/key_management_endpoints.py",
+          "graph_file": "litellm/proxy/management_endpoints/key_management_endpoints.py",
+          "in_degree": 9,
+          "fan_in": 9,
+          "fan_out": 96,
+          "transitive_fan_in": 1155,
+          "transitive_fan_out": 7025,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0027,
+          "hub_score": 0.4417,
+          "authority_score": 0.0052,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::litellm",
+            "litellm/integrations/prometheus.py",
+            "litellm/proxy/auth/login_utils.py",
+            "litellm/proxy/common_utils/key_rotation_manager.py",
+            "litellm/proxy/management_endpoints/budget_management_endpoints.py",
+            "litellm/proxy/management_endpoints/internal_user_endpoints.py",
+            "litellm/proxy/management_endpoints/team_endpoints.py",
+            "litellm/proxy/management_helpers/team_member_permission_checks.py",
+            "litellm/proxy/proxy_server.py"
+          ],
+          "direct_callers_count": 9,
+          "internal_callers": [
+            "aider/analytics.py",
+            "aider/args.py",
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/deprecated.py",
+            "aider/exceptions.py",
+            "aider/gui.py",
+            "aider/history.py",
+            "aider/main.py",
+            "aider/models.py",
+            "benchmark/benchmark.py",
+            "component",
+            "litellm/__init__.py",
+            "litellm/_lazy_imports.py",
+            "litellm/_logging.py",
+            "litellm/_redis.py",
+            "litellm/_service_logger.py",
+            "litellm/a2a_protocol/__init__.py",
+            "litellm/a2a_protocol/card_resolver.py",
+            "litellm/a2a_protocol/client.py"
+          ],
+          "internal_callers_count": 1153,
+          "external_callers": [
+            "external::aider-chat",
+            "external::litellm"
+          ],
+          "external_callers_count": 2
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_014",
+      "vulnerability_id": "CVE-2026-47101",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "litellm/proxy/management_endpoints/key_management_endpoints.py",
+          "graph_file": "litellm/proxy/management_endpoints/key_management_endpoints.py",
+          "in_degree": 9,
+          "fan_in": 9,
+          "fan_out": 96,
+          "transitive_fan_in": 1155,
+          "transitive_fan_out": 7025,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0027,
+          "hub_score": 0.4417,
+          "authority_score": 0.0052,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::litellm",
+            "litellm/integrations/prometheus.py",
+            "litellm/proxy/auth/login_utils.py",
+            "litellm/proxy/common_utils/key_rotation_manager.py",
+            "litellm/proxy/management_endpoints/budget_management_endpoints.py",
+            "litellm/proxy/management_endpoints/internal_user_endpoints.py",
+            "litellm/proxy/management_endpoints/team_endpoints.py",
+            "litellm/proxy/management_helpers/team_member_permission_checks.py",
+            "litellm/proxy/proxy_server.py"
+          ],
+          "direct_callers_count": 9,
+          "internal_callers": [
+            "aider/analytics.py",
+            "aider/args.py",
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/deprecated.py",
+            "aider/exceptions.py",
+            "aider/gui.py",
+            "aider/history.py",
+            "aider/main.py",
+            "aider/models.py",
+            "benchmark/benchmark.py",
+            "component",
+            "litellm/__init__.py",
+            "litellm/_lazy_imports.py",
+            "litellm/_logging.py",
+            "litellm/_redis.py",
+            "litellm/_service_logger.py",
+            "litellm/a2a_protocol/__init__.py",
+            "litellm/a2a_protocol/card_resolver.py",
+            "litellm/a2a_protocol/client.py"
+          ],
+          "internal_callers_count": 1153,
+          "external_callers": [
+            "external::aider-chat",
+            "external::litellm"
+          ],
+          "external_callers_count": 2
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_015",
+      "vulnerability_id": "CVE-2026-40192",
+      "component": "pillow",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pillow"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 97,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2178,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0001,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/PIL/FitsImagePlugin.py",
+          "graph_file": "PIL/FitsImagePlugin.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 7,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 7,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.0888,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::pillow"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::pillow"
+          ],
+          "external_callers_count": 1
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_016",
+      "vulnerability_id": "CVE-2026-49468",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_017",
+      "vulnerability_id": "CVE-2026-49468",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_018",
+      "vulnerability_id": "CVE-2026-35030",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_019",
+      "vulnerability_id": "CVE-2026-35030",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_020",
+      "vulnerability_id": "CVE-2026-44431",
+      "component": "urllib3",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::urllib3"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 36,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 1231,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0006,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_021",
+      "vulnerability_id": "CVE-2026-54293",
+      "component": "nltk",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    },
+    {
+      "finding_id": "finding_022",
+      "vulnerability_id": "CVE-2026-44243",
+      "component": "gitpython",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::gitpython"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 37,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2380,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0085,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_023",
+      "vulnerability_id": "CVE-2026-44209",
+      "component": "banks",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    },
+    {
+      "finding_id": "finding_024",
+      "vulnerability_id": "CVE-2026-39892",
+      "component": "cryptography",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::cryptography"
+        ],
+        "in_degree": 29,
+        "fan_in": 15,
+        "fan_out": 0,
+        "transitive_fan_in": 7878,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0009,
+        "hub_score": 0.0,
+        "authority_score": 0.0002,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "external::litellm/litellm/litellm_core_utils/app_crypto.py",
+          "external::litellm/litellm/litellm_core_utils/app_crypto.py::AppCrypto.decrypt_json",
+          "external::litellm/litellm/litellm_core_utils/app_crypto.py::AppCrypto.encrypt_json",
+          "external::litellm/litellm/llms/oci/chat/transformation.py",
+          "external::litellm/litellm/llms/oci/chat/transformation.py::OCIChatConfig._sign_with_manual_credentials",
+          "external::litellm/litellm/llms/oci/chat/transformation.py::load_private_key_from_str",
+          "external::litellm/litellm/proxy/auth/handle_jwt.py",
+          "external::litellm/litellm/proxy/auth/handle_jwt.py::JWTHandler.auth_jwt",
+          "external::litellm/litellm/proxy/auth/litellm_license.py",
+          "external::litellm/litellm/proxy/auth/litellm_license.py::LicenseCheck.read_public_key"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_025",
+      "vulnerability_id": "CVE-2026-47102",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_026",
+      "vulnerability_id": "CVE-2026-47102",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_027",
+      "vulnerability_id": "CVE-2026-44432",
+      "component": "urllib3",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::urllib3"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 36,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 1231,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0006,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_028",
+      "vulnerability_id": "CVE-2025-69872",
+      "component": "diskcache",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::diskcache"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 7,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 325,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0001,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_029",
+      "vulnerability_id": "CVE-2026-34516",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "aiohttp/multipart.py",
+          "graph_file": "aiohttp/multipart.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 53,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 57,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.4949,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::aiohttp"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::aiohttp"
+          ],
+          "external_callers_count": 1
+        },
+        {
+          "patch_path": "aiohttp/streams.py",
+          "graph_file": "aiohttp/streams.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 17,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 17,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.3215,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::aiohttp"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::aiohttp"
+          ],
+          "external_callers_count": 1
+        },
+        {
+          "patch_path": "aiohttp/web_request.py",
+          "graph_file": "aiohttp/web_request.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 55,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 74,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.4689,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::aiohttp"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::aiohttp"
+          ],
+          "external_callers_count": 1
+        },
+        {
+          "patch_path": "tests/test_multipart.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "tests/test_streams.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "tests/test_web_request.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_030",
+      "vulnerability_id": "CVE-2026-22815",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "aiohttp/_http_parser.pyx",
+          "graph_file": "external::x",
+          "in_degree": 129,
+          "fan_in": 129,
+          "fan_out": 0,
+          "transitive_fan_in": 2188,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0201,
+          "hub_score": 0.0,
+          "authority_score": 0.0262,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "PIL/PdfParser.py",
+            "aiohttp/helpers.py",
+            "cffi/ffiplatform.py",
+            "cffi/pkgconfig.py",
+            "cffi/recompiler.py",
+            "charset_normalizer/constant.py",
+            "click/parser.py",
+            "dateutil/rrule.py",
+            "fsspec/spec.py",
+            "jinja2/environment.py",
+            "jinja2/nodes.py",
+            "jinja2/utils.py",
+            "litellm/litellm_core_utils/streaming_chunk_builder_utils.py",
+            "litellm/llms/dashscope/cost_calculator.py",
+            "litellm/proxy/common_utils/debug_utils.py"
+          ],
+          "direct_callers_count": 129,
+          "internal_callers": [
+            "PIL/PdfParser.py",
+            "aider/analytics.py",
+            "aider/args.py",
+            "aider/coders/base_coder.py",
+            "aider/coders/editblock_coder.py",
+            "aider/coders/search_replace.py",
+            "aider/commands.py",
+            "aider/copypaste.py",
+            "aider/deprecated.py",
+            "aider/editor.py",
+            "aider/exceptions.py",
+            "aider/gui.py",
+            "aider/help.py",
+            "aider/history.py",
+            "aider/io.py",
+            "aider/linter.py",
+            "aider/main.py",
+            "aider/mdstream.py",
+            "aider/models.py",
+            "aider/onboarding.py"
+          ],
+          "internal_callers_count": 2157,
+          "external_callers": [
+            "external::aider-chat",
+            "external::aiohttp",
+            "external::cffi",
+            "external::charset-normalizer",
+            "external::click",
+            "external::fastapi",
+            "external::fsspec",
+            "external::httpx",
+            "external::huggingface-hub",
+            "external::jinja2",
+            "external::litellm",
+            "external::mixpanel",
+            "external::networkx",
+            "external::numpy",
+            "external::openai",
+            "external::packaging",
+            "external::pillow",
+            "external::prompt-toolkit",
+            "external::psutil",
+            "external::pydantic"
+          ],
+          "external_callers_count": 31,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::x (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "aiohttp/http_exceptions.py",
+          "graph_file": "aiohttp/http_exceptions.py",
+          "in_degree": 2,
+          "fan_in": 2,
+          "fan_out": 10,
+          "transitive_fan_in": 1157,
+          "transitive_fan_out": 10,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.002,
+          "hub_score": 0.1688,
+          "authority_score": 0.0006,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::aiohttp",
+            "litellm/llms/custom_httpx/aiohttp_transport.py"
+          ],
+          "direct_callers_count": 2,
+          "internal_callers": [
+            "aider/analytics.py",
+            "aider/args.py",
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/deprecated.py",
+            "aider/exceptions.py",
+            "aider/gui.py",
+            "aider/history.py",
+            "aider/main.py",
+            "aider/models.py",
+            "benchmark/benchmark.py",
+            "component",
+            "litellm/__init__.py",
+            "litellm/_lazy_imports.py",
+            "litellm/_logging.py",
+            "litellm/_redis.py",
+            "litellm/_service_logger.py",
+            "litellm/a2a_protocol/__init__.py",
+            "litellm/a2a_protocol/card_resolver.py",
+            "litellm/a2a_protocol/client.py"
+          ],
+          "internal_callers_count": 1154,
+          "external_callers": [
+            "external::aider-chat",
+            "external::aiohttp",
+            "external::litellm"
+          ],
+          "external_callers_count": 3
+        },
+        {
+          "patch_path": "aiohttp/http_parser.py",
+          "graph_file": "aiohttp/http_parser.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 43,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 50,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.3501,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::aiohttp"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::aiohttp"
+          ],
+          "external_callers_count": 1
+        },
+        {
+          "patch_path": "aiohttp/web_protocol.py",
+          "graph_file": "aiohttp/web_protocol.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 35,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 50,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.3908,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::aiohttp"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::aiohttp"
+          ],
+          "external_callers_count": 1
+        },
+        {
+          "patch_path": "docs/client_reference.rst",
+          "graph_file": "external::st",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 3,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.0,
+          "authority_score": 0.0004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "psutil/_pslinux.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "psutil/_pslinux.py"
+          ],
+          "internal_callers_count": 2,
+          "external_callers": [
+            "external::psutil"
+          ],
+          "external_callers_count": 1,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::st (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "docs/web_reference.rst",
+          "graph_file": "external::st",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 0,
+          "transitive_fan_in": 3,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.0,
+          "authority_score": 0.0004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "psutil/_pslinux.py"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component",
+            "psutil/_pslinux.py"
+          ],
+          "internal_callers_count": 2,
+          "external_callers": [
+            "external::psutil"
+          ],
+          "external_callers_count": 1,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::st (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "tests/test_client_functional.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "tests/test_http_exceptions.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "tests/test_http_parser.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_031",
+      "vulnerability_id": "CVE-2026-42203",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_032",
+      "vulnerability_id": "CVE-2026-42203",
+      "component": "litellm",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::litellm"
+        ],
+        "in_degree": 2,
+        "fan_in": 2,
+        "fan_out": 1547,
+        "transitive_fan_in": 7319,
+        "transitive_fan_out": 29885,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.2879,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/proxy/openai_files_endpoints/common_utils.py::update_batch_in_database"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_033",
+      "vulnerability_id": "CVE-2026-34515",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_034",
+      "vulnerability_id": "CVE-2026-45409",
+      "component": "idna",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::idna"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 8,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 158,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0001,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_035",
+      "vulnerability_id": "CVE-2025-8869",
+      "component": "pip",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    },
+    {
+      "finding_id": "finding_036",
+      "vulnerability_id": "CVE-2026-48818",
+      "component": "starlette",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::starlette"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 34,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2639,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0046,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_037",
+      "vulnerability_id": "CVE-2026-54283",
+      "component": "starlette",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::starlette"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 34,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2639,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0046,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_038",
+      "vulnerability_id": "CVE-2026-34520",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "aiohttp/http_parser.py",
+          "graph_file": "aiohttp/http_parser.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 43,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 50,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.3501,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::aiohttp"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::aiohttp"
+          ],
+          "external_callers_count": 1
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_039",
+      "vulnerability_id": "CVE-2026-33230",
+      "component": "nltk",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [
+        {
+          "patch_path": "nltk/app/wordnet_app.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_040",
+      "vulnerability_id": "CVE-2026-54276",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_041",
+      "vulnerability_id": "CVE-2026-44244",
+      "component": "gitpython",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::gitpython"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 37,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2380,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0085,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_042",
+      "vulnerability_id": "CVE-2026-34525",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_043",
+      "vulnerability_id": "CVE-2026-54277",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "aiohttp/_http_parser.pyx",
+          "graph_file": "external::x",
+          "in_degree": 129,
+          "fan_in": 129,
+          "fan_out": 0,
+          "transitive_fan_in": 2188,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0201,
+          "hub_score": 0.0,
+          "authority_score": 0.0262,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "PIL/PdfParser.py",
+            "aiohttp/helpers.py",
+            "cffi/ffiplatform.py",
+            "cffi/pkgconfig.py",
+            "cffi/recompiler.py",
+            "charset_normalizer/constant.py",
+            "click/parser.py",
+            "dateutil/rrule.py",
+            "fsspec/spec.py",
+            "jinja2/environment.py",
+            "jinja2/nodes.py",
+            "jinja2/utils.py",
+            "litellm/litellm_core_utils/streaming_chunk_builder_utils.py",
+            "litellm/llms/dashscope/cost_calculator.py",
+            "litellm/proxy/common_utils/debug_utils.py"
+          ],
+          "direct_callers_count": 129,
+          "internal_callers": [
+            "PIL/PdfParser.py",
+            "aider/analytics.py",
+            "aider/args.py",
+            "aider/coders/base_coder.py",
+            "aider/coders/editblock_coder.py",
+            "aider/coders/search_replace.py",
+            "aider/commands.py",
+            "aider/copypaste.py",
+            "aider/deprecated.py",
+            "aider/editor.py",
+            "aider/exceptions.py",
+            "aider/gui.py",
+            "aider/help.py",
+            "aider/history.py",
+            "aider/io.py",
+            "aider/linter.py",
+            "aider/main.py",
+            "aider/mdstream.py",
+            "aider/models.py",
+            "aider/onboarding.py"
+          ],
+          "internal_callers_count": 2157,
+          "external_callers": [
+            "external::aider-chat",
+            "external::aiohttp",
+            "external::cffi",
+            "external::charset-normalizer",
+            "external::click",
+            "external::fastapi",
+            "external::fsspec",
+            "external::httpx",
+            "external::huggingface-hub",
+            "external::jinja2",
+            "external::litellm",
+            "external::mixpanel",
+            "external::networkx",
+            "external::numpy",
+            "external::openai",
+            "external::packaging",
+            "external::pillow",
+            "external::prompt-toolkit",
+            "external::psutil",
+            "external::pydantic"
+          ],
+          "external_callers_count": 31,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::x (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_044",
+      "vulnerability_id": "CVE-2026-54274",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "aiohttp/_websocket/reader_py.py",
+          "graph_file": "aiohttp/_websocket/reader_py.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 12,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 12,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.2361,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::aiohttp"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::aiohttp"
+          ],
+          "external_callers_count": 1
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_045",
+      "vulnerability_id": "CVE-2026-54278",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "aiohttp/streams.py",
+          "graph_file": "aiohttp/streams.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 17,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 17,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.3215,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::aiohttp"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::aiohttp"
+          ],
+          "external_callers_count": 1
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_046",
+      "vulnerability_id": "CVE-2026-54273",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "aiohttp/_http_parser.pyx",
+          "graph_file": "external::x",
+          "in_degree": 129,
+          "fan_in": 129,
+          "fan_out": 0,
+          "transitive_fan_in": 2188,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0201,
+          "hub_score": 0.0,
+          "authority_score": 0.0262,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "PIL/PdfParser.py",
+            "aiohttp/helpers.py",
+            "cffi/ffiplatform.py",
+            "cffi/pkgconfig.py",
+            "cffi/recompiler.py",
+            "charset_normalizer/constant.py",
+            "click/parser.py",
+            "dateutil/rrule.py",
+            "fsspec/spec.py",
+            "jinja2/environment.py",
+            "jinja2/nodes.py",
+            "jinja2/utils.py",
+            "litellm/litellm_core_utils/streaming_chunk_builder_utils.py",
+            "litellm/llms/dashscope/cost_calculator.py",
+            "litellm/proxy/common_utils/debug_utils.py"
+          ],
+          "direct_callers_count": 129,
+          "internal_callers": [
+            "PIL/PdfParser.py",
+            "aider/analytics.py",
+            "aider/args.py",
+            "aider/coders/base_coder.py",
+            "aider/coders/editblock_coder.py",
+            "aider/coders/search_replace.py",
+            "aider/commands.py",
+            "aider/copypaste.py",
+            "aider/deprecated.py",
+            "aider/editor.py",
+            "aider/exceptions.py",
+            "aider/gui.py",
+            "aider/help.py",
+            "aider/history.py",
+            "aider/io.py",
+            "aider/linter.py",
+            "aider/main.py",
+            "aider/mdstream.py",
+            "aider/models.py",
+            "aider/onboarding.py"
+          ],
+          "internal_callers_count": 2157,
+          "external_callers": [
+            "external::aider-chat",
+            "external::aiohttp",
+            "external::cffi",
+            "external::charset-normalizer",
+            "external::click",
+            "external::fastapi",
+            "external::fsspec",
+            "external::httpx",
+            "external::huggingface-hub",
+            "external::jinja2",
+            "external::litellm",
+            "external::mixpanel",
+            "external::networkx",
+            "external::numpy",
+            "external::openai",
+            "external::packaging",
+            "external::pillow",
+            "external::prompt-toolkit",
+            "external::psutil",
+            "external::pydantic"
+          ],
+          "external_callers_count": 31,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::x (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "aiohttp/base_protocol.py",
+          "graph_file": "aiohttp/base_protocol.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 8,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 8,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.2382,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::aiohttp"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::aiohttp"
+          ],
+          "external_callers_count": 1
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_047",
+      "vulnerability_id": "CVE-2026-28684",
+      "component": "python-dotenv",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::python-dotenv"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 8,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 682,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0002,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/dotenv/cli.py",
+          "graph_file": "dotenv/cli.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 14,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 25,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0021,
+          "hub_score": 0.2087,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::python-dotenv"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::python-dotenv"
+          ],
+          "external_callers_count": 1
+        },
+        {
+          "patch_path": "src/dotenv/main.py",
+          "graph_file": "dotenv/main.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 21,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 21,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0021,
+          "hub_score": 0.3101,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::python-dotenv"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::python-dotenv"
+          ],
+          "external_callers_count": 1
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_048",
+      "vulnerability_id": "CVE-2026-34513",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "aiohttp/connector.py",
+          "graph_file": "aiohttp/connector.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 62,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 64,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.43,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::aiohttp"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::aiohttp"
+          ],
+          "external_callers_count": 1
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_049",
+      "vulnerability_id": "CVE-2026-42311",
+      "component": "pillow",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pillow"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 97,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2178,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0001,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "Tests/test_imagefile.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "src/PIL/ImageFile.py",
+          "graph_file": "PIL/ImageFile.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 33,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 33,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.3477,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::pillow"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::pillow"
+          ],
+          "external_callers_count": 1
+        },
+        {
+          "patch_path": "src/decode.c",
+          "graph_file": "external::c",
+          "in_degree": 78,
+          "fan_in": 78,
+          "fan_out": 0,
+          "transitive_fan_in": 1946,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0172,
+          "hub_score": 0.0,
+          "authority_score": 0.0195,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "aider/io.py",
+            "aider/repomap.py",
+            "aiohttp/client_reqrep.py",
+            "charset_normalizer/md.py",
+            "click/_termui_impl.py",
+            "click/parser.py",
+            "click/types.py",
+            "dateutil/parser/__init__.py",
+            "flake8/formatting/base.py",
+            "fsspec/parquet.py",
+            "gitdb/pack.py",
+            "litellm/integrations/mlflow.py",
+            "litellm/litellm_core_utils/prompt_templates/common_utils.py",
+            "litellm/litellm_core_utils/token_counter.py",
+            "litellm/llms/anthropic/experimental_pass_through/adapters/transformation.py"
+          ],
+          "direct_callers_count": 78,
+          "internal_callers": [
+            "aider/analytics.py",
+            "aider/args.py",
+            "aider/coders/base_coder.py",
+            "aider/coders/editblock_coder.py",
+            "aider/coders/search_replace.py",
+            "aider/commands.py",
+            "aider/copypaste.py",
+            "aider/deprecated.py",
+            "aider/editor.py",
+            "aider/exceptions.py",
+            "aider/gui.py",
+            "aider/help.py",
+            "aider/history.py",
+            "aider/io.py",
+            "aider/main.py",
+            "aider/mdstream.py",
+            "aider/models.py",
+            "aider/onboarding.py",
+            "aider/repo.py",
+            "aider/repomap.py"
+          ],
+          "internal_callers_count": 1922,
+          "external_callers": [
+            "external::aider-chat",
+            "external::aiohttp",
+            "external::charset-normalizer",
+            "external::click",
+            "external::flake8",
+            "external::fsspec",
+            "external::gitdb",
+            "external::gitpython",
+            "external::httpx",
+            "external::litellm",
+            "external::networkx",
+            "external::numpy",
+            "external::pexpect",
+            "external::posthog",
+            "external::prompt-toolkit",
+            "external::pydantic",
+            "external::pygments",
+            "external::python-dateutil",
+            "external::rich",
+            "external::scipy"
+          ],
+          "external_callers_count": 24,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::c (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "src/encode.c",
+          "graph_file": "external::c",
+          "in_degree": 78,
+          "fan_in": 78,
+          "fan_out": 0,
+          "transitive_fan_in": 1946,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0172,
+          "hub_score": 0.0,
+          "authority_score": 0.0195,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "aider/io.py",
+            "aider/repomap.py",
+            "aiohttp/client_reqrep.py",
+            "charset_normalizer/md.py",
+            "click/_termui_impl.py",
+            "click/parser.py",
+            "click/types.py",
+            "dateutil/parser/__init__.py",
+            "flake8/formatting/base.py",
+            "fsspec/parquet.py",
+            "gitdb/pack.py",
+            "litellm/integrations/mlflow.py",
+            "litellm/litellm_core_utils/prompt_templates/common_utils.py",
+            "litellm/litellm_core_utils/token_counter.py",
+            "litellm/llms/anthropic/experimental_pass_through/adapters/transformation.py"
+          ],
+          "direct_callers_count": 78,
+          "internal_callers": [
+            "aider/analytics.py",
+            "aider/args.py",
+            "aider/coders/base_coder.py",
+            "aider/coders/editblock_coder.py",
+            "aider/coders/search_replace.py",
+            "aider/commands.py",
+            "aider/copypaste.py",
+            "aider/deprecated.py",
+            "aider/editor.py",
+            "aider/exceptions.py",
+            "aider/gui.py",
+            "aider/help.py",
+            "aider/history.py",
+            "aider/io.py",
+            "aider/main.py",
+            "aider/mdstream.py",
+            "aider/models.py",
+            "aider/onboarding.py",
+            "aider/repo.py",
+            "aider/repomap.py"
+          ],
+          "internal_callers_count": 1922,
+          "external_callers": [
+            "external::aider-chat",
+            "external::aiohttp",
+            "external::charset-normalizer",
+            "external::click",
+            "external::flake8",
+            "external::fsspec",
+            "external::gitdb",
+            "external::gitpython",
+            "external::httpx",
+            "external::litellm",
+            "external::networkx",
+            "external::numpy",
+            "external::pexpect",
+            "external::posthog",
+            "external::prompt-toolkit",
+            "external::pydantic",
+            "external::pygments",
+            "external::python-dateutil",
+            "external::rich",
+            "external::scipy"
+          ],
+          "external_callers_count": 24,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::c (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_050",
+      "vulnerability_id": "CVE-2026-34518",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "tests/test_client_functional.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_051",
+      "vulnerability_id": "CVE-2026-48817",
+      "component": "starlette",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::starlette"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 34,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2639,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0046,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_052",
+      "vulnerability_id": "CVE-2026-34517",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "aiohttp/web_request.py",
+          "graph_file": "aiohttp/web_request.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 55,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 74,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.4689,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::aiohttp"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::aiohttp"
+          ],
+          "external_callers_count": 1
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_053",
+      "vulnerability_id": "CVE-2026-1703",
+      "component": "pip",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/pip/_internal/utils/unpacking.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_054",
+      "vulnerability_id": "CVE-2026-34514",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "tests/test_formdata.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_055",
+      "vulnerability_id": "CVE-2026-47265",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_056",
+      "vulnerability_id": "CVE-2026-25645",
+      "component": "requests",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::requests"
+        ],
+        "in_degree": 3,
+        "fan_in": 2,
+        "fan_out": 18,
+        "transitive_fan_in": 7321,
+        "transitive_fan_out": 1092,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0002,
+        "hub_score": 0.0032,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::litellm/litellm/llms/vertex_ai/gemini_embeddings/batch_embed_content_transformation.py::transform_openai_input_gemini_content"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/requests/utils.py",
+          "graph_file": "requests/utils.py",
+          "in_degree": 2,
+          "fan_in": 2,
+          "fan_out": 54,
+          "transitive_fan_in": 1160,
+          "transitive_fan_out": 61,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0021,
+          "hub_score": 0.1748,
+          "authority_score": 0.0003,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::requests",
+            "tqdm/contrib/discord.py"
+          ],
+          "direct_callers_count": 2,
+          "internal_callers": [
+            "aider/analytics.py",
+            "aider/args.py",
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/deprecated.py",
+            "aider/exceptions.py",
+            "aider/gui.py",
+            "aider/history.py",
+            "aider/main.py",
+            "aider/models.py",
+            "benchmark/benchmark.py",
+            "component",
+            "litellm/__init__.py",
+            "litellm/_lazy_imports.py",
+            "litellm/_logging.py",
+            "litellm/_redis.py",
+            "litellm/_service_logger.py",
+            "litellm/a2a_protocol/__init__.py",
+            "litellm/a2a_protocol/card_resolver.py",
+            "litellm/a2a_protocol/client.py"
+          ],
+          "internal_callers_count": 1156,
+          "external_callers": [
+            "external::aider-chat",
+            "external::litellm",
+            "external::requests",
+            "external::tqdm"
+          ],
+          "external_callers_count": 4
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_057",
+      "vulnerability_id": "CVE-2026-34519",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "aiohttp/_http_writer.pyx",
+          "graph_file": "external::x",
+          "in_degree": 129,
+          "fan_in": 129,
+          "fan_out": 0,
+          "transitive_fan_in": 2188,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0201,
+          "hub_score": 0.0,
+          "authority_score": 0.0262,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "PIL/PdfParser.py",
+            "aiohttp/helpers.py",
+            "cffi/ffiplatform.py",
+            "cffi/pkgconfig.py",
+            "cffi/recompiler.py",
+            "charset_normalizer/constant.py",
+            "click/parser.py",
+            "dateutil/rrule.py",
+            "fsspec/spec.py",
+            "jinja2/environment.py",
+            "jinja2/nodes.py",
+            "jinja2/utils.py",
+            "litellm/litellm_core_utils/streaming_chunk_builder_utils.py",
+            "litellm/llms/dashscope/cost_calculator.py",
+            "litellm/proxy/common_utils/debug_utils.py"
+          ],
+          "direct_callers_count": 129,
+          "internal_callers": [
+            "PIL/PdfParser.py",
+            "aider/analytics.py",
+            "aider/args.py",
+            "aider/coders/base_coder.py",
+            "aider/coders/editblock_coder.py",
+            "aider/coders/search_replace.py",
+            "aider/commands.py",
+            "aider/copypaste.py",
+            "aider/deprecated.py",
+            "aider/editor.py",
+            "aider/exceptions.py",
+            "aider/gui.py",
+            "aider/help.py",
+            "aider/history.py",
+            "aider/io.py",
+            "aider/linter.py",
+            "aider/main.py",
+            "aider/mdstream.py",
+            "aider/models.py",
+            "aider/onboarding.py"
+          ],
+          "internal_callers_count": 2157,
+          "external_callers": [
+            "external::aider-chat",
+            "external::aiohttp",
+            "external::cffi",
+            "external::charset-normalizer",
+            "external::click",
+            "external::fastapi",
+            "external::fsspec",
+            "external::httpx",
+            "external::huggingface-hub",
+            "external::jinja2",
+            "external::litellm",
+            "external::mixpanel",
+            "external::networkx",
+            "external::numpy",
+            "external::openai",
+            "external::packaging",
+            "external::pillow",
+            "external::prompt-toolkit",
+            "external::psutil",
+            "external::pydantic"
+          ],
+          "external_callers_count": 31,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::x (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "aiohttp/web_response.py",
+          "graph_file": "aiohttp/web_response.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 40,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 44,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.4339,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::aiohttp"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::aiohttp"
+          ],
+          "external_callers_count": 1
+        },
+        {
+          "patch_path": "tests/test_web_exceptions.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "tests/test_web_response.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_058",
+      "vulnerability_id": "CVE-2025-71176",
+      "component": "pytest",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pytest"
+        ],
+        "in_degree": 99,
+        "fan_in": 85,
+        "fan_out": 0,
+        "transitive_fan_in": 15186,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.008,
+        "hub_score": 0.0,
+        "authority_score": 0.0007,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "external::aiohttp/aiohttp/pytest_plugin.py",
+          "external::aiohttp/aiohttp/pytest_plugin.py::aiohttp_client",
+          "external::aiohttp/aiohttp/pytest_plugin.py::aiohttp_raw_server",
+          "external::aiohttp/aiohttp/pytest_plugin.py::aiohttp_server",
+          "external::aiohttp/aiohttp/pytest_plugin.py::aiohttp_unused_port",
+          "external::aiohttp/aiohttp/pytest_plugin.py::fast",
+          "external::aiohttp/aiohttp/pytest_plugin.py::loop",
+          "external::aiohttp/aiohttp/pytest_plugin.py::loop_debug",
+          "external::aiohttp/aiohttp/pytest_plugin.py::proactor_loop",
+          "external::aiohttp/aiohttp/pytest_plugin.py::raw_test_server"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_059",
+      "vulnerability_id": "CVE-2026-50269",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "aiohttp/payload.py",
+          "graph_file": "aiohttp/payload.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 36,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 40,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.4464,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::aiohttp"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::aiohttp"
+          ],
+          "external_callers_count": 1
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_060",
+      "vulnerability_id": "CVE-2026-54275",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_061",
+      "vulnerability_id": "CVE-2026-6357",
+      "component": "pip",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    },
+    {
+      "finding_id": "finding_062",
+      "vulnerability_id": "CVE-2026-6357",
+      "component": "pip",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    },
+    {
+      "finding_id": "finding_063",
+      "vulnerability_id": "CVE-2026-3219",
+      "component": "pip",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    },
+    {
+      "finding_id": "finding_064",
+      "vulnerability_id": "CVE-2026-3219",
+      "component": "pip",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    },
+    {
+      "finding_id": "finding_065",
+      "vulnerability_id": "CVE-2026-42309",
+      "component": "pillow",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pillow"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 97,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2178,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0001,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_066",
+      "vulnerability_id": "CVE-2026-34993",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_067",
+      "vulnerability_id": "CVE-2026-42310",
+      "component": "pillow",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pillow"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 97,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2178,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0001,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "src/PIL/PdfParser.py",
+          "graph_file": "PIL/PdfParser.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 35,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 35,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.3665,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::pillow"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::pillow"
+          ],
+          "external_callers_count": 1
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_068",
+      "vulnerability_id": "CVE-2026-54282",
+      "component": "starlette",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::starlette"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 34,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2639,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0046,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_069",
+      "vulnerability_id": "CVE-2026-42308",
+      "component": "pillow",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pillow"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 97,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2178,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0001,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_070",
+      "vulnerability_id": "CVE-2026-54280",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_071",
+      "vulnerability_id": "CVE-2026-54279",
+      "component": "aiohttp",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::aiohttp"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 2714,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0011,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": "aiohttp/cookiejar.py",
+          "graph_file": "aiohttp/cookiejar.py",
+          "in_degree": 1,
+          "fan_in": 1,
+          "fan_out": 42,
+          "transitive_fan_in": 2,
+          "transitive_fan_out": 44,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0019,
+          "hub_score": 0.4731,
+          "authority_score": 0.0,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::aiohttp"
+          ],
+          "direct_callers_count": 1,
+          "internal_callers": [
+            "component"
+          ],
+          "internal_callers_count": 1,
+          "external_callers": [
+            "external::aiohttp"
+          ],
+          "external_callers_count": 1
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_072",
+      "vulnerability_id": "CVE-2025-3000",
+      "component": "torch",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::torch"
+        ],
+        "in_degree": 125,
+        "fan_in": 71,
+        "fan_out": 0,
+        "transitive_fan_in": 992,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0068,
+        "hub_score": 0.0,
+        "authority_score": 0.0002,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "external::huggingface-hub/huggingface_hub/_tensorboard_logger.py",
+          "external::huggingface-hub/huggingface_hub/_tensorboard_logger.py::HFSummaryWriter",
+          "external::huggingface-hub/huggingface_hub/hub_mixin.py",
+          "external::huggingface-hub/huggingface_hub/hub_mixin.py::PyTorchModelHubMixin._load_as_pickle",
+          "external::huggingface-hub/huggingface_hub/serialization/_torch.py",
+          "external::huggingface-hub/huggingface_hub/serialization/_torch.py::load_state_dict_from_file",
+          "external::huggingface-hub/huggingface_hub/serialization/_torch.py::save_torch_state_dict",
+          "external::scipy/scipy/_lib/_array_api.py",
+          "external::scipy/scipy/_lib/_array_api.py::get_xp_devices",
+          "external::scipy/scipy/_lib/array_api_compat/common/_helpers.py"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_073",
+      "vulnerability_id": "CVE-2026-34073",
+      "component": "cryptography",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::cryptography"
+        ],
+        "in_degree": 29,
+        "fan_in": 15,
+        "fan_out": 0,
+        "transitive_fan_in": 7878,
+        "transitive_fan_out": 0,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0009,
+        "hub_score": 0.0,
+        "authority_score": 0.0002,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "external::litellm/litellm/litellm_core_utils/app_crypto.py",
+          "external::litellm/litellm/litellm_core_utils/app_crypto.py::AppCrypto.decrypt_json",
+          "external::litellm/litellm/litellm_core_utils/app_crypto.py::AppCrypto.encrypt_json",
+          "external::litellm/litellm/llms/oci/chat/transformation.py",
+          "external::litellm/litellm/llms/oci/chat/transformation.py::OCIChatConfig._sign_with_manual_credentials",
+          "external::litellm/litellm/llms/oci/chat/transformation.py::load_private_key_from_str",
+          "external::litellm/litellm/proxy/auth/handle_jwt.py",
+          "external::litellm/litellm/proxy/auth/handle_jwt.py::JWTHandler.auth_jwt",
+          "external::litellm/litellm/proxy/auth/litellm_license.py",
+          "external::litellm/litellm/proxy/auth/litellm_license.py::LicenseCheck.read_public_key"
+        ]
+      },
+      "file_centrality": [
+        {
+          "patch_path": ".github/actions/fetch-vectors/action.yml",
+          "graph_file": "external::l",
+          "in_degree": 23,
+          "fan_in": 23,
+          "fan_out": 0,
+          "transitive_fan_in": 441,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0047,
+          "hub_score": 0.0,
+          "authority_score": 0.005,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "dateutil/parser/_parser.py",
+            "dateutil/relativedelta.py",
+            "dateutil/rrule.py",
+            "dateutil/tz/tz.py",
+            "fsspec/implementations/http.py",
+            "fsspec/implementations/http_sync.py",
+            "gitdb/db/ref.py",
+            "networkx/algorithms/approximation/traveling_salesman.py",
+            "networkx/algorithms/centrality/current_flow_betweenness.py",
+            "networkx/algorithms/centrality/current_flow_closeness.py",
+            "networkx/algorithms/centrality/flow_matrix.py",
+            "networkx/algorithms/coloring/equitable_coloring.py",
+            "networkx/generators/joint_degree_seq.py",
+            "networkx/generators/line.py",
+            "networkx/generators/random_graphs.py"
+          ],
+          "direct_callers_count": 23,
+          "internal_callers": [
+            "aider/analytics.py",
+            "aider/args.py",
+            "aider/coders/base_coder.py",
+            "aider/coders/editblock_coder.py",
+            "aider/coders/search_replace.py",
+            "aider/commands.py",
+            "aider/deprecated.py",
+            "aider/gui.py",
+            "aider/help.py",
+            "aider/history.py",
+            "aider/main.py",
+            "aider/models.py",
+            "aider/repo.py",
+            "aider/repomap.py",
+            "aider/report.py",
+            "aider/scrape.py",
+            "aider/sendchat.py",
+            "aider/utils.py",
+            "aider/versioncheck.py",
+            "aider/voice.py"
+          ],
+          "internal_callers_count": 430,
+          "external_callers": [
+            "external::aider-chat",
+            "external::fsspec",
+            "external::gitdb",
+            "external::gitpython",
+            "external::networkx",
+            "external::numpy",
+            "external::pexpect",
+            "external::posthog",
+            "external::prompt-toolkit",
+            "external::python-dateutil",
+            "external::scipy"
+          ],
+          "external_callers_count": 11,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::l (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "pyproject.toml",
+          "graph_file": "external::toml",
+          "in_degree": 3,
+          "fan_in": 3,
+          "fan_out": 0,
+          "transitive_fan_in": 16,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0021,
+          "hub_score": 0.0,
+          "authority_score": 0.0013,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "configargparse.py",
+            "huggingface_hub/fastai_utils.py",
+            "pydantic/v1/mypy.py"
+          ],
+          "direct_callers_count": 3,
+          "internal_callers": [
+            "aider/args.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "component",
+            "configargparse.py",
+            "huggingface_hub/fastai_utils.py",
+            "pydantic/v1/mypy.py",
+            "tests/basic/test_deprecated.py",
+            "tests/basic/test_main.py",
+            "tests/basic/test_sanity_check_repo.py",
+            "tests/basic/test_ssl_verification.py",
+            "tests/browser/test_browser.py"
+          ],
+          "internal_callers_count": 12,
+          "external_callers": [
+            "external::aider-chat",
+            "external::configargparse",
+            "external::huggingface-hub",
+            "external::pydantic"
+          ],
+          "external_callers_count": 4,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::toml (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "src/cryptography/__about__.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "src/rust/cryptography-x509-verification/src/lib.rs",
+          "graph_file": "external::s",
+          "in_degree": 127,
+          "fan_in": 127,
+          "fan_out": 0,
+          "transitive_fan_in": 2446,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0265,
+          "hub_score": 0.0,
+          "authority_score": 0.0313,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "PIL/BdfFontFile.py",
+            "PIL/GimpPaletteFile.py",
+            "PIL/ImImagePlugin.py",
+            "PIL/IptcImagePlugin.py",
+            "PIL/JpegImagePlugin.py",
+            "PIL/MpegImagePlugin.py",
+            "PIL/PaletteFile.py",
+            "PIL/PcdImagePlugin.py",
+            "PIL/PngImagePlugin.py",
+            "PIL/XVThumbImagePlugin.py",
+            "aider/coders/patch_coder.py",
+            "aiohappyeyeballs/impl.py",
+            "aiohttp/test_utils.py",
+            "cffi/cparser.py",
+            "cffi/recompiler.py"
+          ],
+          "direct_callers_count": 127,
+          "internal_callers": [
+            "PIL/BdfFontFile.py",
+            "PIL/GimpPaletteFile.py",
+            "PIL/ImImagePlugin.py",
+            "PIL/IptcImagePlugin.py",
+            "PIL/JpegImagePlugin.py",
+            "PIL/MpegImagePlugin.py",
+            "PIL/PaletteFile.py",
+            "PIL/PcdImagePlugin.py",
+            "PIL/PngImagePlugin.py",
+            "PIL/XVThumbImagePlugin.py",
+            "PIL/_typing.py",
+            "aider/analytics.py",
+            "aider/args.py",
+            "aider/coders/base_coder.py",
+            "aider/coders/editblock_coder.py",
+            "aider/coders/patch_coder.py",
+            "aider/coders/search_replace.py",
+            "aider/commands.py",
+            "aider/copypaste.py",
+            "aider/deprecated.py"
+          ],
+          "internal_callers_count": 2398,
+          "external_callers": [
+            "external::aider-chat",
+            "external::aiohappyeyeballs",
+            "external::aiohttp",
+            "external::cffi",
+            "external::diff-match-patch",
+            "external::fastapi",
+            "external::flake8",
+            "external::fsspec",
+            "external::gitpython",
+            "external::h11",
+            "external::httpcore",
+            "external::httpx",
+            "external::huggingface-hub",
+            "external::idna",
+            "external::jinja2",
+            "external::json5",
+            "external::litellm",
+            "external::markupsafe",
+            "external::mslex",
+            "external::networkx"
+          ],
+          "external_callers_count": 48,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::s (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "src/rust/cryptography-x509-verification/src/types.rs",
+          "graph_file": "external::s",
+          "in_degree": 127,
+          "fan_in": 127,
+          "fan_out": 0,
+          "transitive_fan_in": 2446,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0265,
+          "hub_score": 0.0,
+          "authority_score": 0.0313,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "PIL/BdfFontFile.py",
+            "PIL/GimpPaletteFile.py",
+            "PIL/ImImagePlugin.py",
+            "PIL/IptcImagePlugin.py",
+            "PIL/JpegImagePlugin.py",
+            "PIL/MpegImagePlugin.py",
+            "PIL/PaletteFile.py",
+            "PIL/PcdImagePlugin.py",
+            "PIL/PngImagePlugin.py",
+            "PIL/XVThumbImagePlugin.py",
+            "aider/coders/patch_coder.py",
+            "aiohappyeyeballs/impl.py",
+            "aiohttp/test_utils.py",
+            "cffi/cparser.py",
+            "cffi/recompiler.py"
+          ],
+          "direct_callers_count": 127,
+          "internal_callers": [
+            "PIL/BdfFontFile.py",
+            "PIL/GimpPaletteFile.py",
+            "PIL/ImImagePlugin.py",
+            "PIL/IptcImagePlugin.py",
+            "PIL/JpegImagePlugin.py",
+            "PIL/MpegImagePlugin.py",
+            "PIL/PaletteFile.py",
+            "PIL/PcdImagePlugin.py",
+            "PIL/PngImagePlugin.py",
+            "PIL/XVThumbImagePlugin.py",
+            "PIL/_typing.py",
+            "aider/analytics.py",
+            "aider/args.py",
+            "aider/coders/base_coder.py",
+            "aider/coders/editblock_coder.py",
+            "aider/coders/patch_coder.py",
+            "aider/coders/search_replace.py",
+            "aider/commands.py",
+            "aider/copypaste.py",
+            "aider/deprecated.py"
+          ],
+          "internal_callers_count": 2398,
+          "external_callers": [
+            "external::aider-chat",
+            "external::aiohappyeyeballs",
+            "external::aiohttp",
+            "external::cffi",
+            "external::diff-match-patch",
+            "external::fastapi",
+            "external::flake8",
+            "external::fsspec",
+            "external::gitpython",
+            "external::h11",
+            "external::httpcore",
+            "external::httpx",
+            "external::huggingface-hub",
+            "external::idna",
+            "external::jinja2",
+            "external::json5",
+            "external::litellm",
+            "external::markupsafe",
+            "external::mslex",
+            "external::networkx"
+          ],
+          "external_callers_count": 48,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::s (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "vectors/cryptography_vectors/__about__.py",
+          "graph_file": "external::y",
+          "in_degree": 28,
+          "fan_in": 28,
+          "fan_out": 0,
+          "transitive_fan_in": 352,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.006,
+          "hub_score": 0.0,
+          "authority_score": 0.004,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "networkx/algorithms/centrality/trophic.py",
+            "networkx/algorithms/d_separation.py",
+            "numpy/core/function_base.py",
+            "numpy/ma/testutils.py",
+            "numpy/ma/timer_comparison.py",
+            "pydub/scipy_effects.py",
+            "scipy/integrate/_bvp.py",
+            "scipy/interpolate/_bsplines.py",
+            "scipy/interpolate/_cubic.py",
+            "scipy/interpolate/_fitpack2.py",
+            "scipy/interpolate/_fitpack_impl.py",
+            "scipy/interpolate/_interpolate.py",
+            "scipy/interpolate/_polyint.py",
+            "scipy/optimize/_lsq/common.py",
+            "scipy/optimize/_trustregion_constr/equality_constrained_sqp.py"
+          ],
+          "direct_callers_count": 28,
+          "internal_callers": [
+            "aider/coders/base_coder.py",
+            "aider/commands.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "aider/repomap.py",
+            "benchmark/benchmark.py",
+            "component",
+            "networkx/__init__.py",
+            "networkx/algorithms/__init__.py",
+            "networkx/algorithms/approximation/__init__.py",
+            "networkx/algorithms/approximation/clique.py",
+            "networkx/algorithms/approximation/clustering_coefficient.py",
+            "networkx/algorithms/approximation/connectivity.py",
+            "networkx/algorithms/approximation/distance_measures.py",
+            "networkx/algorithms/approximation/dominating_set.py",
+            "networkx/algorithms/approximation/kcomponents.py",
+            "networkx/algorithms/approximation/matching.py",
+            "networkx/algorithms/approximation/maxcut.py",
+            "networkx/algorithms/approximation/ramsey.py",
+            "networkx/algorithms/approximation/steinertree.py"
+          ],
+          "internal_callers_count": 347,
+          "external_callers": [
+            "external::aider-chat",
+            "external::networkx",
+            "external::numpy",
+            "external::pydub",
+            "external::scipy"
+          ],
+          "external_callers_count": 5,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::y (file is inside external package, not repo source)"
+        },
+        {
+          "patch_path": "vectors/pyproject.toml",
+          "graph_file": "external::toml",
+          "in_degree": 3,
+          "fan_in": 3,
+          "fan_out": 0,
+          "transitive_fan_in": 16,
+          "transitive_fan_out": 0,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0021,
+          "hub_score": 0.0,
+          "authority_score": 0.0013,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "configargparse.py",
+            "huggingface_hub/fastai_utils.py",
+            "pydantic/v1/mypy.py"
+          ],
+          "direct_callers_count": 3,
+          "internal_callers": [
+            "aider/args.py",
+            "aider/gui.py",
+            "aider/main.py",
+            "component",
+            "configargparse.py",
+            "huggingface_hub/fastai_utils.py",
+            "pydantic/v1/mypy.py",
+            "tests/basic/test_deprecated.py",
+            "tests/basic/test_main.py",
+            "tests/basic/test_sanity_check_repo.py",
+            "tests/basic/test_ssl_verification.py",
+            "tests/browser/test_browser.py"
+          ],
+          "internal_callers_count": 12,
+          "external_callers": [
+            "external::aider-chat",
+            "external::configargparse",
+            "external::huggingface-hub",
+            "external::pydantic"
+          ],
+          "external_callers_count": 4,
+          "source": "EXTERNAL",
+          "note": "patch file mapped to package node external::toml (file is inside external package, not repo source)"
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_074",
+      "vulnerability_id": "CVE-2026-4539",
+      "component": "pygments",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pygments"
+        ],
+        "in_degree": 3,
+        "fan_in": 3,
+        "fan_out": 338,
+        "transitive_fan_in": 7,
+        "transitive_fan_out": 3585,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0002,
+        "hub_score": 0.0038,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::aider",
+          "external::httpx/httpx/_main.py::get_lexer_for_response",
+          "external::pygments/pygments/__main__.py::<module>"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_075",
+      "vulnerability_id": "CVE-2026-49853",
+      "component": "tornado",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    },
+    {
+      "finding_id": "finding_076",
+      "vulnerability_id": "CVE-2026-49855",
+      "component": "tornado",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    },
+    {
+      "finding_id": "finding_077",
+      "vulnerability_id": "CVE-2026-49854",
+      "component": "tornado",
+      "component_centrality": {
+        "matched_nodes": [],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 0,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 0,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "UNKNOWN",
+        "top_callers": [],
+        "note": "component not found in call graph"
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "UNKNOWN"
+    }
+  ]
+}

@@ -1,0 +1,2812 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "document_id": "reachable-callgraph-case_017-OpenHands",
+  "product": "case_017",
+  "case_id": "case_017",
+  "repo_name": "OpenHands",
+  "method": "reachability_only",
+  "generated": "2026-06-25T05:18:00.460731+00:00",
+  "relationships_file": "cases/case_017/output-callgraph/relationships.csv",
+  "callgraph_file": "",
+  "code_evidence": "cases/case_017/OpenHands_report_code_evidence.json",
+  "callgraph_stats": {
+    "loaded": true,
+    "source": "csv",
+    "node_count": 11857,
+    "edge_count": 30290,
+    "entry_count": 1
+  },
+  "statements": [
+    {
+      "finding_id": "finding_001",
+      "vulnerability_id": "CVE-2026-21710",
+      "component": "node",
+      "version": "24.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component node is reachable from an entry point. Path: component::OpenHands \u2192 openhands-ui/vitest.config.ts \u2192 external::node:url",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands-ui/vitest.config.ts",
+        "external::node:url"
+      ],
+      "matched_nodes": [
+        "external::node",
+        "external::node:path",
+        "external::node:url",
+        "external::comment-node",
+        "external::thread-node"
+      ],
+      "patch_summary": "node installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.025551+00:00"
+    },
+    {
+      "finding_id": "finding_002",
+      "vulnerability_id": "CVE-2026-48710",
+      "component": "starlette",
+      "version": "0.49.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::OpenHands \u2192 openhands/app_server/static.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands/app_server/static.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.49.3 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.032615+00:00"
+    },
+    {
+      "finding_id": "finding_003",
+      "vulnerability_id": "CVE-2026-48710",
+      "component": "starlette",
+      "version": "1.0.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::OpenHands \u2192 openhands/app_server/static.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands/app_server/static.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@1.0.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.038064+00:00"
+    },
+    {
+      "finding_id": "finding_004",
+      "vulnerability_id": "CVE-2026-42215",
+      "component": "gitpython",
+      "version": "3.1.46",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "gitpython was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "gitpython@3.1.46 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.041076+00:00"
+    },
+    {
+      "finding_id": "finding_005",
+      "vulnerability_id": "CVE-2026-42305",
+      "component": "dulwich",
+      "version": "1.1.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dulwich was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dulwich@1.1.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.043296+00:00"
+    },
+    {
+      "finding_id": "finding_006",
+      "vulnerability_id": "CVE-2026-42305",
+      "component": "dulwich",
+      "version": "1.2.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dulwich was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dulwich@1.2.0: no code match in patch files.",
+      "timestamp": "2026-06-25T05:18:00.045569+00:00"
+    },
+    {
+      "finding_id": "finding_007",
+      "vulnerability_id": "CVE-2026-44307",
+      "component": "mako",
+      "version": "1.3.10",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "mako was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "mako@1.3.10: buggy code present.",
+      "timestamp": "2026-06-25T05:18:00.048348+00:00"
+    },
+    {
+      "finding_id": "finding_008",
+      "vulnerability_id": "CVE-2026-44307",
+      "component": "mako",
+      "version": "1.3.11",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "mako was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "mako@1.3.11 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.051098+00:00"
+    },
+    {
+      "finding_id": "finding_009",
+      "vulnerability_id": "CVE-2026-42284",
+      "component": "gitpython",
+      "version": "3.1.46",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "gitpython was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "gitpython@3.1.46 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.053595+00:00"
+    },
+    {
+      "finding_id": "finding_010",
+      "vulnerability_id": "CVE-2026-44492",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.058930+00:00"
+    },
+    {
+      "finding_id": "finding_011",
+      "vulnerability_id": "CVE-2026-42563",
+      "component": "dulwich",
+      "version": "1.1.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dulwich was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dulwich@1.1.0: buggy code present, patched code present.",
+      "timestamp": "2026-06-25T05:18:00.061438+00:00"
+    },
+    {
+      "finding_id": "finding_012",
+      "vulnerability_id": "CVE-2026-42563",
+      "component": "dulwich",
+      "version": "1.2.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dulwich was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dulwich@1.2.0: buggy code present, patched code present.",
+      "timestamp": "2026-06-25T05:18:00.063640+00:00"
+    },
+    {
+      "finding_id": "finding_013",
+      "vulnerability_id": "CVE-2026-35397",
+      "component": "jupyter-server",
+      "version": "2.17.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "jupyter-server was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "jupyter-server@2.17.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.066555+00:00"
+    },
+    {
+      "finding_id": "finding_014",
+      "vulnerability_id": "CVE-2026-44494",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.068988+00:00"
+    },
+    {
+      "finding_id": "finding_015",
+      "vulnerability_id": "CVE-2026-42266",
+      "component": "jupyterlab",
+      "version": "4.5.6",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "jupyterlab was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "jupyterlab installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.071317+00:00"
+    },
+    {
+      "finding_id": "finding_016",
+      "vulnerability_id": "CVE-2026-48779",
+      "component": "ws",
+      "version": "8.18.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component ws is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/i18n/index.ts \u2192 external::i18next-browser-languagedetector",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/i18n/index.ts",
+        "external::i18next-browser-languagedetector"
+      ],
+      "matched_nodes": [
+        "external::ws",
+        "external::i18next-browser-languagedetector",
+        "external::wsref",
+        "external::newsearchparams",
+        "external::wslink"
+      ],
+      "patch_summary": "ws@8.18.3: no code match in patch files.",
+      "timestamp": "2026-06-25T05:18:00.073569+00:00"
+    },
+    {
+      "finding_id": "finding_017",
+      "vulnerability_id": "CVE-2026-44291",
+      "component": "protobufjs",
+      "version": "7.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "protobufjs was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "protobufjs@7.5.5 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.076603+00:00"
+    },
+    {
+      "finding_id": "finding_018",
+      "vulnerability_id": "CVE-2026-40171",
+      "component": "jupyterlab",
+      "version": "4.5.6",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "jupyterlab was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "jupyterlab installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.078770+00:00"
+    },
+    {
+      "finding_id": "finding_019",
+      "vulnerability_id": "CVE-2026-40171",
+      "component": "notebook",
+      "version": "7.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "notebook was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "notebook installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.081409+00:00"
+    },
+    {
+      "finding_id": "finding_020",
+      "vulnerability_id": "CVE-2026-49468",
+      "component": "litellm",
+      "version": "1.83.14",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component litellm is reachable from an entry point. Path: component::OpenHands \u2192 openhands/app_server/utils/logger.py \u2192 external::litellm",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands/app_server/utils/logger.py",
+        "external::litellm"
+      ],
+      "matched_nodes": [
+        "external::litellm",
+        "external::litellmmanager"
+      ],
+      "patch_summary": "litellm@1.83.14 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.083470+00:00"
+    },
+    {
+      "finding_id": "finding_021",
+      "vulnerability_id": "CVE-2026-44431",
+      "component": "urllib3",
+      "version": "2.6.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "urllib3 was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "urllib3@2.6.3 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.085639+00:00"
+    },
+    {
+      "finding_id": "finding_022",
+      "vulnerability_id": "CVE-2026-42211",
+      "component": "react-router",
+      "version": "7.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component react-router is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/components/features/home/connect-to-provider-message.tsx \u2192 external::react-router",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/components/features/home/connect-to-provider-message.tsx",
+        "external::react-router"
+      ],
+      "matched_nodes": [
+        "external::react-router",
+        "external::@react-router/dev"
+      ],
+      "patch_summary": "react-router@7.13.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.087261+00:00"
+    },
+    {
+      "finding_id": "finding_023",
+      "vulnerability_id": "CVE-2026-53571",
+      "component": "vite",
+      "version": "7.3.2",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component vite is reachable from an entry point. Path: component::OpenHands \u2192 openhands-ui/components/interactive-chip/InteractiveChip.stories.tsx \u2192 external::@storybook/react-vite",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands-ui/components/interactive-chip/InteractiveChip.stories.tsx",
+        "external::@storybook/react-vite"
+      ],
+      "matched_nodes": [
+        "external::vite",
+        "external::vitest",
+        "external::@vitejs/plugin-react",
+        "external::@tailwindcss/vite",
+        "external::vite-plugin-dts",
+        "external::@storybook/addon-vitest",
+        "external::@storybook/react-vite",
+        "external::inviter-user",
+        "external::vite-tsconfig-paths",
+        "external::vite-plugin-svgr",
+        "external::navitems"
+      ],
+      "patch_summary": "vite@7.3.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.088759+00:00"
+    },
+    {
+      "finding_id": "finding_024",
+      "vulnerability_id": "CVE-2026-42561",
+      "component": "python-multipart",
+      "version": "0.0.26",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.26 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.090870+00:00"
+    },
+    {
+      "finding_id": "finding_025",
+      "vulnerability_id": "CVE-2026-44243",
+      "component": "gitpython",
+      "version": "3.1.46",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "gitpython was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "gitpython@3.1.46 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.093094+00:00"
+    },
+    {
+      "finding_id": "finding_026",
+      "vulnerability_id": "CVE-2026-44243",
+      "component": "gitpython",
+      "version": "3.1.47",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "gitpython was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "gitpython@3.1.47 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.095329+00:00"
+    },
+    {
+      "finding_id": "finding_027",
+      "vulnerability_id": "CVE-2026-42264",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.097440+00:00"
+    },
+    {
+      "finding_id": "finding_028",
+      "vulnerability_id": "CVE-2026-44432",
+      "component": "urllib3",
+      "version": "2.6.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "urllib3 was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "urllib3@2.6.3 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.099604+00:00"
+    },
+    {
+      "finding_id": "finding_029",
+      "vulnerability_id": "CVE-2026-44289",
+      "component": "protobufjs",
+      "version": "7.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "protobufjs was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "protobufjs@7.5.5 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.101945+00:00"
+    },
+    {
+      "finding_id": "finding_030",
+      "vulnerability_id": "CVE-2026-44487",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.103731+00:00"
+    },
+    {
+      "finding_id": "finding_031",
+      "vulnerability_id": "CVE-2026-42043",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.105311+00:00"
+    },
+    {
+      "finding_id": "finding_032",
+      "vulnerability_id": "CVE-2026-42035",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.107021+00:00"
+    },
+    {
+      "finding_id": "finding_033",
+      "vulnerability_id": "CVE-2026-42033",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.108727+00:00"
+    },
+    {
+      "finding_id": "finding_034",
+      "vulnerability_id": "CVE-2026-33079",
+      "component": "mistune",
+      "version": "3.2.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "mistune was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "mistune@3.2.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.111428+00:00"
+    },
+    {
+      "finding_id": "finding_035",
+      "vulnerability_id": "CVE-2026-44290",
+      "component": "protobufjs",
+      "version": "7.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "protobufjs was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "protobufjs@7.5.5 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.113717+00:00"
+    },
+    {
+      "finding_id": "finding_036",
+      "vulnerability_id": "CVE-2026-42557",
+      "component": "jupyterlab",
+      "version": "4.5.6",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "jupyterlab was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "jupyterlab installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.115822+00:00"
+    },
+    {
+      "finding_id": "finding_037",
+      "vulnerability_id": "CVE-2026-42557",
+      "component": "notebook",
+      "version": "7.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "notebook was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "notebook installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.117949+00:00"
+    },
+    {
+      "finding_id": "finding_038",
+      "vulnerability_id": "CVE-2026-41205",
+      "component": "mako",
+      "version": "1.3.10",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "mako was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "mako@1.3.10 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.120656+00:00"
+    },
+    {
+      "finding_id": "finding_039",
+      "vulnerability_id": "CVE-2026-40110",
+      "component": "jupyter-server",
+      "version": "2.17.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "jupyter-server was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "jupyter-server@2.17.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.122784+00:00"
+    },
+    {
+      "finding_id": "finding_040",
+      "vulnerability_id": "CVE-2026-44496",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.124697+00:00"
+    },
+    {
+      "finding_id": "finding_041",
+      "vulnerability_id": "CVE-2026-44488",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.126535+00:00"
+    },
+    {
+      "finding_id": "finding_042",
+      "vulnerability_id": "CVE-2026-12143",
+      "component": "form-data",
+      "version": "4.0.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "form-data was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "form-data@4.0.5: buggy code present.",
+      "timestamp": "2026-06-25T05:18:00.129301+00:00"
+    },
+    {
+      "finding_id": "finding_043",
+      "vulnerability_id": "CVE-2026-42039",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.132056+00:00"
+    },
+    {
+      "finding_id": "finding_044",
+      "vulnerability_id": "CVE-2026-48712",
+      "component": "protobufjs",
+      "version": "7.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "protobufjs was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "protobufjs@7.5.5 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.135391+00:00"
+    },
+    {
+      "finding_id": "finding_045",
+      "vulnerability_id": "CVE-2026-45409",
+      "component": "idna",
+      "version": "3.11",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "idna was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "idna@3.11 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.138379+00:00"
+    },
+    {
+      "finding_id": "finding_046",
+      "vulnerability_id": "CVE-2026-45409",
+      "component": "idna",
+      "version": "3.13",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "idna was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "idna@3.13 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.141009+00:00"
+    },
+    {
+      "finding_id": "finding_047",
+      "vulnerability_id": "CVE-2026-44486",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.143219+00:00"
+    },
+    {
+      "finding_id": "finding_048",
+      "vulnerability_id": "CVE-2026-40260",
+      "component": "pypdf",
+      "version": "6.9.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.9.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.145511+00:00"
+    },
+    {
+      "finding_id": "finding_049",
+      "vulnerability_id": "CVE-2026-21714",
+      "component": "node",
+      "version": "24.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component node is reachable from an entry point. Path: component::OpenHands \u2192 openhands-ui/vitest.config.ts \u2192 external::node:url",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands-ui/vitest.config.ts",
+        "external::node:url"
+      ],
+      "matched_nodes": [
+        "external::node",
+        "external::node:path",
+        "external::node:url",
+        "external::comment-node",
+        "external::thread-node"
+      ],
+      "patch_summary": "node installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.148745+00:00"
+    },
+    {
+      "finding_id": "finding_050",
+      "vulnerability_id": "CVE-2026-40934",
+      "component": "jupyter-server",
+      "version": "2.17.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "jupyter-server was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "jupyter-server@2.17.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.151869+00:00"
+    },
+    {
+      "finding_id": "finding_051",
+      "vulnerability_id": "CVE-2026-42342",
+      "component": "react-router",
+      "version": "7.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component react-router is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/components/features/home/connect-to-provider-message.tsx \u2192 external::react-router",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/components/features/home/connect-to-provider-message.tsx",
+        "external::react-router"
+      ],
+      "matched_nodes": [
+        "external::react-router",
+        "external::@react-router/dev"
+      ],
+      "patch_summary": "react-router@7.13.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.154025+00:00"
+    },
+    {
+      "finding_id": "finding_052",
+      "vulnerability_id": "CVE-2026-44293",
+      "component": "protobufjs",
+      "version": "7.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "protobufjs was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "protobufjs@7.5.5 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.156578+00:00"
+    },
+    {
+      "finding_id": "finding_053",
+      "vulnerability_id": "CVE-2026-45736",
+      "component": "ws",
+      "version": "8.18.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component ws is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/i18n/index.ts \u2192 external::i18next-browser-languagedetector",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/i18n/index.ts",
+        "external::i18next-browser-languagedetector"
+      ],
+      "matched_nodes": [
+        "external::ws",
+        "external::i18next-browser-languagedetector",
+        "external::wsref",
+        "external::newsearchparams",
+        "external::wslink"
+      ],
+      "patch_summary": "ws@8.18.3: no code match in patch files.",
+      "timestamp": "2026-06-25T05:18:00.158851+00:00"
+    },
+    {
+      "finding_id": "finding_054",
+      "vulnerability_id": "CVE-2026-44294",
+      "component": "protobufjs",
+      "version": "7.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "protobufjs was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "protobufjs@7.5.5 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.161287+00:00"
+    },
+    {
+      "finding_id": "finding_055",
+      "vulnerability_id": "CVE-2026-34077",
+      "component": "react-router",
+      "version": "7.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component react-router is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/components/features/home/connect-to-provider-message.tsx \u2192 external::react-router",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/components/features/home/connect-to-provider-message.tsx",
+        "external::react-router"
+      ],
+      "matched_nodes": [
+        "external::react-router",
+        "external::@react-router/dev"
+      ],
+      "patch_summary": "react-router@7.13.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.163498+00:00"
+    },
+    {
+      "finding_id": "finding_056",
+      "vulnerability_id": "CVE-2026-44727",
+      "component": "jupyter-server",
+      "version": "2.17.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "jupyter-server was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "jupyter-server@2.17.0: patched code present.",
+      "timestamp": "2026-06-25T05:18:00.165716+00:00"
+    },
+    {
+      "finding_id": "finding_057",
+      "vulnerability_id": "CVE-2026-33532",
+      "component": "yaml",
+      "version": "2.8.2",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component yaml is reachable from an entry point. Path: component::OpenHands \u2192 enterprise/enterprise_local/convert_to_env.py \u2192 external::yaml",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "enterprise/enterprise_local/convert_to_env.py",
+        "external::yaml"
+      ],
+      "matched_nodes": [
+        "external::yaml",
+        "external::yaml-data"
+      ],
+      "patch_summary": "yaml@2.8.2: no code match in patch files.",
+      "timestamp": "2026-06-25T05:18:00.168656+00:00"
+    },
+    {
+      "finding_id": "finding_058",
+      "vulnerability_id": "CVE-2026-42036",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.171007+00:00"
+    },
+    {
+      "finding_id": "finding_059",
+      "vulnerability_id": "CVE-2026-21713",
+      "component": "node",
+      "version": "24.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component node is reachable from an entry point. Path: component::OpenHands \u2192 openhands-ui/vitest.config.ts \u2192 external::node:url",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands-ui/vitest.config.ts",
+        "external::node:url"
+      ],
+      "matched_nodes": [
+        "external::node",
+        "external::node:path",
+        "external::node:url",
+        "external::comment-node",
+        "external::thread-node"
+      ],
+      "patch_summary": "node installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.173040+00:00"
+    },
+    {
+      "finding_id": "finding_060",
+      "vulnerability_id": "CVE-2026-48818",
+      "component": "starlette",
+      "version": "0.49.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::OpenHands \u2192 openhands/app_server/static.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands/app_server/static.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.49.3: patched code present.",
+      "timestamp": "2026-06-25T05:18:00.175816+00:00"
+    },
+    {
+      "finding_id": "finding_061",
+      "vulnerability_id": "CVE-2026-48818",
+      "component": "starlette",
+      "version": "1.0.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::OpenHands \u2192 openhands/app_server/static.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands/app_server/static.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@1.0.0: patched code present.",
+      "timestamp": "2026-06-25T05:18:00.178499+00:00"
+    },
+    {
+      "finding_id": "finding_062",
+      "vulnerability_id": "CVE-2026-54283",
+      "component": "starlette",
+      "version": "0.49.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::OpenHands \u2192 openhands/app_server/static.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands/app_server/static.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.49.3 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.180667+00:00"
+    },
+    {
+      "finding_id": "finding_063",
+      "vulnerability_id": "CVE-2026-54283",
+      "component": "starlette",
+      "version": "1.0.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::OpenHands \u2192 openhands/app_server/static.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands/app_server/static.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@1.0.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.182440+00:00"
+    },
+    {
+      "finding_id": "finding_064",
+      "vulnerability_id": "CVE-2026-48937",
+      "component": "node",
+      "version": "24.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component node is reachable from an entry point. Path: component::OpenHands \u2192 openhands-ui/vitest.config.ts \u2192 external::node:url",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands-ui/vitest.config.ts",
+        "external::node:url"
+      ],
+      "matched_nodes": [
+        "external::node",
+        "external::node:path",
+        "external::node:url",
+        "external::comment-node",
+        "external::thread-node"
+      ],
+      "patch_summary": "node installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.184180+00:00"
+    },
+    {
+      "finding_id": "finding_065",
+      "vulnerability_id": "CVE-2026-53539",
+      "component": "python-multipart",
+      "version": "0.0.26",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.26 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.186493+00:00"
+    },
+    {
+      "finding_id": "finding_066",
+      "vulnerability_id": "CVE-2026-8723",
+      "component": "qs",
+      "version": "6.14.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "qs was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "qs@6.14.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.190031+00:00"
+    },
+    {
+      "finding_id": "finding_067",
+      "vulnerability_id": "CVE-2026-54276",
+      "component": "aiohttp",
+      "version": "3.13.4",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component aiohttp is reachable from an entry point. Path: component::OpenHands \u2192 enterprise/server/services/automation_event_service.py \u2192 external::aiohttp",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "enterprise/server/services/automation_event_service.py",
+        "external::aiohttp"
+      ],
+      "matched_nodes": [
+        "external::aiohttp"
+      ],
+      "patch_summary": "aiohttp@3.13.4: no code match in patch files.",
+      "timestamp": "2026-06-25T05:18:00.192416+00:00"
+    },
+    {
+      "finding_id": "finding_068",
+      "vulnerability_id": "CVE-2026-44244",
+      "component": "gitpython",
+      "version": "3.1.46",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "gitpython was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "gitpython@3.1.46 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.194824+00:00"
+    },
+    {
+      "finding_id": "finding_069",
+      "vulnerability_id": "CVE-2026-44244",
+      "component": "gitpython",
+      "version": "3.1.47",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "gitpython was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "gitpython@3.1.47 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.197236+00:00"
+    },
+    {
+      "finding_id": "finding_070",
+      "vulnerability_id": "CVE-2026-42038",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.199314+00:00"
+    },
+    {
+      "finding_id": "finding_071",
+      "vulnerability_id": "CVE-2026-39378",
+      "component": "nbconvert",
+      "version": "7.17.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "nbconvert was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "nbconvert@7.17.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.202040+00:00"
+    },
+    {
+      "finding_id": "finding_072",
+      "vulnerability_id": "CVE-2026-21712",
+      "component": "node",
+      "version": "24.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component node is reachable from an entry point. Path: component::OpenHands \u2192 openhands-ui/vitest.config.ts \u2192 external::node:url",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands-ui/vitest.config.ts",
+        "external::node:url"
+      ],
+      "matched_nodes": [
+        "external::node",
+        "external::node:path",
+        "external::node:url",
+        "external::comment-node",
+        "external::thread-node"
+      ],
+      "patch_summary": "node installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.204690+00:00"
+    },
+    {
+      "finding_id": "finding_073",
+      "vulnerability_id": "CVE-2026-53632",
+      "component": "vite",
+      "version": "7.3.2",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component vite is reachable from an entry point. Path: component::OpenHands \u2192 openhands-ui/components/interactive-chip/InteractiveChip.stories.tsx \u2192 external::@storybook/react-vite",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands-ui/components/interactive-chip/InteractiveChip.stories.tsx",
+        "external::@storybook/react-vite"
+      ],
+      "matched_nodes": [
+        "external::vite",
+        "external::vitest",
+        "external::@vitejs/plugin-react",
+        "external::@tailwindcss/vite",
+        "external::vite-plugin-dts",
+        "external::@storybook/addon-vitest",
+        "external::@storybook/react-vite",
+        "external::inviter-user",
+        "external::vite-tsconfig-paths",
+        "external::vite-plugin-svgr",
+        "external::navitems"
+      ],
+      "patch_summary": "vite@7.3.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.206406+00:00"
+    },
+    {
+      "finding_id": "finding_074",
+      "vulnerability_id": "CVE-2026-42034",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.208099+00:00"
+    },
+    {
+      "finding_id": "finding_075",
+      "vulnerability_id": "CVE-2026-44495",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.209660+00:00"
+    },
+    {
+      "finding_id": "finding_076",
+      "vulnerability_id": "CVE-2026-54277",
+      "component": "aiohttp",
+      "version": "3.13.4",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component aiohttp is reachable from an entry point. Path: component::OpenHands \u2192 enterprise/server/services/automation_event_service.py \u2192 external::aiohttp",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "enterprise/server/services/automation_event_service.py",
+        "external::aiohttp"
+      ],
+      "matched_nodes": [
+        "external::aiohttp"
+      ],
+      "patch_summary": "aiohttp@3.13.4: buggy code present.",
+      "timestamp": "2026-06-25T05:18:00.211450+00:00"
+    },
+    {
+      "finding_id": "finding_077",
+      "vulnerability_id": "CVE-2026-54274",
+      "component": "aiohttp",
+      "version": "3.13.4",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component aiohttp is reachable from an entry point. Path: component::OpenHands \u2192 enterprise/server/services/automation_event_service.py \u2192 external::aiohttp",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "enterprise/server/services/automation_event_service.py",
+        "external::aiohttp"
+      ],
+      "matched_nodes": [
+        "external::aiohttp"
+      ],
+      "patch_summary": "aiohttp@3.13.4 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.213292+00:00"
+    },
+    {
+      "finding_id": "finding_078",
+      "vulnerability_id": "CVE-2026-44288",
+      "component": "@protobufjs/utf8",
+      "version": "1.1.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "@protobufjs/utf8 was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "@protobufjs/utf8 installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.215877+00:00"
+    },
+    {
+      "finding_id": "finding_079",
+      "vulnerability_id": "CVE-2026-44288",
+      "component": "protobufjs",
+      "version": "7.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "protobufjs was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "protobufjs@7.5.5 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.218172+00:00"
+    },
+    {
+      "finding_id": "finding_080",
+      "vulnerability_id": "CVE-2026-42044",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.220219+00:00"
+    },
+    {
+      "finding_id": "finding_081",
+      "vulnerability_id": "CVE-2026-21717",
+      "component": "node",
+      "version": "24.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component node is reachable from an entry point. Path: component::OpenHands \u2192 openhands-ui/vitest.config.ts \u2192 external::node:url",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands-ui/vitest.config.ts",
+        "external::node:url"
+      ],
+      "matched_nodes": [
+        "external::node",
+        "external::node:path",
+        "external::node:url",
+        "external::comment-node",
+        "external::thread-node"
+      ],
+      "patch_summary": "node installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.222083+00:00"
+    },
+    {
+      "finding_id": "finding_082",
+      "vulnerability_id": "CVE-2026-39377",
+      "component": "nbconvert",
+      "version": "7.17.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "nbconvert was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "nbconvert@7.17.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.224792+00:00"
+    },
+    {
+      "finding_id": "finding_083",
+      "vulnerability_id": "CVE-2026-54278",
+      "component": "aiohttp",
+      "version": "3.13.4",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component aiohttp is reachable from an entry point. Path: component::OpenHands \u2192 enterprise/server/services/automation_event_service.py \u2192 external::aiohttp",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "enterprise/server/services/automation_event_service.py",
+        "external::aiohttp"
+      ],
+      "matched_nodes": [
+        "external::aiohttp"
+      ],
+      "patch_summary": "aiohttp@3.13.4 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.227378+00:00"
+    },
+    {
+      "finding_id": "finding_084",
+      "vulnerability_id": "CVE-2026-54273",
+      "component": "aiohttp",
+      "version": "3.13.4",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component aiohttp is reachable from an entry point. Path: component::OpenHands \u2192 enterprise/server/services/automation_event_service.py \u2192 external::aiohttp",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "enterprise/server/services/automation_event_service.py",
+        "external::aiohttp"
+      ],
+      "matched_nodes": [
+        "external::aiohttp"
+      ],
+      "patch_summary": "aiohttp@3.13.4 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.229398+00:00"
+    },
+    {
+      "finding_id": "finding_085",
+      "vulnerability_id": "CVE-2026-39373",
+      "component": "jwcrypto",
+      "version": "1.5.6",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component jwcrypto is reachable from an entry point. Path: component::OpenHands \u2192 openhands/app_server/services/jwt_service.py \u2192 external::jwcrypto",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands/app_server/services/jwt_service.py",
+        "external::jwcrypto"
+      ],
+      "matched_nodes": [
+        "external::jwcrypto"
+      ],
+      "patch_summary": "jwcrypto@1.5.6 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.231060+00:00"
+    },
+    {
+      "finding_id": "finding_086",
+      "vulnerability_id": "CVE-2026-41168",
+      "component": "pypdf",
+      "version": "6.9.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.9.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.233405+00:00"
+    },
+    {
+      "finding_id": "finding_087",
+      "vulnerability_id": "CVE-2026-48525",
+      "component": "pyjwt",
+      "version": "2.12.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pyjwt was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pyjwt@2.12.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.236082+00:00"
+    },
+    {
+      "finding_id": "finding_088",
+      "vulnerability_id": "CVE-2026-48526",
+      "component": "pyjwt",
+      "version": "2.12.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pyjwt was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pyjwt@2.12.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.238697+00:00"
+    },
+    {
+      "finding_id": "finding_089",
+      "vulnerability_id": "CVE-2025-61669",
+      "component": "jupyter-server",
+      "version": "2.17.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "jupyter-server was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "jupyter-server@2.17.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.240993+00:00"
+    },
+    {
+      "finding_id": "finding_090",
+      "vulnerability_id": "CVE-2026-33245",
+      "component": "react-router",
+      "version": "7.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component react-router is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/components/features/home/connect-to-provider-message.tsx \u2192 external::react-router",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/components/features/home/connect-to-provider-message.tsx",
+        "external::react-router"
+      ],
+      "matched_nodes": [
+        "external::react-router",
+        "external::@react-router/dev"
+      ],
+      "patch_summary": "react-router@7.13.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.242724+00:00"
+    },
+    {
+      "finding_id": "finding_091",
+      "vulnerability_id": "CVE-2026-41240",
+      "component": "dompurify",
+      "version": "3.3.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dompurify was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dompurify@3.3.2: patched code present.",
+      "timestamp": "2026-06-25T05:18:00.244907+00:00"
+    },
+    {
+      "finding_id": "finding_092",
+      "vulnerability_id": "CVE-2026-41691",
+      "component": "i18next-http-backend",
+      "version": "3.0.2",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component i18next-http-backend is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/i18n/index.ts \u2192 external::i18next-http-backend",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/i18n/index.ts",
+        "external::i18next-http-backend"
+      ],
+      "matched_nodes": [
+        "external::i18next-http-backend"
+      ],
+      "patch_summary": "i18next-http-backend@3.0.2: buggy code present, patched code present.",
+      "timestamp": "2026-06-25T05:18:00.246559+00:00"
+    },
+    {
+      "finding_id": "finding_093",
+      "vulnerability_id": "CVE-2026-42041",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.248095+00:00"
+    },
+    {
+      "finding_id": "finding_094",
+      "vulnerability_id": "CVE-2026-44490",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.249620+00:00"
+    },
+    {
+      "finding_id": "finding_095",
+      "vulnerability_id": "CVE-2026-44292",
+      "component": "protobufjs",
+      "version": "7.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "protobufjs was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "protobufjs@7.5.5 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.252005+00:00"
+    },
+    {
+      "finding_id": "finding_096",
+      "vulnerability_id": "CVE-2026-45740",
+      "component": "protobufjs",
+      "version": "7.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "protobufjs was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "protobufjs@7.5.5 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.254323+00:00"
+    },
+    {
+      "finding_id": "finding_097",
+      "vulnerability_id": "CVE-2026-41312",
+      "component": "pypdf",
+      "version": "6.9.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.9.2: patched code present.",
+      "timestamp": "2026-06-25T05:18:00.256609+00:00"
+    },
+    {
+      "finding_id": "finding_098",
+      "vulnerability_id": "CVE-2026-41314",
+      "component": "pypdf",
+      "version": "6.9.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.9.2: patched code present.",
+      "timestamp": "2026-06-25T05:18:00.258847+00:00"
+    },
+    {
+      "finding_id": "finding_099",
+      "vulnerability_id": "CVE-2026-41239",
+      "component": "dompurify",
+      "version": "3.3.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dompurify was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dompurify@3.3.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.261536+00:00"
+    },
+    {
+      "finding_id": "finding_100",
+      "vulnerability_id": "CVE-2026-44897",
+      "component": "mistune",
+      "version": "3.2.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "mistune was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "mistune@3.2.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.264366+00:00"
+    },
+    {
+      "finding_id": "finding_101",
+      "vulnerability_id": "CVE-2026-44898",
+      "component": "mistune",
+      "version": "3.2.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "mistune was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "mistune@3.2.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.267099+00:00"
+    },
+    {
+      "finding_id": "finding_102",
+      "vulnerability_id": "CVE-2026-44708",
+      "component": "mistune",
+      "version": "3.2.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "mistune was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "mistune@3.2.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.269776+00:00"
+    },
+    {
+      "finding_id": "finding_103",
+      "vulnerability_id": "CVE-2026-41313",
+      "component": "pypdf",
+      "version": "6.9.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.9.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.272038+00:00"
+    },
+    {
+      "finding_id": "finding_104",
+      "vulnerability_id": "CVE-2026-42037",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.274097+00:00"
+    },
+    {
+      "finding_id": "finding_105",
+      "vulnerability_id": "CVE-2026-54285",
+      "component": "@opentelemetry/core",
+      "version": "2.2.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component @opentelemetry/core is reachable from an entry point. Path: component::OpenHands \u2192 openhands/app_server/file_store/s3.py \u2192 external::botocore",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands/app_server/file_store/s3.py",
+        "external::botocore"
+      ],
+      "matched_nodes": [
+        "external::botocore"
+      ],
+      "patch_summary": "@opentelemetry/core installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.275843+00:00"
+    },
+    {
+      "finding_id": "finding_106",
+      "vulnerability_id": "CVE-2026-54285",
+      "component": "@opentelemetry/core",
+      "version": "2.5.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component @opentelemetry/core is reachable from an entry point. Path: component::OpenHands \u2192 openhands/app_server/file_store/s3.py \u2192 external::botocore",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands/app_server/file_store/s3.py",
+        "external::botocore"
+      ],
+      "matched_nodes": [
+        "external::botocore"
+      ],
+      "patch_summary": "@opentelemetry/core installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.277793+00:00"
+    },
+    {
+      "finding_id": "finding_107",
+      "vulnerability_id": "CVE-2026-54269",
+      "component": "protobufjs",
+      "version": "7.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "protobufjs was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "protobufjs@7.5.5 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.280226+00:00"
+    },
+    {
+      "finding_id": "finding_108",
+      "vulnerability_id": "CVE-2026-41238",
+      "component": "dompurify",
+      "version": "3.3.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dompurify was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dompurify@3.3.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.282410+00:00"
+    },
+    {
+      "finding_id": "finding_109",
+      "vulnerability_id": "CVE-2026-42042",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.285191+00:00"
+    },
+    {
+      "finding_id": "finding_110",
+      "vulnerability_id": "CVE-2026-41305",
+      "component": "postcss",
+      "version": "8.5.6",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "postcss was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "postcss@8.5.6 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.288012+00:00"
+    },
+    {
+      "finding_id": "finding_111",
+      "vulnerability_id": "CVE-2026-44681",
+      "component": "authlib",
+      "version": "1.6.9",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "authlib was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "authlib@1.6.9 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.290815+00:00"
+    },
+    {
+      "finding_id": "finding_112",
+      "vulnerability_id": "CVE-2026-44681",
+      "component": "authlib",
+      "version": "1.7.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "authlib was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "authlib@1.7.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.294742+00:00"
+    },
+    {
+      "finding_id": "finding_113",
+      "vulnerability_id": "CVE-2026-44899",
+      "component": "mistune",
+      "version": "3.2.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "mistune was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "mistune@3.2.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.300889+00:00"
+    },
+    {
+      "finding_id": "finding_114",
+      "vulnerability_id": "CVE-2026-48817",
+      "component": "starlette",
+      "version": "0.49.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::OpenHands \u2192 openhands/app_server/static.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands/app_server/static.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.49.3 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.309427+00:00"
+    },
+    {
+      "finding_id": "finding_115",
+      "vulnerability_id": "CVE-2026-48817",
+      "component": "starlette",
+      "version": "1.0.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::OpenHands \u2192 openhands/app_server/static.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands/app_server/static.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@1.0.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.315135+00:00"
+    },
+    {
+      "finding_id": "finding_116",
+      "vulnerability_id": "CVE-2026-44896",
+      "component": "mistune",
+      "version": "3.2.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "mistune was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "mistune@3.2.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.318373+00:00"
+    },
+    {
+      "finding_id": "finding_117",
+      "vulnerability_id": "CVE-2026-47734",
+      "component": "dulwich",
+      "version": "1.1.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dulwich was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dulwich@1.1.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.323138+00:00"
+    },
+    {
+      "finding_id": "finding_118",
+      "vulnerability_id": "CVE-2026-47734",
+      "component": "dulwich",
+      "version": "1.2.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dulwich was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dulwich@1.2.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.325303+00:00"
+    },
+    {
+      "finding_id": "finding_119",
+      "vulnerability_id": "CVE-2026-40181",
+      "component": "react-router",
+      "version": "7.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component react-router is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/components/features/home/connect-to-provider-message.tsx \u2192 external::react-router",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/components/features/home/connect-to-provider-message.tsx",
+        "external::react-router"
+      ],
+      "matched_nodes": [
+        "external::react-router",
+        "external::@react-router/dev"
+      ],
+      "patch_summary": "react-router@7.13.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.327231+00:00"
+    },
+    {
+      "finding_id": "finding_120",
+      "vulnerability_id": "CVE-2026-47265",
+      "component": "aiohttp",
+      "version": "3.13.4",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component aiohttp is reachable from an entry point. Path: component::OpenHands \u2192 enterprise/server/services/automation_event_service.py \u2192 external::aiohttp",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "enterprise/server/services/automation_event_service.py",
+        "external::aiohttp"
+      ],
+      "matched_nodes": [
+        "external::aiohttp"
+      ],
+      "patch_summary": "aiohttp@3.13.4: no code match in patch files.",
+      "timestamp": "2026-06-25T05:18:00.329425+00:00"
+    },
+    {
+      "finding_id": "finding_121",
+      "vulnerability_id": "CVE-2026-48522",
+      "component": "pyjwt",
+      "version": "2.12.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pyjwt was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pyjwt@2.12.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.332135+00:00"
+    },
+    {
+      "finding_id": "finding_122",
+      "vulnerability_id": "CVE-2026-41479",
+      "component": "authlib",
+      "version": "1.6.9",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "authlib was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "authlib@1.6.9 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.334529+00:00"
+    },
+    {
+      "finding_id": "finding_123",
+      "vulnerability_id": "CVE-2026-41479",
+      "component": "authlib",
+      "version": "1.7.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "authlib was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "authlib@1.7.0: patched code present.",
+      "timestamp": "2026-06-25T05:18:00.336862+00:00"
+    },
+    {
+      "finding_id": "finding_124",
+      "vulnerability_id": "CVE-2026-50269",
+      "component": "aiohttp",
+      "version": "3.13.4",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component aiohttp is reachable from an entry point. Path: component::OpenHands \u2192 enterprise/server/services/automation_event_service.py \u2192 external::aiohttp",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "enterprise/server/services/automation_event_service.py",
+        "external::aiohttp"
+      ],
+      "matched_nodes": [
+        "external::aiohttp"
+      ],
+      "patch_summary": "aiohttp@3.13.4 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.340115+00:00"
+    },
+    {
+      "finding_id": "finding_125",
+      "vulnerability_id": "CVE-2026-48735",
+      "component": "pypdf",
+      "version": "6.10.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.10.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.342384+00:00"
+    },
+    {
+      "finding_id": "finding_126",
+      "vulnerability_id": "CVE-2026-48735",
+      "component": "pypdf",
+      "version": "6.9.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.9.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.344532+00:00"
+    },
+    {
+      "finding_id": "finding_127",
+      "vulnerability_id": "CVE-2026-33244",
+      "component": "react-router",
+      "version": "7.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component react-router is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/components/features/home/connect-to-provider-message.tsx \u2192 external::react-router",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/components/features/home/connect-to-provider-message.tsx",
+        "external::react-router"
+      ],
+      "matched_nodes": [
+        "external::react-router",
+        "external::@react-router/dev"
+      ],
+      "patch_summary": "react-router@7.13.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.346394+00:00"
+    },
+    {
+      "finding_id": "finding_128",
+      "vulnerability_id": "CVE-2026-54530",
+      "component": "pypdf",
+      "version": "6.10.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.10.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.348614+00:00"
+    },
+    {
+      "finding_id": "finding_129",
+      "vulnerability_id": "CVE-2026-49461",
+      "component": "pypdf",
+      "version": "6.10.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.10.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.350726+00:00"
+    },
+    {
+      "finding_id": "finding_130",
+      "vulnerability_id": "CVE-2026-54530",
+      "component": "pypdf",
+      "version": "6.9.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.9.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.353042+00:00"
+    },
+    {
+      "finding_id": "finding_131",
+      "vulnerability_id": "CVE-2026-49461",
+      "component": "pypdf",
+      "version": "6.9.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.9.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.355517+00:00"
+    },
+    {
+      "finding_id": "finding_132",
+      "vulnerability_id": "CVE-2026-54531",
+      "component": "pypdf",
+      "version": "6.10.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.10.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.357830+00:00"
+    },
+    {
+      "finding_id": "finding_133",
+      "vulnerability_id": "CVE-2026-54531",
+      "component": "pypdf",
+      "version": "6.9.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.9.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.360172+00:00"
+    },
+    {
+      "finding_id": "finding_134",
+      "vulnerability_id": "CVE-2026-48524",
+      "component": "pyjwt",
+      "version": "2.12.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pyjwt was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pyjwt@2.12.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.362830+00:00"
+    },
+    {
+      "finding_id": "finding_135",
+      "vulnerability_id": "CVE-2026-53540",
+      "component": "python-multipart",
+      "version": "0.0.26",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.26 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.365078+00:00"
+    },
+    {
+      "finding_id": "finding_136",
+      "vulnerability_id": "CVE-2026-42040",
+      "component": "axios",
+      "version": "1.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component axios is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/utils/retrieve-axios-error-message.ts \u2192 external::axios",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/utils/retrieve-axios-error-message.ts",
+        "external::axios"
+      ],
+      "matched_nodes": [
+        "external::axios"
+      ],
+      "patch_summary": "axios@1.15.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.367213+00:00"
+    },
+    {
+      "finding_id": "finding_137",
+      "vulnerability_id": "CVE-2026-54275",
+      "component": "aiohttp",
+      "version": "3.13.4",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component aiohttp is reachable from an entry point. Path: component::OpenHands \u2192 enterprise/server/services/automation_event_service.py \u2192 external::aiohttp",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "enterprise/server/services/automation_event_service.py",
+        "external::aiohttp"
+      ],
+      "matched_nodes": [
+        "external::aiohttp"
+      ],
+      "patch_summary": "aiohttp@3.13.4 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.369543+00:00"
+    },
+    {
+      "finding_id": "finding_138",
+      "vulnerability_id": "CVE-2026-48523",
+      "component": "pyjwt",
+      "version": "2.12.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pyjwt was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pyjwt@2.12.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.372448+00:00"
+    },
+    {
+      "finding_id": "finding_139",
+      "vulnerability_id": "CVE-2026-34993",
+      "component": "aiohttp",
+      "version": "3.13.4",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component aiohttp is reachable from an entry point. Path: component::OpenHands \u2192 enterprise/server/services/automation_event_service.py \u2192 external::aiohttp",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "enterprise/server/services/automation_event_service.py",
+        "external::aiohttp"
+      ],
+      "matched_nodes": [
+        "external::aiohttp"
+      ],
+      "patch_summary": "aiohttp@3.13.4 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.375936+00:00"
+    },
+    {
+      "finding_id": "finding_140",
+      "vulnerability_id": "CVE-2026-49460",
+      "component": "pypdf",
+      "version": "6.10.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.10.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.379228+00:00"
+    },
+    {
+      "finding_id": "finding_141",
+      "vulnerability_id": "CVE-2026-49460",
+      "component": "pypdf",
+      "version": "6.9.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.9.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.381664+00:00"
+    },
+    {
+      "finding_id": "finding_142",
+      "vulnerability_id": "CVE-2026-54282",
+      "component": "starlette",
+      "version": "0.49.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::OpenHands \u2192 openhands/app_server/static.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands/app_server/static.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.49.3 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.383997+00:00"
+    },
+    {
+      "finding_id": "finding_143",
+      "vulnerability_id": "CVE-2026-54282",
+      "component": "starlette",
+      "version": "1.0.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::OpenHands \u2192 openhands/app_server/static.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands/app_server/static.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@1.0.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.385900+00:00"
+    },
+    {
+      "finding_id": "finding_144",
+      "vulnerability_id": "CVE-2026-48155",
+      "component": "pypdf",
+      "version": "6.10.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.10.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.388282+00:00"
+    },
+    {
+      "finding_id": "finding_145",
+      "vulnerability_id": "CVE-2026-48155",
+      "component": "pypdf",
+      "version": "6.9.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.9.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.390576+00:00"
+    },
+    {
+      "finding_id": "finding_146",
+      "vulnerability_id": "CVE-2026-41140",
+      "component": "poetry",
+      "version": "2.3.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "poetry was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "poetry@2.3.3 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.393095+00:00"
+    },
+    {
+      "finding_id": "finding_147",
+      "vulnerability_id": "CVE-2026-53538",
+      "component": "python-multipart",
+      "version": "0.0.26",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.26 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.395352+00:00"
+    },
+    {
+      "finding_id": "finding_148",
+      "vulnerability_id": "CVE-2026-53537",
+      "component": "python-multipart",
+      "version": "0.0.26",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.26 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.397415+00:00"
+    },
+    {
+      "finding_id": "finding_149",
+      "vulnerability_id": "CVE-2026-54280",
+      "component": "aiohttp",
+      "version": "3.13.4",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component aiohttp is reachable from an entry point. Path: component::OpenHands \u2192 enterprise/server/services/automation_event_service.py \u2192 external::aiohttp",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "enterprise/server/services/automation_event_service.py",
+        "external::aiohttp"
+      ],
+      "matched_nodes": [
+        "external::aiohttp"
+      ],
+      "patch_summary": "aiohttp@3.13.4 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.399574+00:00"
+    },
+    {
+      "finding_id": "finding_150",
+      "vulnerability_id": "CVE-2026-48156",
+      "component": "pypdf",
+      "version": "6.10.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.10.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.401732+00:00"
+    },
+    {
+      "finding_id": "finding_151",
+      "vulnerability_id": "CVE-2026-48156",
+      "component": "pypdf",
+      "version": "6.9.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pypdf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pypdf@6.9.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.403872+00:00"
+    },
+    {
+      "finding_id": "finding_152",
+      "vulnerability_id": "CVE-2026-54279",
+      "component": "aiohttp",
+      "version": "3.13.4",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component aiohttp is reachable from an entry point. Path: component::OpenHands \u2192 enterprise/server/services/automation_event_service.py \u2192 external::aiohttp",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "enterprise/server/services/automation_event_service.py",
+        "external::aiohttp"
+      ],
+      "matched_nodes": [
+        "external::aiohttp"
+      ],
+      "patch_summary": "aiohttp@3.13.4 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.406399+00:00"
+    },
+    {
+      "finding_id": "finding_153",
+      "vulnerability_id": "CVE-2026-41425",
+      "component": "authlib",
+      "version": "1.6.9",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "authlib was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "authlib@1.6.9 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.409725+00:00"
+    },
+    {
+      "finding_id": "finding_154",
+      "vulnerability_id": "CVE-2026-21716",
+      "component": "node",
+      "version": "24.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component node is reachable from an entry point. Path: component::OpenHands \u2192 openhands-ui/vitest.config.ts \u2192 external::node:url",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands-ui/vitest.config.ts",
+        "external::node:url"
+      ],
+      "matched_nodes": [
+        "external::node",
+        "external::node:path",
+        "external::node:url",
+        "external::comment-node",
+        "external::thread-node"
+      ],
+      "patch_summary": "node installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.412287+00:00"
+    },
+    {
+      "finding_id": "finding_155",
+      "vulnerability_id": "CVE-2026-21715",
+      "component": "node",
+      "version": "24.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component node is reachable from an entry point. Path: component::OpenHands \u2192 openhands-ui/vitest.config.ts \u2192 external::node:url",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands-ui/vitest.config.ts",
+        "external::node:url"
+      ],
+      "matched_nodes": [
+        "external::node",
+        "external::node:path",
+        "external::node:url",
+        "external::comment-node",
+        "external::thread-node"
+      ],
+      "patch_summary": "node installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.414893+00:00"
+    },
+    {
+      "finding_id": "finding_156",
+      "vulnerability_id": "CVE-2026-48617",
+      "component": "node",
+      "version": "24.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component node is reachable from an entry point. Path: component::OpenHands \u2192 openhands-ui/vitest.config.ts \u2192 external::node:url",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "openhands-ui/vitest.config.ts",
+        "external::node:url"
+      ],
+      "matched_nodes": [
+        "external::node",
+        "external::node:path",
+        "external::node:url",
+        "external::comment-node",
+        "external::thread-node"
+      ],
+      "patch_summary": "node installation not found in repository.",
+      "timestamp": "2026-06-25T05:18:00.420296+00:00"
+    },
+    {
+      "finding_id": "finding_157",
+      "vulnerability_id": "CVE-2026-47712",
+      "component": "dulwich",
+      "version": "1.1.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dulwich was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dulwich@1.1.0: buggy code present.",
+      "timestamp": "2026-06-25T05:18:00.425480+00:00"
+    },
+    {
+      "finding_id": "finding_158",
+      "vulnerability_id": "CVE-2026-47712",
+      "component": "dulwich",
+      "version": "1.2.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dulwich was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dulwich@1.2.0: buggy code present.",
+      "timestamp": "2026-06-25T05:18:00.428422+00:00"
+    },
+    {
+      "finding_id": "finding_159",
+      "vulnerability_id": "CVE-2026-53663",
+      "component": "react-router",
+      "version": "7.13.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component react-router is reachable from an entry point. Path: component::OpenHands \u2192 frontend/src/components/features/home/connect-to-provider-message.tsx \u2192 external::react-router",
+      "reachable": true,
+      "reachable_path": [
+        "component::OpenHands",
+        "frontend/src/components/features/home/connect-to-provider-message.tsx",
+        "external::react-router"
+      ],
+      "matched_nodes": [
+        "external::react-router",
+        "external::@react-router/dev"
+      ],
+      "patch_summary": "react-router@7.13.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.434238+00:00"
+    },
+    {
+      "finding_id": "finding_160",
+      "vulnerability_id": "CVE-2026-49853",
+      "component": "tornado",
+      "version": "6.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "tornado was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "tornado@6.5.5 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.441257+00:00"
+    },
+    {
+      "finding_id": "finding_161",
+      "vulnerability_id": "CVE-2026-49855",
+      "component": "tornado",
+      "version": "6.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "tornado was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "tornado@6.5.5 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.444221+00:00"
+    },
+    {
+      "finding_id": "finding_162",
+      "vulnerability_id": "CVE-2026-49458",
+      "component": "dompurify",
+      "version": "3.3.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dompurify was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dompurify@3.3.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.448885+00:00"
+    },
+    {
+      "finding_id": "finding_163",
+      "vulnerability_id": "CVE-2026-49459",
+      "component": "dompurify",
+      "version": "3.3.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dompurify was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dompurify@3.3.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.452159+00:00"
+    },
+    {
+      "finding_id": "finding_164",
+      "vulnerability_id": "CVE-2026-49978",
+      "component": "dompurify",
+      "version": "3.3.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dompurify was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dompurify@3.3.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.455823+00:00"
+    },
+    {
+      "finding_id": "finding_165",
+      "vulnerability_id": "CVE-2026-49854",
+      "component": "tornado",
+      "version": "6.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "tornado was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "tornado@6.5.5 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:18:00.460696+00:00"
+    }
+  ]
+}

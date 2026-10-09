@@ -1,0 +1,65 @@
+{
+  "case_id": "case_014",
+  "repo": "gpt-pilot",
+  "language": "python",
+  "ecosystem": "unknown",
+  "generated": "2026-06-27T00:17:56.632039+00:00",
+  "n_findings": 16,
+  "reachability": {
+    "total_findings": 16,
+    "reachable": 5,
+    "not_reachable": 11,
+    "unknown": 0,
+    "scanner_fp_rate": 0.6875
+  },
+  "regime_distribution": {
+    "R1": 0,
+    "R2": 3,
+    "R3": 0,
+    "R4": 2,
+    "R5": 11
+  },
+  "rel_grade_distribution": {
+    "0": 3,
+    "1": 2,
+    "2": 6,
+    "3": 5
+  },
+  "mrftp": {
+    "cape": 1,
+    "cvss_only": 1,
+    "epss_only": 1,
+    "epss_percentile_only": 1,
+    "kev_only": 1
+  },
+  "ndcg": {
+    "cape_5": 0.744655,
+    "cape_10": 0.898388,
+    "cape_all": 0.943798,
+    "cvss_only_5": 0.455808,
+    "cvss_only_10": 0.552534,
+    "cvss_only_all": 0.769665,
+    "epss_only_5": 0.505008,
+    "epss_only_10": 0.626644,
+    "epss_only_all": 0.824677,
+    "epss_percentile_5": 0.505008,
+    "epss_percentile_10": 0.626644,
+    "epss_percentile_all": 0.824677,
+    "kev_5": 0.455808,
+    "kev_10": 0.552534,
+    "kev_all": 0.769665
+  },
+  "auroc": {
+    "cape": 1.0,
+    "cvss_only": 0.609091,
+    "epss_only": 0.418182,
+    "epss_percentile": 0.418182,
+    "kev_only": 0.609091
+  },
+  "kendall_tau": {
+    "cape_vs_cvss_only": 0.247436,
+    "cape_vs_epss_only": -0.120024,
+    "cape_vs_epss_percentile": -0.120024,
+    "cape_vs_kev_only": 0.247436
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "case_id": "case_007",
+  "repo": "fast-graphrag",
+  "language": "python",
+  "ecosystem": "unknown",
+  "generated": "2026-06-27T00:17:56.032412+00:00",
+  "n_findings": 59,
+  "reachability": {
+    "total_findings": 59,
+    "reachable": 51,
+    "not_reachable": 8,
+    "unknown": 0,
+    "scanner_fp_rate": 0.135593
+  },
+  "regime_distribution": {
+    "R1": 0,
+    "R2": 13,
+    "R3": 2,
+    "R4": 25,
+    "R5": 19
+  },
+  "rel_grade_distribution": {
+    "0": 13,
+    "1": 7,
+    "2": 21,
+    "3": 18
+  },
+  "mrftp": {
+    "cape": 1,
+    "cvss_only": 2,
+    "epss_only": 3,
+    "epss_percentile_only": 3,
+    "kev_only": 2
+  },
+  "ndcg": {
+    "cape_5": 1.0,
+    "cape_10": 0.96214,
+    "cape_all": 0.988365,
+    "cvss_only_5": 0.550849,
+    "cvss_only_10": 0.461035,
+    "cvss_only_all": 0.794413,
+    "epss_only_5": 0.487987,
+    "epss_only_10": 0.406047,
+    "epss_only_all": 0.794716,
+    "epss_percentile_5": 0.487987,
+    "epss_percentile_10": 0.406047,
+    "epss_percentile_all": 0.795175,
+    "kev_5": 0.550849,
+    "kev_10": 0.461035,
+    "kev_all": 0.794413
+  },
+  "auroc": {
+    "cape": 0.960256,
+    "cvss_only": 0.441026,
+    "epss_only": 0.548718,
+    "epss_percentile": 0.55,
+    "kev_only": 0.441026
+  },
+  "kendall_tau": {
+    "cape_vs_cvss_only": 0.163431,
+    "cape_vs_epss_only": 0.084503,
+    "cape_vs_epss_percentile": 0.087816,
+    "cape_vs_kev_only": 0.163431
+  }
+}

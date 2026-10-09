@@ -1,0 +1,6196 @@
+[
+  {
+    "finding_id": "finding_001",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-39363",
+    "component": "vite",
+    "version": "7.3.1",
+    "severity": "HIGH",
+    "score": 8.2,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.02292,
+    "epss_percentile": 0.80997,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-p9ff-h696-f583"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.3.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_002",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-39364",
+    "component": "vite",
+    "version": "7.3.1",
+    "severity": "HIGH",
+    "score": 8.2,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0172,
+    "epss_percentile": 0.7453,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-v2wj-q39q-566r"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.3.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_003",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33937",
+    "component": "handlebars",
+    "version": "4.7.8",
+    "severity": "CRITICAL",
+    "score": 9.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.01286,
+    "epss_percentile": 0.66441,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-2w6w-674q-4c4q"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.7.9"
+    ],
+    "advisory_summary": "Handlebars.js has JavaScript Injection via AST Type Confusion",
+    "advisory_details": "Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, `Handlebars.compile()` accepts a pre-parsed AST object in addition to a template string. The `value` field of a `NumberLiteral` AST node is emitted directly into the generated JavaScript without quoting or sanitization. An attacker who can supply a crafted AST to `compile()` can therefore inject and execute arbitrary JavaScript, leading to Remote Code Execution on the server. Version 4",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v4.0.0",
+          "v4.0.1",
+          "v4.0.10",
+          "v4.0.11",
+          "v4.0.12",
+          "v4.0.2",
+          "v4.0.3",
+          "v4.0.4",
+          "v4.0.5",
+          "v4.0.6"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_004",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-28292",
+    "component": "simple-git",
+    "version": "3.31.1",
+    "severity": "CRITICAL",
+    "score": 9.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.01272,
+    "epss_percentile": 0.66102,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-r275-fr43-pm7q"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.32.3"
+    ],
+    "advisory_summary": "simple-git has blockUnsafeOperationsPlugin bypass via case-insensitive protocol.allow config key enables RCE",
+    "advisory_details": "`simple-git`, an interface for running git commands in any node.js application, has an issue in versions 3.15.0 through 3.32.2 that allows an attacker to bypass two prior CVE fixes (CVE-2022-25860 and CVE-2022-25912) and achieve full remote code execution on the host machine. Version 3.23.0 contains an updated fix for the vulnerability.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "simple-git@3.15.0",
+          "simple-git@3.15.1",
+          "simple-git@3.16.0",
+          "simple-git@3.16.1",
+          "simple-git@3.17.0",
+          "simple-git@3.18.0",
+          "simple-git@3.19.0",
+          "simple-git@3.19.1",
+          "simple-git@3.20.0",
+          "simple-git@3.21.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_005",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-27606",
+    "component": "rollup",
+    "version": "4.57.1",
+    "severity": "HIGH",
+    "score": 8.8,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:P",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.01195,
+    "epss_percentile": 0.64076,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-mw96-cpmx-2vgc"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.59.0"
+    ],
+    "advisory_summary": "Rollup 4 has Arbitrary File Write via Path Traversal",
+    "advisory_details": "Rollup is a module bundler for JavaScript. Versions prior to 2.80.0, 3.30.0, and 4.59.0 of the Rollup module bundler (specifically v4.x and present in current source) is vulnerable to an Arbitrary File Write via Path Traversal. Insecure file name sanitization in the core engine allows an attacker to control output filenames (e.g., via CLI named inputs, manual chunk aliases, or malicious plugins) and use traversal sequences (`../`) to overwrite files anywhere on the host filesystem that the build",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v0.10.0",
+          "v0.11.0",
+          "v0.11.1",
+          "v0.11.2",
+          "v0.11.4",
+          "v0.12.0",
+          "v0.12.1",
+          "v0.13.0",
+          "v0.14.0",
+          "v0.14.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_006",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-6951",
+    "component": "simple-git",
+    "version": "3.31.1",
+    "severity": "HIGH",
+    "score": 9.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.01098,
+    "epss_percentile": 0.61377,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-hffm-xvc3-vprc"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.36.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_007",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-4800",
+    "component": "lodash",
+    "version": "4.17.23",
+    "severity": "HIGH",
+    "score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.01026,
+    "epss_percentile": 0.59133,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-r5fr-rjxr-66jc"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.18.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_008",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2025-62718",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "MEDIUM",
+    "score": 4.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.01075,
+    "epss_percentile": 0.60647,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-3p68-rc4w-qgx5"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_009",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2025-12816",
+    "component": "node-forge",
+    "version": "1.3.1",
+    "severity": "HIGH",
+    "score": 8.6,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00689,
+    "epss_percentile": 0.47964,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-5gfm-wpxj-wjgq"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.3.2"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "An interpretation-conflict (CWE-436) vulnerability in node-forge versions 1.3.1 and earlier enables unauthenticated attackers to craft ASN.1 structures to desynchronize schema validations, yielding a semantic divergence that may bypass downstream cryptographic verifications and security decisions.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.14",
+          "0.1.15",
+          "0.1.2",
+          "0.1.3",
+          "0.1.4",
+          "0.1.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_010",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-41242",
+    "component": "protobufjs",
+    "version": "8.0.0",
+    "severity": "CRITICAL",
+    "score": 9.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00575,
+    "epss_percentile": 0.42953,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-xq3m-2v4x-88gg"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.0.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_011",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-39365",
+    "component": "vite",
+    "version": "7.3.1",
+    "severity": "MEDIUM",
+    "score": 6.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00914,
+    "epss_percentile": 0.55476,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-4w7w-66w2-5vf9"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.3.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_012",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-28291",
+    "component": "simple-git",
+    "version": "3.31.1",
+    "severity": "HIGH",
+    "score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00637,
+    "epss_percentile": 0.45786,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jcxm-m3jx-f287"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.32.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_013",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33940",
+    "component": "handlebars",
+    "version": "4.7.8",
+    "severity": "HIGH",
+    "score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00619,
+    "epss_percentile": 0.44989,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-xhpv-hc6g-r9c6"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.7.9"
+    ],
+    "advisory_summary": "Handlebars.js has JavaScript Injection via AST Type Confusion when passing an object as dynamic partial",
+    "advisory_details": "Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, a crafted object placed in the template context can bypass all conditional guards in `resolvePartial()` and cause `invokePartial()` to return `undefined`. The Handlebars runtime then treats the unresolved partial as a source that needs to be compiled, passing the crafted object to `env.compile()`. Because the object is a valid Handlebars AST containing injected code, the generated Java",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v4.0.0",
+          "v4.0.1",
+          "v4.0.10",
+          "v4.0.11",
+          "v4.0.12",
+          "v4.0.2",
+          "v4.0.3",
+          "v4.0.4",
+          "v4.0.5",
+          "v4.0.6"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_014",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33938",
+    "component": "handlebars",
+    "version": "4.7.8",
+    "severity": "HIGH",
+    "score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00617,
+    "epss_percentile": 0.44912,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-3mfm-83xf-c92r"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.7.9"
+    ],
+    "advisory_summary": "Handlebars.js has JavaScript Injection via AST Type Confusion by tampering @partial-block",
+    "advisory_details": "Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, the `@partial-block` special variable is stored in the template data context and is reachable and mutable from within a template via helpers that accept arbitrary objects. When a helper overwrites `@partial-block` with a crafted Handlebars AST, a subsequent invocation of `{{> @partial-block}}` compiles and executes that AST, enabling arbitrary JavaScript execution on the server. Versio",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v4.0.0",
+          "v4.0.1",
+          "v4.0.10",
+          "v4.0.11",
+          "v4.0.12",
+          "v4.0.2",
+          "v4.0.3",
+          "v4.0.4",
+          "v4.0.5",
+          "v4.0.6"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_015",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-1526",
+    "component": "undici",
+    "version": "7.22.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00641,
+    "epss_percentile": 0.45991,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-vrm6-8vpv-qv8q"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.24.0"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "The undici WebSocket client is vulnerable to a denial-of-service attack via unbounded memory consumption during permessage-deflate decompression. When a WebSocket connection negotiates the permessage-deflate extension, the client decompresses incoming compressed frames without enforcing any limit on the decompressed data size. A malicious WebSocket server can send a small compressed frame (a \"decompression bomb\") that expands to an extremely large size in memory, causing the Node.js process to e",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v1.0.0",
+          "v1.0.1",
+          "v1.0.2",
+          "v1.0.3",
+          "v1.1.0",
+          "v1.2.0",
+          "v1.2.1",
+          "v1.2.2",
+          "v1.2.5",
+          "v1.2.6"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_016",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-27699",
+    "component": "basic-ftp",
+    "version": "5.1.0",
+    "severity": "CRITICAL",
+    "score": 9.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00528,
+    "epss_percentile": 0.40526,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-5rq4-664w-9x2c"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.2.0"
+    ],
+    "advisory_summary": "Basic FTP has Path Traversal Vulnerability in its downloadToDir() method",
+    "advisory_details": "The `basic-ftp` FTP client library for Node.js contains a path traversal vulnerability (CWE-22) in versions prior to 5.2.0 in the `downloadToDir()`\u00a0method. A malicious FTP server can send directory listings with filenames containing path traversal sequences (`../`) that cause files to be written outside the intended download directory. Version 5.2.0 patches the issue.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "1.0.6",
+          "4.6.6",
+          "v1.0.2",
+          "v1.0.3",
+          "v1.0.4",
+          "v1.0.5",
+          "v1.0.7",
+          "v1.0.8",
+          "v1.0.9",
+          "v1.1.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_017",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-40175",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "MEDIUM",
+    "score": 4.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00933,
+    "epss_percentile": 0.56089,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-fvcv-3m26-pcqx"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_018",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-26278",
+    "component": "fast-xml-parser",
+    "version": "5.3.4",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00589,
+    "epss_percentile": 0.43616,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jmr7-xgp7-cmfj"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.3.6"
+    ],
+    "advisory_summary": "fast-xml-parser affected by DoS through entity expansion in DOCTYPE (no expansion limit)",
+    "advisory_details": "fast-xml-parser allows users to validate XML, parse XML to JS object, or build XML from JS object without C/C++ based libraries and no callback. In versions 4.1.3 through 5.3.5, the XML parser can be forced to do an unlimited amount of entity expansion. With a very small XML input, it\u2019s possible to make the parser spend seconds or even minutes processing a single request, effectively freezing the application. Version 5.3.6 fixes the issue. As a workaround, avoid using DOCTYPE parsing by `process",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v4.1.3",
+          "v4.1.4",
+          "v4.2.0",
+          "v4.2.3",
+          "v4.2.4",
+          "v4.2.5",
+          "v4.2.6",
+          "v4.2.7",
+          "v4.3.0",
+          "v4.3.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_019",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33036",
+    "component": "fast-xml-parser",
+    "version": "5.3.4",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00576,
+    "epss_percentile": 0.43027,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-8gc5-j5rx-235r"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.5.6"
+    ],
+    "advisory_summary": "fast-xml-parser affected by numeric entity expansion bypassing all entity expansion limits (incomplete fix for CVE-2026-26278)",
+    "advisory_details": "fast-xml-parser allows users to process XML from JS object without C/C++ based libraries or callbacks. Versions 4.0.0-beta.3 through 5.5.5 contain a bypass vulnerability where numeric character references (&#NNN;, &#xHH;) and standard XML entities completely evade the entity expansion limits (e.g., maxTotalExpansions, maxExpandedLength) added to fix CVE-2026-26278, enabling XML entity expansion Denial of Service. The root cause is that replaceEntitiesValue() in OrderedObjParser.js only enforces ",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "2.9.3",
+          "2.9.4",
+          "3.0.0",
+          "3.10.0",
+          "3.12.16",
+          "3.12.5",
+          "3.13.0",
+          "3.14.0",
+          "3.16.0",
+          "3.17.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_020",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44492",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "HIGH",
+    "score": 8.6,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00535,
+    "epss_percentile": 0.40923,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-pjwm-pj3p-43mv"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.16.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_021",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-26996",
+    "component": "minimatch",
+    "version": "10.2.0",
+    "severity": "HIGH",
+    "score": 8.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00519,
+    "epss_percentile": 0.39992,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-3ppc-4f35-3m26"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "10.2.1"
+    ],
+    "advisory_summary": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+    "advisory_details": "minimatch is a minimal matching utility for converting glob expressions into JavaScript RegExp objects. Versions 10.2.0 and below are vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive * wildcards followed by a literal character that doesn't appear in the test string. Each * compiles to a separate [^/]*? regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits. The time complexity is O(4^N) ",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v10.0.0",
+          "v10.0.1",
+          "v10.0.2",
+          "v10.0.3",
+          "v10.1.0",
+          "v10.1.1",
+          "v10.1.2",
+          "v10.1.3",
+          "v10.2.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_022",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42504",
+    "component": "stdlib",
+    "version": "go1.26.3",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0056,
+    "epss_percentile": 0.42231,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.25.11",
+      "1.26.4"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_023",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-25896",
+    "component": "fast-xml-parser",
+    "version": "5.3.4",
+    "severity": "CRITICAL",
+    "score": 9.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00448,
+    "epss_percentile": 0.35678,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-m7jm-9gc2-mpf2"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.3.5"
+    ],
+    "advisory_summary": "fast-xml-parser has an entity encoding bypass via regex injection in DOCTYPE entity names",
+    "advisory_details": "fast-xml-parser allows users to validate XML, parse XML to JS object, or build XML from JS object without C/C++ based libraries and no callback. From 4.1.3to before 5.3.5, a dot (.) in a DOCTYPE entity name is treated as a regex wildcard during entity replacement, allowing an attacker to shadow built-in XML entities (&lt;, &gt;, &amp;, &quot;, &apos;) with arbitrary values. This bypasses entity encoding and leads to XSS when parsed output is rendered. This vulnerability is fixed in 5.3.5.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v4.1.3",
+          "v4.1.4",
+          "v4.2.0",
+          "v4.2.3",
+          "v4.2.4",
+          "v4.2.5",
+          "v4.2.6",
+          "v4.2.7",
+          "v4.3.0",
+          "v4.3.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_024",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2023-28155",
+    "component": "request",
+    "version": "2.88.2",
+    "severity": "MEDIUM",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00719,
+    "epss_percentile": 0.49089,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-p8p7-x288-28g6"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [],
+    "advisory_summary": "",
+    "advisory_details": "The Request package through 2.88.1 for Node.js allows a bypass of SSRF mitigations via an attacker-controller server that does a cross-protocol redirect (HTTP to HTTPS, or HTTPS to HTTP). NOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v1.2.0",
+          "v2.17.0",
+          "v2.18.0",
+          "v2.18.1",
+          "v2.19.0",
+          "v2.19.1",
+          "v2.20.0",
+          "v2.20.1",
+          "v2.21.0",
+          "v2.21.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_025",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33939",
+    "component": "handlebars",
+    "version": "4.7.8",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0053,
+    "epss_percentile": 0.40626,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-9cx6-37pm-9jff"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.7.9"
+    ],
+    "advisory_summary": "Handlebars.js has Denial of Service via Malformed Decorator Syntax in Template Compilation",
+    "advisory_details": "Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, when a Handlebars template contains decorator syntax referencing an unregistered decorator (e.g. `{{*n}}`), the compiled template calls `lookupProperty(decorators, \"n\")`, which returns `undefined`. The runtime then immediately invokes the result as a function, causing an unhandled `TypeError: ... is not a function` that crashes the Node.js process. Any application that compiles user-su",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v4.0.0",
+          "v4.0.1",
+          "v4.0.10",
+          "v4.0.11",
+          "v4.0.12",
+          "v4.0.2",
+          "v4.0.3",
+          "v4.0.4",
+          "v4.0.5",
+          "v4.0.6"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_026",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44494",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "HIGH",
+    "score": 8.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0049,
+    "epss_percentile": 0.38317,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-35jp-ww65-95wh"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.16.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_027",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44291",
+    "component": "protobufjs",
+    "version": "8.0.0",
+    "severity": "HIGH",
+    "score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00499,
+    "epss_percentile": 0.38821,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-75px-5xx7-5xc7"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.0.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_028",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-27903",
+    "component": "minimatch",
+    "version": "10.2.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00517,
+    "epss_percentile": 0.39903,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-7r86-cg39-jmmj"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "10.2.3"
+    ],
+    "advisory_summary": "minimatch has a ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+    "advisory_details": "minimatch is a minimal matching utility for converting glob expressions into JavaScript RegExp objects. Prior to version 10.2.3, 9.0.7, 8.0.6, 7.4.8, 6.2.2, 5.1.8, 4.2.5, and 3.1.3, `matchOne()` performs unbounded recursive backtracking when a glob pattern contains multiple non-adjacent `**` (GLOBSTAR) segments and the input path does not match. The time complexity is O(C(n, k)) -- binomial -- where `n` is the number of path segments and `k` is the number of globstars. With k=11 and n=30, a call",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.0.4",
+          "0.0.5",
+          "0.1.1",
+          "0.1.2",
+          "0.1.3",
+          "0.1.4",
+          "0.1.5",
+          "0.1.6",
+          "0.2.0",
+          "0.2.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_029",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-2229",
+    "component": "undici",
+    "version": "7.22.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00487,
+    "epss_percentile": 0.38151,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-v9p9-hfj2-hcw8"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.24.0"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "ImpactThe undici WebSocket client is vulnerable to a denial-of-service attack due to improper validation of the\u00a0server_max_window_bits\u00a0parameter in the permessage-deflate extension. When a WebSocket client connects to a server, it automatically advertises support for permessage-deflate compression. A malicious server can respond with an out-of-range\u00a0server_max_window_bits\u00a0value (outside zlib's valid range of 8-15). When the server subsequently sends a compressed frame, the client attempts to cre",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v1.0.0",
+          "v1.0.1",
+          "v1.0.2",
+          "v1.0.3",
+          "v1.1.0",
+          "v1.2.0",
+          "v1.2.1",
+          "v1.2.2",
+          "v1.2.5",
+          "v1.2.6"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_030",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-22610",
+    "component": "@angular/compiler",
+    "version": "21.0.3",
+    "severity": "HIGH",
+    "score": 8.5,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00444,
+    "epss_percentile": 0.3532,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jrmj-c5cx-3cw6"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "21.0.7"
+    ],
+    "advisory_summary": "Angular has XSS Vulnerability via Unsanitized SVG Script Attributes",
+    "advisory_details": "Angular is a development platform for building mobile and desktop web applications using TypeScript/JavaScript and other languages. Prior to versions 19.2.18, 20.3.16, 21.0.7, and 21.1.0-rc.0, a cross-site scripting (XSS) vulnerability has been identified in the Angular Template Compiler. The vulnerability exists because Angular\u2019s internal sanitization schema fails to recognize the href and xlink:href attributes of SVG <script> elements as a Resource URL context. This issue has been patched in v",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "10.0.0-next.0",
+          "10.0.0-next.1",
+          "10.0.0-next.2",
+          "10.0.0-next.3",
+          "10.0.0-next.4",
+          "10.0.0-next.5",
+          "10.0.0-next.6",
+          "10.0.0-next.7",
+          "10.0.0-next.8",
+          "10.0.0-next.9"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_031",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-22610",
+    "component": "@angular/core",
+    "version": "21.0.3",
+    "severity": "HIGH",
+    "score": 8.5,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00444,
+    "epss_percentile": 0.3532,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jrmj-c5cx-3cw6"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "21.0.7"
+    ],
+    "advisory_summary": "Angular has XSS Vulnerability via Unsanitized SVG Script Attributes",
+    "advisory_details": "Angular is a development platform for building mobile and desktop web applications using TypeScript/JavaScript and other languages. Prior to versions 19.2.18, 20.3.16, 21.0.7, and 21.1.0-rc.0, a cross-site scripting (XSS) vulnerability has been identified in the Angular Template Compiler. The vulnerability exists because Angular\u2019s internal sanitization schema fails to recognize the href and xlink:href attributes of SVG <script> elements as a Resource URL context. This issue has been patched in v",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "10.0.0-next.0",
+          "10.0.0-next.1",
+          "10.0.0-next.2",
+          "10.0.0-next.3",
+          "10.0.0-next.4",
+          "10.0.0-next.5",
+          "10.0.0-next.6",
+          "10.0.0-next.7",
+          "10.0.0-next.8",
+          "10.0.0-next.9"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_032",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-27904",
+    "component": "minimatch",
+    "version": "10.2.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00472,
+    "epss_percentile": 0.37167,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-23c5-xmqv-rm74"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "10.2.3"
+    ],
+    "advisory_summary": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+    "advisory_details": "minimatch is a minimal matching utility for converting glob expressions into JavaScript RegExp objects. Prior to version 10.2.3, 9.0.7, 8.0.6, 7.4.8, 6.2.2, 5.1.8, 4.2.5, and 3.1.4, nested `*()` extglobs produce regexps with nested unbounded quantifiers (e.g. `(?:(?:a|b)*)*`), which exhibit catastrophic backtracking in V8. With a 12-byte pattern `*(*(*(a|b)))` and an 18-byte non-matching input, `minimatch()` stalls for over 7 seconds. Adding a single nesting level or a few input characters pushe",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.0.4",
+          "0.0.5",
+          "0.1.1",
+          "0.1.2",
+          "0.1.3",
+          "0.1.4",
+          "0.1.5",
+          "0.1.6",
+          "0.2.0",
+          "0.2.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_033",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44240",
+    "component": "basic-ftp",
+    "version": "5.1.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00465,
+    "epss_percentile": 0.36733,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-rpmf-866q-6p89"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.3.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_034",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-4926",
+    "component": "path-to-regexp",
+    "version": "8.3.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00455,
+    "epss_percentile": 0.36118,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-j3q9-mxjg-w52f"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.4.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_035",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-29045",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00437,
+    "epss_percentile": 0.3487,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-q5qw-h33p-qvwr"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.4"
+    ],
+    "advisory_summary": "Hono: Arbitrary file access via serveStatic vulnerability",
+    "advisory_details": "Hono is a Web application framework that provides support for any JavaScript runtime. Prior to version 4.12.4, when using serveStatic together with route-based middleware protections (e.g. app.use('/admin/*', ...)), inconsistent URL decoding allowed protected static resources to be accessed without authorization. The router used decodeURI, while serveStatic used decodeURIComponent. This mismatch allowed paths containing encoded slashes (%2F) to bypass middleware protections while still resolving",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v0.0.1",
+          "v0.0.10",
+          "v0.0.11",
+          "v0.0.13",
+          "v0.0.14",
+          "v0.0.15",
+          "v0.0.16",
+          "v0.0.2",
+          "v0.0.4",
+          "v0.0.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_036",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-27145",
+    "component": "stdlib",
+    "version": "go1.26.3",
+    "severity": "MEDIUM",
+    "score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00561,
+    "epss_percentile": 0.42244,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.25.11",
+      "1.26.4"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_037",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-39821",
+    "component": "golang.org/x/net",
+    "version": "v0.53.0",
+    "severity": "CRITICAL",
+    "score": 9.6,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00344,
+    "epss_percentile": 0.26162,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.55.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_038",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-12151",
+    "component": "undici",
+    "version": "7.22.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00426,
+    "epss_percentile": 0.34016,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-vxpw-j846-p89q"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.28.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_039",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-53571",
+    "component": "vite",
+    "version": "7.3.1",
+    "severity": "HIGH",
+    "score": 8.2,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00402,
+    "epss_percentile": 0.31881,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-fx2h-pf6j-xcff"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.3.5"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_040",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33671",
+    "component": "picomatch",
+    "version": "4.0.3",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00412,
+    "epss_percentile": 0.32824,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-c2c7-rcm5-vvqj"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.0.4"
+    ],
+    "advisory_summary": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+    "advisory_details": "Picomatch is a glob matcher written JavaScript. Versions prior to 4.0.4, 3.0.2, and 2.3.2 are vulnerable to Regular Expression Denial of Service (ReDoS) when processing crafted extglob patterns. Certain patterns using extglob quantifiers such as `+()` and `*()`, especially when combined with overlapping alternatives or nested extglobs, are compiled into regular expressions that can exhibit catastrophic backtracking on non-matching input. Applications are impacted when they allow untrusted users ",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "1.0.1",
+          "1.0.2",
+          "1.1.0",
+          "1.1.2",
+          "2.0.0",
+          "2.0.1",
+          "2.0.2",
+          "2.0.3",
+          "2.0.4",
+          "2.0.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_041",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-2581",
+    "component": "undici",
+    "version": "7.22.0",
+    "severity": "MEDIUM",
+    "score": 5.9,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00566,
+    "epss_percentile": 0.42554,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-phc3-fgpg-7m6h"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.24.0"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "This is an uncontrolled resource consumption vulnerability (CWE-400) that can lead to Denial of Service (DoS).\n\nIn vulnerable Undici versions, when\u00a0interceptors.deduplicate()\u00a0is enabled, response data for deduplicated requests could be accumulated in memory for downstream handlers. An attacker-controlled or untrusted upstream endpoint can exploit this with large/chunked responses and concurrent identical requests, causing high memory usage and potential OOM process termination.\n\nImpacted users a",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v7.17.0",
+          "v7.18.0",
+          "v7.18.1",
+          "v7.18.2",
+          "v7.19.0",
+          "v7.19.1",
+          "v7.19.2",
+          "v7.20.0",
+          "v7.21.0",
+          "v7.22.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_042",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42264",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "HIGH",
+    "score": 7.4,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00414,
+    "epss_percentile": 0.32963,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-q8qp-cvcw-x6jj"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_043",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-27970",
+    "component": "@angular/core",
+    "version": "21.0.3",
+    "severity": "HIGH",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00432,
+    "epss_percentile": 0.34459,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-prjf-86w9-mfqv"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "21.1.6"
+    ],
+    "advisory_summary": "Angular i18n vulnerable to Cross-Site Scripting (XSS)",
+    "advisory_details": "Angular is a development platform for building mobile and desktop web applications using TypeScript/JavaScript and other languages. Versions prior to 21.2.0, 21.1.16, 20.3.17, and 19.2.19 have a cross-Site scripting vulnerability in the Angular internationalization (i18n) pipeline. In ICU messages (International Components for Unicode), HTML from translated content was not properly sanitized and could execute arbitrary JavaScript. Angular i18n typically involves three steps, extracting all messa",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "10.0.0-next.0",
+          "10.0.0-next.1",
+          "10.0.0-next.2",
+          "10.0.0-next.3",
+          "10.0.0-next.4",
+          "10.0.0-next.5",
+          "10.0.0-next.6",
+          "10.0.0-next.7",
+          "10.0.0-next.8",
+          "10.0.0-next.9"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_044",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44289",
+    "component": "protobufjs",
+    "version": "8.0.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00403,
+    "epss_percentile": 0.31962,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-685m-2w69-288q"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.0.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_045",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44487",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "HIGH",
+    "score": 8.2,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00385,
+    "epss_percentile": 0.30182,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-p92q-9vqr-4j8v"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.16.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_046",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42043",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "HIGH",
+    "score": 7.2,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00409,
+    "epss_percentile": 0.32575,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-pmwg-cvhr-8vh7"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_047",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-35209",
+    "component": "defu",
+    "version": "6.1.4",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00398,
+    "epss_percentile": 0.31507,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-737v-mqg7-c878"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "6.1.5"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_048",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-6321",
+    "component": "fast-uri",
+    "version": "3.1.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00397,
+    "epss_percentile": 0.31427,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-q3j6-qgpj-74h6"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.1.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_049",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2025-66031",
+    "component": "node-forge",
+    "version": "1.3.1",
+    "severity": "HIGH",
+    "score": 8.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00366,
+    "epss_percentile": 0.28335,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-554w-wpv2-vw27"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.3.2"
+    ],
+    "advisory_summary": "node-forge ASN.1 Unbounded Recursion",
+    "advisory_details": "Forge (also called `node-forge`) is a native implementation of Transport Layer Security in JavaScript. An Uncontrolled Recursion vulnerability in node-forge versions 1.3.1 and below enables remote, unauthenticated attackers to craft deep ASN.1 structures that trigger unbounded recursive parsing. This leads to a Denial-of-Service (DoS) via stack exhaustion when parsing untrusted DER inputs. This issue has been patched in version 1.3.2.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.14",
+          "0.1.15",
+          "0.1.2",
+          "0.1.3",
+          "0.1.4",
+          "0.1.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_050",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42035",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "HIGH",
+    "score": 7.4,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00394,
+    "epss_percentile": 0.31145,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-6chq-wfr3-2hj9"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_051",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-39408",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 5.9,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00532,
+    "epss_percentile": 0.40721,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-xf4j-xp2r-rqqx"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.12"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_052",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42033",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "HIGH",
+    "score": 7.4,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00381,
+    "epss_percentile": 0.29785,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-pf86-5x62-jrwf"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_053",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-1525",
+    "component": "undici",
+    "version": "7.22.0",
+    "severity": "MEDIUM",
+    "score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00493,
+    "epss_percentile": 0.38475,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-2mjp-6q6p-2qxm"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.24.0"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "Undici allows duplicate HTTP\u00a0Content-Length\u00a0headers when they are provided in an array with case-variant names (e.g.,\u00a0Content-Length\u00a0and\u00a0content-length). This produces malformed HTTP/1.1 requests with multiple conflicting\u00a0Content-Length\u00a0values on the wire.\n\nWho is impacted:\n\n  *  Applications using\u00a0undici.request(),\u00a0undici.Client, or similar low-level APIs with headers passed as flat arrays\n  *  Applications that accept user-controlled header names without case-normalization\n\n\nPotential conseque",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v1.0.0",
+          "v1.0.1",
+          "v1.0.2",
+          "v1.0.3",
+          "v1.1.0",
+          "v1.2.0",
+          "v1.2.1",
+          "v1.2.2",
+          "v1.2.5",
+          "v1.2.6"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_054",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44290",
+    "component": "protobufjs",
+    "version": "8.0.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00373,
+    "epss_percentile": 0.29033,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jvwf-75h9-cwgg"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.0.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_055",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-32635",
+    "component": "@angular/compiler",
+    "version": "21.0.3",
+    "severity": "HIGH",
+    "score": 9.0,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00339,
+    "epss_percentile": 0.25649,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-g93w-mfhg-p222"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "21.2.4"
+    ],
+    "advisory_summary": "Angular has XSS in i18n attribute bindings",
+    "advisory_details": "Angular is a development platform for building mobile and desktop web applications using TypeScript/JavaScript and other languages. Prior to 22.0.0-next.3, 21.2.4, 20.3.18, and 19.2.20, a Cross-Site Scripting (XSS) vulnerability has been identified in the Angular runtime and compiler. It occurs when the application uses a security-sensitive attribute (for example href on an anchor tag) together with Angular's ability to internationalize attributes. Enabling internationalization for the sensitive",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "17.0.0-next.0",
+          "17.0.0-next.1",
+          "17.0.0-next.2",
+          "17.0.0-next.3",
+          "17.0.0-next.4",
+          "17.0.0-next.5",
+          "17.0.0-next.6",
+          "17.0.0-next.7",
+          "17.1.0-next.0",
+          "17.1.0-next.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_056",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-32635",
+    "component": "@angular/core",
+    "version": "21.0.3",
+    "severity": "HIGH",
+    "score": 9.0,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00339,
+    "epss_percentile": 0.25649,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-g93w-mfhg-p222"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "21.2.4"
+    ],
+    "advisory_summary": "Angular has XSS in i18n attribute bindings",
+    "advisory_details": "Angular is a development platform for building mobile and desktop web applications using TypeScript/JavaScript and other languages. Prior to 22.0.0-next.3, 21.2.4, 20.3.18, and 19.2.20, a Cross-Site Scripting (XSS) vulnerability has been identified in the Angular runtime and compiler. It occurs when the application uses a security-sensitive attribute (for example href on an anchor tag) together with Angular's ability to internationalize attributes. Enabling internationalization for the sensitive",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "17.0.0-next.0",
+          "17.0.0-next.1",
+          "17.0.0-next.2",
+          "17.0.0-next.3",
+          "17.0.0-next.4",
+          "17.0.0-next.5",
+          "17.0.0-next.6",
+          "17.0.0-next.7",
+          "17.1.0-next.0",
+          "17.1.0-next.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_057",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-32256",
+    "component": "music-metadata",
+    "version": "11.12.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00366,
+    "epss_percentile": 0.2838,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-v6c2-xwv6-8xf7"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "11.12.3"
+    ],
+    "advisory_summary": "music-metadata has an infinite loop vulnerability in ASF parser",
+    "advisory_details": "music-metadata is a metadata parser for audio and video media files. Prior to version 11.12.3, music-metadata's ASF parser (`parseExtensionObject()` in `lib/asf/AsfParser.ts:112-158`) enters an infinite loop when a sub-object inside the ASF Header Extension Object has `objectSize = 0`. Version 11.12.3 fixes the issue.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.0.2",
+          "0.1.0",
+          "0.1.1",
+          "0.1.2",
+          "0.6.2",
+          "0.8.4",
+          "Browser-0.4.3",
+          "remove",
+          "v0.10.1",
+          "v0.10.2"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_058",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33891",
+    "component": "node-forge",
+    "version": "1.3.1",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00365,
+    "epss_percentile": 0.28271,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-5m6q-g25r-mvwx"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.4.0"
+    ],
+    "advisory_summary": "Forge has Denial of Service via Infinite Loop in BigInteger.modInverse() with Zero Input",
+    "advisory_details": "Forge (also called `node-forge`) is a native implementation of Transport Layer Security in JavaScript. Prior to version 1.4.0, a Denial of Service (DoS) vulnerability exists in the node-forge library due to an infinite loop in the BigInteger.modInverse() function (inherited from the bundled jsbn library). When modInverse() is called with a zero value as input, the internal Extended Euclidean Algorithm enters an unreachable exit condition, causing the process to hang indefinitely and consume 100%",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.14",
+          "0.1.15",
+          "0.1.2",
+          "0.1.3",
+          "0.1.4",
+          "0.1.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_059",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-2327",
+    "component": "markdown-it",
+    "version": "14.1.0",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00503,
+    "epss_percentile": 0.39045,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-38c4-r59v-3vqw"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "14.1.1"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "Versions of the package markdown-it from 13.0.0 and before 14.1.1 are vulnerable to Regular Expression Denial of Service (ReDoS) due to the use of the regex /\\*+$/ in the linkify function. An attacker can supply a long sequence of * characters followed by a non-matching character, which triggers excessive backtracking and may lead to a denial-of-service condition.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "13.0.0",
+          "13.0.1",
+          "13.0.2",
+          "14.0.0",
+          "14.1.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_060",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44496",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00345,
+    "epss_percentile": 0.26225,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-hfxv-24rg-xrqf"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.16.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_061",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44488",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00344,
+    "epss_percentile": 0.26173,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-777c-7fjr-54vf"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.16.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_062",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-1528",
+    "component": "undici",
+    "version": "7.22.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00342,
+    "epss_percentile": 0.25902,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-f269-vfmq-vjvj"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.24.0"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "ImpactA server can reply with a WebSocket frame using the 64-bit length form and an extremely large length. undici's ByteParser overflows internal math, ends up in an invalid state, and throws a fatal TypeError that terminates the process.\n\nPatches\n\nPatched in the undici version v7.24.0 and v6.24.0. Users should upgrade to this version or later.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v1.0.0",
+          "v1.0.1",
+          "v1.0.2",
+          "v1.0.3",
+          "v1.1.0",
+          "v1.2.0",
+          "v1.2.1",
+          "v1.2.2",
+          "v1.2.5",
+          "v1.2.6"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_063",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42039",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "MEDIUM",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00413,
+    "epss_percentile": 0.32927,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-62hf-57xw-28j9"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_064",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-41324",
+    "component": "basic-ftp",
+    "version": "5.1.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00332,
+    "epss_percentile": 0.24868,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-rp42-5vxx-qpwr"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.3.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_065",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33750",
+    "component": "brace-expansion",
+    "version": "5.0.2",
+    "severity": "MEDIUM",
+    "score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0043,
+    "epss_percentile": 0.34315,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-f886-m6hf-6m8v"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.0.5"
+    ],
+    "advisory_summary": "brace-expansion: Zero-step sequence causes process hang and memory exhaustion",
+    "advisory_details": "The brace-expansion library generates arbitrary strings containing a common prefix and suffix. Prior to versions 5.0.5, 3.0.2, 2.0.3, and 1.1.13, a brace pattern with a zero step value (e.g., `{1..2..0}`) causes the sequence generation loop to run indefinitely, making the process hang for seconds and allocate heaps of memory. Versions 5.0.5, 3.0.2, 2.0.3, and 1.1.13 fix the issue. As a workaround, sanitize strings passed to `expand()` to ensure a step value of `0` is not used.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v1.0.0",
+          "v1.0.1",
+          "v1.1.0",
+          "v1.1.1",
+          "v1.1.10",
+          "v1.1.11",
+          "v1.1.12",
+          "v1.1.2",
+          "v1.1.3",
+          "v1.1.4"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_066",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-54267",
+    "component": "@angular/core",
+    "version": "21.0.3",
+    "severity": "HIGH",
+    "score": 8.6,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00305,
+    "epss_percentile": 0.21981,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-rgjc-h3x7-9mwg"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "21.2.17"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_067",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-29087",
+    "component": "@hono/node-server",
+    "version": "1.19.9",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00327,
+    "epss_percentile": 0.24322,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-wc8c-qw6v-h7f6"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.19.10"
+    ],
+    "advisory_summary": "@hono/node-server: Authorization bypass for protected static paths via encoded slashes in Serve Static Middleware",
+    "advisory_details": "@hono/node-server allows running the Hono application on Node.js. Prior to version 1.19.10, when using @hono/node-server's static file serving together with route-based middleware protections (e.g. protecting /admin/*), inconsistent URL decoding can allow protected static resources to be accessed without authorization. In particular, paths containing encoded slashes (%2F) may be evaluated differently by routing/middleware matching versus static file path resolution, enabling a bypass where middl",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v0.0.1",
+          "v0.0.2",
+          "v0.1.0",
+          "v0.1.1",
+          "v0.1.2",
+          "v0.1.3",
+          "v0.2.0",
+          "v0.2.1",
+          "v0.2.2",
+          "v0.2.3"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_068",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33349",
+    "component": "fast-xml-parser",
+    "version": "5.3.4",
+    "severity": "MEDIUM",
+    "score": 5.9,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00449,
+    "epss_percentile": 0.35731,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jp2q-39xq-3w4g"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.5.7"
+    ],
+    "advisory_summary": "fast-xml-parser: Entity Expansion Limits Bypassed When Set to Zero Due to JavaScript Falsy Evaluation",
+    "advisory_details": "fast-xml-parser allows users to process XML from JS object without C/C++ based libraries or callbacks. From version 4.0.0-beta.3 to before version 5.5.7, the DocTypeReader in fast-xml-parser uses JavaScript truthy checks to evaluate maxEntityCount and maxEntitySize configuration limits. When a developer explicitly sets either limit to 0 \u2014 intending to disallow all entities or restrict entity size to zero bytes \u2014 the falsy nature of 0 in JavaScript causes the guard conditions to short-circuit, co",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v4.0.0",
+          "v4.0.0-beta.3",
+          "v4.0.0-beta.4",
+          "v4.0.0-beta.5",
+          "v4.0.0-beta.6",
+          "v4.0.1",
+          "v4.0.10",
+          "v4.0.11",
+          "v4.0.12",
+          "v4.0.13"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_069",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-48712",
+    "component": "protobufjs",
+    "version": "8.0.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00324,
+    "epss_percentile": 0.24033,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-wcpc-wj8m-hjx6"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.4.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_070",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44486",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00322,
+    "epss_percentile": 0.23865,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-j5f8-grm9-p9fc"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.16.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_071",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-39407",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00459,
+    "epss_percentile": 0.36373,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-wmmm-f939-6g9c"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.12"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_072",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33941",
+    "component": "handlebars",
+    "version": "4.7.8",
+    "severity": "HIGH",
+    "score": 8.2,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00293,
+    "epss_percentile": 0.20797,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-xjpj-3mr7-gcpf"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.7.9"
+    ],
+    "advisory_summary": "Handlebars.js has JavaScript Injection in CLI Precompiler via Unescaped Names and Options",
+    "advisory_details": "Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, the Handlebars CLI precompiler (`bin/handlebars` / `lib/precompiler.js`) concatenates user-controlled strings \u2014 template file names and several CLI options \u2014 directly into the JavaScript it emits, without any escaping or sanitization. An attacker who can influence template filenames or CLI arguments can inject arbitrary JavaScript that executes when the generated bundle is loaded in No",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v4.0.0",
+          "v4.0.1",
+          "v4.0.10",
+          "v4.0.11",
+          "v4.0.12",
+          "v4.0.2",
+          "v4.0.3",
+          "v4.0.4",
+          "v4.0.5",
+          "v4.0.6"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_073",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44293",
+    "component": "protobufjs",
+    "version": "8.0.0",
+    "severity": "HIGH",
+    "score": 7.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00294,
+    "epss_percentile": 0.20955,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-66ff-xgx4-vchm"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.0.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_074",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44294",
+    "component": "protobufjs",
+    "version": "8.0.0",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00431,
+    "epss_percentile": 0.34342,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-2pr8-phx7-x9h3"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.0.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_075",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33532",
+    "component": "yaml",
+    "version": "2.8.2",
+    "severity": "MEDIUM",
+    "score": 4.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00469,
+    "epss_percentile": 0.36985,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-48c2-rrv3-qjmp"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.8.3"
+    ],
+    "advisory_summary": "yaml is vulnerable to Stack Overflow via deeply nested YAML collections",
+    "advisory_details": "`yaml` is a YAML parser and serialiser for JavaScript. Parsing a YAML document with a version of `yaml` on the 1.x branch prior to 1.10.3 or on the 2.x branch prior to 2.8.3 may throw a RangeError due to a stack overflow. The node resolution/composition phase uses recursive function calls without a depth bound. An attacker who can supply YAML for parsing can trigger a `RangeError: Maximum call stack size exceeded` with a small payload (~2\u201310 KB). The `RangeError` is not a `YAMLParseError`, so ap",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v1.0.0",
+          "v1.0.1",
+          "v1.0.2",
+          "v1.0.3",
+          "v1.1.0",
+          "v1.10.0",
+          "v1.10.1",
+          "v1.10.2",
+          "v1.2.0",
+          "v1.2.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_076",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42036",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00421,
+    "epss_percentile": 0.33674,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-vf2m-468p-8v99"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_077",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-29786",
+    "component": "tar",
+    "version": "7.5.7",
+    "severity": "HIGH",
+    "score": 8.2,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:H/VA:L/SC:N/SI:H/SA:L",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00276,
+    "epss_percentile": 0.19135,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-qffp-2rhf-9h96"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.5.10"
+    ],
+    "advisory_summary": "node-tar: Hardlink Path Traversal via Drive-Relative Linkpath",
+    "advisory_details": "node-tar is a full-featured Tar for Node.js. Prior to version 7.5.10, tar can be tricked into creating a hardlink that points outside the extraction directory by using a drive-relative link target such as C:../target.txt, which enables file overwrite outside cwd during normal tar.x() extraction. This issue has been patched in version 7.5.10.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.0",
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.2",
+          "0.1.3",
+          "0.1.5",
+          "0.1.6",
+          "0.1.7"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_078",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2025-69873",
+    "component": "ajv",
+    "version": "8.17.1",
+    "severity": "MEDIUM",
+    "score": 5.5,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:P",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00407,
+    "epss_percentile": 0.32369,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-2g4f-4pwh-qvx6"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.18.0"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "ajv (Another JSON Schema Validator) before 8.18.0 is vulnerable to Regular Expression Denial of Service (ReDoS) when the $data option is enabled. The pattern keyword accepts runtime data via JSON Pointer syntax ($data reference), which is passed directly to the JavaScript RegExp() constructor without validation. An attacker can inject a malicious regex pattern (e.g., \"^(a|a)*$\") combined with crafted input to cause catastrophic backtracking. A 31-character payload causes approximately 44 seconds",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.3.0",
+          "0.3.8",
+          "0.4.0",
+          "0.4.1",
+          "0.4.14",
+          "0.4.4",
+          "0.5.0",
+          "0.5.1",
+          "0.5.11",
+          "0.5.2"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_079",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33672",
+    "component": "picomatch",
+    "version": "4.0.3",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0041,
+    "epss_percentile": 0.32665,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-3v7f-55p6-f55p"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.0.4"
+    ],
+    "advisory_summary": "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+    "advisory_details": "Picomatch is a glob matcher written JavaScript. Versions prior to 4.0.4, 3.0.2, and 2.3.2 are vulnerable to a method injection vulnerability affecting the `POSIX_REGEX_SOURCE` object. Because the object inherits from `Object.prototype`, specially crafted POSIX bracket expressions (e.g., `[[:constructor:]]`) can reference inherited method names. These methods are implicitly converted to strings and injected into the generated regular expression. This leads to incorrect glob matching behavior (int",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "1.0.1",
+          "1.0.2",
+          "1.1.0",
+          "1.1.2",
+          "2.0.0",
+          "2.0.1",
+          "2.0.2",
+          "2.0.3",
+          "2.0.4",
+          "2.0.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_080",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-26960",
+    "component": "tar",
+    "version": "7.5.7",
+    "severity": "HIGH",
+    "score": 7.1,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00288,
+    "epss_percentile": 0.20326,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-83g3-92jg-28cx"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.5.8"
+    ],
+    "advisory_summary": "node-tar has Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in Extraction",
+    "advisory_details": "node-tar is a full-featured Tar for Node.js. When using default options in versions 7.5.7 and below, an attacker-controlled archive can create a hardlink inside the extraction directory that points to a file outside the extraction root, enabling arbitrary file read and write as the extracting user. Severity is high because the primitive bypasses path protections and turns archive extraction into a direct filesystem access primitive. This issue has been fixed in version 7.5.8.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.0",
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.2",
+          "0.1.3",
+          "0.1.5",
+          "0.1.6",
+          "0.1.7"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_081",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-52725",
+    "component": "@angular/core",
+    "version": "21.0.3",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00404,
+    "epss_percentile": 0.32131,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-692r-grfm-v8x7"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "21.2.15"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_082",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-6322",
+    "component": "fast-uri",
+    "version": "3.1.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00277,
+    "epss_percentile": 0.19324,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-v39h-62p7-jpjc"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.1.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_083",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2025-15284",
+    "component": "qs",
+    "version": "6.14.0",
+    "severity": "MEDIUM",
+    "score": 3.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0041,
+    "epss_percentile": 0.32659,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-6rw7-vpxm-498p"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "6.14.1"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "Improper Input Validation vulnerability in qs (parse modules) allows HTTP DoS.This issue affects qs: < 6.14.1.\n\n\nSummary\n\nThe arrayLimit\u00a0option in qs did not enforce limits for bracket notation (a[]=1&a[]=2), only for indexed notation (a[0]=1). This is a consistency bug; arrayLimit\u00a0should apply uniformly across all array notations.\n\nNote:\u00a0The default parameterLimit\u00a0of 1000 effectively mitigates the DoS scenario originally described. With default options, bracket notation cannot produce arrays la",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v1.0.0",
+          "v1.0.1",
+          "v1.0.2",
+          "v1.1.0",
+          "v1.2.0",
+          "v1.2.1",
+          "v1.2.2",
+          "v2.0.0",
+          "v2.1.0",
+          "v2.2.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_084",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-41907",
+    "component": "uuid",
+    "version": "11.1.0",
+    "severity": "MEDIUM",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00337,
+    "epss_percentile": 0.25408,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-w5hq-g745-h8pq"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "11.1.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_085",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-31802",
+    "component": "tar",
+    "version": "7.5.7",
+    "severity": "HIGH",
+    "score": 8.2,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:H/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00253,
+    "epss_percentile": 0.16392,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-9ppj-qmqm-q256"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.5.11"
+    ],
+    "advisory_summary": "node-tar Symlink Path Traversal via Drive-Relative Linkpath",
+    "advisory_details": "node-tar is a full-featured Tar for Node.js. Prior to version 7.5.11, tar (npm) can be tricked into creating a symlink that points outside the extraction directory by using a drive-relative symlink target such as C:../../../target.txt, which enables file overwrite outside cwd during normal tar.x() extraction. This vulnerability is fixed in 7.5.11.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.0",
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.2",
+          "0.1.3",
+          "0.1.5",
+          "0.1.6",
+          "0.1.7"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_086",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-39406",
+    "component": "@hono/node-server",
+    "version": "1.19.9",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00376,
+    "epss_percentile": 0.29327,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-92pp-h63x-v22m"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.19.13"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_087",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-4923",
+    "component": "path-to-regexp",
+    "version": "8.3.0",
+    "severity": "MEDIUM",
+    "score": 5.9,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00353,
+    "epss_percentile": 0.27072,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-27v5-c462-wpq7"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.4.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_088",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33895",
+    "component": "node-forge",
+    "version": "1.3.1",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00255,
+    "epss_percentile": 0.1661,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-q67f-28xg-22rw"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.4.0"
+    ],
+    "advisory_summary": "Forge has signature forgery in Ed25519 due to missing S > L check",
+    "advisory_details": "Forge (also called `node-forge`) is a native implementation of Transport Layer Security in JavaScript. Prior to version 1.4.0, Ed25519 signature verification accepts forged non-canonical signatures where the scalar S is not reduced modulo the group order (`S >= L`). A valid signature and its `S + L` variant both verify in forge, while Node.js `crypto.verify` (OpenSSL-backed) rejects the `S + L` variant, as defined by the specification. This class of signature malleability has been exploited in p",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.14",
+          "0.1.15",
+          "0.1.2",
+          "0.1.3",
+          "0.1.4",
+          "0.1.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_089",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42507",
+    "component": "stdlib",
+    "version": "go1.26.3",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0037,
+    "epss_percentile": 0.28759,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.25.11",
+      "1.26.4"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_090",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-8723",
+    "component": "qs",
+    "version": "6.14.0",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00351,
+    "epss_percentile": 0.26865,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-q8mj-m7cp-5q26"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "6.15.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_091",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-39409",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00342,
+    "epss_percentile": 0.25983,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-xpcf-pg52-r92g"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.12"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_092",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33894",
+    "component": "node-forge",
+    "version": "1.3.1",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00245,
+    "epss_percentile": 0.15383,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-ppp5-5v6c-4jwp"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.4.0"
+    ],
+    "advisory_summary": "Forge has signature forgery in RSA-PKCS due to ASN.1 extra field",
+    "advisory_details": "Forge (also called `node-forge`) is a native implementation of Transport Layer Security in JavaScript. Prior to version 1.4.0, RSASSA PKCS#1 v1.5 signature verification accepts forged signatures for low public exponent keys (e=3). Attackers can forge signatures by stuffing \u201cgarbage\u201d bytes within the ASN structure in order to construct a signature that passes verification, enabling Bleichenbacher style forgery. This issue is similar to CVE-2022-24771, but adds bytes in an addition field within th",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.14",
+          "0.1.15",
+          "0.1.2",
+          "0.1.3",
+          "0.1.4",
+          "0.1.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_093",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-54290",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "HIGH",
+    "score": 7.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00248,
+    "epss_percentile": 0.15803,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-88fw-hqm2-52qc"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.25"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_094",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-9678",
+    "component": "undici",
+    "version": "7.22.0",
+    "severity": "MEDIUM",
+    "score": 5.9,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00326,
+    "epss_percentile": 0.24283,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-pr7r-676h-xcf6"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.28.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_095",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42038",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "MEDIUM",
+    "score": 6.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00301,
+    "epss_percentile": 0.2158,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-m7pr-hjqh-92cm"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_096",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-50557",
+    "component": "@angular/compiler",
+    "version": "21.0.3",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00336,
+    "epss_percentile": 0.25317,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-f3m7-gqxr-g87x"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "21.2.15"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_097",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-50557",
+    "component": "@angular/core",
+    "version": "21.0.3",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00336,
+    "epss_percentile": 0.25317,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-f3m7-gqxr-g87x"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "21.2.15"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_098",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-2950",
+    "component": "lodash",
+    "version": "4.17.23",
+    "severity": "MEDIUM",
+    "score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00297,
+    "epss_percentile": 0.21227,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-f23m-r3pf-42rh"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.18.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_099",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-53632",
+    "component": "vite",
+    "version": "7.3.1",
+    "severity": "MEDIUM",
+    "score": 5.5,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00322,
+    "epss_percentile": 0.23854,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-v6wh-96g9-6wx3"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.3.5"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_100",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42034",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00327,
+    "epss_percentile": 0.24381,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-5c9x-8gcm-mpgx"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_101",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-31808",
+    "component": "file-type",
+    "version": "21.3.0",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00325,
+    "epss_percentile": 0.24121,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-5v7r-6r5c-r473"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "21.3.1"
+    ],
+    "advisory_summary": "file-type affected by infinite loop in ASF parser on malformed input with zero-size sub-header",
+    "advisory_details": "file-type detects the file type of a file, stream, or data. Prior to 21.3.1, a denial of service vulnerability exists in the ASF (WMV/WMA) file type detection parser. When parsing a crafted input where an ASF sub-header has a size field of zero, the parser enters an infinite loop. The payload value becomes negative (-24), causing tokenizer.ignore(payload) to move the read position backwards, so the same sub-header is read repeatedly forever. Any application that uses file-type to detect the type",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v13.0.0",
+          "v13.0.1",
+          "v13.0.2",
+          "v13.0.3",
+          "v13.1.0",
+          "v13.1.1",
+          "v13.1.2",
+          "v14.0.0",
+          "v14.1.0",
+          "v14.1.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_102",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44495",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "HIGH",
+    "score": 7.0,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00227,
+    "epss_percentile": 0.13167,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-3g43-6gmg-66jw"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_103",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-54265",
+    "component": "@angular/compiler",
+    "version": "21.0.3",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00318,
+    "epss_percentile": 0.23406,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-58w9-8g37-x9v5"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "21.2.17"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_104",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-2391",
+    "component": "qs",
+    "version": "6.14.0",
+    "severity": "LOW",
+    "score": 3.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00478,
+    "epss_percentile": 0.37529,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-w7fw-mjwx-w883"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "6.14.2"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "### Summary\nThe `arrayLimit` option in qs does not enforce limits for comma-separated values when `comma: true` is enabled, allowing attackers to cause denial-of-service via memory exhaustion. This is a bypass of the array limit enforcement, similar to the bracket notation bypass addressed in GHSA-6rw7-vpxm-498p (CVE-2025-15284).\n\n### Details\nWhen the `comma` option is set to `true` (not the default, but configurable in applications), qs allows parsing comma-separated strings as arrays (e.g., `?",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v6.10.0",
+          "v6.10.1",
+          "v6.10.2",
+          "v6.10.3",
+          "v6.10.4",
+          "v6.10.5",
+          "v6.11.0",
+          "v6.11.1",
+          "v6.11.2",
+          "v6.12.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_105",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-45149",
+    "component": "brace-expansion",
+    "version": "5.0.2",
+    "severity": "MEDIUM",
+    "score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00278,
+    "epss_percentile": 0.19379,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jxxr-4gwj-5jf2"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.0.6"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_106",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-54286",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 5.9,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00292,
+    "epss_percentile": 0.2066,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-wwfh-h76j-fc44"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.25"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_107",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44288",
+    "component": "protobufjs",
+    "version": "8.0.0",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00301,
+    "epss_percentile": 0.2157,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-q6x5-8v7m-xcrf"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.0.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_108",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42044",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "MEDIUM",
+    "score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00269,
+    "epss_percentile": 0.1834,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-3w6x-2g7m-8v23"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_109",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-32630",
+    "component": "file-type",
+    "version": "21.3.0",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00299,
+    "epss_percentile": 0.2141,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-j47w-4g3g-c36v"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "21.3.2"
+    ],
+    "advisory_summary": "file-type affected by ZIP Decompression Bomb DoS via [Content_Types].xml entry",
+    "advisory_details": "file-type detects the file type of a file, stream, or data. From 20.0.0 to 21.3.1, a crafted ZIP file can trigger excessive memory growth during type detection in file-type when using fileTypeFromBuffer(), fileTypeFromBlob(), or fileTypeFromFile(). The ZIP inflate output limit is enforced for stream-based detection, but not for known-size inputs. As a result, a small compressed ZIP can cause file-type to inflate and process a much larger payload while probing ZIP-based formats such as OOXML. Thi",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v20.0.0",
+          "v20.0.1",
+          "v20.1.0",
+          "v20.2.0",
+          "v20.3.0",
+          "v20.4.0",
+          "v20.4.1",
+          "v20.5.0",
+          "v21.0.0",
+          "v21.1.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_110",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-0540",
+    "component": "dompurify",
+    "version": "3.3.1",
+    "severity": "MEDIUM",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00284,
+    "epss_percentile": 0.19946,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-v2wj-7wpq-c8vv"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.3.2"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "DOMPurify 3.1.3 through 3.3.1 and 2.5.3 through 2.5.8, fixed in commit 729097f, contain a cross-site scripting vulnerability that allows attackers to bypass attribute sanitization by exploiting five missing rawtext elements (noscript, xmp, noembed, noframes, iframe) in the SAFE_FOR_XML regex. Attackers can include payloads like </noscript><img src=x onerror=alert(1)> in attribute values to execute JavaScript when sanitized output is placed inside these unprotected rawtext contexts.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "2.5.3",
+          "2.5.4",
+          "2.5.5",
+          "2.5.6",
+          "2.5.7",
+          "2.5.8",
+          "3.1.3",
+          "3.2.3"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_111",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2025-66030",
+    "component": "node-forge",
+    "version": "1.3.1",
+    "severity": "MEDIUM",
+    "score": 6.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00266,
+    "epss_percentile": 0.17758,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-65ch-62r8-g69g"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.3.2"
+    ],
+    "advisory_summary": "node-forge ASN.1 OID Integer Truncation",
+    "advisory_details": "Forge (also called `node-forge`) is a native implementation of Transport Layer Security in JavaScript. An Integer Overflow vulnerability in node-forge versions 1.3.1 and below enables remote, unauthenticated attackers to craft ASN.1 structures containing OIDs with oversized arcs. These arcs may be decoded as smaller, trusted OIDs due to 32-bit bitwise truncation, enabling the bypass of downstream OID-based security decisions. This issue has been patched in version 1.3.2.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.14",
+          "0.1.15",
+          "0.1.2",
+          "0.1.3",
+          "0.1.4",
+          "0.1.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_112",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2025-65945",
+    "component": "jws",
+    "version": "4.0.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00193,
+    "epss_percentile": 0.09031,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-869p-cjfg-cm3x"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.0.1"
+    ],
+    "advisory_summary": "auth0/node-jws improper HMAC signature verification vulnerability",
+    "advisory_details": "auth0/node-jws is a JSON Web Signature implementation for Node.js. In versions 3.2.2 and earlier and version 4.0.0, auth0/node-jws has an improper signature verification vulnerability when using the HS256 algorithm under specific conditions. Applications are affected when they use the jws.createVerify() function for HMAC algorithms and use user-provided data from the JSON Web Signature protected header or payload in HMAC secret lookup routines, which can allow attackers to bypass signature verif",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v0.1.0",
+          "v0.2.0",
+          "v0.2.1",
+          "v0.2.2",
+          "v0.2.3",
+          "v0.2.4",
+          "v0.2.5",
+          "v0.2.6",
+          "v1.0.0",
+          "v1.0.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_113",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-41240",
+    "component": "dompurify",
+    "version": "3.3.1",
+    "severity": "MEDIUM",
+    "score": 6.0,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00263,
+    "epss_percentile": 0.17537,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-h7mw-gpvr-xq4m"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.4.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_114",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-25680",
+    "component": "golang.org/x/net",
+    "version": "v0.53.0",
+    "severity": "MEDIUM",
+    "score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00248,
+    "epss_percentile": 0.1586,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.55.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_115",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42041",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "MEDIUM",
+    "score": 4.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00289,
+    "epss_percentile": 0.20417,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-w9j2-pvgh-6h63"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_116",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44490",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "MEDIUM",
+    "score": 4.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00287,
+    "epss_percentile": 0.20276,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-898c-q2cr-xwhg"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.16.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_117",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-9679",
+    "component": "undici",
+    "version": "7.22.0",
+    "severity": "MEDIUM",
+    "score": 5.9,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00257,
+    "epss_percentile": 0.16873,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-p88m-4jfj-68fv"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.28.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_118",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-39410",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 4.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00284,
+    "epss_percentile": 0.19948,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-r5rp-j6wh-rvv4"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.12"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_119",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-29085",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0024,
+    "epss_percentile": 0.14869,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-p6xx-57qc-3wxr"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.4"
+    ],
+    "advisory_summary": "Hono: SSE Control Field Injection via CR/LF in writeSSE()",
+    "advisory_details": "Hono is a Web application framework that provides support for any JavaScript runtime. Prior to version 4.12.4, when using streamSSE() in Streaming Helper, the event, id, and retry fields were not validated for carriage return (\\r) or newline (\\n) characters. Because the SSE protocol uses line breaks as field delimiters, this could allow injection of additional SSE fields within the same event frame if untrusted input was passed into these fields. This issue has been patched in version 4.12.4.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v0.0.1",
+          "v0.0.10",
+          "v0.0.11",
+          "v0.0.13",
+          "v0.0.14",
+          "v0.0.15",
+          "v0.0.16",
+          "v0.0.2",
+          "v0.0.4",
+          "v0.0.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_120",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33896",
+    "component": "node-forge",
+    "version": "1.3.1",
+    "severity": "HIGH",
+    "score": 7.4,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00185,
+    "epss_percentile": 0.08229,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-2328-f5f3-gj25"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.4.0"
+    ],
+    "advisory_summary": "Forge has a basicConstraints bypass in its certificate chain verification (RFC 5280 violation)",
+    "advisory_details": "Forge (also called `node-forge`) is a native implementation of Transport Layer Security in JavaScript. Prior to version 1.4.0, `pki.verifyCertificateChain()` does not enforce RFC 5280 basicConstraints requirements when an intermediate certificate lacks both the `basicConstraints` and `keyUsage` extensions. This allows any leaf certificate (without these extensions) to act as a CA and sign other certificates, which node-forge will accept as valid. Version 1.4.0 patches the issue.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.14",
+          "0.1.15",
+          "0.1.2",
+          "0.1.3",
+          "0.1.4",
+          "0.1.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_121",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-27942",
+    "component": "fast-xml-parser",
+    "version": "5.3.4",
+    "severity": "LOW",
+    "score": 2.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00478,
+    "epss_percentile": 0.37596,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-fj3w-jwp8-x2g3"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.3.8"
+    ],
+    "advisory_summary": "fast-xml-parser has stack overflow in XMLBuilder with preserveOrder",
+    "advisory_details": "fast-xml-parser allows users to validate XML, parse XML to JS object, or build XML from JS object without C/C++ based libraries and no callback. Prior to version 5.3.8, the application crashes with stack overflow when user use XML builder with `preserveOrder:true`. Version 5.3.8 fixes the issue. As a workaround, use XML builder with `preserveOrder:false` or check the input data before passing to builder.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v5.0.0",
+          "v5.0.2",
+          "v5.0.4",
+          "v5.0.6",
+          "v5.0.7",
+          "v5.0.9",
+          "v5.1.0",
+          "v5.2.0",
+          "v5.2.1",
+          "v5.2.2"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_122",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44292",
+    "component": "protobufjs",
+    "version": "8.0.0",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00264,
+    "epss_percentile": 0.17544,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-fx83-v9x8-x52w"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.0.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_123",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-45740",
+    "component": "protobufjs",
+    "version": "8.0.0",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00263,
+    "epss_percentile": 0.17451,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jggg-4jg4-v7c6"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.2.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_124",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-47676",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0026,
+    "epss_percentile": 0.17119,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-2gcr-mfcq-wcc3"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.21"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_125",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42338",
+    "component": "ip-address",
+    "version": "10.1.0",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00258,
+    "epss_percentile": 0.16943,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-v2v4-37r5-5v8g"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "10.1.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_126",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-41650",
+    "component": "fast-xml-parser",
+    "version": "5.3.4",
+    "severity": "MEDIUM",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00238,
+    "epss_percentile": 0.14641,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-gh4j-gqv2-49f6"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.7.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_127",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-48988",
+    "component": "markdown-it",
+    "version": "14.1.0",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00252,
+    "epss_percentile": 0.16316,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-6v5v-wf23-fmfq"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "14.2.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_128",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-41239",
+    "component": "dompurify",
+    "version": "3.3.1",
+    "severity": "MEDIUM",
+    "score": 6.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00217,
+    "epss_percentile": 0.11907,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-crv5-9vww-q3g8"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.4.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_129",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44456",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00219,
+    "epss_percentile": 0.12158,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-9vqf-7f2p-gf9v"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.16"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_130",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-47674",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00244,
+    "epss_percentile": 0.15339,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-xrhx-7g5j-rcj5"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.21"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_131",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42037",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0024,
+    "epss_percentile": 0.14923,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-445q-vr5w-6q77"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_132",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-1527",
+    "component": "undici",
+    "version": "7.22.0",
+    "severity": "MEDIUM",
+    "score": 4.6,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00256,
+    "epss_percentile": 0.16765,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-4992-7rv2-5pvq"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.24.0"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "ImpactWhen an application passes user-controlled input to the\u00a0upgrade\u00a0option of\u00a0client.request(), an attacker can inject CRLF sequences (\\r\\n) to:\n\n  *  Inject arbitrary HTTP headers\n  *  Terminate the HTTP request prematurely and smuggle raw data to non-HTTP services (Redis, Memcached, Elasticsearch)\nThe vulnerability exists because undici writes the\u00a0upgrade\u00a0value directly to the socket without validating for invalid header characters:\n\n// lib/dispatcher/client-h1.js:1121\nif (upgrade) {\n  heade",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v1.0.0",
+          "v1.0.1",
+          "v1.0.2",
+          "v1.0.3",
+          "v1.1.0",
+          "v1.2.0",
+          "v1.2.1",
+          "v1.2.2",
+          "v1.2.5",
+          "v1.2.6"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_133",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-54269",
+    "component": "protobufjs",
+    "version": "8.0.0",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00238,
+    "epss_percentile": 0.14557,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-f38q-mgvj-vph7"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.6.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_134",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-41238",
+    "component": "dompurify",
+    "version": "3.3.1",
+    "severity": "MEDIUM",
+    "score": 6.9,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00205,
+    "epss_percentile": 0.10494,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-v9jr-rg53-9pgp"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.4.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_135",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42042",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "MEDIUM",
+    "score": 5.4,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00228,
+    "epss_percentile": 0.13359,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-xx6v-rp6x-q39c"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_136",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-41305",
+    "component": "postcss",
+    "version": "8.5.6",
+    "severity": "MEDIUM",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00205,
+    "epss_percentile": 0.10443,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-qx2v-qp2m-jg93"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.5.10"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_137",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-33916",
+    "component": "handlebars",
+    "version": "4.7.8",
+    "severity": "MEDIUM",
+    "score": 4.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00232,
+    "epss_percentile": 0.13871,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-2qvq-rjwj-gvw9"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.7.9"
+    ],
+    "advisory_summary": "Handlebars.js has Prototype Pollution Leading to XSS through Partial Template Injection",
+    "advisory_details": "Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, `resolvePartial()` in the Handlebars runtime resolves partial names via a plain property lookup on `options.partials` without guarding against prototype-chain traversal. When `Object.prototype` has been polluted with a string value whose key matches a partial reference in a template, the polluted string is used as the partial body and rendered without HTML escaping, resulting in reflec",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v4.0.0",
+          "v4.0.1",
+          "v4.0.10",
+          "v4.0.11",
+          "v4.0.12",
+          "v4.0.2",
+          "v4.0.3",
+          "v4.0.4",
+          "v4.0.5",
+          "v4.0.6"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_138",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-29086",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 5.4,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00216,
+    "epss_percentile": 0.11834,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-5pq2-9x2x-5p6w"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.4"
+    ],
+    "advisory_summary": "Hono: Cookie Attribute Injection via Unsanitized domain and path in setCookie()",
+    "advisory_details": "Hono is a Web application framework that provides support for any JavaScript runtime. Prior to version 4.12.4, the setCookie() utility did not validate semicolons (;), carriage returns (\\r), or newline characters (\\n) in the domain and path options when constructing the Set-Cookie header. Because cookie attributes are delimited by semicolons, this could allow injection of additional cookie attributes if untrusted input was passed into these fields. This issue has been patched in version 4.12.4.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v0.0.1",
+          "v0.0.10",
+          "v0.0.11",
+          "v0.0.13",
+          "v0.0.14",
+          "v0.0.15",
+          "v0.0.16",
+          "v0.0.2",
+          "v0.0.4",
+          "v0.0.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_139",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42506",
+    "component": "golang.org/x/net",
+    "version": "v0.53.0",
+    "severity": "MEDIUM",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00188,
+    "epss_percentile": 0.08503,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.55.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_140",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44457",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00197,
+    "epss_percentile": 0.09558,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-p77w-8qqv-26rm"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.18"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_141",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-47675",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 4.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00216,
+    "epss_percentile": 0.11845,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-3hrh-pfw6-9m5x"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.21"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_142",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42502",
+    "component": "golang.org/x/net",
+    "version": "v0.53.0",
+    "severity": "MEDIUM",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00178,
+    "epss_percentile": 0.07477,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.55.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_143",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-25681",
+    "component": "golang.org/x/net",
+    "version": "v0.53.0",
+    "severity": "MEDIUM",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00178,
+    "epss_percentile": 0.07477,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.55.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_144",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-27136",
+    "component": "golang.org/x/net",
+    "version": "v0.53.0",
+    "severity": "MEDIUM",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00178,
+    "epss_percentile": 0.07477,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.55.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_145",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-47673",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 4.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00199,
+    "epss_percentile": 0.09717,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-f577-qrjj-4474"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.21"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_146",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-54287",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00186,
+    "epss_percentile": 0.08247,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-j6c9-x7qj-28xf"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.25"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_147",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44458",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 4.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00197,
+    "epss_percentile": 0.09524,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-qp7p-654g-cw7p"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.18"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_148",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-11525",
+    "component": "undici",
+    "version": "7.22.0",
+    "severity": "LOW",
+    "score": 3.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00248,
+    "epss_percentile": 0.15793,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-g8m3-5g58-fq7m"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.28.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_149",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-6733",
+    "component": "undici",
+    "version": "7.22.0",
+    "severity": "LOW",
+    "score": 3.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0023,
+    "epss_percentile": 0.13593,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-35p6-xmwp-9g52"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.28.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_150",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44459",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "LOW",
+    "score": 3.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00216,
+    "epss_percentile": 0.11822,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-hm8q-7f3q-5f36"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.18"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_151",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-42040",
+    "component": "axios",
+    "version": "1.13.5",
+    "severity": "LOW",
+    "score": 3.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00217,
+    "epss_percentile": 0.11941,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-xhjh-pmcv-23jw"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.15.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_152",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-53655",
+    "component": "tar",
+    "version": "7.5.7",
+    "severity": "MEDIUM",
+    "score": 6.9,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00117,
+    "epss_percentile": 0.01941,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-vmf3-w455-68vh"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "7.5.16"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_153",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-44455",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 4.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0014,
+    "epss_percentile": 0.03722,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-69xw-7hcm-h432"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.16"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_154",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-54288",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00103,
+    "epss_percentile": 0.01211,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-rv63-4mwf-qqc2"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.25"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_155",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-54289",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 4.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00114,
+    "epss_percentile": 0.01742,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-wgpf-jwqj-8h8p"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.25"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_156",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-39824",
+    "component": "golang.org/x/sys",
+    "version": "v0.43.0",
+    "severity": "LOW",
+    "score": 3.3,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00114,
+    "epss_percentile": 0.01743,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.44.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_157",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-3449",
+    "component": "@tootallnate/once",
+    "version": "2.0.0",
+    "severity": "LOW",
+    "score": 3.3,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00112,
+    "epss_percentile": 0.01625,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-vpq2-c234-7xj6"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.0.1"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "Versions of the package @tootallnate/once before 3.0.1 are vulnerable to Incorrect Control Flow Scoping in promise resolving when AbortSignal option is used. The Promise remains in a permanently pending state after the signal is aborted, causing any await or .then() usage to hang indefinitely. This can cause a control-flow leak that can lead to stalled requests, blocked workers, or degraded application availability.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "1.0.0",
+          "1.1.0",
+          "1.1.1",
+          "1.1.2",
+          "2.0.0",
+          "3.0.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_158",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-49458",
+    "component": "dompurify",
+    "version": "3.3.1",
+    "severity": "MEDIUM",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": null,
+    "epss_percentile": null,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-hpcv-96wg-7vj8"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.4.6"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_159",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-49459",
+    "component": "dompurify",
+    "version": "3.3.1",
+    "severity": "MEDIUM",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": null,
+    "epss_percentile": null,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-r47g-fvhr-h676"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.4.6"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_160",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-49978",
+    "component": "dompurify",
+    "version": "3.3.1",
+    "severity": "MEDIUM",
+    "score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": null,
+    "epss_percentile": null,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-rp9w-3fw7-7cwq"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.4.7"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_161",
+    "case_id": "case_003",
+    "vulnerability_id": "CVE-2026-56761",
+    "component": "hono",
+    "version": "4.11.9",
+    "severity": "MEDIUM",
+    "score": 4.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": null,
+    "epss_percentile": null,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-458j-xx4x-4375"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.12.14"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  }
+]

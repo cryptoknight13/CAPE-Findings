@@ -1,0 +1,448 @@
+cve,package,version,severity,kev,kev_date_added,epss,epss_percentile,exploitdb,exploitdb_ids,commit_links,patch_links,fix_commits,repo_urls,ghsa_ids,introduced_versions,fixed_versions,cvss_base,cvss_vector,cvss_version
+CVE-2025-29927,next,13.4.19,Critical,,,,,,,,,,,GHSA-f82v-jwr5-mffw,,13.5.9,9.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,3.1
+CVE-2023-45288,stdlib,go1.20.12,High,,,,,,,,,,,,,1.21.9 | 1.22.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-31125,vite,5.4.14,Medium,,,,,,,,,,,GHSA-4r4m-qw57-chr8,,5.4.16,5.3,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N,3.1
+CVE-2025-30208,vite,5.4.14,Medium,,,,,,,,,,,GHSA-x574-m823-4x7w,,5.4.15,5.3,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N,3.1
+CVE-2026-44578,next,13.4.19,High,,,,,,,,,,,GHSA-c4j6-fc7j-m34r,,15.5.16,8.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N,3.1
+CVE-2026-44578,next,15.4.4,High,,,,,,,,,,,GHSA-c4j6-fc7j-m34r,,15.5.16,8.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N,3.1
+CVE-2026-44578,next,16.1.6,High,,,,,,,,,,,GHSA-c4j6-fc7j-m34r,,16.2.5,8.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N,3.1
+CVE-2025-31486,vite,5.4.14,Medium,,,,,,,,,,,GHSA-xcj6-pq6g-qj4x,,5.4.17,5.3,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N,3.1
+CVE-2024-34351,next,13.4.19,High,,,,,,,,,,,GHSA-fr5h-rqp8-mj6g,,14.1.1,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2024-51479,next,13.4.19,High,,,,,,,,,,,GHSA-7gfc-8cq8-jh5f,,14.2.15,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2025-64756,glob,10.4.5,High,,,,,,,,,,,GHSA-5j98-mcp5-4vw2,,10.5.0,7.5,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2025-64756,glob,11.0.3,High,,,,,,,,,,,GHSA-5j98-mcp5-4vw2,,11.1.0,7.5,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2024-24790,stdlib,go1.20.12,Critical,,,,,,,,,,,,,1.21.11 | 1.22.4,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2025-57822,next,13.4.19,Medium,,,,,,,,,,,GHSA-4342-x723-ch2f,,14.2.32,6.5,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N,3.1
+CVE-2025-57822,next,15.4.4,Medium,,,,,,,,,,,GHSA-4342-x723-ch2f,,15.4.7,6.5,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N,3.1
+CVE-2026-33937,handlebars,4.7.8,Critical,,,,,,,,,,,GHSA-2w6w-674q-4c4q,,4.7.9,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2024-4068,braces,3.0.2,High,,,,,,,,,,,GHSA-grv7-fg5c-xmjg,,3.0.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2024-24791,stdlib,go1.20.12,High,,,,,,,,,,,,,1.21.12 | 1.22.5,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-27606,rollup,4.34.8,High,,,,,,,,,,,GHSA-mw96-cpmx-2vgc,,4.59.0,8.8,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:P,4.0
+CVE-2026-27606,rollup,4.46.2,High,,,,,,,,,,,GHSA-mw96-cpmx-2vgc,,4.59.0,8.8,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:P,4.0
+CVE-2022-33987,got,9.6.0,Medium,,,,,,,,,,,GHSA-pfrx-2q88-qq97,,11.8.5,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2025-32395,vite,5.4.14,Medium,,,,,,,,,,,GHSA-356w-63v5-8wf4,,5.4.18,6,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2026-25639,axios,1.11.0,High,,,,,,,,,,,GHSA-43fc-jf86-j433,,1.13.5,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2024-34350,next,13.4.19,High,,,,,,,,,,,GHSA-77r5-gw3j-2mpf,,13.5.1,7.5,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:H/A:N,3.1
+CVE-2024-34156,stdlib,go1.20.12,High,,,,,,,,,,,,,1.22.7 | 1.23.1,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-58754,axios,1.11.0,High,,,,,,,,,,,GHSA-4hjh-wcwx-xvwj,,1.12.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-4800,lodash,4.17.21,High,,,,,,,,,,,GHSA-r5fr-rjxr-66jc,,4.18.0,8.1,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-4800,lodash,4.17.23,High,,,,,,,,,,,GHSA-r5fr-rjxr-66jc,,4.18.0,8.1,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-44575,next,15.4.4,High,,,,,,,,,,,GHSA-267c-6grr-h53f,,15.5.16,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2026-44575,next,16.1.6,High,,,,,,,,,,,GHSA-267c-6grr-h53f,,16.2.5,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2023-24531,stdlib,go1.20.12,Critical,,,,,,,,,,,,,1.21.0-0,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2024-24784,stdlib,go1.20.12,High,,,,,,,,,,,,,1.21.8 | 1.22.1,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N,3.1
+CVE-2024-34158,stdlib,go1.20.12,High,,,,,,,,,,,,,1.22.7 | 1.23.1,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2024-4067,micromatch,4.0.5,Medium,,,,,,,,,,,GHSA-952p-6rrq-rcjv,,4.0.8,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2025-68121,stdlib,go1.20.12,Critical,,,,,,,,,,,,,1.24.13 | 1.25.7 | 1.26.0-rc.3,10,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,3.1
+CVE-2025-68121,stdlib,go1.23.10,Critical,,,,,,,,,,,,,1.24.13 | 1.25.7 | 1.26.0-rc.3,10,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,3.1
+CVE-2025-68121,stdlib,go1.23.12,Critical,,,,,,,,,,,,,1.24.13 | 1.25.7 | 1.26.0-rc.3,10,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,3.1
+CVE-2023-45290,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.21.8 | 1.22.1,6.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2024-21538,cross-spawn,5.1.0,High,,,,,,,,,,,GHSA-3xgq-45jj-v275,,6.0.6,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2024-21538,cross-spawn,7.0.3,High,,,,,,,,,,,GHSA-3xgq-45jj-v275,,7.0.5,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-22871,stdlib,go1.20.12,Critical,,,,,,,,,,,,,1.23.8 | 1.24.2,9.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,3.1
+CVE-2025-46565,vite,5.4.14,Medium,,,,,,,,,,,GHSA-859w-5945-r5v3,,5.4.19,6,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2025-61726,stdlib,go1.20.12,High,,,,,,,,,,,,,1.24.12 | 1.25.6,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-61726,stdlib,go1.23.10,High,,,,,,,,,,,,,1.24.12 | 1.25.6,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-61726,stdlib,go1.23.12,High,,,,,,,,,,,,,1.24.12 | 1.25.6,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-62718,axios,1.11.0,Medium,,,,,,,,,,,GHSA-3p68-rc4w-qgx5,,1.15.0,4.8,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2025-62522,vite,5.4.14,Medium,,,,,,,,,,,GHSA-93m4-6634-74q7,,5.4.21,6,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2025-62522,vite,5.4.19,Medium,,,,,,,,,,,GHSA-93m4-6634-74q7,,5.4.21,6,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2026-9277,shell-quote,1.8.3,Critical,,,,,,,,,,,GHSA-w7jw-789q-3m8p,,1.8.4,8.1,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-39365,vite,5.4.14,Medium,,,,,,,,,,,GHSA-4w7w-66w2-5vf9,,6.4.2,6.3,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2026-39365,vite,5.4.19,Medium,,,,,,,,,,,GHSA-4w7w-66w2-5vf9,,6.4.2,6.3,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2026-27143,stdlib,go1.20.12,Critical,,,,,,,,,,,,,1.25.9 | 1.26.2,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-27143,stdlib,go1.23.10,Critical,,,,,,,,,,,,,1.25.9 | 1.26.2,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-27143,stdlib,go1.23.12,Critical,,,,,,,,,,,,,1.25.9 | 1.26.2,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-33228,flatted,3.2.9,High,,,,,,,,,,,GHSA-rf6f-7fwh-wjgh,,3.4.2,8.9,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:P,4.0
+CVE-2026-33228,flatted,3.3.3,High,,,,,,,,,,,GHSA-rf6f-7fwh-wjgh,,3.4.2,8.9,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:P,4.0
+CVE-2023-45289,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.21.8 | 1.21.8 | 1.22.1 | 1.22.1,4.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-33940,handlebars,4.7.8,High,,,,,,,,,,,GHSA-xhpv-hc6g-r9c6,,4.7.9,8.1,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-33938,handlebars,4.7.8,High,,,,,,,,,,,GHSA-3mfm-83xf-c92r,,4.7.9,8.1,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-1526,undici,7.22.0,High,,,,,,,,,,,GHSA-vrm6-8vpv-qv8q,,7.24.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-27699,basic-ftp,5.0.5,Critical,,,,,,,,,,,GHSA-5rq4-664w-9x2c,,5.2.0,9.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H,3.1
+CVE-2026-40175,axios,1.11.0,Medium,,,,,,,,,,,GHSA-fvcv-3m26-pcqx,,1.15.0,4.8,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-33811,stdlib,go1.20.12,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-39836,stdlib,go1.20.12,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-33811,stdlib,go1.23.10,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-39836,stdlib,go1.23.10,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-33811,stdlib,go1.23.12,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-39836,stdlib,go1.23.12,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-61723,stdlib,go1.20.12,High,,,,,,,,,,,,,1.24.8 | 1.25.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-61723,stdlib,go1.23.10,High,,,,,,,,,,,,,1.24.8 | 1.25.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-61723,stdlib,go1.23.12,High,,,,,,,,,,,,,1.24.8 | 1.25.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-27140,stdlib,go1.20.12,High,,,,,,,,,,,,,1.25.9 | 1.26.2,8.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,3.1
+CVE-2026-27140,stdlib,go1.23.10,High,,,,,,,,,,,,,1.25.9 | 1.26.2,8.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,3.1
+CVE-2026-27140,stdlib,go1.23.12,High,,,,,,,,,,,,,1.25.9 | 1.26.2,8.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,3.1
+CVE-2024-24787,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.21.10 | 1.22.3,6.4,CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-42499,stdlib,go1.20.12,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-42499,stdlib,go1.23.10,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-42499,stdlib,go1.23.12,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-44492,axios,1.11.0,High,,,,,,,,,,,GHSA-pjwm-pj3p-43mv,,1.16.0,8.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N,3.1
+CVE-2025-61725,stdlib,go1.20.12,High,,,,,,,,,,,,,1.24.8 | 1.25.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-61725,stdlib,go1.23.10,High,,,,,,,,,,,,,1.24.8 | 1.25.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-61725,stdlib,go1.23.12,High,,,,,,,,,,,,,1.24.8 | 1.25.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-33814,stdlib,go1.20.12,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-33814,stdlib,go1.23.10,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-33814,stdlib,go1.23.12,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2023-44270,postcss,8.4.14,Medium,,,,,,,,,,,GHSA-7fh5-64p2-3v2j,,8.4.31,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2023-44270,postcss,8.4.30,Medium,,,,,,,,,,,GHSA-7fh5-64p2-3v2j,,8.4.31,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-26996,minimatch,10.1.1,High,,,,,,,,,,,GHSA-3ppc-4f35-3m26,,10.2.1,8.7,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N,4.0
+CVE-2026-26996,minimatch,3.1.2,High,,,,,,,,,,,GHSA-3ppc-4f35-3m26,,3.1.3,8.7,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N,4.0
+CVE-2026-26996,minimatch,9.0.0,High,,,,,,,,,,,GHSA-3ppc-4f35-3m26,,9.0.6,8.7,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N,4.0
+CVE-2026-26996,minimatch,9.0.3,High,,,,,,,,,,,GHSA-3ppc-4f35-3m26,,9.0.6,8.7,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N,4.0
+CVE-2026-26996,minimatch,9.0.5,High,,,,,,,,,,,GHSA-3ppc-4f35-3m26,,9.0.6,8.7,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N,4.0
+CVE-2026-42504,stdlib,go1.20.12,High,,,,,,,,,,,,,1.25.11 | 1.26.4,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-42504,stdlib,go1.23.10,High,,,,,,,,,,,,,1.25.11 | 1.26.4,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-42504,stdlib,go1.23.12,High,,,,,,,,,,,,,1.25.11 | 1.26.4,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-59343,tar-fs,3.1.0,High,,,,,,,,,,,GHSA-vj76-c3g6-qr5v,,3.1.1,8.7,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2024-24785,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.21.8 | 1.22.1,5.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-32141,flatted,3.2.9,High,,,,,,,,,,,GHSA-25h7-pfq9-p65f,,3.4.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-32141,flatted,3.3.3,High,,,,,,,,,,,GHSA-25h7-pfq9-p65f,,3.4.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2024-56332,next,13.4.19,Medium,,,,,,,,,,,GHSA-7m27-7ghc-44w9,,13.5.8,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-27980,next,13.4.19,Medium,,,,,,,,,,,GHSA-3x4c-7xq6-9pq8,,15.5.14,6.9,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N,4.0
+CVE-2026-27980,next,15.4.4,Medium,,,,,,,,,,,GHSA-3x4c-7xq6-9pq8,,15.5.14,6.9,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N,4.0
+CVE-2026-27980,next,16.1.6,Medium,,,,,,,,,,,GHSA-3x4c-7xq6-9pq8,,16.1.7,6.9,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N,4.0
+CVE-2026-33939,handlebars,4.7.8,High,,,,,,,,,,,GHSA-9cx6-37pm-9jff,,4.7.9,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-44494,axios,1.11.0,High,,,,,,,,,,,GHSA-35jp-ww65-95wh,,1.16.0,8.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N,3.1
+CVE-2023-4316,zod,3.21.4,Medium,,,,,,,,,,,GHSA-m95q-7qp3-xv42,,3.22.3,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-48779,ws,8.18.3,High,,,,,,,,,,,GHSA-96hv-2xvq-fx4p,,8.21.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-25679,stdlib,go1.20.12,High,,,,,,,,,,,,,1.25.8 | 1.26.1,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-25679,stdlib,go1.23.10,High,,,,,,,,,,,,,1.25.8 | 1.26.1,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-25679,stdlib,go1.23.12,High,,,,,,,,,,,,,1.25.8 | 1.26.1,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-25547,@isaacs/brace-expansion,5.0.0,High,,,,,,,,,,,GHSA-7h2j-956f-4vf2,,5.0.1,8.7,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N,4.0
+CVE-2026-27903,minimatch,10.1.1,High,,,,,,,,,,,GHSA-7r86-cg39-jmmj,,10.2.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-27903,minimatch,3.1.2,High,,,,,,,,,,,GHSA-7r86-cg39-jmmj,,3.1.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-27903,minimatch,9.0.0,High,,,,,,,,,,,GHSA-7r86-cg39-jmmj,,9.0.7,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-27903,minimatch,9.0.3,High,,,,,,,,,,,GHSA-7r86-cg39-jmmj,,9.0.7,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-27903,minimatch,9.0.5,High,,,,,,,,,,,GHSA-7r86-cg39-jmmj,,9.0.7,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2024-34155,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.22.7 | 1.23.1,4.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2023-46298,next,13.4.19,Low,,,,,,,,,,,GHSA-c59h-r6p8-q9wc,,13.4.20-canary.13,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2024-39693,next,13.4.19,High,,,,,,,,,,,GHSA-fq54-2j52-jc42,,13.5.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2024-47831,next,13.4.19,Medium,,,,,,,,,,,GHSA-g77x-44xx-532m,,14.2.7,5.9,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-4867,path-to-regexp,0.1.12,High,,,,,,,,,,,GHSA-37ch-88jc-xwx2,,0.1.13,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-61728,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.24.12 | 1.25.6,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H,3.1
+CVE-2025-61728,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.24.12 | 1.25.6,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H,3.1
+CVE-2025-61728,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.24.12 | 1.25.6,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H,3.1
+CVE-2026-22775,devalue,5.3.2,High,,,,,,,,,,,GHSA-g2pg-6438-jwpf,,5.6.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-22774,devalue,5.3.2,High,,,,,,,,,,,GHSA-vw5p-8cq8-m7mv,,5.6.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-2229,undici,7.22.0,High,,,,,,,,,,,GHSA-v9p9-hfj2-hcw8,,7.24.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-33128,h3,2.0.1-rc.14,High,,,,,,,,,,,GHSA-22cc-p3c6-wpvm,,2.0.1-rc.15,7.5,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:H/A:N,3.1
+CVE-2026-39820,stdlib,go1.20.12,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-39820,stdlib,go1.23.10,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-39820,stdlib,go1.23.12,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2024-24783,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.21.8 | 1.22.1,5.9,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N,3.1
+CVE-2026-27904,minimatch,10.1.1,High,,,,,,,,,,,GHSA-23c5-xmqv-rm74,,10.2.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-27904,minimatch,3.1.2,High,,,,,,,,,,,GHSA-23c5-xmqv-rm74,,3.1.4,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-27904,minimatch,9.0.0,High,,,,,,,,,,,GHSA-23c5-xmqv-rm74,,9.0.7,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-27904,minimatch,9.0.3,High,,,,,,,,,,,GHSA-23c5-xmqv-rm74,,9.0.7,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-27904,minimatch,9.0.5,High,,,,,,,,,,,GHSA-23c5-xmqv-rm74,,9.0.7,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-44240,basic-ftp,5.0.5,High,,,,,,,,,,,GHSA-rpmf-866q-6p89,,5.3.1,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-44579,next,15.4.4,High,,,,,,,,,,,GHSA-mg66-mrh9-m8jx,,15.5.16,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-44579,next,16.1.6,High,,,,,,,,,,,GHSA-mg66-mrh9-m8jx,,16.2.5,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2024-45336,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.22.11 | 1.23.5 | 1.24.0-rc.2,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-4926,path-to-regexp,8.3.0,High,,,,,,,,,,,GHSA-j3q9-mxjg-w52f,,8.4.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-30827,express-rate-limit,8.2.1,High,,,,,,,,,,,GHSA-46wh-pxpv-q5gq,,8.2.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-61729,stdlib,go1.20.12,High,,,,,,,,,,,,,1.24.11 | 1.25.5,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-61729,stdlib,go1.23.10,High,,,,,,,,,,,,,1.24.11 | 1.25.5,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-61729,stdlib,go1.23.12,High,,,,,,,,,,,,,1.24.11 | 1.25.5,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-32283,stdlib,go1.20.12,High,,,,,,,,,,,,,1.25.9 | 1.26.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-32283,stdlib,go1.23.10,High,,,,,,,,,,,,,1.25.9 | 1.26.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-32283,stdlib,go1.23.12,High,,,,,,,,,,,,,1.25.9 | 1.26.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-4673,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.23.10 | 1.24.4,6.8,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N,3.1
+CVE-2026-29045,hono,4.11.7,High,,,,,,,,,,,GHSA-q5qw-h33p-qvwr,,4.12.4,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2026-29045,hono,4.12.2,High,,,,,,,,,,,GHSA-q5qw-h33p-qvwr,,4.12.4,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2026-42211,react-router,7.12.0,High,,,,,,,,,,,GHSA-49rj-9fvp-4h2h,,7.14.2,8.1,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-27145,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.25.11 | 1.26.4,6.5,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H,3.1
+CVE-2026-27145,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.25.11 | 1.26.4,6.5,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H,3.1
+CVE-2026-27145,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.25.11 | 1.26.4,6.5,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H,3.1
+CVE-2026-12151,undici,7.22.0,High,,,,,,,,,,,GHSA-vxpw-j846-p89q,,7.28.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-53571,vite,5.4.14,High,,,,,,,,,,,GHSA-fx2h-pf6j-xcff,,6.4.3,8.2,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2026-53571,vite,5.4.19,High,,,,,,,,,,,GHSA-fx2h-pf6j-xcff,,6.4.3,8.2,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2026-53571,vite,7.3.2,High,,,,,,,,,,,GHSA-fx2h-pf6j-xcff,,7.3.5,8.2,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2025-58751,vite,5.4.14,Low,,,,,,,,,,,GHSA-g4jq-h2w9-997c,,5.4.20,2.3,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2025-58751,vite,5.4.19,Low,,,,,,,,,,,GHSA-g4jq-h2w9-997c,,5.4.20,2.3,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2024-55565,nanoid,3.3.6,Medium,,,,,,,,,,,GHSA-mwcw-c2x4-8c55,,3.3.8,4.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-33671,picomatch,2.3.1,High,,,,,,,,,,,GHSA-c2c7-rcm5-vvqj,,2.3.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-33671,picomatch,4.0.3,High,,,,,,,,,,,GHSA-c2c7-rcm5-vvqj,,4.0.4,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-2581,undici,7.22.0,Medium,,,,,,,,,,,GHSA-phc3-fgpg-7m6h,,7.24.0,5.9,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-42264,axios,1.11.0,High,,,,,,,,,,,GHSA-q8qp-cvcw-x6jj,,1.15.2,7.4,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N,3.1
+CVE-2026-44487,axios,1.11.0,High,,,,,,,,,,,GHSA-p92q-9vqr-4j8v,,1.16.0,8.2,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2026-42043,axios,1.11.0,High,,,,,,,,,,,GHSA-pmwg-cvhr-8vh7,,1.15.1,7.2,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N,3.1
+CVE-2026-44574,next,15.4.4,High,,,,,,,,,,,GHSA-492v-c6pp-mqqv,,15.5.16,8.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N,3.1
+CVE-2026-44574,next,16.1.6,High,,,,,,,,,,,GHSA-492v-c6pp-mqqv,,16.2.5,8.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N,3.1
+CVE-2026-6321,fast-uri,3.1.0,High,,,,,,,,,,,GHSA-q3j6-qgpj-74h6,,3.1.1,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N,3.1
+CVE-2026-42035,axios,1.11.0,High,,,,,,,,,,,GHSA-6chq-wfr3-2hj9,,1.15.1,7.4,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N,3.1
+CVE-2026-39408,hono,4.11.7,Medium,,,,,,,,,,,GHSA-xf4j-xp2r-rqqx,,4.12.12,5.9,CVSS:4.0/AV:L/AC:H/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2026-39408,hono,4.12.2,Medium,,,,,,,,,,,GHSA-xf4j-xp2r-rqqx,,4.12.12,5.9,CVSS:4.0/AV:L/AC:H/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2026-45109,next,15.4.4,High,,,,,,,,,,,GHSA-26hh-7cqf-hhc6,,15.5.18,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2026-45109,next,16.1.6,High,,,,,,,,,,,GHSA-26hh-7cqf-hhc6,,16.2.6,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2026-33131,h3,2.0.1-rc.14,High,,,,,,,,,,,GHSA-3vj8-jmxq-cgj5,,2.0.1-rc.15,7.4,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N,3.1
+CVE-2026-27979,next,16.1.6,Medium,,,,,,,,,,,GHSA-h27x-g6w4-24gq,,16.1.7,6.9,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N,4.0
+CVE-2026-42033,axios,1.11.0,High,,,,,,,,,,,GHSA-pf86-5x62-jrwf,,1.15.1,7.4,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N,3.1
+CVE-2026-32280,stdlib,go1.20.12,High,,,,,,,,,,,,,1.25.9 | 1.26.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-32280,stdlib,go1.23.10,High,,,,,,,,,,,,,1.25.9 | 1.26.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-32280,stdlib,go1.23.12,High,,,,,,,,,,,,,1.25.9 | 1.26.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-1525,undici,7.22.0,Medium,,,,,,,,,,,GHSA-2mjp-6q6p-2qxm,,7.24.0,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L,3.1
+CVE-2025-47906,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.23.12 | 1.24.6,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L,3.1
+CVE-2025-47906,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.23.12 | 1.24.6,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L,3.1
+CVE-2025-61731,stdlib,go1.20.12,High,,,,,,,,,,,,,1.24.12 | 1.25.6,7.8,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2025-61731,stdlib,go1.23.10,High,,,,,,,,,,,,,1.24.12 | 1.25.6,7.8,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2025-61731,stdlib,go1.23.12,High,,,,,,,,,,,,,1.24.12 | 1.25.6,7.8,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2025-58187,stdlib,go1.20.12,High,,,,,,,,,,,,,1.24.9 | 1.25.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-58187,stdlib,go1.23.10,High,,,,,,,,,,,,,1.24.9 | 1.25.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-58187,stdlib,go1.23.12,High,,,,,,,,,,,,,1.24.9 | 1.25.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-44705,tmp,0.0.33,High,,,,,,,,,,,GHSA-ph9p-34f9-6g65,,0.2.6,7.7,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:P,4.0
+CVE-2025-27789,@babel/helpers,7.26.9,Medium,,,,,,,,,,,GHSA-968p-4wvh-cqc8,,7.26.10,6.2,CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-27789,@babel/runtime,7.22.15,Medium,,,,,,,,,,,GHSA-968p-4wvh-cqc8,,7.26.10,6.2,CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-44573,next,13.4.19,High,,,,,,,,,,,GHSA-36qx-fr4f-26g5,,15.5.16,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2026-44573,next,15.4.4,High,,,,,,,,,,,GHSA-36qx-fr4f-26g5,,15.5.16,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2026-44573,next,16.1.6,High,,,,,,,,,,,GHSA-36qx-fr4f-26g5,,16.2.5,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2026-32281,stdlib,go1.20.12,High,,,,,,,,,,,,,1.25.9 | 1.26.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-32281,stdlib,go1.23.10,High,,,,,,,,,,,,,1.25.9 | 1.26.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-32281,stdlib,go1.23.12,High,,,,,,,,,,,,,1.25.9 | 1.26.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-44496,axios,1.11.0,High,,,,,,,,,,,GHSA-hfxv-24rg-xrqf,,1.16.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-44488,axios,1.11.0,High,,,,,,,,,,,GHSA-777c-7fjr-54vf,,1.16.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-58188,stdlib,go1.20.12,High,,,,,,,,,,,,,1.24.8 | 1.25.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-58188,stdlib,go1.23.10,High,,,,,,,,,,,,,1.24.8 | 1.25.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-58188,stdlib,go1.23.12,High,,,,,,,,,,,,,1.24.8 | 1.25.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-58186,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2025-58186,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2025-58186,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-1528,undici,7.22.0,High,,,,,,,,,,,GHSA-f269-vfmq-vjvj,,7.24.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-12143,form-data,4.0.4,High,,,,,,,,,,,GHSA-hmw2-7cc7-3qxx,,4.0.6,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N,3.1
+CVE-2025-58185,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2025-61724,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2025-58185,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2025-61724,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2025-58185,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2025-61724,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-42039,axios,1.11.0,Medium,,,,,,,,,,,GHSA-62hf-57xw-28j9,,1.15.1,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-41324,basic-ftp,5.0.5,High,,,,,,,,,,,GHSA-rp42-5vxx-qpwr,,5.3.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-33750,brace-expansion,1.1.11,Medium,,,,,,,,,,,GHSA-f886-m6hf-6m8v,,1.1.13,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H,3.1
+CVE-2026-33750,brace-expansion,1.1.12,Medium,,,,,,,,,,,GHSA-f886-m6hf-6m8v,,1.1.13,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H,3.1
+CVE-2026-33750,brace-expansion,2.0.1,Medium,,,,,,,,,,,GHSA-f886-m6hf-6m8v,,2.0.3,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H,3.1
+CVE-2026-33750,brace-expansion,2.0.2,Medium,,,,,,,,,,,GHSA-f886-m6hf-6m8v,,2.0.3,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H,3.1
+CVE-2026-33750,brace-expansion,5.0.3,Medium,,,,,,,,,,,GHSA-f886-m6hf-6m8v,,5.0.5,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H,3.1
+CVE-2026-45772,@turbo/workspaces,2.8.7,Low,,,,,,,,,,,GHSA-3qcw-2rhx-2726,,2.9.14,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-45772,turbo,1.13.4,Low,,,,,,,,,,,GHSA-3qcw-2rhx-2726,,2.9.14,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-45772,turbo,2.8.7,Low,,,,,,,,,,,GHSA-3qcw-2rhx-2726,,2.9.14,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-45772,turbo,2.9.4,Low,,,,,,,,,,,GHSA-3qcw-2rhx-2726,,2.9.14,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-29087,@hono/node-server,1.19.9,High,,,,,,,,,,,GHSA-wc8c-qw6v-h7f6,,1.19.10,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2024-45341,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.22.11 | 1.23.5 | 1.24.0-rc.2,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2025-59471,next,13.4.19,Medium,,,,,,,,,,,GHSA-9g9p-9gw9-jx7f,,15.5.10,5.9,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-59471,next,15.4.4,Medium,,,,,,,,,,,GHSA-9g9p-9gw9-jx7f,,15.5.10,5.9,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-44486,axios,1.11.0,High,,,,,,,,,,,GHSA-j5f8-grm9-p9fc,,1.16.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2026-29057,next,13.4.19,Medium,,,,,,,,,,,GHSA-ggv3-7p47-pfv8,,15.5.13,6.3,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2026-29057,next,15.4.4,Medium,,,,,,,,,,,GHSA-ggv3-7p47-pfv8,,15.5.13,6.3,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2026-29057,next,16.1.6,Medium,,,,,,,,,,,GHSA-ggv3-7p47-pfv8,,16.1.7,6.3,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2025-47907,stdlib,go1.20.12,High,,,,,,,,,,,,,1.23.12 | 1.24.6,7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:L,3.1
+CVE-2025-47907,stdlib,go1.23.10,High,,,,,,,,,,,,,1.23.12 | 1.24.6,7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:L,3.1
+CVE-2025-55173,next,13.4.19,Medium,,,,,,,,,,,GHSA-xv57-4mr9-wg8v,,14.2.31,4.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N,3.1
+CVE-2025-55173,next,15.4.4,Medium,,,,,,,,,,,GHSA-xv57-4mr9-wg8v,,15.4.5,4.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N,3.1
+CVE-2026-39407,hono,4.11.7,Medium,,,,,,,,,,,GHSA-wmmm-f939-6g9c,,4.12.12,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-39407,hono,4.12.2,Medium,,,,,,,,,,,GHSA-wmmm-f939-6g9c,,4.12.12,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2024-24789,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.21.11 | 1.22.4,5.5,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N,3.1
+CVE-2026-33941,handlebars,4.7.8,High,,,,,,,,,,,GHSA-xjpj-3mr7-gcpf,,4.7.9,8.2,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H,3.1
+CVE-2026-42342,react-router,7.12.0,High,,,,,,,,,,,GHSA-8x6r-g9mw-2r78,,7.15.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-45736,ws,8.18.3,Medium,,,,,,,,,,,GHSA-58qx-3vcg-4xpx,,8.20.1,4.4,CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2026-34077,react-router,7.12.0,High,,,,,,,,,,,GHSA-rxv8-25v2-qmq8,,7.14.0,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-33532,yaml,2.3.2,Medium,,,,,,,,,,,GHSA-48c2-rrv3-qjmp,,2.8.3,4.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-33532,yaml,2.8.1,Medium,,,,,,,,,,,GHSA-48c2-rrv3-qjmp,,2.8.3,4.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-42036,axios,1.11.0,Medium,,,,,,,,,,,GHSA-vf2m-468p-8v99,,1.15.1,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-44577,next,13.4.19,Medium,,,,,,,,,,,GHSA-h64f-5h5j-jqjh,,15.5.16,5.9,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-44577,next,15.4.4,Medium,,,,,,,,,,,GHSA-h64f-5h5j-jqjh,,15.5.16,5.9,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-44577,next,16.1.6,Medium,,,,,,,,,,,GHSA-h64f-5h5j-jqjh,,16.2.5,5.9,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-69873,ajv,6.12.6,Medium,,,,,,,,,,,GHSA-2g4f-4pwh-qvx6,,6.14.0,5.5,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:P,4.0
+CVE-2025-69873,ajv,8.17.1,Medium,,,,,,,,,,,GHSA-2g4f-4pwh-qvx6,,8.18.0,5.5,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:P,4.0
+CVE-2025-47912,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2025-47912,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2025-47912,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2025-58189,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2025-58189,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2025-58189,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2025-32421,next,13.4.19,Low,,,,,,,,,,,GHSA-qpjv-v59x-3qc4,,14.2.24,3.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-33672,picomatch,2.3.1,Medium,,,,,,,,,,,GHSA-3v7f-55p6-f55p,,2.3.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-33672,picomatch,4.0.3,Medium,,,,,,,,,,,GHSA-3v7f-55p6-f55p,,4.0.4,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-30226,devalue,5.3.2,Medium,,,,,,,,,,,GHSA-cfw5-2vxh-hr84,,5.6.4,6.3,CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N,4.0
+CVE-2026-6322,fast-uri,3.1.0,High,,,,,,,,,,,GHSA-v39h-62p7-jpjc,,3.1.2,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N,3.1
+CVE-2026-39826,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.25.10 | 1.26.3,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-39826,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.25.10 | 1.26.3,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-39826,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.25.10 | 1.26.3,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2025-4674,stdlib,go1.20.12,High,,,,,,,,,,,,,1.23.11 | 1.24.5,8.6,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,3.1
+CVE-2025-4674,stdlib,go1.23.10,High,,,,,,,,,,,,,1.23.11 | 1.24.5,8.6,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,3.1
+CVE-2026-44373,nitro,3.0.260311-beta,Medium,,,,,,,,,,,GHSA-5w89-w975-hf9q,,3.0.260429-beta,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-39825,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.25.10 | 1.26.3,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-39825,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.25.10 | 1.26.3,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-39825,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.25.10 | 1.26.3,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-39406,@hono/node-server,1.19.9,Medium,,,,,,,,,,,GHSA-92pp-h63x-v22m,,1.19.13,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-4923,path-to-regexp,8.3.0,Medium,,,,,,,,,,,GHSA-27v5-c462-wpq7,,8.4.0,5.9,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2026-42507,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.25.11 | 1.26.4,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-42507,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.25.11 | 1.26.4,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-42507,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.25.11 | 1.26.4,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2025-64718,js-yaml,3.14.1,Medium,,,,,,,,,,,GHSA-mh29-5h37-fv8m,,3.14.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2025-64718,js-yaml,4.1.0,Medium,,,,,,,,,,,GHSA-mh29-5h37-fv8m,,4.1.1,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-27144,stdlib,go1.20.12,High,,,,,,,,,,,,,1.25.9 | 1.26.2,7.1,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,3.1
+CVE-2026-27144,stdlib,go1.23.10,High,,,,,,,,,,,,,1.25.9 | 1.26.2,7.1,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,3.1
+CVE-2026-27144,stdlib,go1.23.12,High,,,,,,,,,,,,,1.25.9 | 1.26.2,7.1,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,3.1
+CVE-2026-8723,qs,6.14.1,Medium,,,,,,,,,,,GHSA-q8mj-m7cp-5q26,,6.15.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-8723,qs,6.14.2,Medium,,,,,,,,,,,GHSA-q8mj-m7cp-5q26,,6.15.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-8723,qs,6.15.0,Medium,,,,,,,,,,,GHSA-q8mj-m7cp-5q26,,6.15.2,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2025-13465,lodash,4.17.21,Medium,,,,,,,,,,,GHSA-xxjr-mmjv-4gpg,,4.17.23,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L,3.1
+CVE-2026-39409,hono,4.11.7,Medium,,,,,,,,,,,GHSA-xpcf-pg52-r92g,,4.12.12,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-39409,hono,4.12.2,Medium,,,,,,,,,,,GHSA-xpcf-pg52-r92g,,4.12.12,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-27142,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.25.8 | 1.26.1,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-27142,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.25.8 | 1.26.1,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-27142,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.25.8 | 1.26.1,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2025-57752,next,13.4.19,Medium,,,,,,,,,,,GHSA-g5qg-72qw-gw5v,,14.2.31,6.2,CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2025-57752,next,15.4.4,Medium,,,,,,,,,,,GHSA-g5qg-72qw-gw5v,,15.4.5,6.2,CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2026-54290,hono,4.11.7,High,,,,,,,,,,,GHSA-88fw-hqm2-52qc,,4.12.25,7.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N,3.1
+CVE-2026-54290,hono,4.12.2,High,,,,,,,,,,,GHSA-88fw-hqm2-52qc,,4.12.25,7.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N,3.1
+CVE-2025-22870,stdlib,go1.20.12,Medium,,,,,,,,,,,GHSA-qxp5-gwg8-xv66,,1.23.7 | 1.24.1,4.4,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L,3.1
+CVE-2026-9678,undici,7.22.0,Medium,,,,,,,,,,,GHSA-pr7r-676h-xcf6,,7.28.0,5.9,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2025-58183,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,4.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L,3.1
+CVE-2025-58183,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,4.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L,3.1
+CVE-2025-58183,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.24.8 | 1.25.2,4.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L,3.1
+CVE-2026-42038,axios,1.11.0,Medium,,,,,,,,,,,GHSA-m7pr-hjqh-92cm,,1.15.1,6.8,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N,3.1
+CVE-2026-25536,@modelcontextprotocol/sdk,1.25.3,High,,,,,,,,,,,GHSA-345p-7cg4-v4c7,,1.26.0,7.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N,3.1
+CVE-2026-39823,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.25.10 | 1.26.3,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-39823,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.25.10 | 1.26.3,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-39823,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.25.10 | 1.26.3,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-42501,stdlib,go1.20.12,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H,3.1
+CVE-2026-42501,stdlib,go1.23.10,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H,3.1
+CVE-2026-42501,stdlib,go1.23.12,High,,,,,,,,,,,,,1.25.10 | 1.26.3,7.5,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H,3.1
+CVE-2026-2950,lodash,4.17.21,Medium,,,,,,,,,,,GHSA-f23m-r3pf-42rh,,4.18.0,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L,3.1
+CVE-2026-2950,lodash,4.17.23,Medium,,,,,,,,,,,GHSA-f23m-r3pf-42rh,,4.18.0,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L,3.1
+CVE-2026-53632,vite,5.4.14,Medium,,,,,,,,,,,GHSA-v6wh-96g9-6wx3,,6.4.3,5.5,CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H,4.0
+CVE-2026-53632,vite,5.4.19,Medium,,,,,,,,,,,GHSA-v6wh-96g9-6wx3,,6.4.3,5.5,CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H,4.0
+CVE-2026-53632,vite,7.3.2,Medium,,,,,,,,,,,GHSA-v6wh-96g9-6wx3,,7.3.5,5.5,CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H,4.0
+CVE-2026-42034,axios,1.11.0,Medium,,,,,,,,,,,GHSA-5c9x-8gcm-mpgx,,1.15.1,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-32282,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.25.9 | 1.26.2,6.4,CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-32282,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.25.9 | 1.26.2,6.4,CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-32282,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.25.9 | 1.26.2,6.4,CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2025-61732,stdlib,go1.20.12,High,,,,,,,,,,,,,1.24.13 | 1.25.7,8.6,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,3.1
+CVE-2025-61732,stdlib,go1.23.10,High,,,,,,,,,,,,,1.24.13 | 1.25.7,8.6,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,3.1
+CVE-2025-61732,stdlib,go1.23.12,High,,,,,,,,,,,,,1.24.13 | 1.25.7,8.6,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,3.1
+CVE-2026-44495,axios,1.11.0,High,,,,,,,,,,,GHSA-3g43-6gmg-66jw,,1.15.2,7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:L,3.1
+CVE-2026-32289,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.25.9 | 1.26.2,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-32289,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.25.9 | 1.26.2,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-32289,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.25.9 | 1.26.2,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-2391,qs,6.14.1,Low,,,,,,,,,,,GHSA-w7fw-mjwx-w883,,6.14.2,3.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-45149,brace-expansion,5.0.3,Medium,,,,,,,,,,,GHSA-jxxr-4gwj-5jf2,,5.0.6,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H,3.1
+CVE-2026-54286,hono,4.11.7,Medium,,,,,,,,,,,GHSA-wwfh-h76j-fc44,,4.12.25,5.9,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2026-54286,hono,4.12.2,Medium,,,,,,,,,,,GHSA-wwfh-h76j-fc44,,4.12.25,5.9,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2025-58752,vite,5.4.14,Low,,,,,,,,,,,GHSA-jqfw-vq24-v9c3,,5.4.20,2.3,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2025-58752,vite,5.4.19,Low,,,,,,,,,,,GHSA-jqfw-vq24-v9c3,,5.4.20,2.3,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2025-61727,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.24.11 | 1.25.5,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2025-61727,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.24.11 | 1.25.5,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2025-61727,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.24.11 | 1.25.5,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-42044,axios,1.11.0,Medium,,,,,,,,,,,GHSA-3w6x-2g7m-8v23,,1.15.2,6.5,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:N,3.1
+CVE-2026-32288,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.25.9 | 1.26.2,5.5,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H,3.1
+CVE-2026-32288,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.25.9 | 1.26.2,5.5,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H,3.1
+CVE-2026-32288,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.25.9 | 1.26.2,5.5,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H,3.1
+CVE-2026-24001,diff,8.0.2,Low,,,,,,,,,,,GHSA-73rr-hh4g-fpgx,,8.0.3,2.7,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U,4.0
+CVE-2026-33245,react-router,7.12.0,High,,,,,,,,,,,GHSA-8646-j5j9-6r62,,7.13.2,8,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:N,3.1
+CVE-2025-61730,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.24.12 | 1.25.6,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2025-61730,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.24.12 | 1.25.6,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2025-61730,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.24.12 | 1.25.6,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-42041,axios,1.11.0,Medium,,,,,,,,,,,GHSA-w9j2-pvgh-6h63,,1.15.1,4.8,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-44490,axios,1.11.0,Medium,,,,,,,,,,,GHSA-898c-q2cr-xwhg,,1.16.0,4.8,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L,3.1
+CVE-2026-9679,undici,7.22.0,Medium,,,,,,,,,,,GHSA-p88m-4jfj-68fv,,7.28.0,5.9,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N,3.1
+CVE-2025-66400,mdast-util-to-hast,13.2.0,Medium,,,,,,,,,,,GHSA-4fh9-h7wg-q85m,,13.2.1,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-39410,hono,4.11.7,Medium,,,,,,,,,,,GHSA-r5rp-j6wh-rvv4,,4.12.12,4.8,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-39410,hono,4.12.2,Medium,,,,,,,,,,,GHSA-r5rp-j6wh-rvv4,,4.12.12,4.8,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-29085,hono,4.11.7,Medium,,,,,,,,,,,GHSA-p6xx-57qc-3wxr,,4.12.4,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-29085,hono,4.12.2,Medium,,,,,,,,,,,GHSA-p6xx-57qc-3wxr,,4.12.4,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-47676,hono,4.11.7,Medium,,,,,,,,,,,GHSA-2gcr-mfcq-wcc3,,4.12.21,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-47676,hono,4.12.2,Medium,,,,,,,,,,,GHSA-2gcr-mfcq-wcc3,,4.12.21,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-42338,ip-address,10.0.1,Medium,,,,,,,,,,,GHSA-v2v4-37r5-5v8g,,10.1.1,5.3,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2026-42338,ip-address,9.0.5,Medium,,,,,,,,,,,GHSA-v2v4-37r5-5v8g,,10.1.1,5.3,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2026-44576,next,15.4.4,Medium,,,,,,,,,,,GHSA-wfc6-r584-vfw7,,15.5.16,5.4,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:L/A:L,3.1
+CVE-2026-44576,next,16.1.6,Medium,,,,,,,,,,,GHSA-wfc6-r584-vfw7,,16.2.5,5.4,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:L/A:L,3.1
+CVE-2026-53550,js-yaml,3.14.1,Medium,,,,,,,,,,,GHSA-h67p-54hq-rp68,,4.2.0,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-53550,js-yaml,3.14.2,Medium,,,,,,,,,,,GHSA-h67p-54hq-rp68,,4.2.0,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-53550,js-yaml,4.1.0,Medium,,,,,,,,,,,GHSA-h67p-54hq-rp68,,4.2.0,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-53550,js-yaml,4.1.1,Medium,,,,,,,,,,,GHSA-h67p-54hq-rp68,,4.2.0,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-44372,nitro,3.0.260311-beta,Medium,,,,,,,,,,,GHSA-9phm-9p8f-hw5m,,3.0.260429-beta,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2025-0913,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.23.10 | 1.23.10 | 1.24.4 | 1.24.4,5.5,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N,3.1
+CVE-2026-44456,hono,4.11.7,Medium,,,,,,,,,,,GHSA-9vqf-7f2p-gf9v,,4.12.16,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-44456,hono,4.12.2,Medium,,,,,,,,,,,GHSA-9vqf-7f2p-gf9v,,4.12.16,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-47674,hono,4.11.7,Medium,,,,,,,,,,,GHSA-xrhx-7g5j-rcj5,,4.12.21,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-47674,hono,4.12.2,Medium,,,,,,,,,,,GHSA-xrhx-7g5j-rcj5,,4.12.21,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-42037,axios,1.11.0,Medium,,,,,,,,,,,GHSA-445q-vr5w-6q77,,1.15.1,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-1527,undici,7.22.0,Medium,,,,,,,,,,,GHSA-4992-7rv2-5pvq,,7.24.0,4.6,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N,3.1
+CVE-2025-22866,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.22.12 | 1.23.6 | 1.24.0-rc.3,4,CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-33732,srvx,0.11.8,Medium,,,,,,,,,,,GHSA-p36q-q72m-gchr,,0.11.13,4.8,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-42042,axios,1.11.0,Medium,,,,,,,,,,,GHSA-xx6v-rp6x-q39c,,1.15.1,5.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N,3.1
+CVE-2025-5889,brace-expansion,1.1.11,Low,,,,,,,,,,,GHSA-v6h2-p8h4-qcjw,,1.1.12,3.1,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2025-5889,brace-expansion,2.0.1,Low,,,,,,,,,,,GHSA-v6h2-p8h4-qcjw,,2.0.2,3.1,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-44580,next,13.4.19,Medium,,,,,,,,,,,GHSA-gx5p-jg67-6x7h,,15.5.16,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-44580,next,15.4.4,Medium,,,,,,,,,,,GHSA-gx5p-jg67-6x7h,,15.5.16,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-44580,next,16.1.6,Medium,,,,,,,,,,,GHSA-gx5p-jg67-6x7h,,16.2.5,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-41305,postcss,8.4.14,Medium,,,,,,,,,,,GHSA-qx2v-qp2m-jg93,,8.5.10,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-41305,postcss,8.4.30,Medium,,,,,,,,,,,GHSA-qx2v-qp2m-jg93,,8.5.10,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-41305,postcss,8.4.31,Medium,,,,,,,,,,,GHSA-qx2v-qp2m-jg93,,8.5.10,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-41305,postcss,8.5.3,Medium,,,,,,,,,,,GHSA-qx2v-qp2m-jg93,,8.5.10,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-41305,postcss,8.5.6,Medium,,,,,,,,,,,GHSA-qx2v-qp2m-jg93,,8.5.10,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-41305,postcss,8.5.8,Medium,,,,,,,,,,,GHSA-qx2v-qp2m-jg93,,8.5.10,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-33916,handlebars,4.7.8,Medium,,,,,,,,,,,GHSA-2qvq-rjwj-gvw9,,4.7.9,4.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-29086,hono,4.11.7,Medium,,,,,,,,,,,GHSA-5pq2-9x2x-5p6w,,4.12.4,5.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N,3.1
+CVE-2026-29086,hono,4.12.2,Medium,,,,,,,,,,,GHSA-5pq2-9x2x-5p6w,,4.12.4,5.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N,3.1
+CVE-2026-44581,next,13.4.19,Medium,,,,,,,,,,,GHSA-ffhc-5mcf-pf4q,,15.5.16,4.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-44581,next,15.4.4,Medium,,,,,,,,,,,GHSA-ffhc-5mcf-pf4q,,15.5.16,4.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-44581,next,16.1.6,Medium,,,,,,,,,,,GHSA-ffhc-5mcf-pf4q,,16.2.5,4.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-27978,next,16.1.6,Medium,,,,,,,,,,,GHSA-mq59-m269-xvcx,,16.1.7,5.3,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2026-44457,hono,4.11.7,Medium,,,,,,,,,,,GHSA-p77w-8qqv-26rm,,4.12.18,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-44457,hono,4.12.2,Medium,,,,,,,,,,,GHSA-p77w-8qqv-26rm,,4.12.18,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-47675,hono,4.11.7,Medium,,,,,,,,,,,GHSA-3hrh-pfw6-9m5x,,4.12.21,4.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N,3.1
+CVE-2026-47675,hono,4.12.2,Medium,,,,,,,,,,,GHSA-3hrh-pfw6-9m5x,,4.12.21,4.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N,3.1
+CVE-2026-47673,hono,4.11.7,Medium,,,,,,,,,,,GHSA-f577-qrjj-4474,,4.12.21,4.8,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-47673,hono,4.12.2,Medium,,,,,,,,,,,GHSA-f577-qrjj-4474,,4.12.21,4.8,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-54287,hono,4.11.7,Medium,,,,,,,,,,,GHSA-j6c9-x7qj-28xf,,4.12.25,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-54287,hono,4.12.2,Medium,,,,,,,,,,,GHSA-j6c9-x7qj-28xf,,4.12.25,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-40181,react-router,7.12.0,Medium,,,,,,,,,,,GHSA-2j2x-hqr9-3h42,,7.14.1,6.6,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:U,4.0
+CVE-2026-39817,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.25.10 | 1.26.3,5.9,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:N/I:H/A:N,3.1
+CVE-2026-39817,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.25.10 | 1.26.3,5.9,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:N/I:H/A:N,3.1
+CVE-2026-39817,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.25.10 | 1.26.3,5.9,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:N/I:H/A:N,3.1
+CVE-2026-39819,stdlib,go1.20.12,Medium,,,,,,,,,,,,,1.25.10 | 1.26.3,5.3,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:N,3.1
+CVE-2026-39819,stdlib,go1.23.10,Medium,,,,,,,,,,,,,1.25.10 | 1.26.3,5.3,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:N,3.1
+CVE-2026-39819,stdlib,go1.23.12,Medium,,,,,,,,,,,,,1.25.10 | 1.26.3,5.3,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:N,3.1
+CVE-2026-44458,hono,4.11.7,Medium,,,,,,,,,,,GHSA-qp7p-654g-cw7p,,4.12.18,4.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N,3.1
+CVE-2026-44458,hono,4.12.2,Medium,,,,,,,,,,,GHSA-qp7p-654g-cw7p,,4.12.18,4.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N,3.1
+CVE-2025-54798,tmp,0.0.33,Low,,,,,,,,,,,GHSA-52f5-9888-hmc6,,0.2.4,2.5,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-11525,undici,7.22.0,Low,,,,,,,,,,,GHSA-g8m3-5g58-fq7m,,7.28.0,3.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2025-22873,stdlib,go1.20.12,Low,,,,,,,,,,,,,1.23.9 | 1.24.3,3.8,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N,3.1
+CVE-2026-33490,h3,2.0.1-rc.14,Low,,,,,,,,,,,GHSA-2j6q-whv2-gh6w,,2.0.1-rc.17,3.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-6733,undici,7.22.0,Low,,,,,,,,,,,GHSA-35p6-xmwp-9g52,,7.28.0,3.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-33244,react-router,7.12.0,Medium,,,,,,,,,,,GHSA-f22v-gfqf-p8f3,,7.13.2,5.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-44459,hono,4.11.7,Low,,,,,,,,,,,GHSA-hm8q-7f3q-5f36,,4.12.18,3.8,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-44459,hono,4.12.2,Low,,,,,,,,,,,GHSA-hm8q-7f3q-5f36,,4.12.18,3.8,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-42040,axios,1.11.0,Low,,,,,,,,,,,GHSA-xhjh-pmcv-23jw,,1.15.1,3.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-44582,next,13.4.19,Low,,,,,,,,,,,GHSA-vfv6-92ff-j949,,15.5.16,3.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-44582,next,15.4.4,Low,,,,,,,,,,,GHSA-vfv6-92ff-j949,,15.5.16,3.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-44582,next,16.1.6,Low,,,,,,,,,,,GHSA-vfv6-92ff-j949,,16.2.5,3.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-44455,hono,4.11.7,Medium,,,,,,,,,,,GHSA-69xw-7hcm-h432,,4.12.16,4.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-44455,hono,4.12.2,Medium,,,,,,,,,,,GHSA-69xw-7hcm-h432,,4.12.16,4.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-44572,next,13.4.19,Low,,,,,,,,,,,GHSA-3g8h-86w9-wvmq,,15.5.16,3.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-44572,next,15.4.4,Low,,,,,,,,,,,GHSA-3g8h-86w9-wvmq,,15.5.16,3.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-44572,next,16.1.6,Low,,,,,,,,,,,GHSA-3g8h-86w9-wvmq,,16.2.5,3.7,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1
+CVE-2026-45773,turbo,1.13.4,Medium,,,,,,,,,,,GHSA-hcf7-66rw-9f5r,,2.9.14,5.1,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:L/VA:N/SC:L/SI:H/SA:N,4.0
+CVE-2026-45773,turbo,2.8.7,Medium,,,,,,,,,,,GHSA-hcf7-66rw-9f5r,,2.9.14,5.1,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:L/VA:N/SC:L/SI:H/SA:N,4.0
+CVE-2026-45773,turbo,2.9.4,Medium,,,,,,,,,,,GHSA-hcf7-66rw-9f5r,,2.9.14,5.1,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:L/VA:N/SC:L/SI:H/SA:N,4.0
+CVE-2026-54288,hono,4.11.7,Medium,,,,,,,,,,,GHSA-rv63-4mwf-qqc2,,4.12.25,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-54288,hono,4.12.2,Medium,,,,,,,,,,,GHSA-rv63-4mwf-qqc2,,4.12.25,6.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-54289,hono,4.11.7,Medium,,,,,,,,,,,GHSA-wgpf-jwqj-8h8p,,4.12.25,4.8,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-54289,hono,4.12.2,Medium,,,,,,,,,,,GHSA-wgpf-jwqj-8h8p,,4.12.25,4.8,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,3.1
+CVE-2026-27139,stdlib,go1.20.12,Low,,,,,,,,,,,,,1.25.8 | 1.26.1,2.5,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-27139,stdlib,go1.23.10,Low,,,,,,,,,,,,,1.25.8 | 1.26.1,2.5,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-27139,stdlib,go1.23.12,Low,,,,,,,,,,,,,1.25.8 | 1.26.1,2.5,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2026-27977,next,16.1.6,Low,,,,,,,,,,,GHSA-jcc7-9wpm-mj36,,16.1.7,2.3,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2025-48068,next,13.4.19,Low,,,,,,,,,,,GHSA-3h52-269p-cp9r,,14.2.30,2.3,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:N/VA:N/SC:L/SI:N/SA:N,4.0
+CVE-2026-39824,golang.org/x/sys,v0.0.0-20220715151400-c0bba94af5f8,Low,,,,,,,,,,,,,0.44.0,3.3,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N,3.1
+CVE-2026-49356,@babel/core,7.26.9,Low,,,,,,,,,,,GHSA-4x5r-pxfx-6jf8,,7.29.6,3.2,CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:N/A:N,3.1
+CVE-2026-49356,@babel/core,7.28.0,Low,,,,,,,,,,,GHSA-4x5r-pxfx-6jf8,,7.29.6,3.2,CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:N/A:N,3.1
+CVE-2026-49356,@babel/core,7.29.0,Low,,,,,,,,,,,GHSA-4x5r-pxfx-6jf8,,7.29.6,3.2,CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:N/A:N,3.1
+CVE-2026-53663,react-router,7.12.0,Low,,,,,,,,,,,GHSA-84g9-w2xq-vcv6,,7.15.1,3.1,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N,3.1
+CVE-2026-47429,vitest,2.1.9,Critical,,,,,,,,,,,GHSA-5xrq-8626-4rwp,,3.2.6,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-56761,hono,4.11.7,Medium,,,,,,,,,,,GHSA-458j-xx4x-4375,,4.12.14,4.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N,3.1
+CVE-2026-56761,hono,4.12.2,Medium,,,,,,,,,,,GHSA-458j-xx4x-4375,,4.12.14,4.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N,3.1
+CVE-2026-48038,joi,17.13.3,Medium,,,,,,,,,,,GHSA-q7cg-457f-vx79,,17.13.4,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,3.1

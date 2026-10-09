@@ -1,0 +1,17 @@
+cve,package,version,severity,kev,kev_date_added,epss,epss_percentile,exploitdb,exploitdb_ids,commit_links,patch_links,fix_commits,repo_urls,ghsa_ids,introduced_versions,fixed_versions,cvss_base,cvss_vector,cvss_version
+CVE-2026-21441,urllib3,2.2.3,High,,,,,,,,,,,GHSA-38jv-5279-wg99,,2.6.3,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,3.1
+CVE-2025-66471,urllib3,2.2.3,High,,,,,,,,,,,GHSA-2xpw-w6gg-jr37,,2.6.0,8.9,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H,4.0
+CVE-2025-66418,urllib3,2.2.3,High,,,,,,,,,,,GHSA-gm62-xv2j-4w53,,2.6.0,8.9,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H,4.0
+CVE-2026-44307,mako,1.3.7,High,,,,,,,,,,,GHSA-2h4p-vjrc-8xpq,,1.3.12,8.7,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2025-43859,h11,0.14.0,Critical,,,,,,,,,,,GHSA-vqfr-h8mv-ghfj,,0.16.0,9.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,3.1
+CVE-2024-47081,requests,2.32.3,Medium,,,,,,,,,,,GHSA-9hjg-9r4m-mvj7,,2.32.4,5.3,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N,3.1
+CVE-2026-44431,urllib3,2.2.3,High,,,,,,,,,,,GHSA-qccp-gfcp-xxvc,,2.7.0,5.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,3.1
+CVE-2024-56326,jinja2,3.1.4,Medium,,,,,,,,,,,GHSA-q2x7-8rv6-6q7h,,3.1.5,7.8,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2026-41205,mako,1.3.7,High,,,,,,,,,,,GHSA-v92g-xgxw-vvmm,,1.3.11,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2026-45409,idna,3.10,Medium,,,,,,,,,,,GHSA-65pc-fj4g-8rjx,,3.15,6.9,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N,4.0
+CVE-2025-27516,jinja2,3.1.4,Medium,,,,,,,,,,,GHSA-cpwx-vrp4-4pq7,,3.1.6,5.4,CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N,4.0
+CVE-2025-50181,urllib3,2.2.3,Medium,,,,,,,,,,,GHSA-pq67-6m6q-mj2v,,2.5.0,5.3,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2024-56201,jinja2,3.1.4,Medium,,,,,,,,,,,GHSA-gmj6-6f8f-6699,,3.1.5,8.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,3.1
+CVE-2025-50182,urllib3,2.2.3,Medium,,,,,,,,,,,GHSA-48p4-8xcf-vxj5,,2.5.0,5.3,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N,3.1
+CVE-2026-28684,python-dotenv,1.0.1,Medium,,,,,,,,,,,GHSA-mf9w-mj56-hr94,,1.2.2,6.6,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:H,3.1
+CVE-2026-25645,requests,2.32.3,Medium,,,,,,,,,,,GHSA-gc5v-m9x4-r6x2,,2.33.0,4.4,CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N,3.1

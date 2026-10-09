@@ -1,0 +1,1817 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "document_id": "reachable-callgraph-case_013-invokeai",
+  "product": "case_013",
+  "case_id": "case_013",
+  "repo_name": "invokeai",
+  "method": "reachability_only",
+  "generated": "2026-06-25T00:27:35.964445+00:00",
+  "relationships_file": "cases/case_013/output-callgraph/relationships.csv",
+  "callgraph_file": "",
+  "code_evidence": "cases/case_013/invokeai_report_code_evidence.json",
+  "callgraph_stats": {
+    "loaded": true,
+    "source": "csv",
+    "node_count": 17820,
+    "edge_count": 54038,
+    "entry_count": 1
+  },
+  "statements": [
+    {
+      "finding_id": "finding_001",
+      "vulnerability_id": "CVE-2024-7776",
+      "component": "onnx",
+      "version": "1.16.1",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component onnx is reachable from an entry point. Path: component::invokeai \u2192 invokeai/backend/onnx/onnx_runtime.py \u2192 external::onnxruntime",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/backend/onnx/onnx_runtime.py",
+        "external::onnxruntime"
+      ],
+      "matched_nodes": [
+        "external::onnx",
+        "external::onnxruntime",
+        "external::zmainoronnxmodel"
+      ],
+      "patch_summary": "onnx@1.16.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.678255+00:00"
+    },
+    {
+      "finding_id": "finding_002",
+      "vulnerability_id": "CVE-2026-27606",
+      "component": "rollup",
+      "version": "2.79.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "rollup was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "rollup installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.683147+00:00"
+    },
+    {
+      "finding_id": "finding_003",
+      "vulnerability_id": "CVE-2026-27606",
+      "component": "rollup",
+      "version": "4.54.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "rollup was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "rollup installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.686575+00:00"
+    },
+    {
+      "finding_id": "finding_004",
+      "vulnerability_id": "CVE-2024-5187",
+      "component": "onnx",
+      "version": "1.16.1",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component onnx is reachable from an entry point. Path: component::invokeai \u2192 invokeai/backend/onnx/onnx_runtime.py \u2192 external::onnxruntime",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/backend/onnx/onnx_runtime.py",
+        "external::onnxruntime"
+      ],
+      "matched_nodes": [
+        "external::onnx",
+        "external::onnxruntime",
+        "external::zmainoronnxmodel"
+      ],
+      "patch_summary": "onnx@1.16.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.689512+00:00"
+    },
+    {
+      "finding_id": "finding_005",
+      "vulnerability_id": "CVE-2026-4800",
+      "component": "lodash",
+      "version": "4.17.21",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "lodash was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "lodash installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.693124+00:00"
+    },
+    {
+      "finding_id": "finding_006",
+      "vulnerability_id": "CVE-2026-48710",
+      "component": "starlette",
+      "version": "0.48.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::invokeai \u2192 invokeai/app/api/no_cache_staticfiles.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/app/api/no_cache_staticfiles.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.48.0: buggy code present.",
+      "timestamp": "2026-06-25T00:27:35.695878+00:00"
+    },
+    {
+      "finding_id": "finding_007",
+      "vulnerability_id": "CVE-2024-23342",
+      "component": "ecdsa",
+      "version": "0.19.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "ecdsa was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "ecdsa@0.19.2 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.700432+00:00"
+    },
+    {
+      "finding_id": "finding_008",
+      "vulnerability_id": "CVE-2026-44513",
+      "component": "diffusers",
+      "version": "0.37.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component diffusers is reachable from an entry point. Path: component::invokeai \u2192 invokeai/backend/stable_diffusion/extensions/base.py \u2192 external::diffusers",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/backend/stable_diffusion/extensions/base.py",
+        "external::diffusers"
+      ],
+      "matched_nodes": [
+        "external::diffusers",
+        "external::diffusers-dir",
+        "external::nested-diffusers-dir",
+        "external::not-a-diffusers-dir",
+        "external::t2iadapter-diffusers-config-base",
+        "external::controlnet-diffusers-config-base",
+        "external::lora-diffusers-config-base",
+        "external::main-sd-diffusers-config-base",
+        "external::clipembed-diffusers-config-base",
+        "external::vae-diffusers-config-base",
+        "external::flux2diffusersmodels",
+        "external::diffusersmodels",
+        "external::availableqwenimagediffusers"
+      ],
+      "patch_summary": "diffusers@0.37.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.703366+00:00"
+    },
+    {
+      "finding_id": "finding_009",
+      "vulnerability_id": "CVE-2026-9277",
+      "component": "shell-quote",
+      "version": "1.8.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "shell-quote was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "shell-quote installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.706838+00:00"
+    },
+    {
+      "finding_id": "finding_010",
+      "vulnerability_id": "CVE-2026-33228",
+      "component": "flatted",
+      "version": "3.3.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "flatted was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "flatted installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.710286+00:00"
+    },
+    {
+      "finding_id": "finding_011",
+      "vulnerability_id": "CVE-2025-62727",
+      "component": "starlette",
+      "version": "0.48.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::invokeai \u2192 invokeai/app/api/no_cache_staticfiles.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/app/api/no_cache_staticfiles.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.48.0: buggy code present, patched code present.",
+      "timestamp": "2026-06-25T00:27:35.713235+00:00"
+    },
+    {
+      "finding_id": "finding_012",
+      "vulnerability_id": "CVE-2026-27489",
+      "component": "onnx",
+      "version": "1.16.1",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component onnx is reachable from an entry point. Path: component::invokeai \u2192 invokeai/backend/onnx/onnx_runtime.py \u2192 external::onnxruntime",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/backend/onnx/onnx_runtime.py",
+        "external::onnxruntime"
+      ],
+      "matched_nodes": [
+        "external::onnx",
+        "external::onnxruntime",
+        "external::zmainoronnxmodel"
+      ],
+      "patch_summary": "onnx@1.16.1: buggy code present, patched code present.",
+      "timestamp": "2026-06-25T00:27:35.715934+00:00"
+    },
+    {
+      "finding_id": "finding_013",
+      "vulnerability_id": "CVE-2026-26996",
+      "component": "minimatch",
+      "version": "3.1.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "minimatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "minimatch installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.719129+00:00"
+    },
+    {
+      "finding_id": "finding_014",
+      "vulnerability_id": "CVE-2026-26996",
+      "component": "minimatch",
+      "version": "5.1.6",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "minimatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "minimatch installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.722321+00:00"
+    },
+    {
+      "finding_id": "finding_015",
+      "vulnerability_id": "CVE-2026-26996",
+      "component": "minimatch",
+      "version": "9.0.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "minimatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "minimatch installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.725493+00:00"
+    },
+    {
+      "finding_id": "finding_016",
+      "vulnerability_id": "CVE-2026-33151",
+      "component": "socket.io-parser",
+      "version": "4.2.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "socket.io-parser was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "socket.io-parser installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.729185+00:00"
+    },
+    {
+      "finding_id": "finding_017",
+      "vulnerability_id": "CVE-2026-32141",
+      "component": "flatted",
+      "version": "3.3.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "flatted was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "flatted installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.732662+00:00"
+    },
+    {
+      "finding_id": "finding_018",
+      "vulnerability_id": "CVE-2026-48779",
+      "component": "ws",
+      "version": "8.18.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component ws is reachable from an entry point. Path: component::invokeai \u2192 invokeai/frontend/web/src/app/logging/logger.ts \u2192 external::@roarr/browser-log-writer",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/frontend/web/src/app/logging/logger.ts",
+        "external::@roarr/browser-log-writer"
+      ],
+      "matched_nodes": [
+        "external::workflows-dir",
+        "external::tile-and-image-rows",
+        "external::rows",
+        "external::workflowsdata",
+        "external::filteredworkflows",
+        "external::workflows",
+        "external::zworkflowsettingsstate",
+        "external::@roarr/browser-log-writer",
+        "external::workflows-from-file",
+        "external::workflows-to-update",
+        "external::workflows-to-add",
+        "external::windows",
+        "external::workflows-router",
+        "external::workflows-with-thumbnails"
+      ],
+      "patch_summary": "ws installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.735778+00:00"
+    },
+    {
+      "finding_id": "finding_019",
+      "vulnerability_id": "CVE-2026-48779",
+      "component": "ws",
+      "version": "8.20.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component ws is reachable from an entry point. Path: component::invokeai \u2192 invokeai/frontend/web/src/app/logging/logger.ts \u2192 external::@roarr/browser-log-writer",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/frontend/web/src/app/logging/logger.ts",
+        "external::@roarr/browser-log-writer"
+      ],
+      "matched_nodes": [
+        "external::workflows-dir",
+        "external::tile-and-image-rows",
+        "external::rows",
+        "external::workflowsdata",
+        "external::filteredworkflows",
+        "external::workflows",
+        "external::zworkflowsettingsstate",
+        "external::@roarr/browser-log-writer",
+        "external::workflows-from-file",
+        "external::workflows-to-update",
+        "external::workflows-to-add",
+        "external::windows",
+        "external::workflows-router",
+        "external::workflows-with-thumbnails"
+      ],
+      "patch_summary": "ws installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.738576+00:00"
+    },
+    {
+      "finding_id": "finding_020",
+      "vulnerability_id": "CVE-2026-27903",
+      "component": "minimatch",
+      "version": "3.1.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "minimatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "minimatch installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.741760+00:00"
+    },
+    {
+      "finding_id": "finding_021",
+      "vulnerability_id": "CVE-2026-27903",
+      "component": "minimatch",
+      "version": "5.1.6",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "minimatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "minimatch installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.745109+00:00"
+    },
+    {
+      "finding_id": "finding_022",
+      "vulnerability_id": "CVE-2026-27903",
+      "component": "minimatch",
+      "version": "9.0.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "minimatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "minimatch installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.748645+00:00"
+    },
+    {
+      "finding_id": "finding_023",
+      "vulnerability_id": "CVE-2026-27904",
+      "component": "minimatch",
+      "version": "3.1.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "minimatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "minimatch installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.751939+00:00"
+    },
+    {
+      "finding_id": "finding_024",
+      "vulnerability_id": "CVE-2026-27904",
+      "component": "minimatch",
+      "version": "5.1.6",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "minimatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "minimatch installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.755312+00:00"
+    },
+    {
+      "finding_id": "finding_025",
+      "vulnerability_id": "CVE-2026-27904",
+      "component": "minimatch",
+      "version": "9.0.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "minimatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "minimatch installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.758834+00:00"
+    },
+    {
+      "finding_id": "finding_026",
+      "vulnerability_id": "CVE-2026-12151",
+      "component": "undici",
+      "version": "6.25.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "undici was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "undici installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.762593+00:00"
+    },
+    {
+      "finding_id": "finding_027",
+      "vulnerability_id": "CVE-2026-53571",
+      "component": "vite",
+      "version": "7.3.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component vite is reachable from an entry point. Path: component::invokeai \u2192 invokeai/frontend/web/src/features/parameters/components/Prompts/Prompts.stories.tsx \u2192 external::@storybook/react-vite",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/frontend/web/src/features/parameters/components/Prompts/Prompts.stories.tsx",
+        "external::@storybook/react-vite"
+      ],
+      "matched_nodes": [
+        "external::vite",
+        "external::@storybook/react-vite",
+        "external::vitest"
+      ],
+      "patch_summary": "vite installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.766058+00:00"
+    },
+    {
+      "finding_id": "finding_028",
+      "vulnerability_id": "CVE-2026-53571",
+      "component": "vite",
+      "version": "8.0.11",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component vite is reachable from an entry point. Path: component::invokeai \u2192 invokeai/frontend/web/src/features/parameters/components/Prompts/Prompts.stories.tsx \u2192 external::@storybook/react-vite",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/frontend/web/src/features/parameters/components/Prompts/Prompts.stories.tsx",
+        "external::@storybook/react-vite"
+      ],
+      "matched_nodes": [
+        "external::vite",
+        "external::@storybook/react-vite",
+        "external::vitest"
+      ],
+      "patch_summary": "vite installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.768751+00:00"
+    },
+    {
+      "finding_id": "finding_029",
+      "vulnerability_id": "CVE-2026-33671",
+      "component": "picomatch",
+      "version": "2.3.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "picomatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "picomatch installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.772077+00:00"
+    },
+    {
+      "finding_id": "finding_030",
+      "vulnerability_id": "CVE-2026-33671",
+      "component": "picomatch",
+      "version": "4.0.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "picomatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "picomatch installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.775383+00:00"
+    },
+    {
+      "finding_id": "finding_031",
+      "vulnerability_id": "CVE-2026-6321",
+      "component": "fast-uri",
+      "version": "3.1.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "fast-uri was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "fast-uri installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.778882+00:00"
+    },
+    {
+      "finding_id": "finding_032",
+      "vulnerability_id": "CVE-2026-0994",
+      "component": "protobuf",
+      "version": "4.25.9",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "protobuf was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "protobuf@4.25.9 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.782198+00:00"
+    },
+    {
+      "finding_id": "finding_033",
+      "vulnerability_id": "CVE-2026-46625",
+      "component": "js-cookie",
+      "version": "2.2.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "js-cookie was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "js-cookie installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.785645+00:00"
+    },
+    {
+      "finding_id": "finding_034",
+      "vulnerability_id": "CVE-2026-33750",
+      "component": "brace-expansion",
+      "version": "1.1.12",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "brace-expansion was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "brace-expansion installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.789204+00:00"
+    },
+    {
+      "finding_id": "finding_035",
+      "vulnerability_id": "CVE-2026-33750",
+      "component": "brace-expansion",
+      "version": "2.0.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "brace-expansion was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "brace-expansion installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.792644+00:00"
+    },
+    {
+      "finding_id": "finding_036",
+      "vulnerability_id": "CVE-2026-34445",
+      "component": "onnx",
+      "version": "1.16.1",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component onnx is reachable from an entry point. Path: component::invokeai \u2192 invokeai/backend/onnx/onnx_runtime.py \u2192 external::onnxruntime",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/backend/onnx/onnx_runtime.py",
+        "external::onnxruntime"
+      ],
+      "matched_nodes": [
+        "external::onnx",
+        "external::onnxruntime",
+        "external::zmainoronnxmodel"
+      ],
+      "patch_summary": "onnx@1.16.1: buggy code present, patched code present.",
+      "timestamp": "2026-06-25T00:27:35.795404+00:00"
+    },
+    {
+      "finding_id": "finding_037",
+      "vulnerability_id": "CVE-2026-45736",
+      "component": "ws",
+      "version": "8.18.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component ws is reachable from an entry point. Path: component::invokeai \u2192 invokeai/frontend/web/src/app/logging/logger.ts \u2192 external::@roarr/browser-log-writer",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/frontend/web/src/app/logging/logger.ts",
+        "external::@roarr/browser-log-writer"
+      ],
+      "matched_nodes": [
+        "external::workflows-dir",
+        "external::tile-and-image-rows",
+        "external::rows",
+        "external::workflowsdata",
+        "external::filteredworkflows",
+        "external::workflows",
+        "external::zworkflowsettingsstate",
+        "external::@roarr/browser-log-writer",
+        "external::workflows-from-file",
+        "external::workflows-to-update",
+        "external::workflows-to-add",
+        "external::windows",
+        "external::workflows-router",
+        "external::workflows-with-thumbnails"
+      ],
+      "patch_summary": "ws installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.798317+00:00"
+    },
+    {
+      "finding_id": "finding_038",
+      "vulnerability_id": "CVE-2026-45736",
+      "component": "ws",
+      "version": "8.20.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component ws is reachable from an entry point. Path: component::invokeai \u2192 invokeai/frontend/web/src/app/logging/logger.ts \u2192 external::@roarr/browser-log-writer",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/frontend/web/src/app/logging/logger.ts",
+        "external::@roarr/browser-log-writer"
+      ],
+      "matched_nodes": [
+        "external::workflows-dir",
+        "external::tile-and-image-rows",
+        "external::rows",
+        "external::workflowsdata",
+        "external::filteredworkflows",
+        "external::workflows",
+        "external::zworkflowsettingsstate",
+        "external::@roarr/browser-log-writer",
+        "external::workflows-from-file",
+        "external::workflows-to-update",
+        "external::workflows-to-add",
+        "external::windows",
+        "external::workflows-router",
+        "external::workflows-with-thumbnails"
+      ],
+      "patch_summary": "ws installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.801286+00:00"
+    },
+    {
+      "finding_id": "finding_039",
+      "vulnerability_id": "CVE-2026-33532",
+      "component": "yaml",
+      "version": "1.10.2",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component yaml is reachable from an entry point. Path: component::invokeai \u2192 invokeai/app/services/config/config_default.py \u2192 external::yaml",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/app/services/config/config_default.py",
+        "external::yaml"
+      ],
+      "matched_nodes": [
+        "external::yaml",
+        "external::yaml-path",
+        "external::yamlinfo",
+        "external::legacy-models-yaml-path",
+        "external::legacy-models-yaml",
+        "external::yaml-metadata"
+      ],
+      "patch_summary": "yaml@1.10.2: no code match in patch files.",
+      "timestamp": "2026-06-25T00:27:35.803935+00:00"
+    },
+    {
+      "finding_id": "finding_040",
+      "vulnerability_id": "CVE-2025-69873",
+      "component": "ajv",
+      "version": "6.12.6",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "ajv was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "ajv installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.807882+00:00"
+    },
+    {
+      "finding_id": "finding_041",
+      "vulnerability_id": "CVE-2026-33672",
+      "component": "picomatch",
+      "version": "2.3.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "picomatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "picomatch installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.811238+00:00"
+    },
+    {
+      "finding_id": "finding_042",
+      "vulnerability_id": "CVE-2026-33672",
+      "component": "picomatch",
+      "version": "4.0.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "picomatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "picomatch installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.814554+00:00"
+    },
+    {
+      "finding_id": "finding_043",
+      "vulnerability_id": "CVE-2026-6322",
+      "component": "fast-uri",
+      "version": "3.1.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "fast-uri was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "fast-uri installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.818107+00:00"
+    },
+    {
+      "finding_id": "finding_044",
+      "vulnerability_id": "CVE-2026-48818",
+      "component": "starlette",
+      "version": "0.48.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::invokeai \u2192 invokeai/app/api/no_cache_staticfiles.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/app/api/no_cache_staticfiles.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.48.0: patched code present.",
+      "timestamp": "2026-06-25T00:27:35.820964+00:00"
+    },
+    {
+      "finding_id": "finding_045",
+      "vulnerability_id": "CVE-2026-54283",
+      "component": "starlette",
+      "version": "0.48.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::invokeai \u2192 invokeai/app/api/no_cache_staticfiles.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/app/api/no_cache_staticfiles.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.48.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.823524+00:00"
+    },
+    {
+      "finding_id": "finding_046",
+      "vulnerability_id": "CVE-2026-28500",
+      "component": "onnx",
+      "version": "1.16.1",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component onnx is reachable from an entry point. Path: component::invokeai \u2192 invokeai/backend/onnx/onnx_runtime.py \u2192 external::onnxruntime",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/backend/onnx/onnx_runtime.py",
+        "external::onnxruntime"
+      ],
+      "matched_nodes": [
+        "external::onnx",
+        "external::onnxruntime",
+        "external::zmainoronnxmodel"
+      ],
+      "patch_summary": "onnx@1.16.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.825935+00:00"
+    },
+    {
+      "finding_id": "finding_047",
+      "vulnerability_id": "CVE-2026-1839",
+      "component": "transformers",
+      "version": "4.57.6",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component transformers is reachable from an entry point. Path: component::invokeai \u2192 invokeai/app/invocations/z_image_text_encoder.py \u2192 external::transformers",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/app/invocations/z_image_text_encoder.py",
+        "external::transformers"
+      ],
+      "matched_nodes": [
+        "external::transformers"
+      ],
+      "patch_summary": "transformers@4.57.6 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.828218+00:00"
+    },
+    {
+      "finding_id": "finding_048",
+      "vulnerability_id": "CVE-2026-41907",
+      "component": "uuid",
+      "version": "11.1.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component uuid is reachable from an entry point. Path: component::invokeai \u2192 tests/app/services/session_queue/test_session_queue_clear.py \u2192 external::uuid",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "tests/app/services/session_queue/test_session_queue_clear.py",
+        "external::uuid"
+      ],
+      "matched_nodes": [
+        "external::uuid"
+      ],
+      "patch_summary": "uuid installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.830610+00:00"
+    },
+    {
+      "finding_id": "finding_049",
+      "vulnerability_id": "CVE-2026-53539",
+      "component": "python-multipart",
+      "version": "0.0.28",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.28 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.833904+00:00"
+    },
+    {
+      "finding_id": "finding_050",
+      "vulnerability_id": "CVE-2025-13465",
+      "component": "lodash",
+      "version": "4.17.21",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "lodash was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "lodash installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.837461+00:00"
+    },
+    {
+      "finding_id": "finding_051",
+      "vulnerability_id": "CVE-2026-2950",
+      "component": "lodash",
+      "version": "4.17.21",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "lodash was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "lodash installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.841080+00:00"
+    },
+    {
+      "finding_id": "finding_052",
+      "vulnerability_id": "CVE-2026-53632",
+      "component": "vite",
+      "version": "7.3.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component vite is reachable from an entry point. Path: component::invokeai \u2192 invokeai/frontend/web/src/features/parameters/components/Prompts/Prompts.stories.tsx \u2192 external::@storybook/react-vite",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/frontend/web/src/features/parameters/components/Prompts/Prompts.stories.tsx",
+        "external::@storybook/react-vite"
+      ],
+      "matched_nodes": [
+        "external::vite",
+        "external::@storybook/react-vite",
+        "external::vitest"
+      ],
+      "patch_summary": "vite installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.843786+00:00"
+    },
+    {
+      "finding_id": "finding_053",
+      "vulnerability_id": "CVE-2026-53632",
+      "component": "vite",
+      "version": "8.0.11",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component vite is reachable from an entry point. Path: component::invokeai \u2192 invokeai/frontend/web/src/features/parameters/components/Prompts/Prompts.stories.tsx \u2192 external::@storybook/react-vite",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/frontend/web/src/features/parameters/components/Prompts/Prompts.stories.tsx",
+        "external::@storybook/react-vite"
+      ],
+      "matched_nodes": [
+        "external::vite",
+        "external::@storybook/react-vite",
+        "external::vitest"
+      ],
+      "patch_summary": "vite installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.846366+00:00"
+    },
+    {
+      "finding_id": "finding_054",
+      "vulnerability_id": "CVE-2026-54299",
+      "component": "astro",
+      "version": "6.3.7",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component astro is reachable from an entry point. Path: component::invokeai \u2192 docs/src/config/social.ts \u2192 external::@astrojs/starlight",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "docs/src/config/social.ts",
+        "external::@astrojs/starlight"
+      ],
+      "matched_nodes": [
+        "external::astro",
+        "external::@astrojs/starlight",
+        "external::astro:content"
+      ],
+      "patch_summary": "astro installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.848856+00:00"
+    },
+    {
+      "finding_id": "finding_055",
+      "vulnerability_id": "CVE-2026-41240",
+      "component": "dompurify",
+      "version": "3.3.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dompurify was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dompurify installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.852118+00:00"
+    },
+    {
+      "finding_id": "finding_056",
+      "vulnerability_id": "CVE-2026-41691",
+      "component": "i18next-http-backend",
+      "version": "3.0.2",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component i18next-http-backend is reachable from an entry point. Path: component::invokeai \u2192 invokeai/frontend/web/src/i18n.ts \u2192 external::i18next-http-backend",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/frontend/web/src/i18n.ts",
+        "external::i18next-http-backend"
+      ],
+      "matched_nodes": [
+        "external::i18next-http-backend"
+      ],
+      "patch_summary": "i18next-http-backend installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.855306+00:00"
+    },
+    {
+      "finding_id": "finding_057",
+      "vulnerability_id": "CVE-2026-9679",
+      "component": "undici",
+      "version": "6.25.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "undici was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "undici installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.858816+00:00"
+    },
+    {
+      "finding_id": "finding_058",
+      "vulnerability_id": "CVE-2026-34447",
+      "component": "onnx",
+      "version": "1.16.1",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component onnx is reachable from an entry point. Path: component::invokeai \u2192 invokeai/backend/onnx/onnx_runtime.py \u2192 external::onnxruntime",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/backend/onnx/onnx_runtime.py",
+        "external::onnxruntime"
+      ],
+      "matched_nodes": [
+        "external::onnx",
+        "external::onnxruntime",
+        "external::zmainoronnxmodel"
+      ],
+      "patch_summary": "onnx@1.16.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.861213+00:00"
+    },
+    {
+      "finding_id": "finding_059",
+      "vulnerability_id": "CVE-2026-53550",
+      "component": "js-yaml",
+      "version": "4.1.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "js-yaml was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "js-yaml installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.864570+00:00"
+    },
+    {
+      "finding_id": "finding_060",
+      "vulnerability_id": "CVE-2026-41239",
+      "component": "dompurify",
+      "version": "3.3.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dompurify was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dompurify installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.867820+00:00"
+    },
+    {
+      "finding_id": "finding_061",
+      "vulnerability_id": "CVE-2025-3730",
+      "component": "torch",
+      "version": "2.7.1",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component torch is reachable from an entry point. Path: component::invokeai \u2192 tests/backend/model_manager/load/test_loaded_model.py \u2192 external::torch",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "tests/backend/model_manager/load/test_loaded_model.py",
+        "external::torch"
+      ],
+      "matched_nodes": [
+        "external::torch",
+        "external::torchvision",
+        "external::torch-tensor",
+        "external::torchdevice",
+        "external::torch-out",
+        "external::torch-img"
+      ],
+      "patch_summary": "torch@2.7.1: no code match in patch files.",
+      "timestamp": "2026-06-25T00:27:35.870123+00:00"
+    },
+    {
+      "finding_id": "finding_062",
+      "vulnerability_id": "CVE-2026-41238",
+      "component": "dompurify",
+      "version": "3.3.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dompurify was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dompurify installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.873340+00:00"
+    },
+    {
+      "finding_id": "finding_063",
+      "vulnerability_id": "CVE-2026-48817",
+      "component": "starlette",
+      "version": "0.48.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::invokeai \u2192 invokeai/app/api/no_cache_staticfiles.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/app/api/no_cache_staticfiles.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.48.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.875926+00:00"
+    },
+    {
+      "finding_id": "finding_064",
+      "vulnerability_id": "CVE-2026-1260",
+      "component": "sentencepiece",
+      "version": "0.2.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "sentencepiece was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "sentencepiece@0.2.0: no code match in patch files.",
+      "timestamp": "2026-06-25T00:27:35.879407+00:00"
+    },
+    {
+      "finding_id": "finding_065",
+      "vulnerability_id": "CVE-2025-2999",
+      "component": "torch",
+      "version": "2.7.1",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component torch is reachable from an entry point. Path: component::invokeai \u2192 tests/backend/model_manager/load/test_loaded_model.py \u2192 external::torch",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "tests/backend/model_manager/load/test_loaded_model.py",
+        "external::torch"
+      ],
+      "matched_nodes": [
+        "external::torch",
+        "external::torchvision",
+        "external::torch-tensor",
+        "external::torchdevice",
+        "external::torch-out",
+        "external::torch-img"
+      ],
+      "patch_summary": "torch@2.7.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.882085+00:00"
+    },
+    {
+      "finding_id": "finding_066",
+      "vulnerability_id": "CVE-2025-2999",
+      "component": "torch",
+      "version": "2.7.1+cpu",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component torch is reachable from an entry point. Path: component::invokeai \u2192 tests/backend/model_manager/load/test_loaded_model.py \u2192 external::torch",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "tests/backend/model_manager/load/test_loaded_model.py",
+        "external::torch"
+      ],
+      "matched_nodes": [
+        "external::torch",
+        "external::torchvision",
+        "external::torch-tensor",
+        "external::torchdevice",
+        "external::torch-out",
+        "external::torch-img"
+      ],
+      "patch_summary": "torch@2.7.1+cpu installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.884549+00:00"
+    },
+    {
+      "finding_id": "finding_067",
+      "vulnerability_id": "CVE-2025-2999",
+      "component": "torch",
+      "version": "2.7.1+cu128",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component torch is reachable from an entry point. Path: component::invokeai \u2192 tests/backend/model_manager/load/test_loaded_model.py \u2192 external::torch",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "tests/backend/model_manager/load/test_loaded_model.py",
+        "external::torch"
+      ],
+      "matched_nodes": [
+        "external::torch",
+        "external::torchvision",
+        "external::torch-tensor",
+        "external::torchdevice",
+        "external::torch-out",
+        "external::torch-img"
+      ],
+      "patch_summary": "torch@2.7.1+cu128 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.886987+00:00"
+    },
+    {
+      "finding_id": "finding_068",
+      "vulnerability_id": "CVE-2026-34446",
+      "component": "onnx",
+      "version": "1.16.1",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component onnx is reachable from an entry point. Path: component::invokeai \u2192 invokeai/backend/onnx/onnx_runtime.py \u2192 external::onnxruntime",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/backend/onnx/onnx_runtime.py",
+        "external::onnxruntime"
+      ],
+      "matched_nodes": [
+        "external::onnx",
+        "external::onnxruntime",
+        "external::zmainoronnxmodel"
+      ],
+      "patch_summary": "onnx@1.16.1: buggy code present, patched code present.",
+      "timestamp": "2026-06-25T00:27:35.889485+00:00"
+    },
+    {
+      "finding_id": "finding_069",
+      "vulnerability_id": "CVE-2026-11525",
+      "component": "undici",
+      "version": "6.25.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "undici was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "undici installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.893073+00:00"
+    },
+    {
+      "finding_id": "finding_070",
+      "vulnerability_id": "CVE-2026-6733",
+      "component": "undici",
+      "version": "6.25.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "undici was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "undici installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.896564+00:00"
+    },
+    {
+      "finding_id": "finding_071",
+      "vulnerability_id": "CVE-2026-54298",
+      "component": "astro",
+      "version": "6.3.7",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component astro is reachable from an entry point. Path: component::invokeai \u2192 docs/src/config/social.ts \u2192 external::@astrojs/starlight",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "docs/src/config/social.ts",
+        "external::@astrojs/starlight"
+      ],
+      "matched_nodes": [
+        "external::astro",
+        "external::@astrojs/starlight",
+        "external::astro:content"
+      ],
+      "patch_summary": "astro installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.899386+00:00"
+    },
+    {
+      "finding_id": "finding_072",
+      "vulnerability_id": "CVE-2026-53540",
+      "component": "python-multipart",
+      "version": "0.0.28",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.28 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.902711+00:00"
+    },
+    {
+      "finding_id": "finding_073",
+      "vulnerability_id": "CVE-2026-53655",
+      "component": "tar",
+      "version": "7.5.15",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component tar is reachable from an entry point. Path: component::invokeai \u2192 invokeai/frontend/web/src/features/nodes/components/sidePanel/builder/AutosizeTextarea.tsx \u2192 external::react-textarea-autosize",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/frontend/web/src/features/nodes/components/sidePanel/builder/AutosizeTextarea.tsx",
+        "external::react-textarea-autosize"
+      ],
+      "matched_nodes": [
+        "external::targets",
+        "external::target",
+        "external::@astrojs/starlight",
+        "external::starlight-links-validator",
+        "external::starlight-llms-txt",
+        "external::starlight-changelogs",
+        "external::starlight-contextual-menu",
+        "external::redirecttargets",
+        "external::restore-started",
+        "external::target-dir",
+        "external::startermodelwithoutdependencies",
+        "external::target-attention-mask",
+        "external::textarearef",
+        "external::modelswithstarred",
+        "external::textarea",
+        "external::currenttarget",
+        "external::targetitem",
+        "external::dndtarget",
+        "external::getconnectorterminaltargetedges",
+        "external::react-textarea-autosize",
+        "external::restartfailedmodelinstall",
+        "external::restartmodelinstallfile",
+        "external::restartrequiredparts",
+        "external::startermodel",
+        "external::target-image",
+        "external::starlette",
+        "external::starter-model",
+        "external::target-path",
+        "external::starred-images",
+        "external::unstarred-images"
+      ],
+      "patch_summary": "tar installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.905299+00:00"
+    },
+    {
+      "finding_id": "finding_074",
+      "vulnerability_id": "CVE-2026-54282",
+      "component": "starlette",
+      "version": "0.48.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::invokeai \u2192 invokeai/app/api/no_cache_staticfiles.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/app/api/no_cache_staticfiles.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.48.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.907891+00:00"
+    },
+    {
+      "finding_id": "finding_075",
+      "vulnerability_id": "CVE-2026-53538",
+      "component": "python-multipart",
+      "version": "0.0.28",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.28 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.911230+00:00"
+    },
+    {
+      "finding_id": "finding_076",
+      "vulnerability_id": "CVE-2026-53537",
+      "component": "python-multipart",
+      "version": "0.0.28",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.28 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.914616+00:00"
+    },
+    {
+      "finding_id": "finding_077",
+      "vulnerability_id": "CVE-2025-3001",
+      "component": "torch",
+      "version": "2.7.1",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component torch is reachable from an entry point. Path: component::invokeai \u2192 tests/backend/model_manager/load/test_loaded_model.py \u2192 external::torch",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "tests/backend/model_manager/load/test_loaded_model.py",
+        "external::torch"
+      ],
+      "matched_nodes": [
+        "external::torch",
+        "external::torchvision",
+        "external::torch-tensor",
+        "external::torchdevice",
+        "external::torch-out",
+        "external::torch-img"
+      ],
+      "patch_summary": "torch@2.7.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.917812+00:00"
+    },
+    {
+      "finding_id": "finding_078",
+      "vulnerability_id": "CVE-2025-3001",
+      "component": "torch",
+      "version": "2.7.1+cpu",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component torch is reachable from an entry point. Path: component::invokeai \u2192 tests/backend/model_manager/load/test_loaded_model.py \u2192 external::torch",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "tests/backend/model_manager/load/test_loaded_model.py",
+        "external::torch"
+      ],
+      "matched_nodes": [
+        "external::torch",
+        "external::torchvision",
+        "external::torch-tensor",
+        "external::torchdevice",
+        "external::torch-out",
+        "external::torch-img"
+      ],
+      "patch_summary": "torch@2.7.1+cpu installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.920545+00:00"
+    },
+    {
+      "finding_id": "finding_079",
+      "vulnerability_id": "CVE-2025-3001",
+      "component": "torch",
+      "version": "2.7.1+cu128",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component torch is reachable from an entry point. Path: component::invokeai \u2192 tests/backend/model_manager/load/test_loaded_model.py \u2192 external::torch",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "tests/backend/model_manager/load/test_loaded_model.py",
+        "external::torch"
+      ],
+      "matched_nodes": [
+        "external::torch",
+        "external::torchvision",
+        "external::torch-tensor",
+        "external::torchdevice",
+        "external::torch-out",
+        "external::torch-img"
+      ],
+      "patch_summary": "torch@2.7.1+cu128 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.922848+00:00"
+    },
+    {
+      "finding_id": "finding_080",
+      "vulnerability_id": "CVE-2025-3000",
+      "component": "torch",
+      "version": "2.10.0+rocm7.1",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component torch is reachable from an entry point. Path: component::invokeai \u2192 tests/backend/model_manager/load/test_loaded_model.py \u2192 external::torch",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "tests/backend/model_manager/load/test_loaded_model.py",
+        "external::torch"
+      ],
+      "matched_nodes": [
+        "external::torch",
+        "external::torchvision",
+        "external::torch-tensor",
+        "external::torchdevice",
+        "external::torch-out",
+        "external::torch-img"
+      ],
+      "patch_summary": "torch@2.10.0+rocm7.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.925072+00:00"
+    },
+    {
+      "finding_id": "finding_081",
+      "vulnerability_id": "CVE-2025-3000",
+      "component": "torch",
+      "version": "2.12.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component torch is reachable from an entry point. Path: component::invokeai \u2192 tests/backend/model_manager/load/test_loaded_model.py \u2192 external::torch",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "tests/backend/model_manager/load/test_loaded_model.py",
+        "external::torch"
+      ],
+      "matched_nodes": [
+        "external::torch",
+        "external::torchvision",
+        "external::torch-tensor",
+        "external::torchdevice",
+        "external::torch-out",
+        "external::torch-img"
+      ],
+      "patch_summary": "torch@2.12.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.927355+00:00"
+    },
+    {
+      "finding_id": "finding_082",
+      "vulnerability_id": "CVE-2025-3000",
+      "component": "torch",
+      "version": "2.7.1",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component torch is reachable from an entry point. Path: component::invokeai \u2192 tests/backend/model_manager/load/test_loaded_model.py \u2192 external::torch",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "tests/backend/model_manager/load/test_loaded_model.py",
+        "external::torch"
+      ],
+      "matched_nodes": [
+        "external::torch",
+        "external::torchvision",
+        "external::torch-tensor",
+        "external::torchdevice",
+        "external::torch-out",
+        "external::torch-img"
+      ],
+      "patch_summary": "torch@2.7.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.929630+00:00"
+    },
+    {
+      "finding_id": "finding_083",
+      "vulnerability_id": "CVE-2025-3000",
+      "component": "torch",
+      "version": "2.7.1+cpu",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component torch is reachable from an entry point. Path: component::invokeai \u2192 tests/backend/model_manager/load/test_loaded_model.py \u2192 external::torch",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "tests/backend/model_manager/load/test_loaded_model.py",
+        "external::torch"
+      ],
+      "matched_nodes": [
+        "external::torch",
+        "external::torchvision",
+        "external::torch-tensor",
+        "external::torchdevice",
+        "external::torch-out",
+        "external::torch-img"
+      ],
+      "patch_summary": "torch@2.7.1+cpu installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.931876+00:00"
+    },
+    {
+      "finding_id": "finding_084",
+      "vulnerability_id": "CVE-2025-3000",
+      "component": "torch",
+      "version": "2.7.1+cu128",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component torch is reachable from an entry point. Path: component::invokeai \u2192 tests/backend/model_manager/load/test_loaded_model.py \u2192 external::torch",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "tests/backend/model_manager/load/test_loaded_model.py",
+        "external::torch"
+      ],
+      "matched_nodes": [
+        "external::torch",
+        "external::torchvision",
+        "external::torch-tensor",
+        "external::torchdevice",
+        "external::torch-out",
+        "external::torch-img"
+      ],
+      "patch_summary": "torch@2.7.1+cu128 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.934097+00:00"
+    },
+    {
+      "finding_id": "finding_085",
+      "vulnerability_id": "CVE-2026-49356",
+      "component": "@babel/core",
+      "version": "7.28.5",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component @babel/core is reachable from an entry point. Path: component::invokeai \u2192 invokeai/backend/model_manager/configs/base.py \u2192 external::pydantic-core",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/backend/model_manager/configs/base.py",
+        "external::pydantic-core"
+      ],
+      "matched_nodes": [
+        "external::pydantic-core",
+        "external::highest-score-candidate",
+        "external::scores",
+        "external::overlap-scores",
+        "external::degree-scores",
+        "external::length-scores",
+        "external::all-score",
+        "external::valid-score-mask"
+      ],
+      "patch_summary": "@babel/core installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.936474+00:00"
+    },
+    {
+      "finding_id": "finding_086",
+      "vulnerability_id": "CVE-2026-49356",
+      "component": "@babel/core",
+      "version": "7.29.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component @babel/core is reachable from an entry point. Path: component::invokeai \u2192 invokeai/backend/model_manager/configs/base.py \u2192 external::pydantic-core",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/backend/model_manager/configs/base.py",
+        "external::pydantic-core"
+      ],
+      "matched_nodes": [
+        "external::pydantic-core",
+        "external::highest-score-candidate",
+        "external::scores",
+        "external::overlap-scores",
+        "external::degree-scores",
+        "external::length-scores",
+        "external::all-score",
+        "external::valid-score-mask"
+      ],
+      "patch_summary": "@babel/core installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.938822+00:00"
+    },
+    {
+      "finding_id": "finding_087",
+      "vulnerability_id": "CVE-2026-53663",
+      "component": "react-router",
+      "version": "7.15.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component react-router is reachable from an entry point. Path: component::invokeai \u2192 invokeai/frontend/web/src/features/auth/components/AdministratorSetup.tsx \u2192 external::react-router-dom",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/frontend/web/src/features/auth/components/AdministratorSetup.tsx",
+        "external::react-router-dom"
+      ],
+      "matched_nodes": [
+        "external::react-router-dom"
+      ],
+      "patch_summary": "react-router installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.941409+00:00"
+    },
+    {
+      "finding_id": "finding_088",
+      "vulnerability_id": "CVE-2026-45804",
+      "component": "diffusers",
+      "version": "0.37.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component diffusers is reachable from an entry point. Path: component::invokeai \u2192 invokeai/backend/stable_diffusion/extensions/base.py \u2192 external::diffusers",
+      "reachable": true,
+      "reachable_path": [
+        "component::invokeai",
+        "invokeai/backend/stable_diffusion/extensions/base.py",
+        "external::diffusers"
+      ],
+      "matched_nodes": [
+        "external::diffusers",
+        "external::diffusers-dir",
+        "external::nested-diffusers-dir",
+        "external::not-a-diffusers-dir",
+        "external::t2iadapter-diffusers-config-base",
+        "external::controlnet-diffusers-config-base",
+        "external::lora-diffusers-config-base",
+        "external::main-sd-diffusers-config-base",
+        "external::clipembed-diffusers-config-base",
+        "external::vae-diffusers-config-base",
+        "external::flux2diffusersmodels",
+        "external::diffusersmodels",
+        "external::availableqwenimagediffusers"
+      ],
+      "patch_summary": "diffusers@0.37.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T00:27:35.943648+00:00"
+    },
+    {
+      "finding_id": "finding_089",
+      "vulnerability_id": "CVE-2026-49853",
+      "component": "tornado",
+      "version": "6.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "tornado was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "tornado installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.947449+00:00"
+    },
+    {
+      "finding_id": "finding_090",
+      "vulnerability_id": "CVE-2026-49855",
+      "component": "tornado",
+      "version": "6.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "tornado was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "tornado installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.951131+00:00"
+    },
+    {
+      "finding_id": "finding_091",
+      "vulnerability_id": "CVE-2026-49458",
+      "component": "dompurify",
+      "version": "3.3.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dompurify was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dompurify installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.954369+00:00"
+    },
+    {
+      "finding_id": "finding_092",
+      "vulnerability_id": "CVE-2026-49459",
+      "component": "dompurify",
+      "version": "3.3.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dompurify was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dompurify installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.957574+00:00"
+    },
+    {
+      "finding_id": "finding_093",
+      "vulnerability_id": "CVE-2026-49978",
+      "component": "dompurify",
+      "version": "3.3.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "dompurify was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "dompurify installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.960753+00:00"
+    },
+    {
+      "finding_id": "finding_094",
+      "vulnerability_id": "CVE-2026-49854",
+      "component": "tornado",
+      "version": "6.5.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "tornado was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "tornado installation not found in repository.",
+      "timestamp": "2026-06-25T00:27:35.964432+00:00"
+    }
+  ]
+}

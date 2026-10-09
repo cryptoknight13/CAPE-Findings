@@ -1,0 +1,9 @@
+cve,package,version,severity,kev,kev_date_added,epss,epss_percentile,exploitdb,exploitdb_ids,commit_links,patch_links,fix_commits,repo_urls,ghsa_ids,introduced_versions,fixed_versions,cvss_base,cvss_vector,cvss_version
+CVE-2026-0540,dompurify,3.2.7,Medium,,,,,,,,,,,GHSA-v2wj-7wpq-c8vv,,3.3.2,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-41240,dompurify,3.2.7,Medium,,,,,,,,,,,GHSA-h7mw-gpvr-xq4m,,3.4.0,6,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N,4.0
+CVE-2026-41239,dompurify,3.2.7,Medium,,,,,,,,,,,GHSA-crv5-9vww-q3g8,,3.4.0,6.8,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N,3.1
+CVE-2026-41238,dompurify,3.2.7,Medium,,,,,,,,,,,GHSA-v9jr-rg53-9pgp,,3.4.0,6.9,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N,3.1
+CVE-2026-41305,postcss,8.4.31,Medium,,,,,,,,,,,GHSA-qx2v-qp2m-jg93,,8.5.10,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-49458,dompurify,3.2.7,Medium,,,,,,,,,,,GHSA-hpcv-96wg-7vj8,,3.4.6,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-49459,dompurify,3.2.7,Medium,,,,,,,,,,,GHSA-r47g-fvhr-h676,,3.4.6,6.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,3.1
+CVE-2026-49978,dompurify,3.2.7,Medium,,,,,,,,,,,GHSA-rp9w-3fw7-7cwq,,3.4.7,5.1,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N,4.0

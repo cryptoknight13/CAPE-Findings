@@ -1,0 +1,1436 @@
+[
+  {
+    "finding_id": "finding_001",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-24486",
+    "component": "python-multipart",
+    "version": "0.0.20",
+    "severity": "HIGH",
+    "score": 8.6,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.01761,
+    "epss_percentile": 0.75123,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-wp53-j4wj-2cfg"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.0.22"
+    ],
+    "advisory_summary": "Python-Multipart has Arbitrary File Write via Non-Default Configuration",
+    "advisory_details": "Python-Multipart is a streaming multipart parser for Python. Prior to version 0.0.22, a Path Traversal vulnerability exists when using non-default configuration options `UPLOAD_DIR` and `UPLOAD_KEEP_FILENAME=True`. An attacker can write uploaded files to arbitrary locations on the filesystem by crafting a malicious filename. Users should upgrade to version 0.0.22 to receive a patch or, as a workaround, avoid using `UPLOAD_KEEP_FILENAME=True` in project configurations.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.0.10",
+          "0.0.11",
+          "0.0.12",
+          "0.0.13",
+          "0.0.14",
+          "0.0.15",
+          "0.0.16",
+          "0.0.17",
+          "0.0.18",
+          "0.0.19"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_002",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-4800",
+    "component": "lodash-es",
+    "version": "4.17.23",
+    "severity": "HIGH",
+    "score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.01026,
+    "epss_percentile": 0.59133,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-r5fr-rjxr-66jc"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.18.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_003",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-48710",
+    "component": "starlette",
+    "version": "0.41.3",
+    "severity": "MEDIUM",
+    "score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.01384,
+    "epss_percentile": 0.68683,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-86qp-5c8j-p5mr"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.0.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_004",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2025-62727",
+    "component": "starlette",
+    "version": "0.41.3",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00597,
+    "epss_percentile": 0.43956,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-7f5h-v6xp-fcq8"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.49.1"
+    ],
+    "advisory_summary": "Starlette vulnerable to O(n^2) DoS via Range header merging in starlette.responses.FileResponse",
+    "advisory_details": "Starlette is a lightweight ASGI framework/toolkit. Starting in version 0.39.0 and prior to version 0.49.1 , an unauthenticated attacker can send a crafted HTTP Range header that triggers quadratic-time processing in Starlette's FileResponse Range parsing/merging logic. This enables CPU exhaustion per request, causing denial\u2011of\u2011service for endpoints serving files (e.g., StaticFiles or any use of FileResponse). This vulnerability is fixed in 0.49.1.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.0",
+          "0.1.1",
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.14",
+          "0.1.15",
+          "0.1.16",
+          "0.1.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_005",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-42561",
+    "component": "python-multipart",
+    "version": "0.0.20",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0042,
+    "epss_percentile": 0.33548,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-pp6c-gr5w-3c5g"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.0.27"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_006",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-33671",
+    "component": "picomatch",
+    "version": "2.3.1",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00412,
+    "epss_percentile": 0.32824,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-c2c7-rcm5-vvqj"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.3.2"
+    ],
+    "advisory_summary": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+    "advisory_details": "Picomatch is a glob matcher written JavaScript. Versions prior to 4.0.4, 3.0.2, and 2.3.2 are vulnerable to Regular Expression Denial of Service (ReDoS) when processing crafted extglob patterns. Certain patterns using extglob quantifiers such as `+()` and `*()`, especially when combined with overlapping alternatives or nested extglobs, are compiled into regular expressions that can exhibit catastrophic backtracking on non-matching input. Applications are impacted when they allow untrusted users ",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "1.0.1",
+          "1.0.2",
+          "1.1.0",
+          "1.1.2",
+          "2.0.0",
+          "2.0.1",
+          "2.0.2",
+          "2.0.3",
+          "2.0.4",
+          "2.0.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_007",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-33671",
+    "component": "picomatch",
+    "version": "4.0.3",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00412,
+    "epss_percentile": 0.32824,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-c2c7-rcm5-vvqj"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.0.4"
+    ],
+    "advisory_summary": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+    "advisory_details": "Picomatch is a glob matcher written JavaScript. Versions prior to 4.0.4, 3.0.2, and 2.3.2 are vulnerable to Regular Expression Denial of Service (ReDoS) when processing crafted extglob patterns. Certain patterns using extglob quantifiers such as `+()` and `*()`, especially when combined with overlapping alternatives or nested extglobs, are compiled into regular expressions that can exhibit catastrophic backtracking on non-matching input. Applications are impacted when they allow untrusted users ",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "1.0.1",
+          "1.0.2",
+          "1.1.0",
+          "1.1.2",
+          "2.0.0",
+          "2.0.1",
+          "2.0.2",
+          "2.0.3",
+          "2.0.4",
+          "2.0.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_008",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-41248",
+    "component": "@clerk/shared",
+    "version": "4.3.1",
+    "severity": "CRITICAL",
+    "score": 9.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00323,
+    "epss_percentile": 0.23915,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-vqx2-fgx2-5wq9"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.8.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_009",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-46625",
+    "component": "js-cookie",
+    "version": "3.0.5",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00363,
+    "epss_percentile": 0.28022,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-qjx8-664m-686j"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.0.7"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_010",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2025-54121",
+    "component": "starlette",
+    "version": "0.41.3",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00526,
+    "epss_percentile": 0.40397,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-2c2j-9gv5-cj73"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.47.2"
+    ],
+    "advisory_summary": "Starlette has possible denial-of-service vector when parsing large files in multipart forms",
+    "advisory_details": "Starlette is a lightweight ASGI (Asynchronous Server Gateway Interface) framework/toolkit, designed for building async web services in Python. In versions 0.47.1 and below, when parsing a multi-part form with large files (greater than the default max spool size) starlette will block the main thread to roll the file over to disk. This blocks the event thread which means the application can't accept new connections. The UploadFile code has a minor bug where instead of just checking for self._in_me",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.0",
+          "0.1.1",
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.14",
+          "0.1.15",
+          "0.1.16",
+          "0.1.17"
+        ]
+      },
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.0",
+          "0.1.1",
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.14",
+          "0.1.15",
+          "0.1.16",
+          "0.1.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_011",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2025-8869",
+    "component": "pip",
+    "version": "24.0",
+    "severity": "MEDIUM",
+    "score": 5.9,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00438,
+    "epss_percentile": 0.34908,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-4xh5-x5gv-qwph"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "25.3"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "When extracting a tar archive pip may not check symbolic links point into the extraction directory if the tarfile module doesn't implement PEP 706.\nNote that upgrading pip to a \"fixed\" version for this vulnerability doesn't fix all known vulnerabilities that are remediated by using a Python version that implements PEP 706.\n\nNote that this is a vulnerability in pip's fallback implementation of tar extraction for Python versions that don't implement PEP 706\nand therefore are not secure to all vuln",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": []
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_012",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-33672",
+    "component": "picomatch",
+    "version": "2.3.1",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0041,
+    "epss_percentile": 0.32665,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-3v7f-55p6-f55p"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.3.2"
+    ],
+    "advisory_summary": "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+    "advisory_details": "Picomatch is a glob matcher written JavaScript. Versions prior to 4.0.4, 3.0.2, and 2.3.2 are vulnerable to a method injection vulnerability affecting the `POSIX_REGEX_SOURCE` object. Because the object inherits from `Object.prototype`, specially crafted POSIX bracket expressions (e.g., `[[:constructor:]]`) can reference inherited method names. These methods are implicitly converted to strings and injected into the generated regular expression. This leads to incorrect glob matching behavior (int",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "1.0.1",
+          "1.0.2",
+          "1.1.0",
+          "1.1.2",
+          "2.0.0",
+          "2.0.1",
+          "2.0.2",
+          "2.0.3",
+          "2.0.4",
+          "2.0.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_013",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-33672",
+    "component": "picomatch",
+    "version": "4.0.3",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0041,
+    "epss_percentile": 0.32665,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-3v7f-55p6-f55p"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.0.4"
+    ],
+    "advisory_summary": "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+    "advisory_details": "Picomatch is a glob matcher written JavaScript. Versions prior to 4.0.4, 3.0.2, and 2.3.2 are vulnerable to a method injection vulnerability affecting the `POSIX_REGEX_SOURCE` object. Because the object inherits from `Object.prototype`, specially crafted POSIX bracket expressions (e.g., `[[:constructor:]]`) can reference inherited method names. These methods are implicitly converted to strings and injected into the generated regular expression. This leads to incorrect glob matching behavior (int",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "1.0.1",
+          "1.0.2",
+          "1.1.0",
+          "1.1.2",
+          "2.0.0",
+          "2.0.1",
+          "2.0.2",
+          "2.0.3",
+          "2.0.4",
+          "2.0.5"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_014",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-48818",
+    "component": "starlette",
+    "version": "0.41.3",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00277,
+    "epss_percentile": 0.19284,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-wqp7-x3pw-xc5r"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.1.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_015",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-54283",
+    "component": "starlette",
+    "version": "0.41.3",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00275,
+    "epss_percentile": 0.19067,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-82w8-qh3p-5jfq"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.3.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_016",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-53539",
+    "component": "python-multipart",
+    "version": "0.0.20",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00263,
+    "epss_percentile": 0.1745,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-5rvq-cxj2-64vf"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.0.30"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_017",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-42349",
+    "component": "@clerk/react",
+    "version": "6.1.1",
+    "severity": "HIGH",
+    "score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00246,
+    "epss_percentile": 0.15553,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-w24r-5266-9c3c"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "6.4.3"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_018",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-42349",
+    "component": "@clerk/shared",
+    "version": "4.3.1",
+    "severity": "HIGH",
+    "score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00246,
+    "epss_percentile": 0.15553,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-w24r-5266-9c3c"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.8.3"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_019",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-40347",
+    "component": "python-multipart",
+    "version": "0.0.20",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00351,
+    "epss_percentile": 0.26844,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-mj87-hwqh-73pj"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.0.26"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_020",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-2950",
+    "component": "lodash-es",
+    "version": "4.17.23",
+    "severity": "MEDIUM",
+    "score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00297,
+    "epss_percentile": 0.21227,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-f23m-r3pf-42rh"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.18.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_021",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-32597",
+    "component": "pyjwt",
+    "version": "2.10.1",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00198,
+    "epss_percentile": 0.09678,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-752w-5fwx-jx9f"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.12.0"
+    ],
+    "advisory_summary": "PyJWT accepts unknown `crit` header extensions (RFC 7515 \u00a74.1.11 MUST violation)",
+    "advisory_details": "PyJWT is a JSON Web Token implementation in Python. Prior to 2.12.0, PyJWT does not validate the crit (Critical) Header Parameter defined in RFC 7515 \u00a74.1.11. When a JWS token contains a crit array listing extensions that PyJWT does not understand, the library accepts the token instead of rejecting it. This violates the MUST requirement in the RFC. This vulnerability is fixed in 2.12.0.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.6",
+          "0.1.9",
+          "0.2.0",
+          "0.2.2",
+          "0.2.3",
+          "0.3.0",
+          "0.3.1",
+          "0.3.2",
+          "0.4.0",
+          "0.4.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_022",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-48525",
+    "component": "pyjwt",
+    "version": "2.10.1",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00288,
+    "epss_percentile": 0.203,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-w7vc-732c-9m39"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.13.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_023",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-48526",
+    "component": "pyjwt",
+    "version": "2.10.1",
+    "severity": "HIGH",
+    "score": 7.4,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00198,
+    "epss_percentile": 0.09635,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-xgmm-8j9v-c9wx"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.13.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_024",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-28684",
+    "component": "python-dotenv",
+    "version": "1.0.1",
+    "severity": "MEDIUM",
+    "score": 6.6,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00236,
+    "epss_percentile": 0.14311,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-mf9w-mj56-hr94"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.2.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_025",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-41305",
+    "component": "postcss",
+    "version": "8.5.8",
+    "severity": "MEDIUM",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00205,
+    "epss_percentile": 0.10443,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-qx2v-qp2m-jg93"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.5.10"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_026",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-48817",
+    "component": "starlette",
+    "version": "0.41.3",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00213,
+    "epss_percentile": 0.11448,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-x746-7m8f-x49c"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.1.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_027",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-1703",
+    "component": "pip",
+    "version": "24.0",
+    "severity": "LOW",
+    "score": 2.0,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0039,
+    "epss_percentile": 0.30729,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-6vgw-5pg2-w6jp"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "26.0"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "When pip is installing and extracting a maliciously crafted wheel archive, files may be extracted outside the installation directory. The path traversal is limited to prefixes of the installation directory, thus isn't able to inject or overwrite executable files in typical situations.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.3",
+          "0.6",
+          "0.7",
+          "0.7.1",
+          "0.8",
+          "0.8.2",
+          "0.8.3",
+          "1.0",
+          "1.2",
+          "1.4rc1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_028",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-40181",
+    "component": "react-router",
+    "version": "6.30.3",
+    "severity": "MEDIUM",
+    "score": 6.6,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00162,
+    "epss_percentile": 0.05751,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-2j2x-hqr9-3h42"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "6.30.4"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_029",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-48522",
+    "component": "pyjwt",
+    "version": "2.10.1",
+    "severity": "MEDIUM",
+    "score": 4.2,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00181,
+    "epss_percentile": 0.07779,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-993g-76c3-p5m4"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.13.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_030",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2025-71176",
+    "component": "pytest",
+    "version": "8.3.4",
+    "severity": "MEDIUM",
+    "score": 6.8,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0014,
+    "epss_percentile": 0.03718,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-6w46-j5rx-g56g"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "9.0.3"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "pytest through 9.0.2 on UNIX relies on directories with the /tmp/pytest-of-{user} name pattern, which allows local users to cause a denial of service or possibly gain privileges.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "1.0.0b3",
+          "1.1.0",
+          "1.1.1",
+          "1.2.0",
+          "1.2.1",
+          "1.3.0",
+          "1.3.1",
+          "1.3.2",
+          "1.3.3",
+          "2.0.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_031",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-48524",
+    "component": "pyjwt",
+    "version": "2.10.1",
+    "severity": "LOW",
+    "score": 3.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00222,
+    "epss_percentile": 0.1258,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-fhv5-28vv-h8m8"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.13.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_032",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-53540",
+    "component": "python-multipart",
+    "version": "0.0.20",
+    "severity": "LOW",
+    "score": 3.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00217,
+    "epss_percentile": 0.11985,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-v9pg-7xvm-68hf"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.0.31"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_033",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-6357",
+    "component": "pip",
+    "version": "24.0",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:H/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00138,
+    "epss_percentile": 0.03543,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jp4c-xjxw-mgf9"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "26.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_034",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-3219",
+    "component": "pip",
+    "version": "24.0",
+    "severity": "MEDIUM",
+    "score": 4.6,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00144,
+    "epss_percentile": 0.04016,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-58qw-9mgm-455v"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "26.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_035",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-48523",
+    "component": "pyjwt",
+    "version": "2.10.1",
+    "severity": "MEDIUM",
+    "score": 5.4,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00127,
+    "epss_percentile": 0.02652,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jq35-7prp-9v3f"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.13.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_036",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-54282",
+    "component": "starlette",
+    "version": "0.41.3",
+    "severity": "LOW",
+    "score": 3.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00186,
+    "epss_percentile": 0.08261,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jp82-jpqv-5vv3"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.3.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_037",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-53538",
+    "component": "python-multipart",
+    "version": "0.0.20",
+    "severity": "LOW",
+    "score": 3.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00176,
+    "epss_percentile": 0.07185,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-6jv3-5f52-599m"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.0.30"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_038",
+    "case_id": "case_025",
+    "vulnerability_id": "CVE-2026-53537",
+    "component": "python-multipart",
+    "version": "0.0.20",
+    "severity": "LOW",
+    "score": 3.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00176,
+    "epss_percentile": 0.07186,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-vffw-93wf-4j4q"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.0.30"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  }
+]

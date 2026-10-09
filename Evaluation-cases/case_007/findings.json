@@ -1,0 +1,2355 @@
+[
+  {
+    "finding_id": "finding_001",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-21441",
+    "component": "urllib3",
+    "version": "2.2.3",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0068,
+    "epss_percentile": 0.47599,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-38jv-5279-wg99"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.6.3"
+    ],
+    "advisory_summary": "urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API)",
+    "advisory_details": "urllib3 is an HTTP client library for Python. urllib3's streaming API is designed for the efficient handling of large HTTP responses by reading the content in chunks, rather than loading the entire response body into memory at once. urllib3 can perform decoding or decompression based on the HTTP `Content-Encoding` header (e.g., `gzip`, `deflate`, `br`, or `zstd`). When using the streaming API, the library decompresses only the necessary bytes, enabling partial content consumption. Starting in ve",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": []
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_002",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-66471",
+    "component": "urllib3",
+    "version": "2.2.3",
+    "severity": "HIGH",
+    "score": 8.9,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00622,
+    "epss_percentile": 0.45143,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-2xpw-w6gg-jr37"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.6.0"
+    ],
+    "advisory_summary": "urllib3 Streaming API improperly handles highly compressed data",
+    "advisory_details": "urllib3 is a user-friendly HTTP client library for Python. Starting in version 1.0 and prior to 2.6.0, the Streaming API improperly handles highly compressed data. urllib3's streaming API is designed for the efficient handling of large HTTP responses by reading the content in chunks, rather than loading the entire response body into memory at once. When streaming a compressed response, urllib3 can perform decoding or decompression based on the HTTP Content-Encoding header (e.g., gzip, deflate, b",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": []
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_003",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-66418",
+    "component": "urllib3",
+    "version": "2.2.3",
+    "severity": "HIGH",
+    "score": 8.9,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00622,
+    "epss_percentile": 0.45143,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-gm62-xv2j-4w53"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.6.0"
+    ],
+    "advisory_summary": "urllib3 allows an unbounded number of links in the decompression chain",
+    "advisory_details": "urllib3 is a user-friendly HTTP client library for Python. Starting in version 1.24 and prior to 2.6.0, the number of links in the decompression chain was unbounded allowing a malicious server to insert a virtually unlimited number of compression steps leading to high CPU usage and massive memory allocation for the decompressed data. This vulnerability is fixed in 2.6.0.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": []
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_004",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-43859",
+    "component": "h11",
+    "version": "0.14.0",
+    "severity": "CRITICAL",
+    "score": 9.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00522,
+    "epss_percentile": 0.40213,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-vqfr-h8mv-ghfj"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.16.0"
+    ],
+    "advisory_summary": "h11 accepts some malformed Chunked-Encoding bodies",
+    "advisory_details": "h11 is a Python implementation of HTTP/1.1. Prior to version 0.16.0, a leniency in h11's parsing of line terminators in chunked-coding message bodies can lead to request smuggling vulnerabilities under certain conditions. This issue has been patched in version 0.16.0. Since exploitation requires the combination of buggy h11 with a buggy (reverse) proxy, fixing either component is sufficient to mitigate this issue.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v0.11.0",
+          "v0.12.0",
+          "v0.13.0",
+          "v0.14.0",
+          "v0.15.0",
+          "v0.5.0",
+          "v0.6.0",
+          "v0.7.0",
+          "v0.8.0",
+          "v0.9.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_005",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2024-47081",
+    "component": "requests",
+    "version": "2.32.3",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00846,
+    "epss_percentile": 0.53296,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-9hjg-9r4m-mvj7"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.32.4"
+    ],
+    "advisory_summary": "Requests vulnerable to .netrc credentials leak via malicious URLs",
+    "advisory_details": "Requests is a HTTP library. Due to a URL parsing issue, Requests releases prior to 2.32.4 may leak .netrc credentials to third parties for specific maliciously-crafted URLs. Users should upgrade to version 2.32.4 to receive a fix. For older versions of Requests, use of the .netrc file can be disabled with `trust_env=False` on one's Requests Session.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "2.0",
+          "v0.10.0",
+          "v0.10.1",
+          "v0.10.2",
+          "v0.10.3",
+          "v0.10.4",
+          "v0.10.5",
+          "v0.10.6",
+          "v0.10.7",
+          "v0.10.8"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_006",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-30922",
+    "component": "pyasn1",
+    "version": "0.6.1",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0058,
+    "epss_percentile": 0.43211,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jr27-m4p2-rc6r"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.6.3"
+    ],
+    "advisory_summary": "pyasn1 Vulnerable to Denial of Service via Unbounded Recursion",
+    "advisory_details": "pyasn1 is a generic ASN.1 library for Python. Prior to 0.6.3, the `pyasn1` library is vulnerable to a Denial of Service (DoS) attack caused by uncontrolled recursion when decoding ASN.1 data with deeply nested structures. An attacker can supply a crafted payload containing thousands of nested `SEQUENCE` (`0x30`) or `SET` (`0x31`) tags with \"Indefinite Length\" (`0x80`) markers. This forces the decoder to recursively call itself until the Python interpreter crashes with a `RecursionError` or consu",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.2.3",
+          "v0.2.1",
+          "v0.2.2",
+          "v0.3.1",
+          "v0.3.2",
+          "v0.3.3",
+          "v0.3.4",
+          "v0.3.5",
+          "v0.3.6",
+          "v0.3.7"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_007",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-40192",
+    "component": "pillow",
+    "version": "11.1.0",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00485,
+    "epss_percentile": 0.37991,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-whj4-6x5x-4v2j"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "12.2.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_008",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-23490",
+    "component": "pyasn1",
+    "version": "0.6.1",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00491,
+    "epss_percentile": 0.38342,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-63vm-454h-vhhq"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.6.2"
+    ],
+    "advisory_summary": "pyasn1 has a DoS vulnerability in decoder",
+    "advisory_details": "pyasn1 is a generic ASN.1 library for Python. Prior to 0.6.2, a Denial-of-Service issue has been found that leads to memory exhaustion from malformed RELATIVE-OID with excessive continuation octets. This vulnerability is fixed in 0.6.2.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.2.3",
+          "v0.2.1",
+          "v0.2.2",
+          "v0.3.1",
+          "v0.3.2",
+          "v0.3.3",
+          "v0.3.4",
+          "v0.3.5",
+          "v0.3.6",
+          "v0.3.7"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_009",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-44431",
+    "component": "urllib3",
+    "version": "2.2.3",
+    "severity": "HIGH",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00483,
+    "epss_percentile": 0.37887,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-qccp-gfcp-xxvc"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.7.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_010",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-2473",
+    "component": "google-cloud-aiplatform",
+    "version": "1.71.1",
+    "severity": "HIGH",
+    "score": 7.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/U:Clear",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00438,
+    "epss_percentile": 0.34878,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-wh2j-26j7-9728"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.133.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_011",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-25990",
+    "component": "pillow",
+    "version": "11.1.0",
+    "severity": "HIGH",
+    "score": 8.6,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0037,
+    "epss_percentile": 0.28718,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-cfh3-3jmp-rvhc"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "12.1.1"
+    ],
+    "advisory_summary": "Pillow has an out-of-bounds write when loading PSD images",
+    "advisory_details": "Pillow is a Python imaging library. From 10.3.0 to before 12.1.1, n out-of-bounds write may be triggered when loading a specially crafted PSD image. This vulnerability is fixed in 12.1.1.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "10.3.0",
+          "10.4.0",
+          "11.0.0",
+          "11.1.0",
+          "11.2.1",
+          "11.3.0",
+          "12.0.0",
+          "12.1.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_012",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2024-56326",
+    "component": "jinja2",
+    "version": "3.1.4",
+    "severity": "MEDIUM",
+    "score": 7.8,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00496,
+    "epss_percentile": 0.38645,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-q2x7-8rv6-6q7h"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.1.5"
+    ],
+    "advisory_summary": "Jinja has a sandbox breakout through indirect reference to format method",
+    "advisory_details": "Jinja is an extensible templating engine. Prior to 3.1.5, An oversight in how the Jinja sandboxed environment detects calls to str.format allows an attacker that controls the content of a template to execute arbitrary Python code. To exploit the vulnerability, an attacker needs to control the content of a template. Whether that is the case depends on the type of application using Jinja. This vulnerability impacts users of applications which execute untrusted templates. Jinja's sandbox does catch",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "2.0",
+          "2.0rc1",
+          "2.1",
+          "2.1.1",
+          "2.10",
+          "2.11.0",
+          "2.2",
+          "2.2.1",
+          "2.3",
+          "2.4"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_013",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-69872",
+    "component": "diskcache",
+    "version": "5.6.3",
+    "severity": "MEDIUM",
+    "score": 5.2,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:P",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00546,
+    "epss_percentile": 0.41497,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-w8v5-vhqr-4h9v"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [],
+    "advisory_summary": "",
+    "advisory_details": "DiskCache (python-diskcache) through 5.6.3 uses Python pickle for serialization by default. An attacker with write access to the cache directory can achieve arbitrary code execution when a victim application reads from the cache.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v0.1.2",
+          "v0.1.3",
+          "v0.1.4",
+          "v0.1.5",
+          "v0.1.6",
+          "v0.1.7",
+          "v0.1.8",
+          "v0.2.0",
+          "v0.2.1",
+          "v0.2.10"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_014",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-0994",
+    "component": "protobuf",
+    "version": "5.29.3",
+    "severity": "HIGH",
+    "score": 8.2,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:L",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00351,
+    "epss_percentile": 0.26855,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-7gcm-g887-7qv7"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.29.6"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "A denial-of-service (DoS) vulnerability exists in google.protobuf.json_format.ParseDict() in Python, where the max_recursion_depth limit can be bypassed when parsing nested google.protobuf.Any messages.\n\nDue to missing recursion depth accounting inside the internal Any-handling logic, an attacker can supply deeply nested Any structures that bypass the intended recursion limit, eventually exhausting Python\u2019s recursion stack and causing a RecursionError.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": []
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_015",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-34516",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "MEDIUM",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0044,
+    "epss_percentile": 0.35083,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-m5qp-6w8w-w647"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.4"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_016",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-22815",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "MEDIUM",
+    "score": 6.9,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0044,
+    "epss_percentile": 0.35084,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-w2fm-2cpv-w7v5"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.4"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_017",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-34515",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "MEDIUM",
+    "score": 6.6,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00433,
+    "epss_percentile": 0.34508,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-p998-jp59-783m"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.4"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_018",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-45409",
+    "component": "idna",
+    "version": "3.10",
+    "severity": "MEDIUM",
+    "score": 6.9,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00408,
+    "epss_percentile": 0.32426,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-65pc-fj4g-8rjx"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.15"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_019",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-27516",
+    "component": "jinja2",
+    "version": "3.1.4",
+    "severity": "MEDIUM",
+    "score": 5.4,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00465,
+    "epss_percentile": 0.36726,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-cpwx-vrp4-4pq7"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.1.6"
+    ],
+    "advisory_summary": "Jinja sandbox breakout through attr filter selecting format method",
+    "advisory_details": "Jinja is an extensible templating engine. Prior to 3.1.6, an oversight in how the Jinja sandboxed environment interacts with the |attr filter allows an attacker that controls the content of a template to execute arbitrary Python code. To exploit the vulnerability, an attacker needs to control the content of a template. Whether that is the case depends on the type of application using Jinja. This vulnerability impacts users of applications which execute untrusted templates. Jinja's sandbox does c",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "2.0",
+          "2.0rc1",
+          "2.1",
+          "2.1.1",
+          "2.10",
+          "2.11.0",
+          "2.2",
+          "2.2.1",
+          "2.3",
+          "2.4"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_020",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-69223",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00299,
+    "epss_percentile": 0.21398,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-6mq8-rvhq-8wgg"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.3"
+    ],
+    "advisory_summary": "AIOHTTP's HTTP Parser auto_decompress feature is vulnerable to zip bomb",
+    "advisory_details": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Versions 3.13.2 and below allow a zip bomb to be used to execute a DoS against the AIOHTTP server. An attacker may be able to send a compressed request that when decompressed by AIOHTTP could exhaust the host's memory. This issue is fixed in version 3.13.3.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.15.2",
+          "0.8.2",
+          "1.3.0",
+          "2.0.0",
+          "2.0.0rc1",
+          "4v0.21.6",
+          "v.0.6.5",
+          "v0.1",
+          "v0.10.0",
+          "v0.10.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_021",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-4565",
+    "component": "protobuf",
+    "version": "5.29.3",
+    "severity": "HIGH",
+    "score": 8.2,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00281,
+    "epss_percentile": 0.19711,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-8qvm-5x2c-j2w7"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.29.5"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "Any project that uses Protobuf Pure-Python backend\u00a0to parse untrusted Protocol Buffers data containing an arbitrary number of recursive groups, recursive messages or a series of SGROUP\u00a0tags can be corrupted by exceeding the Python recursion limit. This can result in a Denial of service by crashing the application with a RecursionError. We recommend upgrading to version =>6.31.1 or beyond commit\u00a017838beda2943d08b8a9d4df5b68f5f04f26d901",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "rust-prerelease-4.30.0-beta1",
+          "rust-prerelease-4.31.0-beta1",
+          "v2.6.0",
+          "v2.6.1rc1",
+          "v25.0-rc1",
+          "v26-dev",
+          "v27-dev",
+          "v28-dev",
+          "v29-dev",
+          "v29.0-rc1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_022",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-50181",
+    "component": "urllib3",
+    "version": "2.2.3",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.004,
+    "epss_percentile": 0.31723,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-pq67-6m6q-mj2v"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.5.0"
+    ],
+    "advisory_summary": "urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation",
+    "advisory_details": "urllib3 is a user-friendly HTTP client library for Python. Prior to 2.5.0, it is possible to disable redirects for all requests by instantiating a PoolManager and specifying retries in a way that disable redirects. By default, requests and botocore users are not affected. An application attempting to mitigate SSRF or open redirect vulnerabilities by disabling redirects at the PoolManager level will remain vulnerable. This issue has been patched in version 2.5.0.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.3",
+          "0.3.1",
+          "0.4",
+          "0.4.1",
+          "1.1",
+          "1.2",
+          "1.2.1",
+          "1.25",
+          "1.25.1",
+          "1.25.2"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_023",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-34520",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "LOW",
+    "score": 9.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00461,
+    "epss_percentile": 0.36478,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-63hf-3vf5-4wqf"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.4"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_024",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-69228",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "MEDIUM",
+    "score": 6.6,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00347,
+    "epss_percentile": 0.26483,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-6jhg-hg63-jvvf"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.3"
+    ],
+    "advisory_summary": "AIOHTTP vulnerable to denial of service through large payloads",
+    "advisory_details": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Versions 3.13.2 and below allow a request to be crafted in such a way that an AIOHTTP server's memory fills up uncontrollably during processing. If an application includes a handler that uses the Request.post() method, an attacker may be able to freeze the server by exhausting the memory. This issue is fixed in version 3.13.3.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.15.2",
+          "0.8.2",
+          "1.3.0",
+          "2.0.0",
+          "2.0.0rc1",
+          "4v0.21.6",
+          "v.0.6.5",
+          "v0.1",
+          "v0.10.0",
+          "v0.10.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_025",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-69229",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "MEDIUM",
+    "score": 6.6,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00338,
+    "epss_percentile": 0.2547,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-g84x-mcqj-x9qq"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.3"
+    ],
+    "advisory_summary": "AIOHTTP vulnerable to DoS through chunked messages",
+    "advisory_details": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. In versions 3.13.2 and below, handling of chunked messages can result in excessive blocking CPU usage when receiving a large number of chunks. If an application makes use of the request.read() method in an endpoint, it may be possible for an attacker to cause the server to spend a moderate amount of blocking CPU time (e.g. 1 second) while processing the request. This could potentially lead to DoS as the server would ",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.15.2",
+          "0.8.2",
+          "1.3.0",
+          "2.0.0",
+          "2.0.0rc1",
+          "4v0.21.6",
+          "v.0.6.5",
+          "v0.1",
+          "v0.10.0",
+          "v0.10.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_026",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-69227",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "MEDIUM",
+    "score": 6.6,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00337,
+    "epss_percentile": 0.25453,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jj3x-wxrx-4x23"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.3"
+    ],
+    "advisory_summary": "AIOHTTP vulnerable to DoS when bypassing asserts",
+    "advisory_details": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Versions 3.13.2 and below allow for an infinite loop to occur when assert statements are bypassed, resulting in a DoS attack when processing a POST body. If optimizations are enabled (-O or PYTHONOPTIMIZE=1), and the application includes a handler that uses the Request.post() method, then an attacker may be able to execute a DoS attack with a specially crafted message. This issue is fixed in version 3.13.3.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.15.2",
+          "0.8.2",
+          "1.3.0",
+          "2.0.0",
+          "2.0.0rc1",
+          "4v0.21.6",
+          "v.0.6.5",
+          "v0.1",
+          "v0.10.0",
+          "v0.10.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_027",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-54276",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "MEDIUM",
+    "score": 6.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00323,
+    "epss_percentile": 0.23911,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-hpj7-wq8m-9hgp"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.14.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_028",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2024-56201",
+    "component": "jinja2",
+    "version": "3.1.4",
+    "severity": "MEDIUM",
+    "score": 8.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00298,
+    "epss_percentile": 0.21325,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-gmj6-6f8f-6699"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.1.5"
+    ],
+    "advisory_summary": "Jinja has a sandbox breakout through malicious filenames",
+    "advisory_details": "Jinja is an extensible templating engine. In versions on the 3.x branch prior to 3.1.5, a bug in the Jinja compiler allows an attacker that controls both the content and filename of a template to execute arbitrary Python code, regardless of if Jinja's sandbox is used. To exploit the vulnerability, an attacker needs to control both the filename and the contents of a template. Whether that is the case depends on the type of application using Jinja. This vulnerability impacts users of applications ",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "3.0.0",
+          "3.1.0",
+          "3.1.1",
+          "3.1.2"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_029",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-34525",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "MEDIUM",
+    "score": 6.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:L/SI:L/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00288,
+    "epss_percentile": 0.20341,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-c427-h43c-vf67"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.4"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_030",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-54277",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "MEDIUM",
+    "score": 6.6,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00279,
+    "epss_percentile": 0.19509,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-63hw-fmq6-xxg2"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.14.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_031",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-54274",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "MEDIUM",
+    "score": 6.6,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00279,
+    "epss_percentile": 0.19508,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-xcgm-r5h9-7989"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.14.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_032",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-50182",
+    "component": "urllib3",
+    "version": "2.2.3",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00313,
+    "epss_percentile": 0.22853,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-48p4-8xcf-vxj5"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.5.0"
+    ],
+    "advisory_summary": "urllib3 does not control redirects in browsers and Node.js",
+    "advisory_details": "urllib3 is a user-friendly HTTP client library for Python. Starting in version 2.2.0 and prior to 2.5.0, urllib3 does not control redirects in browsers and Node.js. urllib3 supports being used in a Pyodide runtime utilizing the JavaScript Fetch API or falling back on XMLHttpRequest. This means Python libraries can be used to make HTTP requests from a browser or Node.js. Additionally, urllib3 provides a mechanism to control redirects, but the retries and redirect parameters are ignored with Pyodi",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "2.2.0",
+          "2.2.1",
+          "2.2.2",
+          "2.2.3",
+          "2.3.0",
+          "2.4.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_033",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-54278",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "MEDIUM",
+    "score": 6.6,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00263,
+    "epss_percentile": 0.17465,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-g3cq-j2xw-wf74"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.14.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_034",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-54273",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "MEDIUM",
+    "score": 6.6,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00263,
+    "epss_percentile": 0.17465,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-4fvr-rgm6-gqmc"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.14.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_035",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-28684",
+    "component": "python-dotenv",
+    "version": "1.0.1",
+    "severity": "MEDIUM",
+    "score": 6.6,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00236,
+    "epss_percentile": 0.14311,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-mf9w-mj56-hr94"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.2.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_036",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-34513",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "LOW",
+    "score": 2.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0044,
+    "epss_percentile": 0.35083,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-hcc4-c3v8-rx92"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.4"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_037",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-42311",
+    "component": "pillow",
+    "version": "11.1.0",
+    "severity": "HIGH",
+    "score": 8.6,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0015,
+    "epss_percentile": 0.04526,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-pwv6-vv43-88gr"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "12.2.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_038",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-34518",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "LOW",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00337,
+    "epss_percentile": 0.25398,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-966j-vmvw-g2g9"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.4"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_039",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-34517",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "LOW",
+    "score": 2.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00384,
+    "epss_percentile": 0.30098,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-3wq7-rqq7-wx6j"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.4"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_040",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-1260",
+    "component": "sentencepiece",
+    "version": "0.2.0",
+    "severity": "HIGH",
+    "score": 8.5,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00132,
+    "epss_percentile": 0.03039,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-38vq-g6vr-w8wf"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.2.1"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "Invalid memory access in Sentencepiece versions less than 0.2.1 when using a vulnerable model file, which is not created in the normal training procedure.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.2.1pre1",
+          "v0.1.4",
+          "v0.1.5",
+          "v0.1.6",
+          "v0.1.6pre1",
+          "v0.1.7",
+          "v0.1.8",
+          "v0.1.81",
+          "v0.1.82",
+          "v0.1.83"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_041",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-68146",
+    "component": "filelock",
+    "version": "3.17.0",
+    "severity": "MEDIUM",
+    "score": 6.3,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00184,
+    "epss_percentile": 0.08034,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-w853-jp5j-5j7f"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.20.1"
+    ],
+    "advisory_summary": "filelock has TOCTOU race condition that allows symlink attacks during lock file creation",
+    "advisory_details": "filelock is a platform-independent file lock for Python. In versions prior to 3.20.1, a Time-of-Check-Time-of-Use (TOCTOU) race condition allows local attackers to corrupt or truncate arbitrary user files through symlink attacks. The vulnerability exists in both Unix and Windows lock file creation where filelock checks if a file exists before opening it with O_TRUNC. An attacker can create a symlink pointing to a victim file in the time gap between the check and open, causing os.open() to follow",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "3.1.0",
+          "3.10.0",
+          "3.10.1",
+          "3.10.2",
+          "3.10.3",
+          "3.10.4",
+          "3.10.5",
+          "3.10.6",
+          "3.10.7",
+          "3.11.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_042",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-69230",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "LOW",
+    "score": 2.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00332,
+    "epss_percentile": 0.2483,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-fh55-r93g-j68g"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.3"
+    ],
+    "advisory_summary": "AIOHTTP Vulnerable to Cookie Parser Warning Storm",
+    "advisory_details": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. In versions 3.13.2 and below, reading multiple invalid cookies can lead to a logging storm. If the cookies attribute is accessed in an application, then an attacker may be able to trigger a storm of warning-level logs using a specially crafted Cookie header. This issue is fixed in 3.13.3.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.15.2",
+          "0.8.2",
+          "1.3.0",
+          "2.0.0",
+          "2.0.0rc1",
+          "4v0.21.6",
+          "v.0.6.5",
+          "v0.1",
+          "v0.10.0",
+          "v0.10.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_043",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-34514",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "LOW",
+    "score": 2.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00315,
+    "epss_percentile": 0.23101,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-2vrm-gr82-f7m5"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.4"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_044",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-69226",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "LOW",
+    "score": 2.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00313,
+    "epss_percentile": 0.22935,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-54jq-c3m8-4m76"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.3"
+    ],
+    "advisory_summary": "AIOHTTP allows for a brute-force leak of internal static \ufb01lepath components",
+    "advisory_details": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Versions 3.13.2 and below enable an attacker to ascertain the existence of absolute path components through the path normalization logic for static files meant to prevent path traversal. If an application uses web.static() (not recommended for production deployments), it may be possible for an attacker to ascertain the existence of path components. This issue is fixed in version 3.13.3.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.15.2",
+          "0.8.2",
+          "1.3.0",
+          "2.0.0",
+          "2.0.0rc1",
+          "4v0.21.6",
+          "v.0.6.5",
+          "v0.1",
+          "v0.10.0",
+          "v0.10.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_045",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-47265",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "MEDIUM",
+    "score": 6.6,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0015,
+    "epss_percentile": 0.04559,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-hg6j-4rv6-33pg"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.14.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_046",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-25645",
+    "component": "requests",
+    "version": "2.32.3",
+    "severity": "MEDIUM",
+    "score": 4.4,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00182,
+    "epss_percentile": 0.07909,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-gc5v-m9x4-r6x2"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.33.0"
+    ],
+    "advisory_summary": "Requests has Insecure Temp File Reuse in its extract_zipped_paths() utility function",
+    "advisory_details": "Requests is a HTTP library. Prior to version 2.33.0, the `requests.utils.extract_zipped_paths()` utility function uses a predictable filename when extracting files from zip archives into the system temporary directory. If the target file already exists, it is reused without validation. A local attacker with write access to the temp directory could pre-create a malicious file that would be loaded in place of the legitimate one. Standard usage of the Requests library is not affected by this vulner",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "2.0",
+          "v0.10.0",
+          "v0.10.1",
+          "v0.10.2",
+          "v0.10.3",
+          "v0.10.4",
+          "v0.10.5",
+          "v0.10.6",
+          "v0.10.7",
+          "v0.10.8"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_047",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-34519",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "LOW",
+    "score": 2.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00292,
+    "epss_percentile": 0.20736,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-mwh4-6h8g-pg8w"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.4"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_048",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-50269",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "LOW",
+    "score": 2.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00273,
+    "epss_percentile": 0.18838,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-m6qw-4cw2-hm4m"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.14.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_049",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-54275",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "LOW",
+    "score": 2.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00254,
+    "epss_percentile": 0.16583,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-4m7w-qmgq-4wj5"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.14.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_050",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-53643",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "LOW",
+    "score": 1.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00297,
+    "epss_percentile": 0.21199,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-9548-qrrj-x5pj"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.12.14"
+    ],
+    "advisory_summary": "AIOHTTP is vulnerable to HTTP Request/Response Smuggling through incorrect parsing of chunked trailer sections",
+    "advisory_details": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to version 3.12.14, the Python parser is vulnerable to a request smuggling vulnerability due to not parsing trailer sections of an HTTP request. If a pure Python version of aiohttp is installed (i.e. without the usual C extensions) or AIOHTTP_NO_EXTENSIONS is enabled, then an attacker may be able to execute a request smuggling attack to bypass certain firewalls or proxy protections. Version 3.12.14 contains a p",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.15.2",
+          "0.8.2",
+          "1.3.0",
+          "2.0.0",
+          "2.0.0rc1",
+          "4v0.21.6",
+          "v.0.6.5",
+          "v0.1",
+          "v0.10.0",
+          "v0.10.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_051",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-69225",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "LOW",
+    "score": 2.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00236,
+    "epss_percentile": 0.14293,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-mqqc-3gqh-h2x8"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.3"
+    ],
+    "advisory_summary": "AIOHTTP Regex Mismatch Allows Unicode in ASCII-Only Protocol Fields",
+    "advisory_details": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Versions 3.13.2 and below contain parser logic which allows non-ASCII decimals to be present in the Range header. There is no known impact, but there is the possibility that there's a method to exploit a request smuggling vulnerability. This issue is fixed in version 3.13.3.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.15.2",
+          "0.8.2",
+          "1.3.0",
+          "2.0.0",
+          "2.0.0rc1",
+          "4v0.21.6",
+          "v.0.6.5",
+          "v0.1",
+          "v0.10.0",
+          "v0.10.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_052",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-34993",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "MEDIUM",
+    "score": 6.4,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:L/I:H/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00115,
+    "epss_percentile": 0.01851,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jg22-mg44-37j8"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.14.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_053",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-42310",
+    "component": "pillow",
+    "version": "11.1.0",
+    "severity": "MEDIUM",
+    "score": 5.5,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00126,
+    "epss_percentile": 0.02587,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-r73j-pqj5-w3x7"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "12.2.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_054",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2025-69224",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "LOW",
+    "score": 2.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00213,
+    "epss_percentile": 0.11452,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-69f9-5gxw-wvc2"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.13.3"
+    ],
+    "advisory_summary": "AIOHTTP's Unicode processing of header values could cause parsing discrepancies",
+    "advisory_details": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Versions 3.13.2 and below of the Python HTTP parser may allow a request smuggling attack with the presence of non-ASCII characters. If a pure Python version of AIOHTTP is installed (i.e. without the usual C extensions) or AIOHTTP_NO_EXTENSIONS is enabled, then an attacker may be able to execute a request smuggling attack to bypass certain firewalls or proxy protections. This issue is fixed in version 3.13.3.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.15.2",
+          "0.8.2",
+          "1.3.0",
+          "2.0.0",
+          "2.0.0rc1",
+          "4v0.21.6",
+          "v.0.6.5",
+          "v0.1",
+          "v0.10.0",
+          "v0.10.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_055",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-22701",
+    "component": "filelock",
+    "version": "3.17.0",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00115,
+    "epss_percentile": 0.0184,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-qmgc-5h2g-mvrw"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.20.3"
+    ],
+    "advisory_summary": "filelock Time-of-Check-Time-of-Use (TOCTOU) Symlink Vulnerability in SoftFileLock",
+    "advisory_details": "filelock is a platform-independent file lock for Python. Prior to version 3.20.3, a TOCTOU race condition vulnerability exists in the SoftFileLock implementation of the filelock package. An attacker with local filesystem access and permission to create symlinks can exploit a race condition between the permission validation and file creation to cause lock operations to fail or behave unexpectedly. The vulnerability occurs in the _acquire() method between raise_on_not_writable_file() (permission c",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "3.1.0",
+          "3.10.0",
+          "3.10.1",
+          "3.10.2",
+          "3.10.3",
+          "3.10.4",
+          "3.10.5",
+          "3.10.6",
+          "3.10.7",
+          "3.11.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_056",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-42308",
+    "component": "pillow",
+    "version": "11.1.0",
+    "severity": "MEDIUM",
+    "score": 5.5,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00114,
+    "epss_percentile": 0.01719,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-wjx4-4jcj-g98j"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "12.2.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_057",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-54280",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "LOW",
+    "score": 1.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00247,
+    "epss_percentile": 0.15786,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-9x8q-7h8h-wcw9"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.14.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_058",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-54279",
+    "component": "aiohttp",
+    "version": "3.11.10",
+    "severity": "LOW",
+    "score": 1.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:N/SA:N/E:U",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00263,
+    "epss_percentile": 0.17464,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-2fqr-mr3j-6wp8"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.14.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_059",
+    "case_id": "case_007",
+    "vulnerability_id": "CVE-2026-4539",
+    "component": "pygments",
+    "version": "2.18.0",
+    "severity": "LOW",
+    "score": 3.3,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00156,
+    "epss_percentile": 0.05125,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-5239-wwwm-4pmq"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.20.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  }
+]

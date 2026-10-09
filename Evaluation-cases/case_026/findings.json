@@ -1,0 +1,280 @@
+[
+  {
+    "finding_id": "finding_001",
+    "case_id": "case_026",
+    "vulnerability_id": "CVE-2026-0540",
+    "component": "dompurify",
+    "version": "3.2.7",
+    "severity": "MEDIUM",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00284,
+    "epss_percentile": 0.19946,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-v2wj-7wpq-c8vv"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.3.2"
+    ],
+    "advisory_summary": "",
+    "advisory_details": "DOMPurify 3.1.3 through 3.3.1 and 2.5.3 through 2.5.8, fixed in commit 729097f, contain a cross-site scripting vulnerability that allows attackers to bypass attribute sanitization by exploiting five missing rawtext elements (noscript, xmp, noembed, noframes, iframe) in the SAFE_FOR_XML regex. Attackers can include payloads like </noscript><img src=x onerror=alert(1)> in attribute values to execute JavaScript when sanitized output is placed inside these unprotected rawtext contexts.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "2.5.3",
+          "2.5.4",
+          "2.5.5",
+          "2.5.6",
+          "2.5.7",
+          "2.5.8",
+          "3.1.3",
+          "3.2.3"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_002",
+    "case_id": "case_026",
+    "vulnerability_id": "CVE-2026-41240",
+    "component": "dompurify",
+    "version": "3.2.7",
+    "severity": "MEDIUM",
+    "score": 6.0,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00263,
+    "epss_percentile": 0.17537,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-h7mw-gpvr-xq4m"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.4.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_003",
+    "case_id": "case_026",
+    "vulnerability_id": "CVE-2026-41239",
+    "component": "dompurify",
+    "version": "3.2.7",
+    "severity": "MEDIUM",
+    "score": 6.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00217,
+    "epss_percentile": 0.11907,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-crv5-9vww-q3g8"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.4.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_004",
+    "case_id": "case_026",
+    "vulnerability_id": "CVE-2026-41238",
+    "component": "dompurify",
+    "version": "3.2.7",
+    "severity": "MEDIUM",
+    "score": 6.9,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00205,
+    "epss_percentile": 0.10494,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-v9jr-rg53-9pgp"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.4.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_005",
+    "case_id": "case_026",
+    "vulnerability_id": "CVE-2026-41305",
+    "component": "postcss",
+    "version": "8.4.31",
+    "severity": "MEDIUM",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00205,
+    "epss_percentile": 0.10443,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-qx2v-qp2m-jg93"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "8.5.10"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_006",
+    "case_id": "case_026",
+    "vulnerability_id": "CVE-2026-49458",
+    "component": "dompurify",
+    "version": "3.2.7",
+    "severity": "MEDIUM",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": null,
+    "epss_percentile": null,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-hpcv-96wg-7vj8"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.4.6"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_007",
+    "case_id": "case_026",
+    "vulnerability_id": "CVE-2026-49459",
+    "component": "dompurify",
+    "version": "3.2.7",
+    "severity": "MEDIUM",
+    "score": 6.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": null,
+    "epss_percentile": null,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-r47g-fvhr-h676"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.4.6"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_008",
+    "case_id": "case_026",
+    "vulnerability_id": "CVE-2026-49978",
+    "component": "dompurify",
+    "version": "3.2.7",
+    "severity": "MEDIUM",
+    "score": 5.1,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": null,
+    "epss_percentile": null,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-rp9w-3fw7-7cwq"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.4.7"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  }
+]

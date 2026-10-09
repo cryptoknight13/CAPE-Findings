@@ -1,0 +1,933 @@
+{
+  "case_id": "case_015",
+  "repo": "rag_api",
+  "generated": "2026-06-25T04:51:01.859931+00:00",
+  "graph_stats": {
+    "function_nodes": 130351,
+    "function_edges": 396338,
+    "entry_nodes": 1,
+    "external_nodes": 129859,
+    "file_nodes": 27353,
+    "file_edges": 127044,
+    "entry_files": 1
+  },
+  "findings": [
+    {
+      "finding_id": "finding_001",
+      "vulnerability_id": "CVE-2026-48710",
+      "component": "starlette",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::starlette"
+        ],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 34,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 297,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0033,
+        "authority_score": 0.0,
+        "impact_rating": "LOW",
+        "top_callers": []
+      },
+      "file_centrality": [
+        {
+          "patch_path": "starlette/datastructures.py",
+          "graph_file": "starlette/datastructures.py",
+          "in_degree": 17,
+          "fan_in": 17,
+          "fan_out": 5,
+          "transitive_fan_in": 4102,
+          "transitive_fan_out": 97,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0031,
+          "hub_score": 0.2482,
+          "authority_score": 0.0019,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::starlette",
+            "fastapi/_compat.py",
+            "fastapi/applications.py",
+            "fastapi/datastructures.py",
+            "fastapi/dependencies/utils.py",
+            "starlette/applications.py",
+            "starlette/formparsers.py",
+            "starlette/middleware/cors.py",
+            "starlette/middleware/gzip.py",
+            "starlette/middleware/httpsredirect.py",
+            "starlette/middleware/sessions.py",
+            "starlette/middleware/trustedhost.py",
+            "starlette/requests.py",
+            "starlette/responses.py",
+            "starlette/routing.py"
+          ],
+          "direct_callers_count": 17,
+          "internal_callers": [
+            "app/config.py",
+            "app/middleware.py",
+            "app/models.py",
+            "app/routes/document_routes.py",
+            "app/routes/pgvector_routes.py",
+            "app/services/database.py",
+            "app/services/mongo_client.py",
+            "app/services/vector_store/async_pg_vector.py",
+            "app/services/vector_store/atlas_mongo_vector.py",
+            "app/services/vector_store/extended_pg_vector.py",
+            "app/services/vector_store/factory.py",
+            "app/utils/document_loader.py",
+            "app/utils/health.py",
+            "component",
+            "dotenv/__init__.py",
+            "dotenv/cli.py",
+            "dotenv/ipython.py",
+            "fastapi/_compat.py",
+            "fastapi/applications.py",
+            "fastapi/background.py"
+          ],
+          "internal_callers_count": 4065,
+          "external_callers": [
+            "external::fastapi",
+            "external::huggingface-hub",
+            "external::langchain",
+            "external::langchain-aws",
+            "external::langchain-classic",
+            "external::langchain-community",
+            "external::langchain-core",
+            "external::langchain-google-genai",
+            "external::langchain-huggingface",
+            "external::langchain-mongodb",
+            "external::langchain-ollama",
+            "external::langchain-openai",
+            "external::langchain-text-splitters",
+            "external::langgraph-sdk",
+            "external::langsmith",
+            "external::narwhals",
+            "external::networkx",
+            "external::nltk",
+            "external::numba",
+            "external::ollama"
+          ],
+          "external_callers_count": 37
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_002",
+      "vulnerability_id": "CVE-2025-62727",
+      "component": "starlette",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::starlette"
+        ],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 34,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 297,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0033,
+        "authority_score": 0.0,
+        "impact_rating": "LOW",
+        "top_callers": []
+      },
+      "file_centrality": [
+        {
+          "patch_path": "starlette/responses.py",
+          "graph_file": "starlette/responses.py",
+          "in_degree": 25,
+          "fan_in": 25,
+          "fan_out": 22,
+          "transitive_fan_in": 4102,
+          "transitive_fan_out": 97,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0052,
+          "hub_score": 0.4088,
+          "authority_score": 0.0026,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::starlette",
+            "fastapi/applications.py",
+            "fastapi/dependencies/utils.py",
+            "fastapi/exception_handlers.py",
+            "fastapi/openapi/docs.py",
+            "fastapi/openapi/utils.py",
+            "fastapi/responses.py",
+            "fastapi/routing.py",
+            "main.py",
+            "starlette/applications.py",
+            "starlette/authentication.py",
+            "starlette/endpoints.py",
+            "starlette/middleware/authentication.py",
+            "starlette/middleware/base.py",
+            "starlette/middleware/cors.py"
+          ],
+          "direct_callers_count": 25,
+          "internal_callers": [
+            "app/config.py",
+            "app/middleware.py",
+            "app/models.py",
+            "app/routes/document_routes.py",
+            "app/routes/pgvector_routes.py",
+            "app/services/database.py",
+            "app/services/mongo_client.py",
+            "app/services/vector_store/async_pg_vector.py",
+            "app/services/vector_store/atlas_mongo_vector.py",
+            "app/services/vector_store/extended_pg_vector.py",
+            "app/services/vector_store/factory.py",
+            "app/utils/document_loader.py",
+            "app/utils/health.py",
+            "component",
+            "dotenv/__init__.py",
+            "dotenv/cli.py",
+            "dotenv/ipython.py",
+            "fastapi/_compat.py",
+            "fastapi/applications.py",
+            "fastapi/background.py"
+          ],
+          "internal_callers_count": 4065,
+          "external_callers": [
+            "external::fastapi",
+            "external::huggingface-hub",
+            "external::langchain",
+            "external::langchain-aws",
+            "external::langchain-classic",
+            "external::langchain-community",
+            "external::langchain-core",
+            "external::langchain-google-genai",
+            "external::langchain-huggingface",
+            "external::langchain-mongodb",
+            "external::langchain-ollama",
+            "external::langchain-openai",
+            "external::langchain-text-splitters",
+            "external::langgraph-sdk",
+            "external::langsmith",
+            "external::narwhals",
+            "external::networkx",
+            "external::nltk",
+            "external::numba",
+            "external::ollama"
+          ],
+          "external_callers_count": 37
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_003",
+      "vulnerability_id": "CVE-2026-54293",
+      "component": "nltk",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::nltk"
+        ],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 296,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 36734,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0026,
+        "authority_score": 0.0,
+        "impact_rating": "LOW",
+        "top_callers": []
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "LOW"
+    },
+    {
+      "finding_id": "finding_004",
+      "vulnerability_id": "CVE-2026-44843",
+      "component": "langchain-core",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::langchain-core"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 179,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 36819,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.1432,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_005",
+      "vulnerability_id": "CVE-2026-42561",
+      "component": "python-multipart",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::python-multipart"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 4,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 171,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0001,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_006",
+      "vulnerability_id": "CVE-2025-54121",
+      "component": "starlette",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::starlette"
+        ],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 34,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 297,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0033,
+        "authority_score": 0.0,
+        "impact_rating": "LOW",
+        "top_callers": []
+      },
+      "file_centrality": [
+        {
+          "patch_path": "starlette/datastructures.py",
+          "graph_file": "starlette/datastructures.py",
+          "in_degree": 17,
+          "fan_in": 17,
+          "fan_out": 5,
+          "transitive_fan_in": 4102,
+          "transitive_fan_out": 97,
+          "impact_radius": 1.0,
+          "eigenvector_centrality": 0.0031,
+          "hub_score": 0.2482,
+          "authority_score": 0.0019,
+          "impact_rating": "HIGH",
+          "direct_callers": [
+            "external::starlette",
+            "fastapi/_compat.py",
+            "fastapi/applications.py",
+            "fastapi/datastructures.py",
+            "fastapi/dependencies/utils.py",
+            "starlette/applications.py",
+            "starlette/formparsers.py",
+            "starlette/middleware/cors.py",
+            "starlette/middleware/gzip.py",
+            "starlette/middleware/httpsredirect.py",
+            "starlette/middleware/sessions.py",
+            "starlette/middleware/trustedhost.py",
+            "starlette/requests.py",
+            "starlette/responses.py",
+            "starlette/routing.py"
+          ],
+          "direct_callers_count": 17,
+          "internal_callers": [
+            "app/config.py",
+            "app/middleware.py",
+            "app/models.py",
+            "app/routes/document_routes.py",
+            "app/routes/pgvector_routes.py",
+            "app/services/database.py",
+            "app/services/mongo_client.py",
+            "app/services/vector_store/async_pg_vector.py",
+            "app/services/vector_store/atlas_mongo_vector.py",
+            "app/services/vector_store/extended_pg_vector.py",
+            "app/services/vector_store/factory.py",
+            "app/utils/document_loader.py",
+            "app/utils/health.py",
+            "component",
+            "dotenv/__init__.py",
+            "dotenv/cli.py",
+            "dotenv/ipython.py",
+            "fastapi/_compat.py",
+            "fastapi/applications.py",
+            "fastapi/background.py"
+          ],
+          "internal_callers_count": 4065,
+          "external_callers": [
+            "external::fastapi",
+            "external::huggingface-hub",
+            "external::langchain",
+            "external::langchain-aws",
+            "external::langchain-classic",
+            "external::langchain-community",
+            "external::langchain-core",
+            "external::langchain-google-genai",
+            "external::langchain-huggingface",
+            "external::langchain-mongodb",
+            "external::langchain-ollama",
+            "external::langchain-openai",
+            "external::langchain-text-splitters",
+            "external::langgraph-sdk",
+            "external::langsmith",
+            "external::narwhals",
+            "external::networkx",
+            "external::nltk",
+            "external::numba",
+            "external::ollama"
+          ],
+          "external_callers_count": 37
+        }
+      ],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_007",
+      "vulnerability_id": "CVE-2026-48818",
+      "component": "starlette",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::starlette"
+        ],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 34,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 297,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0033,
+        "authority_score": 0.0,
+        "impact_rating": "LOW",
+        "top_callers": []
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "LOW"
+    },
+    {
+      "finding_id": "finding_008",
+      "vulnerability_id": "CVE-2026-54283",
+      "component": "starlette",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::starlette"
+        ],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 34,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 297,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0033,
+        "authority_score": 0.0,
+        "impact_rating": "LOW",
+        "top_callers": []
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "LOW"
+    },
+    {
+      "finding_id": "finding_009",
+      "vulnerability_id": "CVE-2026-1839",
+      "component": "transformers",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::transformers"
+        ],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 2214,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 43083,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0077,
+        "authority_score": 0.0,
+        "impact_rating": "LOW",
+        "top_callers": []
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "LOW"
+    },
+    {
+      "finding_id": "finding_010",
+      "vulnerability_id": "CVE-2026-53539",
+      "component": "python-multipart",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::python-multipart"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 4,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 171,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0001,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_011",
+      "vulnerability_id": "CVE-2026-48525",
+      "component": "pyjwt",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pyjwt"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 12,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 963,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_012",
+      "vulnerability_id": "CVE-2026-48526",
+      "component": "pyjwt",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pyjwt"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 12,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 963,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_013",
+      "vulnerability_id": "CVE-2026-45134",
+      "component": "langchain-classic",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::langchain-classic"
+        ],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 1321,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 50566,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.029,
+        "authority_score": 0.0,
+        "impact_rating": "LOW",
+        "top_callers": []
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "LOW"
+    },
+    {
+      "finding_id": "finding_014",
+      "vulnerability_id": "CVE-2026-48817",
+      "component": "starlette",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::starlette"
+        ],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 34,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 297,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0033,
+        "authority_score": 0.0,
+        "impact_rating": "LOW",
+        "top_callers": []
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "LOW"
+    },
+    {
+      "finding_id": "finding_015",
+      "vulnerability_id": "CVE-2026-48522",
+      "component": "pyjwt",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pyjwt"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 12,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 963,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_016",
+      "vulnerability_id": "CVE-2026-48735",
+      "component": "pypdf",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pypdf"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 1839,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0012,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_017",
+      "vulnerability_id": "CVE-2026-54530",
+      "component": "pypdf",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pypdf"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 1839,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0012,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_018",
+      "vulnerability_id": "CVE-2026-49461",
+      "component": "pypdf",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pypdf"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 1839,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0012,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_019",
+      "vulnerability_id": "CVE-2026-54531",
+      "component": "pypdf",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pypdf"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 1839,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0012,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_020",
+      "vulnerability_id": "CVE-2026-48524",
+      "component": "pyjwt",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pyjwt"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 12,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 963,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_021",
+      "vulnerability_id": "CVE-2026-53540",
+      "component": "python-multipart",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::python-multipart"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 4,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 171,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0001,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_022",
+      "vulnerability_id": "CVE-2026-48523",
+      "component": "pyjwt",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pyjwt"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 12,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 963,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_023",
+      "vulnerability_id": "CVE-2026-49460",
+      "component": "pypdf",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pypdf"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 1839,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0012,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_024",
+      "vulnerability_id": "CVE-2026-54282",
+      "component": "starlette",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::starlette"
+        ],
+        "in_degree": 0,
+        "fan_in": 0,
+        "fan_out": 34,
+        "transitive_fan_in": 0,
+        "transitive_fan_out": 297,
+        "impact_radius": 0.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0033,
+        "authority_score": 0.0,
+        "impact_rating": "LOW",
+        "top_callers": []
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "LOW"
+    },
+    {
+      "finding_id": "finding_025",
+      "vulnerability_id": "CVE-2026-48155",
+      "component": "pypdf",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pypdf"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 1839,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0012,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_026",
+      "vulnerability_id": "CVE-2026-53538",
+      "component": "python-multipart",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::python-multipart"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 4,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 171,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0001,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_027",
+      "vulnerability_id": "CVE-2026-53537",
+      "component": "python-multipart",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::python-multipart"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 4,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 171,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0001,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    },
+    {
+      "finding_id": "finding_028",
+      "vulnerability_id": "CVE-2026-48156",
+      "component": "pypdf",
+      "component_centrality": {
+        "matched_nodes": [
+          "external::pypdf"
+        ],
+        "in_degree": 1,
+        "fan_in": 1,
+        "fan_out": 55,
+        "transitive_fan_in": 1,
+        "transitive_fan_out": 1839,
+        "impact_radius": 1.0,
+        "eigenvector_centrality": 0.0001,
+        "hub_score": 0.0012,
+        "authority_score": 0.0,
+        "impact_rating": "HIGH",
+        "top_callers": [
+          "component::rag_api"
+        ]
+      },
+      "file_centrality": [],
+      "overall_impact_rating": "HIGH"
+    }
+  ]
+}

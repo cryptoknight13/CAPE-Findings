@@ -1,0 +1,65 @@
+{
+  "case_id": "case_023",
+  "repo": "cve-lite-cli",
+  "language": "typescript",
+  "ecosystem": "unknown",
+  "generated": "2026-06-27T00:17:57.423806+00:00",
+  "n_findings": 696,
+  "reachability": {
+    "total_findings": 696,
+    "reachable": 166,
+    "not_reachable": 530,
+    "unknown": 0,
+    "scanner_fp_rate": 0.761494
+  },
+  "regime_distribution": {
+    "R1": 0,
+    "R2": 431,
+    "R3": 231,
+    "R4": 34,
+    "R5": 0
+  },
+  "rel_grade_distribution": {
+    "0": 576,
+    "1": 114,
+    "2": 6,
+    "3": 0
+  },
+  "mrftp": {
+    "cape": 697,
+    "cvss_only": 697,
+    "epss_only": 697,
+    "epss_percentile_only": 697,
+    "kev_only": 697
+  },
+  "ndcg": {
+    "cape_5": 1.0,
+    "cape_10": 0.793102,
+    "cape_all": 0.876368,
+    "cvss_only_5": 0.0,
+    "cvss_only_10": 0.121734,
+    "cvss_only_all": 0.600904,
+    "epss_only_5": 0.0,
+    "epss_only_10": 0.0,
+    "epss_only_all": 0.558083,
+    "epss_percentile_5": 0.0,
+    "epss_percentile_10": 0.0,
+    "epss_percentile_all": 0.558175,
+    "kev_5": 0.0,
+    "kev_10": 0.121734,
+    "kev_all": 0.600904
+  },
+  "auroc": {
+    "cape": 0.997826,
+    "cvss_only": 0.720652,
+    "epss_only": 0.656401,
+    "epss_percentile": 0.65628,
+    "kev_only": 0.720652
+  },
+  "kendall_tau": {
+    "cape_vs_cvss_only": 0.353152,
+    "cape_vs_epss_only": 0.027449,
+    "cape_vs_epss_percentile": 0.027722,
+    "cape_vs_kev_only": 0.353152
+  }
+}

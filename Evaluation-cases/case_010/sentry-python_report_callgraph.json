@@ -1,0 +1,459 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "document_id": "reachable-callgraph-case_010-sentry-python",
+  "product": "case_010",
+  "case_id": "case_010",
+  "repo_name": "sentry-python",
+  "method": "reachability_only",
+  "generated": "2026-06-25T05:56:36.314074+00:00",
+  "relationships_file": "cases/case_010/output-callgraph/relationships.csv",
+  "callgraph_file": "",
+  "code_evidence": "cases/case_010/sentry-python_report_code_evidence.json",
+  "callgraph_stats": {
+    "loaded": true,
+    "source": "csv",
+    "node_count": 8254,
+    "edge_count": 23518,
+    "entry_count": 1
+  },
+  "statements": [
+    {
+      "finding_id": "finding_001",
+      "vulnerability_id": "CVE-2025-47273",
+      "component": "setuptools",
+      "version": "76.0.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component setuptools is reachable from an entry point. Path: component::sentry-python \u2192 setup.py \u2192 external::setuptools",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "setup.py",
+        "external::setuptools"
+      ],
+      "matched_nodes": [
+        "external::setuptools"
+      ],
+      "patch_summary": "setuptools installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.283507+00:00"
+    },
+    {
+      "finding_id": "finding_002",
+      "vulnerability_id": "CVE-2026-21441",
+      "component": "urllib3",
+      "version": "2.3.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component urllib3 is reachable from an entry point. Path: component::sentry-python \u2192 sentry_sdk/integrations/django/caching.py \u2192 external::urllib3",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "sentry_sdk/integrations/django/caching.py",
+        "external::urllib3"
+      ],
+      "matched_nodes": [
+        "external::urllib3"
+      ],
+      "patch_summary": "urllib3 installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.285740+00:00"
+    },
+    {
+      "finding_id": "finding_003",
+      "vulnerability_id": "CVE-2025-66471",
+      "component": "urllib3",
+      "version": "2.3.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component urllib3 is reachable from an entry point. Path: component::sentry-python \u2192 sentry_sdk/integrations/django/caching.py \u2192 external::urllib3",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "sentry_sdk/integrations/django/caching.py",
+        "external::urllib3"
+      ],
+      "matched_nodes": [
+        "external::urllib3"
+      ],
+      "patch_summary": "urllib3 installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.286621+00:00"
+    },
+    {
+      "finding_id": "finding_004",
+      "vulnerability_id": "CVE-2025-66418",
+      "component": "urllib3",
+      "version": "2.3.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component urllib3 is reachable from an entry point. Path: component::sentry-python \u2192 sentry_sdk/integrations/django/caching.py \u2192 external::urllib3",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "sentry_sdk/integrations/django/caching.py",
+        "external::urllib3"
+      ],
+      "matched_nodes": [
+        "external::urllib3"
+      ],
+      "patch_summary": "urllib3 installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.287651+00:00"
+    },
+    {
+      "finding_id": "finding_005",
+      "vulnerability_id": "CVE-2024-47081",
+      "component": "requests",
+      "version": "2.32.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component requests is reachable from an entry point. Path: component::sentry-python \u2192 tests/integrations/requests/test_requests.py \u2192 external::requests",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "tests/integrations/requests/test_requests.py",
+        "external::requests"
+      ],
+      "matched_nodes": [
+        "external::requests"
+      ],
+      "patch_summary": "requests installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.288714+00:00"
+    },
+    {
+      "finding_id": "finding_006",
+      "vulnerability_id": "CVE-2026-27459",
+      "component": "pyopenssl",
+      "version": "24.3.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pyopenssl was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pyopenssl installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.290196+00:00"
+    },
+    {
+      "finding_id": "finding_007",
+      "vulnerability_id": "CVE-2026-44431",
+      "component": "urllib3",
+      "version": "2.3.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component urllib3 is reachable from an entry point. Path: component::sentry-python \u2192 sentry_sdk/integrations/django/caching.py \u2192 external::urllib3",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "sentry_sdk/integrations/django/caching.py",
+        "external::urllib3"
+      ],
+      "matched_nodes": [
+        "external::urllib3"
+      ],
+      "patch_summary": "urllib3 installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.291027+00:00"
+    },
+    {
+      "finding_id": "finding_008",
+      "vulnerability_id": "CVE-2026-27199",
+      "component": "werkzeug",
+      "version": "3.1.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component werkzeug is reachable from an entry point. Path: component::sentry-python \u2192 tests/integrations/django/test_db_transactions.py \u2192 external::werkzeug",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "tests/integrations/django/test_db_transactions.py",
+        "external::werkzeug"
+      ],
+      "matched_nodes": [
+        "external::werkzeug"
+      ],
+      "patch_summary": "werkzeug installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.291798+00:00"
+    },
+    {
+      "finding_id": "finding_009",
+      "vulnerability_id": "CVE-2025-66221",
+      "component": "werkzeug",
+      "version": "3.1.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component werkzeug is reachable from an entry point. Path: component::sentry-python \u2192 tests/integrations/django/test_db_transactions.py \u2192 external::werkzeug",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "tests/integrations/django/test_db_transactions.py",
+        "external::werkzeug"
+      ],
+      "matched_nodes": [
+        "external::werkzeug"
+      ],
+      "patch_summary": "werkzeug installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.292555+00:00"
+    },
+    {
+      "finding_id": "finding_010",
+      "vulnerability_id": "CVE-2026-45409",
+      "component": "idna",
+      "version": "3.10",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "idna was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "idna installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.294227+00:00"
+    },
+    {
+      "finding_id": "finding_011",
+      "vulnerability_id": "CVE-2025-8869",
+      "component": "pip",
+      "version": "24.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component pip is reachable from an entry point. Path: component::sentry-python \u2192 tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py \u2192 tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::<module> \u2192 tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::test_rediscluster_pipeline \u2192 external::pipeline",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py",
+        "tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::<module>",
+        "tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::test_rediscluster_pipeline",
+        "external::pipeline"
+      ],
+      "matched_nodes": [
+        "external::-ai-pipeline-name",
+        "external::pipeline"
+      ],
+      "patch_summary": "pip@24.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:56:36.296749+00:00"
+    },
+    {
+      "finding_id": "finding_012",
+      "vulnerability_id": "CVE-2026-21860",
+      "component": "werkzeug",
+      "version": "3.1.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component werkzeug is reachable from an entry point. Path: component::sentry-python \u2192 tests/integrations/django/test_db_transactions.py \u2192 external::werkzeug",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "tests/integrations/django/test_db_transactions.py",
+        "external::werkzeug"
+      ],
+      "matched_nodes": [
+        "external::werkzeug"
+      ],
+      "patch_summary": "werkzeug installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.297537+00:00"
+    },
+    {
+      "finding_id": "finding_013",
+      "vulnerability_id": "CVE-2025-50181",
+      "component": "urllib3",
+      "version": "2.3.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component urllib3 is reachable from an entry point. Path: component::sentry-python \u2192 sentry_sdk/integrations/django/caching.py \u2192 external::urllib3",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "sentry_sdk/integrations/django/caching.py",
+        "external::urllib3"
+      ],
+      "matched_nodes": [
+        "external::urllib3"
+      ],
+      "patch_summary": "urllib3 installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.298334+00:00"
+    },
+    {
+      "finding_id": "finding_014",
+      "vulnerability_id": "CVE-2026-24049",
+      "component": "wheel",
+      "version": "0.45.1",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component wheel is reachable from an entry point. Path: component::sentry-python \u2192 scripts/populate_tox/populate_tox.py \u2192 scripts/populate_tox/populate_tox.py::<module> \u2192 scripts/populate_tox/populate_tox.py::_has_free_threading_dependencies \u2192 external::wheel-filename",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "scripts/populate_tox/populate_tox.py",
+        "scripts/populate_tox/populate_tox.py::<module>",
+        "scripts/populate_tox/populate_tox.py::_has_free_threading_dependencies",
+        "external::wheel-filename"
+      ],
+      "matched_nodes": [
+        "external::wheel-filename"
+      ],
+      "patch_summary": "wheel installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.300964+00:00"
+    },
+    {
+      "finding_id": "finding_015",
+      "vulnerability_id": "CVE-2026-26007",
+      "component": "cryptography",
+      "version": "44.0.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "cryptography was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "cryptography installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.302321+00:00"
+    },
+    {
+      "finding_id": "finding_016",
+      "vulnerability_id": "CVE-2025-50182",
+      "component": "urllib3",
+      "version": "2.3.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component urllib3 is reachable from an entry point. Path: component::sentry-python \u2192 sentry_sdk/integrations/django/caching.py \u2192 external::urllib3",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "sentry_sdk/integrations/django/caching.py",
+        "external::urllib3"
+      ],
+      "matched_nodes": [
+        "external::urllib3"
+      ],
+      "patch_summary": "urllib3 installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.303119+00:00"
+    },
+    {
+      "finding_id": "finding_017",
+      "vulnerability_id": "CVE-2026-1703",
+      "component": "pip",
+      "version": "24.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component pip is reachable from an entry point. Path: component::sentry-python \u2192 tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py \u2192 tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::<module> \u2192 tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::test_rediscluster_pipeline \u2192 external::pipeline",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py",
+        "tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::<module>",
+        "tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::test_rediscluster_pipeline",
+        "external::pipeline"
+      ],
+      "matched_nodes": [
+        "external::-ai-pipeline-name",
+        "external::pipeline"
+      ],
+      "patch_summary": "pip@24.0: buggy code present.",
+      "timestamp": "2026-06-25T05:56:36.305192+00:00"
+    },
+    {
+      "finding_id": "finding_018",
+      "vulnerability_id": "CVE-2026-25645",
+      "component": "requests",
+      "version": "2.32.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component requests is reachable from an entry point. Path: component::sentry-python \u2192 tests/integrations/requests/test_requests.py \u2192 external::requests",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "tests/integrations/requests/test_requests.py",
+        "external::requests"
+      ],
+      "matched_nodes": [
+        "external::requests"
+      ],
+      "patch_summary": "requests installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.305980+00:00"
+    },
+    {
+      "finding_id": "finding_019",
+      "vulnerability_id": "CVE-2026-6357",
+      "component": "pip",
+      "version": "24.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component pip is reachable from an entry point. Path: component::sentry-python \u2192 tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py \u2192 tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::<module> \u2192 tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::test_rediscluster_pipeline \u2192 external::pipeline",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py",
+        "tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::<module>",
+        "tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::test_rediscluster_pipeline",
+        "external::pipeline"
+      ],
+      "matched_nodes": [
+        "external::-ai-pipeline-name",
+        "external::pipeline"
+      ],
+      "patch_summary": "pip@24.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:56:36.307967+00:00"
+    },
+    {
+      "finding_id": "finding_020",
+      "vulnerability_id": "CVE-2026-3219",
+      "component": "pip",
+      "version": "24.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component pip is reachable from an entry point. Path: component::sentry-python \u2192 tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py \u2192 tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::<module> \u2192 tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::test_rediscluster_pipeline \u2192 external::pipeline",
+      "reachable": true,
+      "reachable_path": [
+        "component::sentry-python",
+        "tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py",
+        "tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::<module>",
+        "tests/integrations/redis_py_cluster_legacy/test_redis_py_cluster_legacy.py::test_rediscluster_pipeline",
+        "external::pipeline"
+      ],
+      "matched_nodes": [
+        "external::-ai-pipeline-name",
+        "external::pipeline"
+      ],
+      "patch_summary": "pip@24.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T05:56:36.309904+00:00"
+    },
+    {
+      "finding_id": "finding_021",
+      "vulnerability_id": "CVE-2026-27448",
+      "component": "pyopenssl",
+      "version": "24.3.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pyopenssl was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pyopenssl installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.311236+00:00"
+    },
+    {
+      "finding_id": "finding_022",
+      "vulnerability_id": "CVE-2026-34073",
+      "component": "cryptography",
+      "version": "44.0.2",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "cryptography was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "cryptography installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.312517+00:00"
+    },
+    {
+      "finding_id": "finding_023",
+      "vulnerability_id": "CVE-2026-4539",
+      "component": "pygments",
+      "version": "2.19.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pygments was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pygments installation not found in repository.",
+      "timestamp": "2026-06-25T05:56:36.314043+00:00"
+    }
+  ]
+}

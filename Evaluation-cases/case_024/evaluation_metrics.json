@@ -1,0 +1,65 @@
+{
+  "case_id": "case_024",
+  "repo": "AgentGPT",
+  "language": "typescript",
+  "ecosystem": "unknown",
+  "generated": "2026-06-27T00:17:57.536477+00:00",
+  "n_findings": 193,
+  "reachability": {
+    "total_findings": 193,
+    "reachable": 115,
+    "not_reachable": 78,
+    "unknown": 0,
+    "scanner_fp_rate": 0.404145
+  },
+  "regime_distribution": {
+    "R1": 0,
+    "R2": 66,
+    "R3": 108,
+    "R4": 9,
+    "R5": 10
+  },
+  "rel_grade_distribution": {
+    "0": 107,
+    "1": 74,
+    "2": 12,
+    "3": 0
+  },
+  "mrftp": {
+    "cape": 23,
+    "cvss_only": 10,
+    "epss_only": 30,
+    "epss_percentile_only": 30,
+    "kev_only": 10
+  },
+  "ndcg": {
+    "cape_5": 0.0,
+    "cape_10": 0.024455,
+    "cape_all": 0.673197,
+    "cvss_only_5": 0.113053,
+    "cvss_only_10": 0.206668,
+    "cvss_only_all": 0.657057,
+    "epss_only_5": 0.289598,
+    "epss_only_10": 0.304952,
+    "epss_only_all": 0.706708,
+    "epss_percentile_5": 0.289598,
+    "epss_percentile_10": 0.304952,
+    "epss_percentile_all": 0.706763,
+    "kev_5": 0.113053,
+    "kev_10": 0.206668,
+    "kev_all": 0.657057
+  },
+  "auroc": {
+    "cape": 0.88582,
+    "cvss_only": 0.485727,
+    "epss_only": 0.475829,
+    "epss_percentile": 0.475599,
+    "kev_only": 0.485727
+  },
+  "kendall_tau": {
+    "cape_vs_cvss_only": 0.242485,
+    "cape_vs_epss_only": -0.009723,
+    "cape_vs_epss_percentile": -0.009118,
+    "cape_vs_kev_only": 0.242485
+  }
+}

@@ -1,0 +1,10 @@
+/Evaluation-cases/case_003/output-callgraph/callgraph.json filter=lfs diff=lfs merge=lfs -text
+/Evaluation-cases/case_003/output-callgraph/import.cypher filter=lfs diff=lfs merge=lfs -text
+/Evaluation-cases/case_003/output-callgraph/multilevel_nodes.csv filter=lfs diff=lfs merge=lfs -text
+/Evaluation-cases/case_003/output-callgraph/multilevel_relationships.csv filter=lfs diff=lfs merge=lfs -text
+/Evaluation-cases/case_003/output-callgraph/nodes.csv filter=lfs diff=lfs merge=lfs -text
+/Evaluation-cases/case_003/output-callgraph/relationships.csv filter=lfs diff=lfs merge=lfs -text
+/Evaluation-cases/case_005/open-webui_report_callgraph.json filter=lfs diff=lfs merge=lfs -text
+/Evaluation-cases/case_027/ChatDoc_report_callgraph.json filter=lfs diff=lfs merge=lfs -text
+/Evaluation-cases/case_028/ui_report_callgraph.json filter=lfs diff=lfs merge=lfs -text
+/Evaluation-cases/case_030/IOPaint_report_callgraph.json filter=lfs diff=lfs merge=lfs -text

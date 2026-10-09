@@ -1,0 +1,857 @@
+{
+  "document_id": "code-evidence-case_001-ansible",
+  "product": "case_001",
+  "case_id": "case_001",
+  "repo_name": "ansible",
+  "method": "code_evidence",
+  "generated": "2026-06-24T10:00:31.160090+00:00",
+  "findings": [
+    {
+      "finding_id": "finding_001",
+      "vulnerability_id": "CVE-2026-44431",
+      "component": "urllib3",
+      "reported_version": "2.6.3",
+      "timestamp": "2026-06-24T09:59:21.622441+00:00",
+      "nvd_found": true,
+      "nvd_summary": "urllib3 is an HTTP client library for Python. From 1.23 to before 2.7.0, cross-origin redirects followed from the low-level API via ProxyManager.connection_from_url().urlopen(..., assert_same_host=False) still forward these sensitive headers. This vulnerability is fixed in 2.7.0.",
+      "nvd_refs": [
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-qccp-gfcp-xxvc"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_002",
+      "vulnerability_id": "CVE-2026-39892",
+      "component": "cryptography",
+      "reported_version": "46.0.5",
+      "timestamp": "2026-06-24T09:59:23.919086+00:00",
+      "nvd_found": true,
+      "nvd_summary": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. From 45.0.0 to before 46.0.7, if a non-contiguous buffer was passed to APIs which accepted Python buffers (e.g. Hash.update()), this could lead to buffer overflows. This vulnerability is fixed in 46.0.7.",
+      "nvd_refs": [
+        "https://github.com/pyca/cryptography/security/advisories/GHSA-p423-j2cm-9vmq",
+        "http://www.openwall.com/lists/oss-security/2026/04/08/12"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography",
+          "version": "49.0.0",
+          "version_matches_finding": false,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography-49.0.0.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_003",
+      "vulnerability_id": "CVE-2026-44432",
+      "component": "urllib3",
+      "reported_version": "2.6.3",
+      "timestamp": "2026-06-24T09:59:26.003106+00:00",
+      "nvd_found": true,
+      "nvd_summary": "urllib3 is an HTTP client library for Python. From 2.6.0 to before 2.7.0, urllib3 could decompress the whole response instead of the requested portion (1) during the second HTTPResponse.read(amt=N) call when the response was decompressed using the official Brotli library or (2) when HTTPResponse.drain_conn() was called after the response had been read and decompressed partially (compression algorithm did not matter here). These issues could cause urllib3 to fully decode a small amount of highly compressed data in a single operation. This could result in excessive resource consumption (high CPU usage and massive memory allocation for the decompressed data) on the client side. This vulnerability is fixed in 2.7.0.",
+      "nvd_refs": [
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-mf9v-mfxr-j63j"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_004",
+      "vulnerability_id": "CVE-2025-8869",
+      "component": "pip",
+      "reported_version": "24.0",
+      "timestamp": "2026-06-24T09:59:28.273280+00:00",
+      "nvd_found": true,
+      "nvd_summary": "When extracting a tar archive pip may not check symbolic links point into the extraction directory if the tarfile module doesn't implement PEP 706.\nNote that upgrading pip to a \"fixed\" version for this vulnerability doesn't fix all known vulnerabilities that are remediated by using a Python version that implements PEP 706.\n\nNote that this is a vulnerability in pip's fallback implementation of tar extraction for Python versions that don't implement PEP 706\nand therefore are not secure to all vulnerabilities in the Python 'tarfile' module. If you're using a Python version that implements PEP 706\nthen pip doesn't use the \"vulnerable\" fallback code.\n\nMitigations include upgrading to a version of pip that includes the fix, upgrading to a Python version that implements PEP 706 (Python >=3.9.17, >=3.10.12, >=3.11.4, or >=3.12),\napplying the linked patch, or inspecting source distributions (sdists) before installation as is already a best-practice.",
+      "nvd_refs": [
+        "https://github.com/pypa/pip/pull/13550",
+        "https://mail.python.org/archives/list/security-announce@python.org/thread/IF5A3GCJY3VH7BVHJKOWOJFKTW7VFQEN/",
+        "https://lists.debian.org/debian-lts-announce/2025/10/msg00028.html"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [
+        "https://github.com/pypa/pip/pull/13550"
+      ],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/pip",
+          "version": "24.0",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/pip-24.0.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [],
+      "errors": [
+        "Could not fetch diff from any commit URL. GitHub/GitLab may require authentication or the commit was deleted."
+      ]
+    },
+    {
+      "finding_id": "finding_005",
+      "vulnerability_id": "CVE-2026-1703",
+      "component": "pip",
+      "reported_version": "24.0",
+      "timestamp": "2026-06-24T09:59:30.422757+00:00",
+      "nvd_found": true,
+      "nvd_summary": "When pip is installing and extracting a maliciously crafted wheel archive, files may be extracted outside the installation directory. The path traversal is limited to prefixes of the installation directory, thus isn't able to inject or overwrite executable files in typical situations.",
+      "nvd_refs": [
+        "https://github.com/pypa/pip/commit/8e227a9be4faa9594e05d02ca05a413a2a4e7735",
+        "https://github.com/pypa/pip/pull/13777",
+        "https://mail.python.org/archives/list/security-announce@python.org/thread/WIEA34D4TABF2UNQJAOMXKCICSPBE2DJ/"
+      ],
+      "commit_found": true,
+      "commit_urls_tried": [
+        "https://github.com/pypa/pip/commit/8e227a9be4faa9594e05d02ca05a413a2a4e7735",
+        "https://github.com/pypa/pip/pull/13777"
+      ],
+      "diff_url": "https://github.com/pypa/pip/commit/8e227a9be4faa9594e05d02ca05a413a2a4e7735",
+      "patch_files": [
+        {
+          "patch_path": "news/+1ee322a1.bugfix.rst",
+          "buggy_lines": [],
+          "patched_lines": [
+            {
+              "line": "Use a path-segment prefix comparison, not char-by-char.",
+              "approx_lineno": 0
+            }
+          ]
+        },
+        {
+          "patch_path": "src/pip/_internal/utils/unpacking.py",
+          "buggy_lines": [
+            {
+              "line": "prefix = os.path.commonprefix([abs_directory, abs_target])",
+              "approx_lineno": 86
+            }
+          ],
+          "patched_lines": [
+            {
+              "line": "prefix = os.path.commonpath([abs_directory, abs_target])",
+              "approx_lineno": 87
+            }
+          ]
+        },
+        {
+          "patch_path": "tests/unit/test_utils_unpacking.py",
+          "buggy_lines": [],
+          "patched_lines": [
+            {
+              "line": "((\"parent/child\", \"parent/childfoo\"), False),",
+              "approx_lineno": 415
+            }
+          ]
+        }
+      ],
+      "installations": [
+        {
+          "install_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/pip",
+          "version": "24.0",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/pip-24.0.dist-info/METADATA",
+          "patch_file_checks": [
+            {
+              "patch_path": "news/+1ee322a1.bugfix.rst",
+              "local_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/pip/news/+1ee322a1.bugfix.rst",
+              "file_exists": false,
+              "buggy_lines_found": [],
+              "patched_lines_found": [],
+              "summary": "File not found at expected path: cases/case_001/ansible/.venv/lib/python3.12/site-packages/pip/news/+1ee322a1.bugfix.rst"
+            },
+            {
+              "patch_path": "src/pip/_internal/utils/unpacking.py",
+              "local_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/pip/_internal/utils/unpacking.py",
+              "file_exists": true,
+              "buggy_lines_found": [
+                {
+                  "searched_for": "prefix = os.path.commonprefix([abs_directory, abs_target])",
+                  "line_number": 84,
+                  "context": "prefix = os.path.commonprefix([abs_directory, abs_target])"
+                }
+              ],
+              "patched_lines_found": [],
+              "summary": "BUGGY code present (1/1 lines matched). Patch has NOT been applied to this file."
+            },
+            {
+              "patch_path": "tests/unit/test_utils_unpacking.py",
+              "local_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/pip/tests/unit/test_utils_unpacking.py",
+              "file_exists": false,
+              "buggy_lines_found": [],
+              "patched_lines_found": [],
+              "summary": "File not found at expected path: cases/case_001/ansible/.venv/lib/python3.12/site-packages/pip/tests/unit/test_utils_unpacking.py"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Diff fetched from: https://github.com/pypa/pip/commit/8e227a9be4faa9594e05d02ca05a413a2a4e7735"
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_006",
+      "vulnerability_id": "CVE-2025-71176",
+      "component": "pytest",
+      "reported_version": "8.4.2",
+      "timestamp": "2026-06-24T09:59:33.286436+00:00",
+      "nvd_found": true,
+      "nvd_summary": "pytest through 9.0.2 on UNIX relies on directories with the /tmp/pytest-of-{user} name pattern, which allows local users to cause a denial of service or possibly gain privileges.",
+      "nvd_refs": [
+        "https://github.com/pytest-dev/pytest/issues/13669",
+        "https://www.openwall.com/lists/oss-security/2026/01/21/5"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_007",
+      "vulnerability_id": "CVE-2026-6357",
+      "component": "pip",
+      "reported_version": "24.0",
+      "timestamp": "2026-06-24T09:59:59.695440+00:00",
+      "nvd_found": true,
+      "nvd_summary": "pip prior to version 26.1 would run self-update check functionality after installing wheel files which required importing well-known Python modules names. These module imports were intentionally deferred to increase startup time of the pip CLI. The patch changes self-update functionality to run before wheels are installed to prevent newly-installed modules from being imported shortly after the installation of a wheel package. Users should still review package contents prior to installation.",
+      "nvd_refs": [
+        "https://github.com/pypa/pip/pull/13923",
+        "https://ichard26.github.io/blog/2026/04/whats-new-in-pip-26.1/#security-fixes",
+        "http://www.openwall.com/lists/oss-security/2026/04/27/7"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/pip",
+          "version": "24.0",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/pip-24.0.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_008",
+      "vulnerability_id": "CVE-2026-3219",
+      "component": "pip",
+      "reported_version": "24.0",
+      "timestamp": "2026-06-24T10:00:02.058727+00:00",
+      "nvd_found": true,
+      "nvd_summary": "pip handles concatenated tar and ZIP files as ZIP files regardless of filename or whether a file is both a tar and ZIP file. This behavior could result in confusing installation behavior, such as installing \"incorrect\" files according to the filename of the archive. New behavior only proceeds with installation if the file identifies uniquely as a ZIP or tar archive, not as both.",
+      "nvd_refs": [
+        "https://github.com/pypa/pip/pull/13870",
+        "https://mail.python.org/archives/list/security-announce@python.org/thread/QAJ5JIVWWCAJ4EZL2FP5MOOW35JS7LRJ/",
+        "http://www.openwall.com/lists/oss-security/2026/04/20/8"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/pip",
+          "version": "24.0",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/pip-24.0.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_009",
+      "vulnerability_id": "CVE-2026-34073",
+      "component": "cryptography",
+      "reported_version": "46.0.5",
+      "timestamp": "2026-06-24T10:00:07.611511+00:00",
+      "nvd_found": false,
+      "nvd_summary": "",
+      "nvd_refs": [],
+      "commit_found": true,
+      "commit_urls_tried": [
+        "https://github.com/pyca/cryptography/commit/91d728897bdad30cd5c79a2b23e207f1f050d587"
+      ],
+      "diff_url": "https://github.com/pyca/cryptography/commit/91d728897bdad30cd5c79a2b23e207f1f050d587",
+      "patch_files": [
+        {
+          "patch_path": ".github/actions/fetch-vectors/action.yml",
+          "buggy_lines": [
+            {
+              "line": "ref: \"999222b8cce3c271eb1d1924f8c053a766ac8d2a\" # wycheproof-ref",
+              "approx_lineno": 13
+            },
+            {
+              "line": "ref: \"28e6162b6f78ee5052b6a1011f812317d01db101\" # x509-limbo-ref",
+              "approx_lineno": 21
+            }
+          ],
+          "patched_lines": [
+            {
+              "line": "ref: \"fca0d3ba9f1286c3af57801ace39c633e29a88f1\" # wycheproof-ref",
+              "approx_lineno": 14
+            },
+            {
+              "line": "ref: \"23a7ab348f27efef72d429f4faa92a3d8c23f720\" # x509-limbo-ref",
+              "approx_lineno": 22
+            }
+          ]
+        },
+        {
+          "patch_path": "CHANGELOG.rst",
+          "buggy_lines": [],
+          "patched_lines": [
+            {
+              "line": "46.0.6 - 2026-03-25",
+              "approx_lineno": 6
+            },
+            {
+              "line": "~~~~~~~~~~~~~~~~~~~",
+              "approx_lineno": 6
+            },
+            {
+              "line": "to peer names during verification when the leaf certificate contains a",
+              "approx_lineno": 6
+            },
+            {
+              "line": "wildcard DNS SAN. Ordinary X.509 topologies are not affected by this bug,",
+              "approx_lineno": 6
+            },
+            {
+              "line": "including those used by the Web PKI. Credit to **Oleh Konko (1seal)** for",
+              "approx_lineno": 6
+            },
+            {
+              "line": "reporting the issue. **CVE-2026-34073**",
+              "approx_lineno": 6
+            }
+          ]
+        },
+        {
+          "patch_path": "pyproject.toml",
+          "buggy_lines": [
+            {
+              "line": "version = \"46.0.5\"",
+              "approx_lineno": 19
+            },
+            {
+              "line": "\"cryptography_vectors==46.0.5\",",
+              "approx_lineno": 73
+            }
+          ],
+          "patched_lines": [
+            {
+              "line": "version = \"46.0.6\"",
+              "approx_lineno": 20
+            },
+            {
+              "line": "\"cryptography_vectors==46.0.6\",",
+              "approx_lineno": 74
+            }
+          ]
+        },
+        {
+          "patch_path": "src/cryptography/__about__.py",
+          "buggy_lines": [
+            {
+              "line": "__version__ = \"46.0.5\"",
+              "approx_lineno": 13
+            }
+          ],
+          "patched_lines": [
+            {
+              "line": "__version__ = \"46.0.6\"",
+              "approx_lineno": 14
+            }
+          ]
+        },
+        {
+          "patch_path": "src/rust/cryptography-x509-verification/src/lib.rs",
+          "buggy_lines": [
+            {
+              "line": "(Some(constraint), Some(name)) => {",
+              "approx_lineno": 165
+            },
+            {
+              "line": "Ok(Applied(constraint.matches(name.inner_name())))",
+              "approx_lineno": 166
+            }
+          ],
+          "patched_lines": [
+            {
+              "line": "(Some(constraint), Some(name)) => Ok(Applied(constraint.matches(&name))),",
+              "approx_lineno": 168
+            }
+          ]
+        },
+        {
+          "patch_path": "src/rust/cryptography-x509-verification/src/types.rs",
+          "buggy_lines": [
+            {
+              "line": "/// Returns the inner `DNSName` within this `DNSPattern`, e.g.",
+              "approx_lineno": 142
+            },
+            {
+              "line": "/// `foo.com` for `*.foo.com` or `example.com` for `example.com`.",
+              "approx_lineno": 143
+            },
+            {
+              "line": "/// This API must not be used to bypass pattern matching; it exists",
+              "approx_lineno": 145
+            },
+            {
+              "line": "/// solely to enable checks that only require the inner name, such",
+              "approx_lineno": 146
+            },
+            {
+              "line": "/// as Name Constraint checks.",
+              "approx_lineno": 147
+            },
+            {
+              "line": "pub fn inner_name(&self) -> &DNSName<'a> {",
+              "approx_lineno": 148
+            },
+            {
+              "line": "match self {",
+              "approx_lineno": 149
+            },
+            {
+              "line": "DNSPattern::Exact(dnsname) => dnsname,",
+              "approx_lineno": 150
+            },
+            {
+              "line": "DNSPattern::Wildcard(dnsname) => dnsname,",
+              "approx_lineno": 151
+            },
+            {
+              "line": "/// Returns true if this `DNSConstraint` matches the given name.",
+              "approx_lineno": 166
+            },
+            {
+              "line": "/// # use cryptography_x509_verification::types::{DNSConstraint, DNSName};",
+              "approx_lineno": 173
+            },
+            {
+              "line": "/// let example_com = DNSName::new(\"example.com\").unwrap();",
+              "approx_lineno": 174
+            },
+            {
+              "line": "/// let badexample_com = DNSName::new(\"badexample.com\").unwrap();",
+              "approx_lineno": 175
+            },
+            {
+              "line": "/// let foo_example_com = DNSName::new(\"foo.example.com\").unwrap();",
+              "approx_lineno": 176
+            },
+            {
+              "line": "/// assert!(DNSConstraint::new(example_com.as_str()).unwrap().matches(&example_com));",
+              "approx_lineno": 177
+            },
+            {
+              "line": "/// assert!(DNSConstraint::new(example_com.as_str()).unwrap().matches(&foo_example_com));",
+              "approx_lineno": 178
+            },
+            {
+              "line": "/// assert!(!DNSConstraint::new(example_com.as_str()).unwrap().matches(&badexample_com));",
+              "approx_lineno": 179
+            },
+            {
+              "line": "pub fn matches(&self, name: &DNSName<'_>) -> bool {",
+              "approx_lineno": 181
+            },
+            {
+              "line": "name.as_str().len() >= self.0.as_str().len()",
+              "approx_lineno": 189
+            },
+            {
+              "line": ".zip(name.rlabels())",
+              "approx_lineno": 193
+            },
+            {
+              "line": ".all(|(a, o)| a.eq_ignore_ascii_case(o))",
+              "approx_lineno": 194
+            },
+            {
+              "line": "assert!(example_com.matches(&DNSName::new(\"example.com\").unwrap()));",
+              "approx_lineno": 600
+            },
+            {
+              "line": "assert!(example_com.matches(&DNSName::new(\"foo.example.com\").unwrap()));",
+              "approx_lineno": 601
+            },
+            {
+              "line": "assert!(example_com.matches(&DNSName::new(\"foo.bar.baz.quux.example.com\").unwrap()));",
+              "approx_lineno": 602
+            },
+            {
+              "line": "assert!(!example_com.matches(&DNSName::new(\"com\").unwrap()));",
+              "approx_lineno": 605
+            },
+            {
+              "line": "assert!(!example_com.matches(&DNSName::new(\"badexample.com\").unwrap()));",
+              "approx_lineno": 606
+            },
+            {
+              "line": "assert!(!example_com.matches(&DNSName::new(\"wrong.com\").unwrap()));",
+              "approx_lineno": 607
+            }
+          ],
+          "patched_lines": [
+            {
+              "line": "/// Returns true if this `DNSConstraint` matches the given `DNSPattern`.",
+              "approx_lineno": 167
+            },
+            {
+              "line": "/// On top of what RFC 5280 specifies, we define behavior for wildcard",
+              "approx_lineno": 195
+            },
+            {
+              "line": "/// patterns (which are not covered by RFC 5280): a wildcard pattern",
+              "approx_lineno": 195
+            },
+            {
+              "line": "/// matches a constraint if the pattern matches the constraint's inner name,",
+              "approx_lineno": 195
+            },
+            {
+              "line": "/// _or_ if the pattern's inner name matches the constraint.",
+              "approx_lineno": 195
+            },
+            {
+              "line": "/// This allows us to reject DNS names like `*.example.com` when",
+              "approx_lineno": 195
+            },
+            {
+              "line": "/// the constraint is `example.com` or `bar.example.com`.",
+              "approx_lineno": 195
+            },
+            {
+              "line": "pub fn matches(&self, name: &DNSPattern<'_>) -> bool {",
+              "approx_lineno": 195
+            },
+            {
+              "line": "match name {",
+              "approx_lineno": 195
+            },
+            {
+              "line": "DNSPattern::Exact(name) => {",
+              "approx_lineno": 195
+            },
+            {
+              "line": "name.as_str().len() >= self.0.as_str().len()",
+              "approx_lineno": 195
+            },
+            {
+              "line": ".zip(name.rlabels())",
+              "approx_lineno": 195
+            },
+            {
+              "line": ".all(|(a, o)| a.eq_ignore_ascii_case(o))",
+              "approx_lineno": 195
+            },
+            {
+              "line": "DNSPattern::Wildcard(inner) => {",
+              "approx_lineno": 195
+            },
+            {
+              "line": "name.matches(&self.0) || self.matches(&DNSPattern::Exact(inner.clone()))",
+              "approx_lineno": 195
+            },
+            {
+              "line": "assert!(example_com.matches(&DNSPattern::new(\"example.com\").unwrap()));",
+              "approx_lineno": 603
+            },
+            {
+              "line": "assert!(example_com.matches(&DNSPattern::new(\"foo.example.com\").unwrap()));",
+              "approx_lineno": 603
+            },
+            {
+              "line": "assert!(example_com.matches(&DNSPattern::new(\"foo.bar.baz.quux.example.com\").unwrap()));",
+              "approx_lineno": 603
+            },
+            {
+              "line": "assert!(!example_com.matches(&DNSPattern::new(\"com\").unwrap()));",
+              "approx_lineno": 608
+            },
+            {
+              "line": "assert!(!example_com.matches(&DNSPattern::new(\"badexample.com\").unwrap()));",
+              "approx_lineno": 608
+            },
+            {
+              "line": "assert!(!example_com.matches(&DNSPattern::new(\"wrong.com\").unwrap()));",
+              "approx_lineno": 608
+            },
+            {
+              "line": "fn test_dnsconstraint_matches_wildcard() {",
+              "approx_lineno": 608
+            },
+            {
+              "line": "let com = DNSConstraint::new(\"com\").unwrap();",
+              "approx_lineno": 608
+            },
+            {
+              "line": "let example_com = DNSConstraint::new(\"example.com\").unwrap();",
+              "approx_lineno": 608
+            },
+            {
+              "line": "let bar_example_com = DNSConstraint::new(\"bar.example.com\").unwrap();",
+              "approx_lineno": 608
+            },
+            {
+              "line": "let baz_bar_example_com = DNSConstraint::new(\"baz.bar.example.com\").unwrap();",
+              "approx_lineno": 608
+            },
+            {
+              "line": "let any_example_com = DNSPattern::new(\"*.example.com\").unwrap();",
+              "approx_lineno": 608
+            },
+            {
+              "line": "assert!(com.matches(&any_example_com));",
+              "approx_lineno": 608
+            },
+            {
+              "line": "assert!(example_com.matches(&any_example_com));",
+              "approx_lineno": 608
+            },
+            {
+              "line": "assert!(bar_example_com.matches(&any_example_com));",
+              "approx_lineno": 608
+            },
+            {
+              "line": "assert!(!baz_bar_example_com.matches(&any_example_com));",
+              "approx_lineno": 608
+            }
+          ]
+        },
+        {
+          "patch_path": "tests/x509/verification/test_limbo.py",
+          "buggy_lines": [],
+          "patched_lines": [
+            {
+              "line": "\"webpki::cn::ipv4-hex-mismatch\",",
+              "approx_lineno": 88
+            },
+            {
+              "line": "\"webpki::cn::ipv4-leading-zeros-mismatch\",",
+              "approx_lineno": 88
+            },
+            {
+              "line": "\"webpki::cn::ipv6-uppercase-mismatch\",",
+              "approx_lineno": 88
+            },
+            {
+              "line": "\"webpki::cn::ipv6-uncompressed-mismatch\",",
+              "approx_lineno": 88
+            },
+            {
+              "line": "\"webpki::cn::ipv6-non-rfc5952-mismatch\",",
+              "approx_lineno": 88
+            },
+            {
+              "line": "\"webpki::cn::punycode-not-in-san\",",
+              "approx_lineno": 88
+            },
+            {
+              "line": "\"webpki::cn::utf8-vs-punycode-mismatch\",",
+              "approx_lineno": 88
+            },
+            {
+              "line": "\"webpki::cn::not-in-san\",",
+              "approx_lineno": 88
+            },
+            {
+              "line": "\"webpki::cn::case-mismatch\",",
+              "approx_lineno": 88
+            }
+          ]
+        },
+        {
+          "patch_path": "vectors/cryptography_vectors/__about__.py",
+          "buggy_lines": [
+            {
+              "line": "__version__ = \"46.0.5\"",
+              "approx_lineno": 9
+            }
+          ],
+          "patched_lines": [
+            {
+              "line": "__version__ = \"46.0.6\"",
+              "approx_lineno": 10
+            }
+          ]
+        },
+        {
+          "patch_path": "vectors/pyproject.toml",
+          "buggy_lines": [
+            {
+              "line": "version = \"46.0.5\"",
+              "approx_lineno": 7
+            }
+          ],
+          "patched_lines": [
+            {
+              "line": "version = \"46.0.6\"",
+              "approx_lineno": 8
+            }
+          ]
+        }
+      ],
+      "installations": [
+        {
+          "install_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography",
+          "version": "49.0.0",
+          "version_matches_finding": false,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography-49.0.0.dist-info/METADATA",
+          "patch_file_checks": [
+            {
+              "patch_path": ".github/actions/fetch-vectors/action.yml",
+              "local_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/.github/actions/fetch-vectors/action.yml",
+              "file_exists": false,
+              "buggy_lines_found": [],
+              "patched_lines_found": [],
+              "summary": "File not found at expected path: cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/.github/actions/fetch-vectors/action.yml"
+            },
+            {
+              "patch_path": "CHANGELOG.rst",
+              "local_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/CHANGELOG.rst",
+              "file_exists": false,
+              "buggy_lines_found": [],
+              "patched_lines_found": [],
+              "summary": "File not found at expected path: cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/CHANGELOG.rst"
+            },
+            {
+              "patch_path": "pyproject.toml",
+              "local_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/pyproject.toml",
+              "file_exists": false,
+              "buggy_lines_found": [],
+              "patched_lines_found": [],
+              "summary": "File not found at expected path: cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/pyproject.toml"
+            },
+            {
+              "patch_path": "src/cryptography/__about__.py",
+              "local_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/__about__.py",
+              "file_exists": true,
+              "buggy_lines_found": [],
+              "patched_lines_found": [],
+              "summary": "File exists but neither buggy nor patched lines matched (searched 1 buggy, 1 patched queries)."
+            },
+            {
+              "patch_path": "src/rust/cryptography-x509-verification/src/lib.rs",
+              "local_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/src/rust/cryptography-x509-verification/src/lib.rs",
+              "file_exists": false,
+              "buggy_lines_found": [],
+              "patched_lines_found": [],
+              "summary": "File not found at expected path: cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/src/rust/cryptography-x509-verification/src/lib.rs"
+            },
+            {
+              "patch_path": "src/rust/cryptography-x509-verification/src/types.rs",
+              "local_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/src/rust/cryptography-x509-verification/src/types.rs",
+              "file_exists": false,
+              "buggy_lines_found": [],
+              "patched_lines_found": [],
+              "summary": "File not found at expected path: cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/src/rust/cryptography-x509-verification/src/types.rs"
+            },
+            {
+              "patch_path": "tests/x509/verification/test_limbo.py",
+              "local_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/tests/x509/verification/test_limbo.py",
+              "file_exists": false,
+              "buggy_lines_found": [],
+              "patched_lines_found": [],
+              "summary": "File not found at expected path: cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/tests/x509/verification/test_limbo.py"
+            },
+            {
+              "patch_path": "vectors/cryptography_vectors/__about__.py",
+              "local_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/vectors/cryptography_vectors/__about__.py",
+              "file_exists": false,
+              "buggy_lines_found": [],
+              "patched_lines_found": [],
+              "summary": "File not found at expected path: cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/vectors/cryptography_vectors/__about__.py"
+            },
+            {
+              "patch_path": "vectors/pyproject.toml",
+              "local_path": "cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/vectors/pyproject.toml",
+              "file_exists": false,
+              "buggy_lines_found": [],
+              "patched_lines_found": [],
+              "summary": "File not found at expected path: cases/case_001/ansible/.venv/lib/python3.12/site-packages/cryptography/vectors/pyproject.toml"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Diff fetched from: https://github.com/pyca/cryptography/commit/91d728897bdad30cd5c79a2b23e207f1f050d587"
+      ],
+      "errors": [
+        "NVD: timeout"
+      ]
+    },
+    {
+      "finding_id": "finding_010",
+      "vulnerability_id": "CVE-2026-4539",
+      "component": "pygments",
+      "reported_version": "2.19.2",
+      "timestamp": "2026-06-24T10:00:25.991628+00:00",
+      "nvd_found": true,
+      "nvd_summary": "A security flaw has been discovered in pygments up to 2.19.2. The impacted element is the function AdlLexer of the file pygments/lexers/archetype.py. The manipulation results in inefficient regular expression complexity. The attack is only possible with local access. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
+      "nvd_refs": [
+        "https://github.com/pygments/pygments/",
+        "https://github.com/pygments/pygments/issues/3058",
+        "https://vuldb.com/?ctiid.352327",
+        "https://vuldb.com/?id.352327",
+        "https://vuldb.com/?submit.774685"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    }
+  ]
+}

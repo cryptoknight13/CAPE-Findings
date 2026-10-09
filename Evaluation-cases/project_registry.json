@@ -1,0 +1,212 @@
+{
+  "case_001": {
+    "project_name": "ansible",
+    "github_url": "https://github.com/ansible/ansible",
+    "commit_hash": "3d3afdb34b1416b4da444f806fa013f33a812298",
+    "language": "python",
+    "n_findings": 10
+  },
+  "case_002": {
+    "project_name": "browser-use",
+    "github_url": "https://github.com/browser-use/browser-use",
+    "commit_hash": "48c3c882ac5f5557c011cb0c8edfc53962da5899",
+    "language": "python",
+    "n_findings": 35
+  },
+  "case_003": {
+    "project_name": "openclaw",
+    "github_url": "https://github.com/openclaw/openclaw",
+    "commit_hash": "2c714ac2e09f7e5fc4aaada0472cbc3eceb802ec",
+    "language": "typescript",
+    "n_findings": 161
+  },
+  "case_004": {
+    "project_name": "n8n",
+    "github_url": "https://github.com/n8n-io/n8n",
+    "commit_hash": "d3f1164a4328c013b735a4b2563307957c787062",
+    "language": "typescript",
+    "n_findings": 345
+  },
+  "case_005": {
+    "project_name": "open-webui",
+    "github_url": "https://github.com/open-webui/open-webui",
+    "commit_hash": "3660bc00fd807deced3400a63bfa6db47811a3bb",
+    "language": "python",
+    "n_findings": 418
+  },
+  "case_006": {
+    "project_name": "Flowise",
+    "github_url": "https://github.com/FlowiseAI/Flowise",
+    "commit_hash": "a82edce8aeb7fa650ff35780df5dcbd7548f8446",
+    "language": "typescript",
+    "n_findings": 719
+  },
+  "case_007": {
+    "project_name": "fast-graphrag",
+    "github_url": "https://github.com/circlemind-ai/fast-graphrag",
+    "commit_hash": "23b3a1bef64338faf9f35c521a20465dbd09419f",
+    "language": "python",
+    "n_findings": 59
+  },
+  "case_008": {
+    "project_name": "mindsdb",
+    "github_url": "https://github.com/mindsdb/mindsdb",
+    "commit_hash": "d2ceabc2d45d13a72afc3374bb3284ddf4be377c",
+    "language": "python",
+    "n_findings": 227
+  },
+  "case_009": {
+    "project_name": "autogen",
+    "github_url": "https://github.com/microsoft/autogen",
+    "commit_hash": "027ecf0a379bcc1d09956d46d12d44a3ad9cee14",
+    "language": "python",
+    "n_findings": 356
+  },
+  "case_010": {
+    "project_name": "sentry-python",
+    "github_url": "https://github.com/getsentry/sentry-python",
+    "commit_hash": "c7187282c5d514ecabf110ab0e97c5b9fbc81d48",
+    "language": "python",
+    "n_findings": 23
+  },
+  "case_011": {
+    "project_name": "textgen",
+    "github_url": "https://github.com/oobabooga/textgen",
+    "commit_hash": "1f367a27fc5c130202b8a0161074619a04759670",
+    "language": "python",
+    "n_findings": 33
+  },
+  "case_012": {
+    "project_name": "chat-ollama",
+    "github_url": "https://github.com/sugarforever/chat-ollama",
+    "commit_hash": "c7cca20dcd5bbb7136f23321d39da354ecd487ca",
+    "language": "typescript",
+    "n_findings": 518
+  },
+  "case_013": {
+    "project_name": "invokeai",
+    "github_url": "https://github.com/invoke-ai/InvokeAI",
+    "commit_hash": "ed49fab8e1209608f18c5177e16338bf743dd84b",
+    "language": "typescript",
+    "n_findings": 94
+  },
+  "case_014": {
+    "project_name": "gpt-pilot",
+    "github_url": "https://github.com/Pythagora-io/gpt-pilot",
+    "commit_hash": "53154df1c66b42021f230c3fb6ef797c4b7c3e83",
+    "language": "python",
+    "n_findings": 16
+  },
+  "case_015": {
+    "project_name": "rag_api",
+    "github_url": "https://github.com/danny-avila/rag_api",
+    "commit_hash": "6233a4d991c051033ada4ce35b43023591c5e08b",
+    "language": "python",
+    "n_findings": 28
+  },
+  "case_016": {
+    "project_name": "open-interpreter",
+    "github_url": "https://github.com/openinterpreter/open-interpreter",
+    "commit_hash": "9902a48f19ff6cf82a4705a52594150b250b73a3",
+    "language": "python",
+    "n_findings": 114
+  },
+  "case_017": {
+    "project_name": "OpenHands",
+    "github_url": "https://github.com/OpenHands/OpenHands",
+    "commit_hash": "cae76e54a590a3de417fa846e83e2a4a5afa3bde",
+    "language": "typescript",
+    "n_findings": 165
+  },
+  "case_018": {
+    "project_name": "aider",
+    "github_url": "https://github.com/Aider-AI/aider",
+    "commit_hash": "3ec8ec5a7d695b08a6c24fe6c0c235c8f87df9af",
+    "language": "python",
+    "n_findings": 77
+  },
+  "case_019": {
+    "project_name": "khoj",
+    "github_url": "https://github.com/khoj-ai/khoj",
+    "commit_hash": "9258f57dceab19d52a1a0bdac54eb38576c29187",
+    "language": "python",
+    "n_findings": 155
+  },
+  "case_020": {
+    "project_name": "langflow",
+    "github_url": "https://github.com/langflow-ai/langflow",
+    "commit_hash": "a4d875a9a1acb013e6956010fa5ec377a3d5de91",
+    "language": "python",
+    "n_findings": 260
+  },
+  "case_021": {
+    "project_name": "RA.Aid",
+    "github_url": "https://github.com/ai-christianson/RA.Aid",
+    "commit_hash": "e71bb83dcfdf8796d41c746ad99bf4838d1d5914",
+    "language": "python",
+    "n_findings": 173
+  },
+  "case_022": {
+    "project_name": "kimi-code",
+    "github_url": "https://github.com/MoonshotAI/kimi-code",
+    "commit_hash": "933cf6727efa74a3ac99d2c325f540439d65a5cd",
+    "language": "typescript",
+    "n_findings": 186
+  },
+  "case_023": {
+    "project_name": "cve-lite-cli",
+    "github_url": "https://github.com/OWASP/cve-lite-cli",
+    "commit_hash": "f0e5848a3a36167f203bea902853669ca05efe0c",
+    "language": "typescript",
+    "n_findings": 696
+  },
+  "case_024": {
+    "project_name": "AgentGPT",
+    "github_url": "https://github.com/reworkd/AgentGPT",
+    "commit_hash": "18b073ab05b2902e1d052c3d2799786d8623b5e5",
+    "language": "typescript",
+    "n_findings": 193
+  },
+  "case_025": {
+    "project_name": "aimap",
+    "github_url": "https://github.com/BishopFox/aimap",
+    "commit_hash": "65c820cbdad3da449f49aedb70055ca5ed4fa0ce",
+    "language": "python",
+    "n_findings": 38
+  },
+  "case_026": {
+    "project_name": "9router",
+    "github_url": "https://github.com/decolua/9router",
+    "commit_hash": "cce8a50cac501d97c49e563d2a37c3d6ec4da991",
+    "language": "javascript",
+    "n_findings": 8
+  },
+  "case_027": {
+    "project_name": "ChatDoc",
+    "github_url": "https://github.com/brijeshpatolia/ChatDoc",
+    "commit_hash": "9193292005f13b8ebfd20b3a45cb46a5cf2fb9c4",
+    "language": "typescript",
+    "n_findings": 268
+  },
+  "case_028": {
+    "project_name": "ui",
+    "github_url": "https://github.com/shadcn-ui/ui",
+    "commit_hash": "fc1ca40af4053770c58306a35978537af9dffabb",
+    "language": "typescript",
+    "n_findings": 447
+  },
+  "case_029": {
+    "project_name": "diffusers",
+    "github_url": "https://github.com/huggingface/diffusers",
+    "commit_hash": "b95637a98dda87a679321a2dfde5f166f22a8119",
+    "language": "python",
+    "n_findings": 111
+  },
+  "case_030": {
+    "project_name": "IOPaint",
+    "github_url": "https://github.com/Sanster/IOPaint",
+    "commit_hash": "61a759fb3f332bacdce8b2813f4837495c9b86e0",
+    "language": "python",
+    "n_findings": 205
+  }
+}

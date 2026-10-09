@@ -1,0 +1,277 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "document_id": "reachable-callgraph-case_014-gpt-pilot",
+  "product": "case_014",
+  "case_id": "case_014",
+  "repo_name": "gpt-pilot",
+  "method": "reachability_only",
+  "generated": "2026-06-25T04:49:02.878983+00:00",
+  "relationships_file": "cases/case_014/output-callgraph/relationships.csv",
+  "callgraph_file": "",
+  "code_evidence": "cases/case_014/gpt-pilot_report_code_evidence.json",
+  "callgraph_stats": {
+    "loaded": true,
+    "source": "csv",
+    "node_count": 2429,
+    "edge_count": 6118,
+    "entry_count": 1
+  },
+  "statements": [
+    {
+      "finding_id": "finding_001",
+      "vulnerability_id": "CVE-2026-21441",
+      "component": "urllib3",
+      "version": "2.2.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "urllib3 was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "urllib3@2.2.3: no code match in patch files.",
+      "timestamp": "2026-06-25T04:49:02.871607+00:00"
+    },
+    {
+      "finding_id": "finding_002",
+      "vulnerability_id": "CVE-2025-66471",
+      "component": "urllib3",
+      "version": "2.2.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "urllib3 was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "urllib3@2.2.3: buggy code present, patched code present.",
+      "timestamp": "2026-06-25T04:49:02.872347+00:00"
+    },
+    {
+      "finding_id": "finding_003",
+      "vulnerability_id": "CVE-2025-66418",
+      "component": "urllib3",
+      "version": "2.2.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "urllib3 was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "urllib3@2.2.3: buggy code present, patched code present.",
+      "timestamp": "2026-06-25T04:49:02.872732+00:00"
+    },
+    {
+      "finding_id": "finding_004",
+      "vulnerability_id": "CVE-2026-44307",
+      "component": "mako",
+      "version": "1.3.7",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "mako was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "mako@1.3.7 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T04:49:02.873213+00:00"
+    },
+    {
+      "finding_id": "finding_005",
+      "vulnerability_id": "CVE-2025-43859",
+      "component": "h11",
+      "version": "0.14.0",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "h11 was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "h11@0.14.0: buggy code present, patched code present.",
+      "timestamp": "2026-06-25T04:49:02.873624+00:00"
+    },
+    {
+      "finding_id": "finding_006",
+      "vulnerability_id": "CVE-2024-47081",
+      "component": "requests",
+      "version": "2.32.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component requests is reachable from an entry point. Path: component::gpt-pilot \u2192 core/llm/request_log.py \u2192 core/llm/request_log.py::<module> \u2192 core/llm/request_log.py::LLMRequestStatus",
+      "reachable": true,
+      "reachable_path": [
+        "component::gpt-pilot",
+        "core/llm/request_log.py",
+        "core/llm/request_log.py::<module>",
+        "core/llm/request_log.py::LLMRequestStatus"
+      ],
+      "matched_nodes": [
+        "core/llm/request_log.py::LLMRequestStatus"
+      ],
+      "patch_summary": "requests@2.32.3: buggy code present.",
+      "timestamp": "2026-06-25T04:49:02.874426+00:00"
+    },
+    {
+      "finding_id": "finding_007",
+      "vulnerability_id": "CVE-2026-44431",
+      "component": "urllib3",
+      "version": "2.2.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "urllib3 was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "urllib3@2.2.3 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T04:49:02.874806+00:00"
+    },
+    {
+      "finding_id": "finding_008",
+      "vulnerability_id": "CVE-2024-56326",
+      "component": "jinja2",
+      "version": "3.1.4",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component jinja2 is reachable from an entry point. Path: component::gpt-pilot \u2192 core/llm/prompt.py \u2192 external::jinja2",
+      "reachable": true,
+      "reachable_path": [
+        "component::gpt-pilot",
+        "core/llm/prompt.py",
+        "external::jinja2"
+      ],
+      "matched_nodes": [
+        "external::jinja2"
+      ],
+      "patch_summary": "jinja2@3.1.4: buggy code present, patched code present.",
+      "timestamp": "2026-06-25T04:49:02.875377+00:00"
+    },
+    {
+      "finding_id": "finding_009",
+      "vulnerability_id": "CVE-2026-41205",
+      "component": "mako",
+      "version": "1.3.7",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "mako was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "mako@1.3.7: buggy code present.",
+      "timestamp": "2026-06-25T04:49:02.875871+00:00"
+    },
+    {
+      "finding_id": "finding_010",
+      "vulnerability_id": "CVE-2026-45409",
+      "component": "idna",
+      "version": "3.10",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "idna was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "idna@3.10 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-25T04:49:02.876331+00:00"
+    },
+    {
+      "finding_id": "finding_011",
+      "vulnerability_id": "CVE-2025-27516",
+      "component": "jinja2",
+      "version": "3.1.4",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component jinja2 is reachable from an entry point. Path: component::gpt-pilot \u2192 core/llm/prompt.py \u2192 external::jinja2",
+      "reachable": true,
+      "reachable_path": [
+        "component::gpt-pilot",
+        "core/llm/prompt.py",
+        "external::jinja2"
+      ],
+      "matched_nodes": [
+        "external::jinja2"
+      ],
+      "patch_summary": "jinja2@3.1.4: buggy code present, patched code present.",
+      "timestamp": "2026-06-25T04:49:02.876713+00:00"
+    },
+    {
+      "finding_id": "finding_012",
+      "vulnerability_id": "CVE-2025-50181",
+      "component": "urllib3",
+      "version": "2.2.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "urllib3 was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "urllib3@2.2.3: buggy code present, patched code present.",
+      "timestamp": "2026-06-25T04:49:02.877104+00:00"
+    },
+    {
+      "finding_id": "finding_013",
+      "vulnerability_id": "CVE-2024-56201",
+      "component": "jinja2",
+      "version": "3.1.4",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component jinja2 is reachable from an entry point. Path: component::gpt-pilot \u2192 core/llm/prompt.py \u2192 external::jinja2",
+      "reachable": true,
+      "reachable_path": [
+        "component::gpt-pilot",
+        "core/llm/prompt.py",
+        "external::jinja2"
+      ],
+      "matched_nodes": [
+        "external::jinja2"
+      ],
+      "patch_summary": "jinja2@3.1.4: buggy code present.",
+      "timestamp": "2026-06-25T04:49:02.877468+00:00"
+    },
+    {
+      "finding_id": "finding_014",
+      "vulnerability_id": "CVE-2025-50182",
+      "component": "urllib3",
+      "version": "2.2.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "urllib3 was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "urllib3@2.2.3: patched code present.",
+      "timestamp": "2026-06-25T04:49:02.877854+00:00"
+    },
+    {
+      "finding_id": "finding_015",
+      "vulnerability_id": "CVE-2026-28684",
+      "component": "python-dotenv",
+      "version": "1.0.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-dotenv was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-dotenv@1.0.1: buggy code present, patched code present.",
+      "timestamp": "2026-06-25T04:49:02.878240+00:00"
+    },
+    {
+      "finding_id": "finding_016",
+      "vulnerability_id": "CVE-2026-25645",
+      "component": "requests",
+      "version": "2.32.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component requests is reachable from an entry point. Path: component::gpt-pilot \u2192 core/llm/request_log.py \u2192 core/llm/request_log.py::<module> \u2192 core/llm/request_log.py::LLMRequestStatus",
+      "reachable": true,
+      "reachable_path": [
+        "component::gpt-pilot",
+        "core/llm/request_log.py",
+        "core/llm/request_log.py::<module>",
+        "core/llm/request_log.py::LLMRequestStatus"
+      ],
+      "matched_nodes": [
+        "core/llm/request_log.py::LLMRequestStatus"
+      ],
+      "patch_summary": "requests@2.32.3: buggy code present.",
+      "timestamp": "2026-06-25T04:49:02.878972+00:00"
+    }
+  ]
+}

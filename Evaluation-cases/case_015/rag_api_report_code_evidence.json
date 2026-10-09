@@ -1,0 +1,1584 @@
+{
+  "document_id": "code-evidence-case_015-rag_api",
+  "product": "case_015",
+  "case_id": "case_015",
+  "repo_name": "rag_api",
+  "method": "code_evidence",
+  "generated": "2026-06-25T04:47:28.729268+00:00",
+  "findings": [
+    {
+      "finding_id": "finding_001",
+      "vulnerability_id": "CVE-2026-48710",
+      "component": "starlette",
+      "reported_version": "0.46.2",
+      "timestamp": "2026-06-25T04:38:10.342222+00:00",
+      "nvd_found": true,
+      "nvd_summary": "Starlette is a lightweight ASGI framework/toolkit. Prior to version 1.0.1, the HTTP `Host` request header was not validated before being used to reconstruct `request.url`. Because the routing algorithm relies on the raw HTTP path while `request.url` is rebuilt from the `Host` header, a malformed header could make `request.url.path` differ from the path that was actually requested. Middleware and endpoints that apply security restrictions based on `request.url` (rather than the raw `scope` path) could therefore be bypassed. Users should upgrade to a version greater than or equal to version 1.0.1, which validates the `Host` header against the grammar of RFC 9112 \u00a73.2 / RFC 3986 \u00a73.2.2 when constructing `request.url` and falls back to `scope[\"server\"]` for malformed values.",
+      "nvd_refs": [
+        "https://badhost.org",
+        "https://github.com/Kludex/starlette/commit/764dab0dcfb9033d75442d7a359645c9f94648c6",
+        "https://github.com/Kludex/starlette/security/advisories/GHSA-86qp-5c8j-p5mr",
+        "https://github.com/pypa/advisory-database/tree/main/vulns/starlette/PYSEC-2026-161.yaml",
+        "https://ostif.org/disclosing-the-badhost-vulnerability-in-starlette",
+        "https://www.secwest.net/starlette",
+        "https://www.x41-dsec.de/lab/advisories/x41-2026-002-starlette",
+        "https://access.redhat.com/security/cve/CVE-2026-48710",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2481742",
+        "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-48710.json"
+      ],
+      "commit_found": true,
+      "commit_urls_tried": [
+        "https://github.com/Kludex/starlette/commit/764dab0dcfb9033d75442d7a359645c9f94648c6"
+      ],
+      "diff_url": "https://github.com/Kludex/starlette/commit/764dab0dcfb9033d75442d7a359645c9f94648c6",
+      "patch_files": [
+        {
+          "patch_path": "starlette/datastructures.py",
+          "buggy_lines": [
+            {
+              "line": "if host_header is not None:",
+              "approx_lineno": 51
+            }
+          ],
+          "patched_lines": [
+            {
+              "line": "_HOST_RE = re.compile(r\"^([a-z0-9.-]+|\\[[a-f0-9]*:[a-f0-9.:]+\\])(?::[0-9]+)?$\", re.IGNORECASE)",
+              "approx_lineno": 29
+            },
+            {
+              "line": "if host_header is not None and _HOST_RE.fullmatch(host_header):",
+              "approx_lineno": 52
+            }
+          ]
+        },
+        {
+          "patch_path": "tests/test_datastructures.py",
+          "buggy_lines": [],
+          "patched_lines": [
+            {
+              "line": "@pytest.mark.parametrize(",
+              "approx_lineno": 162
+            },
+            {
+              "line": "pytest.param(b\"foo/?x=\", id=\"question-mark\"),",
+              "approx_lineno": 162
+            },
+            {
+              "line": "pytest.param(b\"foo/#\", id=\"hash\"),",
+              "approx_lineno": 162
+            },
+            {
+              "line": "pytest.param(b\"foo/bar\", id=\"slash\"),",
+              "approx_lineno": 162
+            },
+            {
+              "line": "pytest.param(b\"user@foo\", id=\"at-sign\"),",
+              "approx_lineno": 162
+            },
+            {
+              "line": "pytest.param(b\"foo\\\\bar\", id=\"backslash\"),",
+              "approx_lineno": 162
+            },
+            {
+              "line": "pytest.param(b\"foo bar\", id=\"space\"),",
+              "approx_lineno": 162
+            },
+            {
+              "line": "def test_url_from_scope_with_invalid_host(host: bytes) -> None:",
+              "approx_lineno": 162
+            },
+            {
+              "line": "\"\"\"An invalid Host header should be ignored, falling back to the server tuple.\"\"\"",
+              "approx_lineno": 162
+            },
+            {
+              "line": "\"scheme\": \"http\",",
+              "approx_lineno": 162
+            },
+            {
+              "line": "\"server\": (\"example.com\", 80),",
+              "approx_lineno": 162
+            },
+            {
+              "line": "\"path\": \"/admin\",",
+              "approx_lineno": 162
+            },
+            {
+              "line": "\"query_string\": b\"\",",
+              "approx_lineno": 162
+            },
+            {
+              "line": "\"headers\": [(b\"host\", host)],",
+              "approx_lineno": 162
+            },
+            {
+              "line": "assert u.path == \"/admin\"",
+              "approx_lineno": 162
+            },
+            {
+              "line": "assert u.netloc == \"example.com\"",
+              "approx_lineno": 162
+            }
+          ]
+        }
+      ],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette",
+          "version": "0.46.2",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette-0.46.2.dist-info/METADATA",
+          "patch_file_checks": [
+            {
+              "patch_path": "starlette/datastructures.py",
+              "local_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette/datastructures.py",
+              "file_exists": true,
+              "buggy_lines_found": [
+                {
+                  "searched_for": "if host_header is not None:",
+                  "line_number": 44,
+                  "context": "if host_header is not None:"
+                }
+              ],
+              "patched_lines_found": [],
+              "summary": "BUGGY code present (1/1 lines matched). Patch has NOT been applied to this file."
+            },
+            {
+              "patch_path": "tests/test_datastructures.py",
+              "local_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette/tests/test_datastructures.py",
+              "file_exists": false,
+              "buggy_lines_found": [],
+              "patched_lines_found": [],
+              "summary": "File not found at expected path: cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette/tests/test_datastructures.py"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Diff fetched from: https://github.com/Kludex/starlette/commit/764dab0dcfb9033d75442d7a359645c9f94648c6"
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_002",
+      "vulnerability_id": "CVE-2025-62727",
+      "component": "starlette",
+      "reported_version": "0.46.2",
+      "timestamp": "2026-06-25T04:39:14.737132+00:00",
+      "nvd_found": true,
+      "nvd_summary": "Starlette is a lightweight ASGI framework/toolkit. Starting in version 0.39.0 and prior to version 0.49.1 , an unauthenticated attacker can send a crafted HTTP Range header that triggers quadratic-time processing in Starlette's FileResponse Range parsing/merging logic. This enables CPU exhaustion per request, causing denial\u2011of\u2011service for endpoints serving files (e.g., StaticFiles or any use of FileResponse). This vulnerability is fixed in 0.49.1.",
+      "nvd_refs": [
+        "https://github.com/Kludex/starlette/commit/4ea6e22b489ec388d6004cfbca52dd5b147127c5",
+        "https://github.com/Kludex/starlette/commit/69ed26a85956ef4bd0161807eb27abf49be7cd3c",
+        "https://github.com/Kludex/starlette/releases/tag/0.49.1",
+        "https://github.com/Kludex/starlette/security/advisories/GHSA-7f5h-v6xp-fcq8",
+        "https://github.com/Kludex/starlette/security/advisories/GHSA-7f5h-v6xp-fcq8"
+      ],
+      "commit_found": true,
+      "commit_urls_tried": [
+        "https://github.com/Kludex/starlette/commit/4ea6e22b489ec388d6004cfbca52dd5b147127c5",
+        "https://github.com/Kludex/starlette/commit/69ed26a85956ef4bd0161807eb27abf49be7cd3c",
+        "https://github.com/kludex/starlette/commit/4ea6e22b489ec388d6004cfbca52dd5b147127c5",
+        "https://github.com/kludex/starlette/commit/69ed26a85956ef4bd0161807eb27abf49be7cd3c",
+        "https://github.com/kludex/starlette/commit/7e4b7428f273dbdc875dcd036d20804bcfc7b2ee"
+      ],
+      "diff_url": "https://github.com/Kludex/starlette/commit/4ea6e22b489ec388d6004cfbca52dd5b147127c5",
+      "patch_files": [
+        {
+          "patch_path": "starlette/responses.py",
+          "buggy_lines": [
+            {
+              "line": "_RANGE_PATTERN = re.compile(r\"(\\d*)-(\\d*)\")",
+              "approx_lineno": 294
+            },
+            {
+              "line": "@staticmethod",
+              "approx_lineno": 458
+            },
+            {
+              "line": "def _parse_range_header(http_range: str, file_size: int) -> list[tuple[int, int]]:",
+              "approx_lineno": 459
+            },
+            {
+              "line": "int(_[0]) if _[0] else file_size - int(_[1]),",
+              "approx_lineno": 473
+            },
+            {
+              "line": "int(_[1]) + 1 if _[0] and _[1] and int(_[1]) < file_size else file_size,",
+              "approx_lineno": 474
+            },
+            {
+              "line": "for _ in _RANGE_PATTERN.findall(range_)",
+              "approx_lineno": 476
+            },
+            {
+              "line": "if _ != (\"\", \"\")",
+              "approx_lineno": 477
+            }
+          ],
+          "patched_lines": [
+            {
+              "line": "@classmethod",
+              "approx_lineno": 460
+            },
+            {
+              "line": "def _parse_range_header(cls, http_range: str, file_size: int) -> list[tuple[int, int]]:",
+              "approx_lineno": 460
+            },
+            {
+              "line": "ranges = cls._parse_ranges(range_, file_size)",
+              "approx_lineno": 479
+            },
+            {
+              "line": "@classmethod",
+              "approx_lineno": 510
+            },
+            {
+              "line": "def _parse_ranges(cls, range_: str, file_size: int) -> list[tuple[int, int]]:",
+              "approx_lineno": 510
+            },
+            {
+              "line": "ranges: list[tuple[int, int]] = []",
+              "approx_lineno": 510
+            },
+            {
+              "line": "for part in range_.split(\",\"):",
+              "approx_lineno": 510
+            },
+            {
+              "line": "part = part.strip()",
+              "approx_lineno": 510
+            },
+            {
+              "line": "if not part or part == \"-\":",
+              "approx_lineno": 510
+            },
+            {
+              "line": "if \"-\" not in part:",
+              "approx_lineno": 510
+            },
+            {
+              "line": "start_str, end_str = part.split(\"-\", 1)",
+              "approx_lineno": 510
+            },
+            {
+              "line": "start_str = start_str.strip()",
+              "approx_lineno": 510
+            },
+            {
+              "line": "end_str = end_str.strip()",
+              "approx_lineno": 510
+            },
+            {
+              "line": "start = int(start_str) if start_str else file_size - int(end_str)",
+              "approx_lineno": 510
+            },
+            {
+              "line": "end = int(end_str) + 1 if start_str and end_str and int(end_str) < file_size else file_size",
+              "approx_lineno": 510
+            },
+            {
+              "line": "ranges.append((start, end))",
+              "approx_lineno": 510
+            },
+            {
+              "line": "except ValueError:",
+              "approx_lineno": 510
+            },
+            {
+              "line": "return ranges",
+              "approx_lineno": 510
+            }
+          ]
+        },
+        {
+          "patch_path": "tests/test_responses.py",
+          "buggy_lines": [],
+          "patched_lines": [
+            {
+              "line": "def test_file_response_range_without_dash(file_response_client: TestClient) -> None:",
+              "approx_lineno": 801
+            },
+            {
+              "line": "response = file_response_client.get(\"/\", headers={\"Range\": \"bytes=100, 0-50\"})",
+              "approx_lineno": 801
+            },
+            {
+              "line": "assert response.status_code == 206",
+              "approx_lineno": 801
+            },
+            {
+              "line": "assert response.headers[\"content-range\"] == f\"bytes 0-50/{len(README.encode('utf8'))}\"",
+              "approx_lineno": 801
+            },
+            {
+              "line": "def test_file_response_range_empty_start_and_end(file_response_client: TestClient) -> None:",
+              "approx_lineno": 801
+            },
+            {
+              "line": "response = file_response_client.get(\"/\", headers={\"Range\": \"bytes= - , 0-50\"})",
+              "approx_lineno": 801
+            },
+            {
+              "line": "assert response.status_code == 206",
+              "approx_lineno": 801
+            },
+            {
+              "line": "assert response.headers[\"content-range\"] == f\"bytes 0-50/{len(README.encode('utf8'))}\"",
+              "approx_lineno": 801
+            },
+            {
+              "line": "def test_file_response_range_ignore_non_numeric(file_response_client: TestClient) -> None:",
+              "approx_lineno": 801
+            },
+            {
+              "line": "response = file_response_client.get(\"/\", headers={\"Range\": \"bytes=abc-def, 0-50\"})",
+              "approx_lineno": 801
+            },
+            {
+              "line": "assert response.status_code == 206",
+              "approx_lineno": 801
+            },
+            {
+              "line": "assert response.headers[\"content-range\"] == f\"bytes 0-50/{len(README.encode('utf8'))}\"",
+              "approx_lineno": 801
+            },
+            {
+              "line": "def test_file_response_suffix_range(file_response_client: TestClient) -> None:",
+              "approx_lineno": 801
+            },
+            {
+              "line": "response = file_response_client.get(\"/\", headers={\"Range\": \"bytes=-100\"})",
+              "approx_lineno": 801
+            },
+            {
+              "line": "assert response.status_code == 206",
+              "approx_lineno": 801
+            },
+            {
+              "line": "file_size = len(README.encode(\"utf8\"))",
+              "approx_lineno": 801
+            },
+            {
+              "line": "assert response.headers[\"content-range\"] == f\"bytes {file_size - 100}-{file_size - 1}/{file_size}\"",
+              "approx_lineno": 801
+            },
+            {
+              "line": "assert response.headers[\"content-length\"] == \"100\"",
+              "approx_lineno": 801
+            },
+            {
+              "line": "assert response.content == README.encode(\"utf8\")[-100:]",
+              "approx_lineno": 801
+            }
+          ]
+        }
+      ],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette",
+          "version": "0.46.2",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette-0.46.2.dist-info/METADATA",
+          "patch_file_checks": [
+            {
+              "patch_path": "starlette/responses.py",
+              "local_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette/responses.py",
+              "file_exists": true,
+              "buggy_lines_found": [
+                {
+                  "searched_for": "_RANGE_PATTERN = re.compile(r\"(\\d*)-(\\d*)\")",
+                  "line_number": 286,
+                  "context": "_RANGE_PATTERN = re.compile(r\"(\\d*)-(\\d*)\")"
+                },
+                {
+                  "searched_for": "@staticmethod",
+                  "line_number": 446,
+                  "context": "@staticmethod"
+                },
+                {
+                  "searched_for": "def _parse_range_header(http_range: str, file_size: int) -> list[tuple[int, int]]:",
+                  "line_number": 447,
+                  "context": "def _parse_range_header(http_range: str, file_size: int) -> list[tuple[int, int]]:"
+                },
+                {
+                  "searched_for": "int(_[0]) if _[0] else file_size - int(_[1]),",
+                  "line_number": 461,
+                  "context": "int(_[0]) if _[0] else file_size - int(_[1]),"
+                },
+                {
+                  "searched_for": "int(_[1]) + 1 if _[0] and _[1] and int(_[1]) < file_size else file_size,",
+                  "line_number": 462,
+                  "context": "int(_[1]) + 1 if _[0] and _[1] and int(_[1]) < file_size else file_size,"
+                },
+                {
+                  "searched_for": "for _ in _RANGE_PATTERN.findall(range_)",
+                  "line_number": 464,
+                  "context": "for _ in _RANGE_PATTERN.findall(range_)"
+                },
+                {
+                  "searched_for": "if _ != (\"\", \"\")",
+                  "line_number": 465,
+                  "context": "if _ != (\"\", \"\")"
+                }
+              ],
+              "patched_lines_found": [
+                {
+                  "searched_for": "ranges: list[tuple[int, int]] = []",
+                  "line_number": 448,
+                  "context": "ranges: list[tuple[int, int]] = []"
+                },
+                {
+                  "searched_for": "except ValueError:",
+                  "line_number": 451,
+                  "context": "except ValueError:"
+                },
+                {
+                  "searched_for": "return ranges",
+                  "line_number": 478,
+                  "context": "return ranges"
+                }
+              ],
+              "summary": "Both buggy (7) and patched (3) lines found. Partial patch or file modified after patch."
+            },
+            {
+              "patch_path": "tests/test_responses.py",
+              "local_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette/tests/test_responses.py",
+              "file_exists": false,
+              "buggy_lines_found": [],
+              "patched_lines_found": [],
+              "summary": "File not found at expected path: cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette/tests/test_responses.py"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Diff fetched from: https://github.com/Kludex/starlette/commit/4ea6e22b489ec388d6004cfbca52dd5b147127c5"
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_003",
+      "vulnerability_id": "CVE-2026-54293",
+      "component": "nltk",
+      "reported_version": "3.9.4",
+      "timestamp": "2026-06-25T04:40:33.112037+00:00",
+      "nvd_found": true,
+      "nvd_summary": "NLTK (Natural Language Toolkit) is a suite of open source Python modules, data sets, and tutorials supporting research and development in Natural Language Processing. Prior to 3.10.0-rc1, nltk.data.load() in NLTK is vulnerable to path traversal via URL-encoded path separators and traversal segments when using the nltk: URL scheme. The unsafe-path regex check is performed before url2pathname() decodes the %xx sequences (a classic decode-after-check / TOCTOU-style flaw), allowing an attacker to bypass the protection documented in NLTK's SECURITY.md and read arbitrary files from the filesystem. While literal traversal strings such as ../../../etc/passwd are correctly blocked, encoded variants such as %2fetc%2fpasswd, %2e%2e%2f..., and ..%2f..%2f slip past the regex and are subsequently decoded into a real filesystem path. This vulnerability is fixed in 3.10.0-rc1.",
+      "nvd_refs": [
+        "https://github.com/nltk/nltk/pull/3575",
+        "https://github.com/nltk/nltk/security/advisories/GHSA-p4gq-832x-fm9v",
+        "https://github.com/nltk/nltk/security/advisories/GHSA-p4gq-832x-fm9v"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/nltk",
+          "version": "3.9.4",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/nltk-3.9.4.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_004",
+      "vulnerability_id": "CVE-2026-44843",
+      "component": "langchain-core",
+      "reported_version": "1.2.31",
+      "timestamp": "2026-06-25T04:40:50.222491+00:00",
+      "nvd_found": true,
+      "nvd_summary": "LangChain is a framework for building agents and LLM-powered applications. Prior to 0.3.85 and 1.3.3, LangChain contains older runtime code paths that deserialize run inputs, run outputs, or other application-controlled payloads using overly broad object allowlists. These paths may call load() with allowed_objects=\"all\". This does not enable arbitrary Python object deserialization, but it does allow any trusted LangChain-serializable object to be revived, which is broader than these runtime paths require. As a result, attacker-supplied LangChain serialized constructor dictionaries may cause trusted runtime paths to instantiate classes with untrusted constructor arguments. This vulnerability is fixed in 0.3.85 and 1.3.3.",
+      "nvd_refs": [
+        "https://github.com/langchain-ai/langchain/security/advisories/GHSA-pjwx-r37v-7724"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/langchain_core",
+          "version": "1.2.31",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/langchain_core-1.2.31.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_005",
+      "vulnerability_id": "CVE-2026-42561",
+      "component": "python-multipart",
+      "reported_version": "0.0.26",
+      "timestamp": "2026-06-25T04:41:07.944134+00:00",
+      "nvd_found": false,
+      "nvd_summary": "",
+      "nvd_refs": [],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/python_multipart",
+          "version": "0.0.26",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/python_multipart-0.0.26.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": [
+        "NVD: timeout"
+      ]
+    },
+    {
+      "finding_id": "finding_006",
+      "vulnerability_id": "CVE-2025-54121",
+      "component": "starlette",
+      "reported_version": "0.46.2",
+      "timestamp": "2026-06-25T04:41:25.620981+00:00",
+      "nvd_found": false,
+      "nvd_summary": "",
+      "nvd_refs": [],
+      "commit_found": true,
+      "commit_urls_tried": [
+        "https://github.com/encode/starlette/commit/9f7ec2eb512fcc3fe90b43cb9dd9e1d08696bec1",
+        "https://github.com/encode/starlette/commit/6ee94f2cac955eeae68d2898a8dec8cf17b48736",
+        "https://github.com/kludex/starlette/commit/9f7ec2eb512fcc3fe90b43cb9dd9e1d08696bec1"
+      ],
+      "diff_url": "https://github.com/encode/starlette/commit/9f7ec2eb512fcc3fe90b43cb9dd9e1d08696bec1",
+      "patch_files": [
+        {
+          "patch_path": "starlette/datastructures.py",
+          "buggy_lines": [
+            {
+              "line": "self.size += len(data)",
+              "approx_lineno": 443
+            },
+            {
+              "line": "if self._in_memory:",
+              "approx_lineno": 445
+            },
+            {
+              "line": "self.file.write(data)",
+              "approx_lineno": 446
+            }
+          ],
+          "patched_lines": [
+            {
+              "line": "self._max_mem_size = getattr(self.file, \"_max_size\", 0)",
+              "approx_lineno": 431
+            },
+            {
+              "line": "def _will_roll(self, size_to_add: int) -> bool:",
+              "approx_lineno": 441
+            },
+            {
+              "line": "if not self._in_memory:",
+              "approx_lineno": 441
+            },
+            {
+              "line": "future_size = self.file.tell() + size_to_add",
+              "approx_lineno": 441
+            },
+            {
+              "line": "return bool(future_size > self._max_mem_size) if self._max_mem_size else False",
+              "approx_lineno": 441
+            },
+            {
+              "line": "new_data_len = len(data)",
+              "approx_lineno": 442
+            },
+            {
+              "line": "self.size += new_data_len",
+              "approx_lineno": 444
+            },
+            {
+              "line": "if self._will_roll(new_data_len):",
+              "approx_lineno": 448
+            },
+            {
+              "line": "self.file.write(data)",
+              "approx_lineno": 449
+            }
+          ]
+        },
+        {
+          "patch_path": "tests/test_formparsers.py",
+          "buggy_lines": [],
+          "patched_lines": [
+            {
+              "line": "async def app_monitor_thread(scope: Scope, receive: Receive, send: Send) -> None:",
+              "approx_lineno": 107
+            },
+            {
+              "line": "\"\"\"Helper app to monitor what thread the app was called on.",
+              "approx_lineno": 107
+            },
+            {
+              "line": "This can later be used to validate thread/event loop operations.",
+              "approx_lineno": 107
+            },
+            {
+              "line": "request = Request(scope, receive)",
+              "approx_lineno": 107
+            },
+            {
+              "line": "await request.form()",
+              "approx_lineno": 107
+            },
+            {
+              "line": "await request.close()",
+              "approx_lineno": 107
+            },
+            {
+              "line": "response = JSONResponse({\"thread_ident\": threading.current_thread().ident})",
+              "approx_lineno": 107
+            },
+            {
+              "line": "await response(scope, receive, send)",
+              "approx_lineno": 107
+            },
+            {
+              "line": "class ThreadTrackingSpooledTemporaryFile(SpooledTemporaryFile[bytes]):",
+              "approx_lineno": 306
+            },
+            {
+              "line": "\"\"\"Helper class to track which threads performed the rollover operation.",
+              "approx_lineno": 306
+            },
+            {
+              "line": "This is not threadsafe/multi-test safe.",
+              "approx_lineno": 306
+            },
+            {
+              "line": "rollover_threads: ClassVar[set[int | None]] = set()",
+              "approx_lineno": 306
+            },
+            {
+              "line": "def rollover(self) -> None:",
+              "approx_lineno": 306
+            },
+            {
+              "line": "ThreadTrackingSpooledTemporaryFile.rollover_threads.add(threading.current_thread().ident)",
+              "approx_lineno": 306
+            },
+            {
+              "line": "super().rollover()",
+              "approx_lineno": 306
+            },
+            {
+              "line": "@pytest.fixture",
+              "approx_lineno": 306
+            },
+            {
+              "line": "def mock_spooled_temporary_file() -> Generator[None]:",
+              "approx_lineno": 306
+            },
+            {
+              "line": "with mock.patch(\"starlette.formparsers.SpooledTemporaryFile\", ThreadTrackingSpooledTemporaryFile):",
+              "approx_lineno": 306
+            },
+            {
+              "line": "ThreadTrackingSpooledTemporaryFile.rollover_threads.clear()",
+              "approx_lineno": 306
+            },
+            {
+              "line": "def test_multipart_request_large_file_rollover_in_background_thread(",
+              "approx_lineno": 306
+            },
+            {
+              "line": "mock_spooled_temporary_file: None, test_client_factory: TestClientFactory",
+              "approx_lineno": 306
+            },
+            {
+              "line": "\"\"\"Test that Spooled file rollovers happen in background threads.\"\"\"",
+              "approx_lineno": 306
+            },
+            {
+              "line": "data = BytesIO(b\" \" * (MultiPartParser.spool_max_size + 1))",
+              "approx_lineno": 306
+            },
+            {
+              "line": "client = test_client_factory(app_monitor_thread)",
+              "approx_lineno": 306
+            },
+            {
+              "line": "response = client.post(\"/\", files=[(\"test_large\", data)])",
+              "approx_lineno": 306
+            },
+            {
+              "line": "assert response.status_code == 200",
+              "approx_lineno": 306
+            },
+            {
+              "line": "app_thread_ident = response.json().get(\"thread_ident\")",
+              "approx_lineno": 306
+            },
+            {
+              "line": "assert app_thread_ident is not None",
+              "approx_lineno": 306
+            },
+            {
+              "line": "assert app_thread_ident not in ThreadTrackingSpooledTemporaryFile.rollover_threads",
+              "approx_lineno": 306
+            },
+            {
+              "line": "assert len(ThreadTrackingSpooledTemporaryFile.rollover_threads) == 1",
+              "approx_lineno": 306
+            }
+          ]
+        }
+      ],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette",
+          "version": "0.46.2",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette-0.46.2.dist-info/METADATA",
+          "patch_file_checks": [
+            {
+              "patch_path": "starlette/datastructures.py",
+              "local_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette/datastructures.py",
+              "file_exists": true,
+              "buggy_lines_found": [
+                {
+                  "searched_for": "self.size += len(data)",
+                  "line_number": 439,
+                  "context": "self.size += len(data)"
+                },
+                {
+                  "searched_for": "if self._in_memory:",
+                  "line_number": 441,
+                  "context": "if self._in_memory:"
+                },
+                {
+                  "searched_for": "self.file.write(data)",
+                  "line_number": 442,
+                  "context": "self.file.write(data)"
+                }
+              ],
+              "patched_lines_found": [
+                {
+                  "searched_for": "self.file.write(data)",
+                  "line_number": 442,
+                  "context": "self.file.write(data)"
+                }
+              ],
+              "summary": "Both buggy (3) and patched (1) lines found. Partial patch or file modified after patch."
+            },
+            {
+              "patch_path": "tests/test_formparsers.py",
+              "local_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette/tests/test_formparsers.py",
+              "file_exists": false,
+              "buggy_lines_found": [],
+              "patched_lines_found": [],
+              "summary": "File not found at expected path: cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette/tests/test_formparsers.py"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Diff fetched from: https://github.com/encode/starlette/commit/9f7ec2eb512fcc3fe90b43cb9dd9e1d08696bec1"
+      ],
+      "errors": [
+        "NVD: timeout"
+      ]
+    },
+    {
+      "finding_id": "finding_007",
+      "vulnerability_id": "CVE-2026-48818",
+      "component": "starlette",
+      "reported_version": "0.46.2",
+      "timestamp": "2026-06-25T04:42:31.385656+00:00",
+      "nvd_found": true,
+      "nvd_summary": "Starlette is a lightweight ASGI framework/toolkit. In versions 1.0.1 and earlier, StaticFiles on Windows is vulnerable to SSRF. An UNC path such as \\\\attacker.com\\share can cause os.path.realpath to initiate an outbound SMB connection before the path is rejected, exposing the service account\u2019s NTLMv2 credentials for offline cracking or relay even though the HTTP response is only a 404. The issue affects default follow_symlink=False deployments, including frameworks built on Starlette such as FastAPI; POSIX systems and follow_symlink=True are unaffected. The issue is fixed in 1.1.0.",
+      "nvd_refs": [
+        "https://github.com/Kludex/starlette/commit/fd53168a7767b6b55ba5af787fd88f49e33cabc5",
+        "https://github.com/Kludex/starlette/pull/3287",
+        "https://github.com/Kludex/starlette/releases/tag/1.1.0",
+        "https://github.com/Kludex/starlette/security/advisories/GHSA-wqp7-x3pw-xc5r"
+      ],
+      "commit_found": true,
+      "commit_urls_tried": [
+        "https://github.com/Kludex/starlette/commit/fd53168a7767b6b55ba5af787fd88f49e33cabc5"
+      ],
+      "diff_url": "https://github.com/Kludex/starlette/commit/fd53168a7767b6b55ba5af787fd88f49e33cabc5",
+      "patch_files": [
+        {
+          "patch_path": "starlette/staticfiles.py",
+          "buggy_lines": [],
+          "patched_lines": [
+            {
+              "line": "if path.startswith((\"/\", \"\\\\\")):",
+              "approx_lineno": 155
+            },
+            {
+              "line": "return \"\", None",
+              "approx_lineno": 155
+            }
+          ]
+        },
+        {
+          "patch_path": "tests/test_staticfiles.py",
+          "buggy_lines": [],
+          "patched_lines": [
+            {
+              "line": "def test_staticfiles_rejects_absolute_paths(tmp_path: Path) -> None:",
+              "approx_lineno": 606
+            },
+            {
+              "line": "statics_path = tmp_path / \"static\"",
+              "approx_lineno": 606
+            },
+            {
+              "line": "statics_path.mkdir()",
+              "approx_lineno": 606
+            },
+            {
+              "line": "app = StaticFiles(directory=statics_path)",
+              "approx_lineno": 606
+            },
+            {
+              "line": "full_path, stat_result = app.lookup_path(\"/etc/passwd\")",
+              "approx_lineno": 606
+            },
+            {
+              "line": "assert full_path == \"\"",
+              "approx_lineno": 606
+            },
+            {
+              "line": "assert stat_result is None",
+              "approx_lineno": 606
+            },
+            {
+              "line": "def test_staticfiles_rejects_absolute_windows_paths(tmp_path: Path) -> None:",
+              "approx_lineno": 606
+            },
+            {
+              "line": "statics_path = tmp_path / \"static\"",
+              "approx_lineno": 606
+            },
+            {
+              "line": "statics_path.mkdir()",
+              "approx_lineno": 606
+            },
+            {
+              "line": "app = StaticFiles(directory=statics_path)",
+              "approx_lineno": 606
+            },
+            {
+              "line": "full_path, stat_result = app.lookup_path(\"\\\\\\\\server\\\\share\")",
+              "approx_lineno": 606
+            },
+            {
+              "line": "assert full_path == \"\"",
+              "approx_lineno": 606
+            },
+            {
+              "line": "assert stat_result is None",
+              "approx_lineno": 606
+            }
+          ]
+        }
+      ],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette",
+          "version": "0.46.2",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette-0.46.2.dist-info/METADATA",
+          "patch_file_checks": [
+            {
+              "patch_path": "starlette/staticfiles.py",
+              "local_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette/staticfiles.py",
+              "file_exists": true,
+              "buggy_lines_found": [],
+              "patched_lines_found": [
+                {
+                  "searched_for": "return \"\", None",
+                  "line_number": 167,
+                  "context": "return \"\", None"
+                }
+              ],
+              "summary": "PATCHED code present (1/2 lines matched). Fix appears to have been applied."
+            },
+            {
+              "patch_path": "tests/test_staticfiles.py",
+              "local_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette/tests/test_staticfiles.py",
+              "file_exists": false,
+              "buggy_lines_found": [],
+              "patched_lines_found": [],
+              "summary": "File not found at expected path: cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette/tests/test_staticfiles.py"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Diff fetched from: https://github.com/Kludex/starlette/commit/fd53168a7767b6b55ba5af787fd88f49e33cabc5"
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_008",
+      "vulnerability_id": "CVE-2026-54283",
+      "component": "starlette",
+      "reported_version": "0.46.2",
+      "timestamp": "2026-06-25T04:42:44.896297+00:00",
+      "nvd_found": true,
+      "nvd_summary": "Starlette is a lightweight ASGI framework/toolkit. From 0.4.1 until 1.3.1, request.form() accepts max_fields and max_part_size to bound resource consumption while parsing form data. These limits are enforced for multipart/form-data, but silently ignored for application/x-www-form-urlencoded. An unauthenticated attacker can therefore send a urlencoded body with an arbitrarily large number of fields or an arbitrarily large field, even when the application configured limits it believed would apply. This vulnerability is fixed in 1.3.1.",
+      "nvd_refs": [
+        "https://github.com/Kludex/starlette/security/advisories/GHSA-82w8-qh3p-5jfq"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette",
+          "version": "0.46.2",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette-0.46.2.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_009",
+      "vulnerability_id": "CVE-2026-1839",
+      "component": "transformers",
+      "reported_version": "4.57.6",
+      "timestamp": "2026-06-25T04:42:54.647609+00:00",
+      "nvd_found": false,
+      "nvd_summary": "",
+      "nvd_refs": [],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/transformers",
+          "version": "4.57.6",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/transformers-4.57.6.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": [
+        "NVD: max retries"
+      ]
+    },
+    {
+      "finding_id": "finding_010",
+      "vulnerability_id": "CVE-2026-53539",
+      "component": "python-multipart",
+      "reported_version": "0.0.26",
+      "timestamp": "2026-06-25T04:43:12.641137+00:00",
+      "nvd_found": false,
+      "nvd_summary": "",
+      "nvd_refs": [],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/python_multipart",
+          "version": "0.0.26",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/python_multipart-0.0.26.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": [
+        "NVD: max retries"
+      ]
+    },
+    {
+      "finding_id": "finding_011",
+      "vulnerability_id": "CVE-2026-48525",
+      "component": "pyjwt",
+      "reported_version": "2.12.1",
+      "timestamp": "2026-06-25T04:43:35.803186+00:00",
+      "nvd_found": true,
+      "nvd_summary": "PyJWT is a JSON Web Token implementation in Python. From 2.8.0 to 2.12.1, when verifying detached JWS tokens using the unencoded-payload option (\"b64\": false, RFC 7797), PyJWT performs Base64URL decoding of the compact-serialization payload segment before enforcing the detached-payload rules. For b64=false, PyJWT later discards that decoded payload and replaces it with the caller-provided detached_payload. In practice, this turns the middle segment into an attacker-controlled \u201cwork amplifier\u201d: a remote client can supply an arbitrarily large Base64URL payload segment that forces CPU work + memory allocations even if the signature is invalid. This creates an unauthenticated DoS vector against any endpoint that verifies detached JWS using PyJWT. This vulnerability is fixed in 2.13.0.",
+      "nvd_refs": [
+        "https://github.com/jpadilla/pyjwt/security/advisories/GHSA-w7vc-732c-9m39",
+        "https://github.com/jpadilla/pyjwt/security/advisories/GHSA-w7vc-732c-9m39"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages",
+          "version": "2.12.1",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pyjwt-2.12.1.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_012",
+      "vulnerability_id": "CVE-2026-48526",
+      "component": "pyjwt",
+      "reported_version": "2.12.1",
+      "timestamp": "2026-06-25T04:43:46.257728+00:00",
+      "nvd_found": true,
+      "nvd_summary": "PyJWT is a JSON Web Token implementation in Python. Prior to 2.13.0, when the verifier is decoding JSON Web Tokens, while supporting both asymmetric and HMAC algorithms, the library does not validate use of JSON Web Keys in HMAC algorithm, allowing attacker to use the issuer public key as the secret key for HMAC algorithm. This vulnerability is fixed in 2.13.0.",
+      "nvd_refs": [
+        "https://github.com/jpadilla/pyjwt/security/advisories/GHSA-xgmm-8j9v-c9wx"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages",
+          "version": "2.12.1",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pyjwt-2.12.1.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_013",
+      "vulnerability_id": "CVE-2026-45134",
+      "component": "langchain-classic",
+      "reported_version": "1.0.4",
+      "timestamp": "2026-06-25T04:43:51.275724+00:00",
+      "nvd_found": true,
+      "nvd_summary": "LangSmith Client SDKs provide SDK's for interacting with the LangSmith platform. Prior to LangSmith SDK Python 0.8.0 and JS/TS 0.6.0, the LangSmith SDK's prompt pull methods (pull_prompt / pull_prompt_commit in Python, pullPrompt / pullPromptCommit in JS/TS) fetch and deserialize prompt manifests from the LangSmith Hub. These manifests may contain serialized LangChain objects and model configuration that affect runtime behavior. When pulling a public prompt by owner/name identifier, the manifest content is controlled by an external party, but prior versions of the SDK did not distinguish this from pulling a prompt within the caller's own organization. This vulnerability is fixed in LangSmith SDK Python 0.8.0 and JS/TS 0.6.0.",
+      "nvd_refs": [
+        "https://github.com/langchain-ai/langsmith-sdk/security/advisories/GHSA-3644-q5cj-c5c7"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/langchain_classic",
+          "version": "1.0.4",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/langchain_classic-1.0.4.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_014",
+      "vulnerability_id": "CVE-2026-48817",
+      "component": "starlette",
+      "reported_version": "0.46.2",
+      "timestamp": "2026-06-25T04:44:01.271663+00:00",
+      "nvd_found": false,
+      "nvd_summary": "",
+      "nvd_refs": [],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette",
+          "version": "0.46.2",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette-0.46.2.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": [
+        "NVD: max retries"
+      ]
+    },
+    {
+      "finding_id": "finding_015",
+      "vulnerability_id": "CVE-2026-48522",
+      "component": "pyjwt",
+      "reported_version": "2.12.1",
+      "timestamp": "2026-06-25T04:44:24.850090+00:00",
+      "nvd_found": true,
+      "nvd_summary": "PyJWT is a JSON Web Token implementation in Python. Prior to 2.13.0, PyJWKClient passes its uri argument directly to urllib.request.urlopen() which uses Python stdlib's default OpenerDirector registering HTTPHandler, HTTPSHandler, FTPHandler, FileHandler, and DataHandler. There is currently no documented option to restrict which schemes PyJWKClient will fetch. If an application's jku URL ingestion path accepts attacker-influenced URLs (e.g., from JWT header, configuration file, OAuth flow parameter), the attacker can cause PyJWKClient to read arbitrary local files via file:// (SSRF on local filesystem), cause PyJWKClient to attempt FTP / data-URI fetches (broader SSRF surface), or forge tokens that PyJWT verifies as valid. The library does not directly return non-HTTP(S) URI contents to the attacker; the chained \"plant a JWKS to forge tokens\" scenario described in the original report requires additional application-layer flaws (attacker write access to a filesystem path, untrusted jku derivation) that this fix does not address. This vulnerability is fixed in 2.13.0.",
+      "nvd_refs": [
+        "https://github.com/jpadilla/pyjwt/security/advisories/GHSA-993g-76c3-p5m4",
+        "https://github.com/jpadilla/pyjwt/security/advisories/GHSA-993g-76c3-p5m4"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages",
+          "version": "2.12.1",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pyjwt-2.12.1.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_016",
+      "vulnerability_id": "CVE-2026-48735",
+      "component": "pypdf",
+      "reported_version": "6.10.2",
+      "timestamp": "2026-06-25T04:44:33.145392+00:00",
+      "nvd_found": true,
+      "nvd_summary": "pypdf is a free and open-source pure-python PDF library. Prior to 6.12.1, an attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires parsing large XMP metadata, possibly with lots of unnecessary elements. This vulnerability is fixed in 6.12.1.",
+      "nvd_refs": [
+        "https://github.com/py-pdf/pypdf/pull/3796",
+        "https://github.com/py-pdf/pypdf/releases/tag/6.12.1",
+        "https://github.com/py-pdf/pypdf/security/advisories/GHSA-wjqc-6w8f-h24c"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pypdf",
+          "version": "6.10.2",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pypdf-6.10.2.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_017",
+      "vulnerability_id": "CVE-2026-54530",
+      "component": "pypdf",
+      "reported_version": "6.10.2",
+      "timestamp": "2026-06-25T04:44:43.939524+00:00",
+      "nvd_found": true,
+      "nvd_summary": "pypdf is a free and open-source pure-python PDF library. Prior to 6.13.0, an attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires extracting the text in layout mode. This vulnerability is fixed in 6.13.0.",
+      "nvd_refs": [
+        "https://github.com/py-pdf/pypdf/pull/3830",
+        "https://github.com/py-pdf/pypdf/releases/tag/6.13.0",
+        "https://github.com/py-pdf/pypdf/security/advisories/GHSA-52x6-gq3r-vpf4"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pypdf",
+          "version": "6.10.2",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pypdf-6.10.2.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_018",
+      "vulnerability_id": "CVE-2026-49461",
+      "component": "pypdf",
+      "reported_version": "6.10.2",
+      "timestamp": "2026-06-25T04:44:50.971360+00:00",
+      "nvd_found": false,
+      "nvd_summary": "",
+      "nvd_refs": [],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pypdf",
+          "version": "6.10.2",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pypdf-6.10.2.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": [
+        "NVD: timeout"
+      ]
+    },
+    {
+      "finding_id": "finding_019",
+      "vulnerability_id": "CVE-2026-54531",
+      "component": "pypdf",
+      "reported_version": "6.10.2",
+      "timestamp": "2026-06-25T04:45:13.476402+00:00",
+      "nvd_found": false,
+      "nvd_summary": "",
+      "nvd_refs": [],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pypdf",
+          "version": "6.10.2",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pypdf-6.10.2.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": [
+        "NVD: max retries"
+      ]
+    },
+    {
+      "finding_id": "finding_020",
+      "vulnerability_id": "CVE-2026-48524",
+      "component": "pyjwt",
+      "reported_version": "2.12.1",
+      "timestamp": "2026-06-25T04:45:31.531446+00:00",
+      "nvd_found": false,
+      "nvd_summary": "",
+      "nvd_refs": [],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages",
+          "version": "2.12.1",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pyjwt-2.12.1.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": [
+        "NVD: timeout"
+      ]
+    },
+    {
+      "finding_id": "finding_021",
+      "vulnerability_id": "CVE-2026-53540",
+      "component": "python-multipart",
+      "reported_version": "0.0.26",
+      "timestamp": "2026-06-25T04:45:50.069044+00:00",
+      "nvd_found": false,
+      "nvd_summary": "",
+      "nvd_refs": [],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/python_multipart",
+          "version": "0.0.26",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/python_multipart-0.0.26.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": [
+        "NVD: timeout"
+      ]
+    },
+    {
+      "finding_id": "finding_022",
+      "vulnerability_id": "CVE-2026-48523",
+      "component": "pyjwt",
+      "reported_version": "2.12.1",
+      "timestamp": "2026-06-25T04:46:07.746286+00:00",
+      "nvd_found": true,
+      "nvd_summary": "PyJWT is a JSON Web Token implementation in Python. From 2.9.0 to 2.12.1, there is a verifier-side algorithm allow-list bypass when jwt.decode() or jwt.decode_complete() are called with a PyJWK key. The token header alg is checked against the caller-supplied algorithms allow-list, but signature verification is performed with the algorithm bound to the PyJWK object instead of the header algorithm. An attacker who controls a registered JWK/JWKS private key can sign with a disallowed algorithm, advertise an allowed algorithm in the JWT header, and still be accepted. The issue affects the documented PyJWKClient.get_signing_key_from_jwt(...) flow. This vulnerability is fixed in 2.13.0.",
+      "nvd_refs": [
+        "https://github.com/jpadilla/pyjwt/security/advisories/GHSA-jq35-7prp-9v3f",
+        "https://github.com/jpadilla/pyjwt/security/advisories/GHSA-jq35-7prp-9v3f"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages",
+          "version": "2.12.1",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pyjwt-2.12.1.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_023",
+      "vulnerability_id": "CVE-2026-49460",
+      "component": "pypdf",
+      "reported_version": "6.10.2",
+      "timestamp": "2026-06-25T04:46:21.515137+00:00",
+      "nvd_found": false,
+      "nvd_summary": "",
+      "nvd_refs": [],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pypdf",
+          "version": "6.10.2",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pypdf-6.10.2.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": [
+        "NVD: timeout"
+      ]
+    },
+    {
+      "finding_id": "finding_024",
+      "vulnerability_id": "CVE-2026-54282",
+      "component": "starlette",
+      "reported_version": "0.46.2",
+      "timestamp": "2026-06-25T04:46:38.946559+00:00",
+      "nvd_found": false,
+      "nvd_summary": "",
+      "nvd_refs": [],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette",
+          "version": "0.46.2",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/starlette-0.46.2.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": [
+        "NVD: max retries"
+      ]
+    },
+    {
+      "finding_id": "finding_025",
+      "vulnerability_id": "CVE-2026-48155",
+      "component": "pypdf",
+      "reported_version": "6.10.2",
+      "timestamp": "2026-06-25T04:46:56.046611+00:00",
+      "nvd_found": false,
+      "nvd_summary": "",
+      "nvd_refs": [],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pypdf",
+          "version": "6.10.2",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pypdf-6.10.2.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": [
+        "NVD: timeout"
+      ]
+    },
+    {
+      "finding_id": "finding_026",
+      "vulnerability_id": "CVE-2026-53538",
+      "component": "python-multipart",
+      "reported_version": "0.0.26",
+      "timestamp": "2026-06-25T04:47:13.519440+00:00",
+      "nvd_found": true,
+      "nvd_summary": "Python-Multipart is a streaming multipart parser for Python. Prior to 0.0.30, QuerystringParser treated ; as a field separator in application/x-www-form-urlencoded bodies, in addition to &. The WHATWG URL standard, modern browsers, and Python's urllib.parse (since the CVE-2021-23336 fix) treat only & as a separator. This creates a parser differential: the same bytes are tokenized into different fields than a WHATWG compliant intermediary would produce, allowing an attacker to smuggle extra form fields past an upstream body inspecting component. This vulnerability is fixed in 0.0.30.",
+      "nvd_refs": [
+        "https://github.com/Kludex/python-multipart/security/advisories/GHSA-6jv3-5f52-599m"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/python_multipart",
+          "version": "0.0.26",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/python_multipart-0.0.26.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_027",
+      "vulnerability_id": "CVE-2026-53537",
+      "component": "python-multipart",
+      "reported_version": "0.0.26",
+      "timestamp": "2026-06-25T04:47:16.664415+00:00",
+      "nvd_found": true,
+      "nvd_summary": "Python-Multipart is a streaming multipart parser for Python. Prior to 0.0.30, parse_options_header parsed Content-Disposition (and Content-Type) headers with email.message.Message, which transparently applies RFC 2231/5987 decoding. The extended parameter syntax (filename*=charset'lang'value, name*=..., and the filename*0/filename*1 continuation form) is decoded and surfaced under the bare filename/name key, and overrides the plain parameter when both are present. RFC 7578 \u00a74.2 explicitly forbids the filename* form in multipart/form-data. Components that follow RFC 7578, or that do not implement RFC 2231/5987 decoding for multipart/form-data (WAFs, proxies, gateways), may interpret such a header differently. An attacker can exploit that difference to smuggle a different field name or filename past an upstream inspector to the backend. This vulnerability is fixed in 0.0.30.",
+      "nvd_refs": [
+        "https://github.com/Kludex/python-multipart/security/advisories/GHSA-vffw-93wf-4j4q"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/python_multipart",
+          "version": "0.0.26",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/python_multipart-0.0.26.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    },
+    {
+      "finding_id": "finding_028",
+      "vulnerability_id": "CVE-2026-48156",
+      "component": "pypdf",
+      "reported_version": "6.10.2",
+      "timestamp": "2026-06-25T04:47:26.107740+00:00",
+      "nvd_found": true,
+      "nvd_summary": "pypdf is a free and open-source pure-python PDF library. Prior to 6.12.0, an attacker who uses this vulnerability can craft a PDF which leads to long runtimes. This requires cross-reference streams with /W [0 0 0] values and large /Size values. This vulnerability is fixed in 6.12.0.",
+      "nvd_refs": [
+        "https://github.com/py-pdf/pypdf/pull/3791",
+        "https://github.com/py-pdf/pypdf/releases/tag/6.12.0",
+        "https://github.com/py-pdf/pypdf/security/advisories/GHSA-248m-82v9-q6g6"
+      ],
+      "commit_found": false,
+      "commit_urls_tried": [],
+      "diff_url": "",
+      "patch_files": [],
+      "installations": [
+        {
+          "install_path": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pypdf",
+          "version": "6.10.2",
+          "version_matches_finding": true,
+          "ecosystem": "pypi",
+          "manifest": "cases/case_015/rag_api/.venv/lib/python3.12/site-packages/pypdf-6.10.2.dist-info/METADATA",
+          "patch_file_checks": []
+        }
+      ],
+      "notes": [
+        "No fix commit URL found in NVD or OSV. Cannot perform patch-based code analysis."
+      ],
+      "errors": []
+    }
+  ]
+}

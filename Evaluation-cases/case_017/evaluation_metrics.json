@@ -1,0 +1,65 @@
+{
+  "case_id": "case_017",
+  "repo": "OpenHands",
+  "language": "typescript",
+  "ecosystem": "unknown",
+  "generated": "2026-06-27T00:17:56.788252+00:00",
+  "n_findings": 165,
+  "reachability": {
+    "total_findings": 165,
+    "reachable": 68,
+    "not_reachable": 97,
+    "unknown": 0,
+    "scanner_fp_rate": 0.587879
+  },
+  "regime_distribution": {
+    "R1": 0,
+    "R2": 144,
+    "R3": 2,
+    "R4": 11,
+    "R5": 8
+  },
+  "rel_grade_distribution": {
+    "0": 145,
+    "1": 6,
+    "2": 12,
+    "3": 2
+  },
+  "mrftp": {
+    "cape": 2,
+    "cvss_only": 9,
+    "epss_only": 7,
+    "epss_percentile_only": 7,
+    "kev_only": 9
+  },
+  "ndcg": {
+    "cape_5": 0.483519,
+    "cape_10": 0.421738,
+    "cape_all": 0.654952,
+    "cvss_only_5": 0.028022,
+    "cvss_only_10": 0.066177,
+    "cvss_only_all": 0.40449,
+    "epss_only_5": 0.0,
+    "epss_only_10": 0.092645,
+    "epss_only_all": 0.424509,
+    "epss_percentile_5": 0.0,
+    "epss_percentile_10": 0.092645,
+    "epss_percentile_all": 0.424467,
+    "kev_5": 0.028022,
+    "kev_10": 0.066177,
+    "kev_all": 0.40449
+  },
+  "auroc": {
+    "cape": 0.888363,
+    "cvss_only": 0.579707,
+    "epss_only": 0.611873,
+    "epss_percentile": 0.611873,
+    "kev_only": 0.579707
+  },
+  "kendall_tau": {
+    "cape_vs_cvss_only": 0.367433,
+    "cape_vs_epss_only": 0.254592,
+    "cape_vs_epss_percentile": 0.254904,
+    "cape_vs_kev_only": 0.367433
+  }
+}

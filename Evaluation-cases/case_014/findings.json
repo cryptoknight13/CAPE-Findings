@@ -1,0 +1,663 @@
+[
+  {
+    "finding_id": "finding_001",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2026-21441",
+    "component": "urllib3",
+    "version": "2.2.3",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0068,
+    "epss_percentile": 0.47599,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-38jv-5279-wg99"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.6.3"
+    ],
+    "advisory_summary": "urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API)",
+    "advisory_details": "urllib3 is an HTTP client library for Python. urllib3's streaming API is designed for the efficient handling of large HTTP responses by reading the content in chunks, rather than loading the entire response body into memory at once. urllib3 can perform decoding or decompression based on the HTTP `Content-Encoding` header (e.g., `gzip`, `deflate`, `br`, or `zstd`). When using the streaming API, the library decompresses only the necessary bytes, enabling partial content consumption. Starting in ve",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": []
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_002",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2025-66471",
+    "component": "urllib3",
+    "version": "2.2.3",
+    "severity": "HIGH",
+    "score": 8.9,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00622,
+    "epss_percentile": 0.45143,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-2xpw-w6gg-jr37"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.6.0"
+    ],
+    "advisory_summary": "urllib3 Streaming API improperly handles highly compressed data",
+    "advisory_details": "urllib3 is a user-friendly HTTP client library for Python. Starting in version 1.0 and prior to 2.6.0, the Streaming API improperly handles highly compressed data. urllib3's streaming API is designed for the efficient handling of large HTTP responses by reading the content in chunks, rather than loading the entire response body into memory at once. When streaming a compressed response, urllib3 can perform decoding or decompression based on the HTTP Content-Encoding header (e.g., gzip, deflate, b",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": []
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_003",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2025-66418",
+    "component": "urllib3",
+    "version": "2.2.3",
+    "severity": "HIGH",
+    "score": 8.9,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00622,
+    "epss_percentile": 0.45143,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-gm62-xv2j-4w53"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.6.0"
+    ],
+    "advisory_summary": "urllib3 allows an unbounded number of links in the decompression chain",
+    "advisory_details": "urllib3 is a user-friendly HTTP client library for Python. Starting in version 1.24 and prior to 2.6.0, the number of links in the decompression chain was unbounded allowing a malicious server to insert a virtually unlimited number of compression steps leading to high CPU usage and massive memory allocation for the decompressed data. This vulnerability is fixed in 2.6.0.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": []
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_004",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2026-44307",
+    "component": "mako",
+    "version": "1.3.7",
+    "severity": "HIGH",
+    "score": 8.7,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00609,
+    "epss_percentile": 0.44521,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-2h4p-vjrc-8xpq"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.3.12"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_005",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2025-43859",
+    "component": "h11",
+    "version": "0.14.0",
+    "severity": "CRITICAL",
+    "score": 9.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00522,
+    "epss_percentile": 0.40213,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-vqfr-h8mv-ghfj"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.16.0"
+    ],
+    "advisory_summary": "h11 accepts some malformed Chunked-Encoding bodies",
+    "advisory_details": "h11 is a Python implementation of HTTP/1.1. Prior to version 0.16.0, a leniency in h11's parsing of line terminators in chunked-coding message bodies can lead to request smuggling vulnerabilities under certain conditions. This issue has been patched in version 0.16.0. Since exploitation requires the combination of buggy h11 with a buggy (reverse) proxy, fixing either component is sufficient to mitigate this issue.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v0.11.0",
+          "v0.12.0",
+          "v0.13.0",
+          "v0.14.0",
+          "v0.15.0",
+          "v0.5.0",
+          "v0.6.0",
+          "v0.7.0",
+          "v0.8.0",
+          "v0.9.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_006",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2024-47081",
+    "component": "requests",
+    "version": "2.32.3",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00846,
+    "epss_percentile": 0.53296,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-9hjg-9r4m-mvj7"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.32.4"
+    ],
+    "advisory_summary": "Requests vulnerable to .netrc credentials leak via malicious URLs",
+    "advisory_details": "Requests is a HTTP library. Due to a URL parsing issue, Requests releases prior to 2.32.4 may leak .netrc credentials to third parties for specific maliciously-crafted URLs. Users should upgrade to version 2.32.4 to receive a fix. For older versions of Requests, use of the .netrc file can be disabled with `trust_env=False` on one's Requests Session.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "2.0",
+          "v0.10.0",
+          "v0.10.1",
+          "v0.10.2",
+          "v0.10.3",
+          "v0.10.4",
+          "v0.10.5",
+          "v0.10.6",
+          "v0.10.7",
+          "v0.10.8"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_007",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2026-44431",
+    "component": "urllib3",
+    "version": "2.2.3",
+    "severity": "HIGH",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00483,
+    "epss_percentile": 0.37887,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-qccp-gfcp-xxvc"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.7.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_008",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2024-56326",
+    "component": "jinja2",
+    "version": "3.1.4",
+    "severity": "MEDIUM",
+    "score": 7.8,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00496,
+    "epss_percentile": 0.38645,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-q2x7-8rv6-6q7h"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.1.5"
+    ],
+    "advisory_summary": "Jinja has a sandbox breakout through indirect reference to format method",
+    "advisory_details": "Jinja is an extensible templating engine. Prior to 3.1.5, An oversight in how the Jinja sandboxed environment detects calls to str.format allows an attacker that controls the content of a template to execute arbitrary Python code. To exploit the vulnerability, an attacker needs to control the content of a template. Whether that is the case depends on the type of application using Jinja. This vulnerability impacts users of applications which execute untrusted templates. Jinja's sandbox does catch",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "2.0",
+          "2.0rc1",
+          "2.1",
+          "2.1.1",
+          "2.10",
+          "2.11.0",
+          "2.2",
+          "2.2.1",
+          "2.3",
+          "2.4"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_009",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2026-41205",
+    "component": "mako",
+    "version": "1.3.7",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00361,
+    "epss_percentile": 0.27856,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-v92g-xgxw-vvmm"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.3.11"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_010",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2026-45409",
+    "component": "idna",
+    "version": "3.10",
+    "severity": "MEDIUM",
+    "score": 6.9,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00408,
+    "epss_percentile": 0.32426,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-65pc-fj4g-8rjx"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.15"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_011",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2025-27516",
+    "component": "jinja2",
+    "version": "3.1.4",
+    "severity": "MEDIUM",
+    "score": 5.4,
+    "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00465,
+    "epss_percentile": 0.36726,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-cpwx-vrp4-4pq7"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.1.6"
+    ],
+    "advisory_summary": "Jinja sandbox breakout through attr filter selecting format method",
+    "advisory_details": "Jinja is an extensible templating engine. Prior to 3.1.6, an oversight in how the Jinja sandboxed environment interacts with the |attr filter allows an attacker that controls the content of a template to execute arbitrary Python code. To exploit the vulnerability, an attacker needs to control the content of a template. Whether that is the case depends on the type of application using Jinja. This vulnerability impacts users of applications which execute untrusted templates. Jinja's sandbox does c",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "2.0",
+          "2.0rc1",
+          "2.1",
+          "2.1.1",
+          "2.10",
+          "2.11.0",
+          "2.2",
+          "2.2.1",
+          "2.3",
+          "2.4"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_012",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2025-50181",
+    "component": "urllib3",
+    "version": "2.2.3",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.004,
+    "epss_percentile": 0.31723,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-pq67-6m6q-mj2v"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.5.0"
+    ],
+    "advisory_summary": "urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation",
+    "advisory_details": "urllib3 is a user-friendly HTTP client library for Python. Prior to 2.5.0, it is possible to disable redirects for all requests by instantiating a PoolManager and specifying retries in a way that disable redirects. By default, requests and botocore users are not affected. An application attempting to mitigate SSRF or open redirect vulnerabilities by disabling redirects at the PoolManager level will remain vulnerable. This issue has been patched in version 2.5.0.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.3",
+          "0.3.1",
+          "0.4",
+          "0.4.1",
+          "1.1",
+          "1.2",
+          "1.2.1",
+          "1.25",
+          "1.25.1",
+          "1.25.2"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_013",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2024-56201",
+    "component": "jinja2",
+    "version": "3.1.4",
+    "severity": "MEDIUM",
+    "score": 8.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00298,
+    "epss_percentile": 0.21325,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-gmj6-6f8f-6699"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "3.1.5"
+    ],
+    "advisory_summary": "Jinja has a sandbox breakout through malicious filenames",
+    "advisory_details": "Jinja is an extensible templating engine. In versions on the 3.x branch prior to 3.1.5, a bug in the Jinja compiler allows an attacker that controls both the content and filename of a template to execute arbitrary Python code, regardless of if Jinja's sandbox is used. To exploit the vulnerability, an attacker needs to control both the filename and the contents of a template. Whether that is the case depends on the type of application using Jinja. This vulnerability impacts users of applications ",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "3.0.0",
+          "3.1.0",
+          "3.1.1",
+          "3.1.2"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_014",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2025-50182",
+    "component": "urllib3",
+    "version": "2.2.3",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00313,
+    "epss_percentile": 0.22853,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-48p4-8xcf-vxj5"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.5.0"
+    ],
+    "advisory_summary": "urllib3 does not control redirects in browsers and Node.js",
+    "advisory_details": "urllib3 is a user-friendly HTTP client library for Python. Starting in version 2.2.0 and prior to 2.5.0, urllib3 does not control redirects in browsers and Node.js. urllib3 supports being used in a Pyodide runtime utilizing the JavaScript Fetch API or falling back on XMLHttpRequest. This means Python libraries can be used to make HTTP requests from a browser or Node.js. Additionally, urllib3 provides a mechanism to control redirects, but the retries and redirect parameters are ignored with Pyodi",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "2.2.0",
+          "2.2.1",
+          "2.2.2",
+          "2.2.3",
+          "2.3.0",
+          "2.4.0"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_015",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2026-28684",
+    "component": "python-dotenv",
+    "version": "1.0.1",
+    "severity": "MEDIUM",
+    "score": 6.6,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00236,
+    "epss_percentile": 0.14311,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-mf9w-mj56-hr94"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.2.2"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_016",
+    "case_id": "case_014",
+    "vulnerability_id": "CVE-2026-25645",
+    "component": "requests",
+    "version": "2.32.3",
+    "severity": "MEDIUM",
+    "score": 4.4,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00182,
+    "epss_percentile": 0.07909,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-gc5v-m9x4-r6x2"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "2.33.0"
+    ],
+    "advisory_summary": "Requests has Insecure Temp File Reuse in its extract_zipped_paths() utility function",
+    "advisory_details": "Requests is a HTTP library. Prior to version 2.33.0, the `requests.utils.extract_zipped_paths()` utility function uses a predictable filename when extracting files from zip archives into the system temporary directory. If the target file already exists, it is reused without validation. A local attacker with write access to the temp directory could pre-create a malicious file that would be loaded in place of the legitimate one. Standard usage of the Requests library is not affected by this vulner",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "2.0",
+          "v0.10.0",
+          "v0.10.1",
+          "v0.10.2",
+          "v0.10.3",
+          "v0.10.4",
+          "v0.10.5",
+          "v0.10.6",
+          "v0.10.7",
+          "v0.10.8"
+        ]
+      }
+    ],
+    "kev_listed": false
+  }
+]

@@ -1,0 +1,1477 @@
+[
+  {
+    "finding_id": "finding_001",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2026-28414",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.03095,
+    "epss_percentile": 0.86044,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-39mp-8hj3-5c49"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "6.7.0"
+    ],
+    "advisory_summary": "Gradio has Absolute Path Traversal on Windows with Python 3.13+",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. Prior to version 6.7, Gradio apps running on Window with Python 3.13+ are vulnerable to an absolute path traversal issue that enables unauthenticated attackers to read arbitrary files from the file system. Python 3.13+ changed the definition of `os.path.isabs` so that root-relative paths like `/windows/win.ini` on Windows are no longer considered absolute paths, resulting in a vulnerability in Gradio's logic for joining path",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_002",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2026-48710",
+    "component": "starlette",
+    "version": "0.38.6",
+    "severity": "MEDIUM",
+    "score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.01384,
+    "epss_percentile": 0.68683,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-86qp-5c8j-p5mr"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.0.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_003",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2025-23042",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "CRITICAL",
+    "score": 9.1,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00836,
+    "epss_percentile": 0.52979,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-j2jg-fq62-7c3h"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.11.0"
+    ],
+    "advisory_summary": "Gradio Blocked Path ACL Bypass Vulnerability",
+    "advisory_details": "Gradio is an open-source Python package that allows quick building of demos and web application for machine learning models, API, or any arbitrary Python function. Gradio's Access Control List (ACL) for file paths can be bypassed by altering the letter case of a blocked file or directory path. This vulnerability arises due to the lack of case normalization in the file path validation logic. On case-insensitive file systems, such as those used by Windows and macOS, this flaw enables attackers to ",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_004",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2026-44513",
+    "component": "diffusers",
+    "version": "0.37.1",
+    "severity": "HIGH",
+    "score": 8.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00685,
+    "epss_percentile": 0.47813,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-98h9-4798-4q5v"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.38.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_005",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-8966",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00744,
+    "epss_percentile": 0.49965,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-5cpq-9538-jm2j"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [],
+    "advisory_summary": "",
+    "advisory_details": "A vulnerability in the file upload process of gradio-app/gradio version @gradio/video@0.10.2 allows for a Denial of Service (DoS) attack. An attacker can append a large number of characters to the end of a multipart boundary, causing the system to continuously process each character and issue warnings. This can render Gradio inaccessible for extended periods, disrupting services and causing significant downtime.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_006",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-47874",
+    "component": "starlette",
+    "version": "0.38.6",
+    "severity": "HIGH",
+    "score": 0.0,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00652,
+    "epss_percentile": 0.4645,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-f96h-pmfr-66vw"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.40.0"
+    ],
+    "advisory_summary": "Starlette Denial of service (DoS) via multipart/form-data",
+    "advisory_details": "Starlette is an Asynchronous Server Gateway Interface (ASGI) framework/toolkit. Prior to version 0.40.0, Starlette treats `multipart/form-data` parts without a `filename` as text form fields and buffers those in byte strings with no size limit. This allows an attacker to upload arbitrary large form fields and cause Starlette to both slow down significantly due to excessive memory allocations and copy operations, and also consume more and more memory until the server starts swapping and grinds to",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.0",
+          "0.1.1",
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.14",
+          "0.1.15",
+          "0.1.16",
+          "0.1.17"
+        ]
+      },
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.0",
+          "0.1.1",
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.14",
+          "0.1.15",
+          "0.1.16",
+          "0.1.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_007",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-10648",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "HIGH",
+    "score": 8.2,
+    "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+    "cvss_version": "3.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0067,
+    "epss_percentile": 0.47185,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-pgfv-gvc5-prfg"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_008",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-10569",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0061,
+    "epss_percentile": 0.44576,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-7xmc-vhjp-qv5q"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_009",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-47868",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00804,
+    "epss_percentile": 0.51971,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-4q3c-cj7g-jcwf"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.0.0"
+    ],
+    "advisory_summary": "Several components\u2019 post-process steps may allow arbitrary file leaks in Gradio",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. This is a **data validation vulnerability** affecting several Gradio components, which allows arbitrary file leaks through the post-processing step. Attackers can exploit these components by crafting requests that bypass expected input constraints. This issue could lead to sensitive files being exposed to unauthorized users, especially when combined with other vulnerabilities, such as issue TOB-GRADIO-15. The components most",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_010",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-47164",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "MEDIUM",
+    "score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00687,
+    "epss_percentile": 0.47872,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-77xq-6g77-h274"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.0.0"
+    ],
+    "advisory_summary": "The `is_in_or_equal` function may be bypassed in Gradio",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. This vulnerability relates to the **bypass of directory traversal checks** within the `is_in_or_equal` function. This function, intended to check if a file resides within a given directory, can be bypassed with certain payloads that manipulate file paths using `..` (parent directory) sequences. Attackers could potentially access restricted files if they are able to exploit this flaw, although the difficulty is high. This pri",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_011",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-47084",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "HIGH",
+    "score": 8.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00484,
+    "epss_percentile": 0.37936,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-3c67-5hwx-f6wx"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.44.0"
+    ],
+    "advisory_summary": "CORS origin validation is not performed when the request has a cookie in Gradio",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. This vulnerability is related to **CORS origin validation**, where the Gradio server fails to validate the request origin when a cookie is present. This allows an attacker\u2019s website to make unauthorized requests to a local Gradio server. Potentially, attackers can upload files, steal authentication tokens, and access user data if the victim visits a malicious website while logged into Gradio. This impacts users who have depl",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_012",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-12217",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.0",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0064,
+    "epss_percentile": 0.45901,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-prpg-p95c-32fv"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_013",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2025-48889",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.0061,
+    "epss_percentile": 0.44565,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-8jw3-6x8j-v96g"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.31.0"
+    ],
+    "advisory_summary": "Gradio Allows Unauthorized File Copy via Path Manipulation",
+    "advisory_details": "Gradio is an open-source Python package that allows quick building of demos and web application for machine learning models, API, or any arbitrary Python function. Prior to version 5.31.0, an arbitrary file copy vulnerability in Gradio's flagging feature allows unauthenticated attackers to copy any readable file from the server's filesystem. While attackers can't read these copied files, they can cause DoS by copying large files (like /dev/urandom) to fill disk space. This issue has been patched",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.5.14",
+          "@gradio/accordion@0.5.15",
+          "@gradio/annotatedimage@0.9.17",
+          "@gradio/annotatedimage@0.9.18",
+          "@gradio/annotatedimage@0.9.19",
+          "@gradio/atoms@0.16.0",
+          "@gradio/atoms@0.16.1",
+          "@gradio/audio@0.17.11",
+          "@gradio/audio@0.17.12",
+          "@gradio/audio@0.17.13"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_014",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-47167",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "MEDIUM",
+    "score": 7.2,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00463,
+    "epss_percentile": 0.36593,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-576c-3j53-r9jj"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.0.0"
+    ],
+    "advisory_summary": "SSRF in the path parameter of /queue/join in Gradio",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. This vulnerability relates to **Server-Side Request Forgery (SSRF)** in the `/queue/join` endpoint. Gradio\u2019s `async_save_url_to_cache` function allows attackers to force the Gradio server to send HTTP requests to user-controlled URLs. This could enable attackers to target internal servers or services within a local network and possibly exfiltrate data or cause unwanted internal requests. Additionally, the content from these ",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_015",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-47870",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "HIGH",
+    "score": 7.0,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00359,
+    "epss_percentile": 0.27625,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-xh2x-3mrm-fwqm"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.0.0"
+    ],
+    "advisory_summary": "Race condition in update_root_in_config may redirect user traffic in Gradio",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. This vulnerability involves a **race condition** in the `update_root_in_config` function, allowing an attacker to modify the `root` URL used by the Gradio frontend to communicate with the backend. By exploiting this flaw, an attacker can redirect user traffic to a malicious server. This could lead to the interception of sensitive data such as authentication credentials or uploaded files. This impacts all users who connect to",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_016",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2025-54121",
+    "component": "starlette",
+    "version": "0.38.6",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00526,
+    "epss_percentile": 0.40397,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-2c2j-9gv5-cj73"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.47.2"
+    ],
+    "advisory_summary": "Starlette has possible denial-of-service vector when parsing large files in multipart forms",
+    "advisory_details": "Starlette is a lightweight ASGI (Asynchronous Server Gateway Interface) framework/toolkit, designed for building async web services in Python. In versions 0.47.1 and below, when parsing a multi-part form with large files (greater than the default max spool size) starlette will block the main thread to roll the file over to disk. This blocks the event thread which means the application can't accept new connections. The UploadFile code has a minor bug where instead of just checking for self._in_me",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.0",
+          "0.1.1",
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.14",
+          "0.1.15",
+          "0.1.16",
+          "0.1.17"
+        ]
+      },
+      {
+        "ecosystem": "",
+        "versions": [
+          "0.1.0",
+          "0.1.1",
+          "0.1.10",
+          "0.1.11",
+          "0.1.12",
+          "0.1.13",
+          "0.1.14",
+          "0.1.15",
+          "0.1.16",
+          "0.1.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_017",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-48052",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "MEDIUM",
+    "score": 6.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00464,
+    "epss_percentile": 0.36654,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-3gf9-wv65-gwh9"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [],
+    "advisory_summary": "",
+    "advisory_details": "In gradio <=4.42.0, the gr.DownloadButton function has a hidden server-side request forgery (SSRF) vulnerability. The reason is that within the save_url_to_cache function, there are no restrictions on the URL, which allows access to local target resources. This can lead to the download of local resources and sensitive information.",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_018",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2026-28416",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "HIGH",
+    "score": 8.2,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00316,
+    "epss_percentile": 0.23141,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jmh7-g254-2cq9"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "6.6.0"
+    ],
+    "advisory_summary": "Gradio has SSRF via Malicious `proxy_url` Injection in `gr.load()` Config Processing",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. Prior to version 6.6.0, a Server-Side Request Forgery (SSRF) vulnerability in Gradio allows an attacker to make arbitrary HTTP requests from a victim's server by hosting a malicious Gradio Space. When a victim application uses `gr.load()` to load an attacker-controlled Space, the malicious `proxy_url` from the config is trusted and added to the allowlist, enabling the attacker to access internal services, cloud metadata endp",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_019",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-47166",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00421,
+    "epss_percentile": 0.33618,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-37qc-qgx6-9xjv"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.44.0"
+    ],
+    "advisory_summary": "One-level read path traversal in `/custom_component` in Gradio",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. This vulnerability involves a **one-level read path traversal** in the `/custom_component` endpoint. Attackers can exploit this flaw to access and leak source code from custom Gradio components by manipulating the file path in the request. Although the traversal is limited to a single directory level, it could expose proprietary or sensitive code that developers intended to keep private. This impacts users who have developed",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_020",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2026-48818",
+    "component": "starlette",
+    "version": "0.38.6",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00277,
+    "epss_percentile": 0.19284,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-wqp7-x3pw-xc5r"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.1.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_021",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2026-54283",
+    "component": "starlette",
+    "version": "0.38.6",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00275,
+    "epss_percentile": 0.19067,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-82w8-qh3p-5jfq"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.3.1"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_022",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-47867",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00208,
+    "epss_percentile": 0.10784,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-8c87-gvhj-xm8m"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.0.0"
+    ],
+    "advisory_summary": "Lack of integrity check on the downloaded FRP client in Gradio",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. This vulnerability is a **lack of integrity check** on the downloaded FRP client, which could potentially allow attackers to introduce malicious code. If an attacker gains access to the remote URL from which the FRP client is downloaded, they could modify the binary without detection, as the Gradio server does not verify the file's checksum or signature.  Any users utilizing the Gradio server's sharing mechanism that downloa",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_023",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-47869",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "MEDIUM",
+    "score": 3.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00285,
+    "epss_percentile": 0.20014,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-j757-pf57-f8r4"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.44.0"
+    ],
+    "advisory_summary": "Non-constant-time comparison when comparing hashes in Gradio",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. This vulnerability involves a **timing attack** in the way Gradio compares hashes for the `analytics_dashboard` function. Since the comparison is not done in constant time, an attacker could exploit this by measuring the response time of different requests to infer the correct hash byte-by-byte. This can lead to unauthorized access to the analytics dashboard, especially if the attacker can repeatedly query the system with di",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_024",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-47165",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "MEDIUM",
+    "score": 5.4,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00274,
+    "epss_percentile": 0.18998,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-89v2-pqfv-c5r9"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.0.0"
+    ],
+    "advisory_summary": "CORS origin validation accepts the null origin in Gradio",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. This vulnerability relates to **CORS origin validation accepting a null origin**. When a Gradio server is deployed locally, the `localhost_aliases` variable includes \"null\" as a valid origin. This allows attackers to make unauthorized requests from sandboxed iframes or other sources with a null origin, potentially leading to data theft, such as user authentication tokens or uploaded files. This impacts users running Gradio l",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_025",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-47871",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "HIGH",
+    "score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00172,
+    "epss_percentile": 0.06769,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-279j-x4gx-hfrh"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.0.0"
+    ],
+    "advisory_summary": "Insecure communication between the FRP client and server in Gradio",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. This vulnerability involves **insecure communication** between the FRP (Fast Reverse Proxy) client and server when Gradio's `share=True` option is used. HTTPS is not enforced on the connection, allowing attackers to intercept and read files uploaded to the Gradio server, as well as modify responses or data sent between the client and server. This impacts users who are sharing Gradio demos publicly over the internet using `sh",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_026",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2026-27167",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "LOW",
+    "score": 0.0,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00453,
+    "epss_percentile": 0.35962,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-h3h8-3v2v-rg7m"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "6.6.0"
+    ],
+    "advisory_summary": "Gradio: Mocked OAuth Login Exposes Server Credentials and Uses Hardcoded Session Secret",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. Starting in version 4.16.0 and prior to version 6.6.0, Gradio applications running outside of Hugging Face Spaces automatically enable \"mocked\" OAuth routes when OAuth components (e.g. `gr.LoginButton`) are used. When a user visits `/login/huggingface`, the server retrieves its own Hugging Face access token via `huggingface_hub.get_token()` and stores it in the visitor's session cookie. If the application is network-accessib",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_027",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-47872",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "MEDIUM",
+    "score": 5.4,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00252,
+    "epss_percentile": 0.16322,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-gvv6-33j7-884g"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "5.0.0"
+    ],
+    "advisory_summary": "Cross-site Scripting on Gradio server via upload of HTML files, JS files, or SVG files",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. This vulnerability involves **Cross-Site Scripting (XSS)** on any Gradio server that allows file uploads. Authenticated users can upload files such as HTML, JavaScript, or SVG files containing malicious scripts. When other users download or view these files, the scripts will execute in their browser, allowing attackers to perform unauthorized actions or steal sensitive information from their sessions. This impacts any Gradio",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_028",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2026-48817",
+    "component": "starlette",
+    "version": "0.38.6",
+    "severity": "MEDIUM",
+    "score": 5.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00213,
+    "epss_percentile": 0.11448,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-x746-7m8f-x49c"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.1.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_029",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2026-28415",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "MEDIUM",
+    "score": 4.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00232,
+    "epss_percentile": 0.13787,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-pfjf-5gxr-995x"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "6.6.0"
+    ],
+    "advisory_summary": "Gradio has Open Redirect in OAuth Flow",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. Prior to version 6.6.0, the _redirect_to_target() function in Gradio's OAuth flow accepts an unvalidated _target_url query parameter, allowing redirection to arbitrary external URLs. This affects the /logout and /login/callback endpoints on Gradio apps with OAuth enabled (i.e. apps running on Hugging Face Spaces with gr.LoginButton). Starting in version 6.6.0, the _target_url parameter is sanitized to only use the path, quer",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_030",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2023-36308",
+    "component": "github.com/disintegration/imaging",
+    "version": "v1.6.2",
+    "severity": "LOW",
+    "score": 5.5,
+    "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00354,
+    "epss_percentile": 0.27212,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-q7pp-wcgr-pffx"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [],
+    "advisory_summary": "",
+    "advisory_details": "disintegration Imaging 1.6.2 allows attackers to cause a panic (because of an integer index out of range during a Grayscale call) via a crafted TIFF file to the scan function of scanner.go. NOTE: it is unclear whether there are common use cases in which this panic could have any security consequence",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "v1.0.0",
+          "v1.1.0",
+          "v1.2.0",
+          "v1.2.1",
+          "v1.2.2",
+          "v1.2.3",
+          "v1.2.4",
+          "v1.3.0",
+          "v1.4.0",
+          "v1.4.1"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_031",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2024-47168",
+    "component": "gradio",
+    "version": "4.37.2+custom.20",
+    "severity": "LOW",
+    "score": 4.3,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00323,
+    "epss_percentile": 0.23937,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-hm3c-93pg-4cxw"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "4.44.0"
+    ],
+    "advisory_summary": "The `enable_monitoring` flag set to `False` does not disable monitoring in Gradio",
+    "advisory_details": "Gradio is an open-source Python package designed for quick prototyping. This vulnerability involves data exposure due to the enable_monitoring flag not properly disabling monitoring when set to False. Even when monitoring is supposedly disabled, an attacker or unauthorized user can still access the monitoring dashboard by directly requesting the /monitoring endpoint. This means that sensitive application analytics may still be exposed, particularly in environments where monitoring is expected to",
+    "affected_ranges": [
+      {
+        "ecosystem": "",
+        "versions": [
+          "@gradio/accordion@0.3.0",
+          "@gradio/accordion@0.3.1",
+          "@gradio/accordion@0.3.10",
+          "@gradio/accordion@0.3.11",
+          "@gradio/accordion@0.3.12",
+          "@gradio/accordion@0.3.13",
+          "@gradio/accordion@0.3.14",
+          "@gradio/accordion@0.3.15",
+          "@gradio/accordion@0.3.16",
+          "@gradio/accordion@0.3.17"
+        ]
+      }
+    ],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_032",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2026-54282",
+    "component": "starlette",
+    "version": "0.38.6",
+    "severity": "LOW",
+    "score": 3.7,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": 0.00186,
+    "epss_percentile": 0.08261,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-jp82-jpqv-5vv3"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "1.3.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  },
+  {
+    "finding_id": "finding_033",
+    "case_id": "case_011",
+    "vulnerability_id": "CVE-2026-45804",
+    "component": "diffusers",
+    "version": "0.37.1",
+    "severity": "HIGH",
+    "score": 7.5,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "scanner_source": "grype",
+    "kev": false,
+    "kev_date_added": null,
+    "epss": null,
+    "epss_percentile": null,
+    "exploitdb": false,
+    "exploitdb_ids": [],
+    "commit_links": [],
+    "patch_links": [],
+    "fix_commits": [],
+    "repo_urls": [],
+    "ghsa_ids": [
+      "GHSA-7wx4-6vff-v64p"
+    ],
+    "introduced_versions": [],
+    "fixed_versions": [
+      "0.38.0"
+    ],
+    "advisory_summary": "Not in OSV",
+    "advisory_details": "",
+    "affected_ranges": [],
+    "kev_listed": false
+  }
+]

@@ -1,0 +1,713 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "document_id": "reachable-callgraph-case_025-aimap",
+  "product": "case_025",
+  "case_id": "case_025",
+  "repo_name": "aimap",
+  "method": "reachability_only",
+  "generated": "2026-06-24T20:50:53.520866+00:00",
+  "relationships_file": "cases/case_025/output-callgraph/relationships.csv",
+  "callgraph_file": "",
+  "code_evidence": "cases/case_025/aimap_report_code_evidence.json",
+  "callgraph_stats": {
+    "loaded": true,
+    "source": "csv",
+    "node_count": 9650,
+    "edge_count": 31595,
+    "entry_count": 1
+  },
+  "statements": [
+    {
+      "finding_id": "finding_001",
+      "vulnerability_id": "CVE-2026-24486",
+      "component": "python-multipart",
+      "version": "0.0.20",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.20: buggy code present.",
+      "timestamp": "2026-06-24T20:50:53.434364+00:00"
+    },
+    {
+      "finding_id": "finding_002",
+      "vulnerability_id": "CVE-2026-4800",
+      "component": "lodash-es",
+      "version": "4.17.23",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "lodash-es was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "lodash-es@4.17.23: no code match in patch files.",
+      "timestamp": "2026-06-24T20:50:53.437530+00:00"
+    },
+    {
+      "finding_id": "finding_003",
+      "vulnerability_id": "CVE-2026-48710",
+      "component": "starlette",
+      "version": "0.41.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::aimap \u2192 backend/app/routes/scans.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::aimap",
+        "backend/app/routes/scans.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.41.3: buggy code present.",
+      "timestamp": "2026-06-24T20:50:53.439565+00:00"
+    },
+    {
+      "finding_id": "finding_004",
+      "vulnerability_id": "CVE-2025-62727",
+      "component": "starlette",
+      "version": "0.41.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::aimap \u2192 backend/app/routes/scans.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::aimap",
+        "backend/app/routes/scans.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.41.3: buggy code present, patched code present.",
+      "timestamp": "2026-06-24T20:50:53.441314+00:00"
+    },
+    {
+      "finding_id": "finding_005",
+      "vulnerability_id": "CVE-2026-42561",
+      "component": "python-multipart",
+      "version": "0.0.20",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.20 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.443823+00:00"
+    },
+    {
+      "finding_id": "finding_006",
+      "vulnerability_id": "CVE-2026-33671",
+      "component": "picomatch",
+      "version": "2.3.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "picomatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "picomatch@2.3.1: patched code present.",
+      "timestamp": "2026-06-24T20:50:53.446115+00:00"
+    },
+    {
+      "finding_id": "finding_007",
+      "vulnerability_id": "CVE-2026-33671",
+      "component": "picomatch",
+      "version": "4.0.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "picomatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "picomatch@4.0.3: patched code present.",
+      "timestamp": "2026-06-24T20:50:53.448280+00:00"
+    },
+    {
+      "finding_id": "finding_008",
+      "vulnerability_id": "CVE-2026-41248",
+      "component": "@clerk/shared",
+      "version": "4.3.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "@clerk/shared@4.3.1 is installed but the library is not reachable from any entry point.",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [
+        "external::pandas/pandas/core/shared_docs.py",
+        "external::pandas/pandas/core/shared_docs.py::<module>",
+        "external::pandas/pandas/core/_numba/kernels/shared.py",
+        "external::pandas/pandas/core/_numba/kernels/shared.py::<module>"
+      ],
+      "patch_summary": "@clerk/shared installation not found in repository.",
+      "timestamp": "2026-06-24T20:50:53.450242+00:00"
+    },
+    {
+      "finding_id": "finding_009",
+      "vulnerability_id": "CVE-2026-46625",
+      "component": "js-cookie",
+      "version": "3.0.5",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "js-cookie was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "js-cookie@3.0.5: no code match in patch files.",
+      "timestamp": "2026-06-24T20:50:53.452649+00:00"
+    },
+    {
+      "finding_id": "finding_010",
+      "vulnerability_id": "CVE-2025-54121",
+      "component": "starlette",
+      "version": "0.41.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::aimap \u2192 backend/app/routes/scans.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::aimap",
+        "backend/app/routes/scans.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.41.3: buggy code present, patched code present.",
+      "timestamp": "2026-06-24T20:50:53.454699+00:00"
+    },
+    {
+      "finding_id": "finding_011",
+      "vulnerability_id": "CVE-2025-8869",
+      "component": "pip",
+      "version": "24.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component pip is reachable from an entry point. Path: component::aimap \u2192 presentation/aimap_slides.py \u2192 presentation/aimap_slides.py::<module> \u2192 presentation/aimap_slides.py::DiscoverySlide \u2192 presentation/aimap_slides.py::DiscoverySlide.construct \u2192 external::pipeline",
+      "reachable": true,
+      "reachable_path": [
+        "component::aimap",
+        "presentation/aimap_slides.py",
+        "presentation/aimap_slides.py::<module>",
+        "presentation/aimap_slides.py::DiscoverySlide",
+        "presentation/aimap_slides.py::DiscoverySlide.construct",
+        "external::pipeline"
+      ],
+      "matched_nodes": [
+        "external::pipeline",
+        "external::prompt-toolkit/prompt_toolkit/input/win32_pipe.py",
+        "external::prompt-toolkit/prompt_toolkit/input/win32_pipe.py::<module>",
+        "external::prompt-toolkit/prompt_toolkit/input/posix_pipe.py",
+        "external::prompt-toolkit/prompt_toolkit/input/posix_pipe.py::<module>"
+      ],
+      "patch_summary": "pip@24.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.456786+00:00"
+    },
+    {
+      "finding_id": "finding_012",
+      "vulnerability_id": "CVE-2026-33672",
+      "component": "picomatch",
+      "version": "2.3.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "picomatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "picomatch@2.3.1: patched code present.",
+      "timestamp": "2026-06-24T20:50:53.459183+00:00"
+    },
+    {
+      "finding_id": "finding_013",
+      "vulnerability_id": "CVE-2026-33672",
+      "component": "picomatch",
+      "version": "4.0.3",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "picomatch was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "picomatch@4.0.3: patched code present.",
+      "timestamp": "2026-06-24T20:50:53.461676+00:00"
+    },
+    {
+      "finding_id": "finding_014",
+      "vulnerability_id": "CVE-2026-48818",
+      "component": "starlette",
+      "version": "0.41.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::aimap \u2192 backend/app/routes/scans.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::aimap",
+        "backend/app/routes/scans.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.41.3: patched code present.",
+      "timestamp": "2026-06-24T20:50:53.463516+00:00"
+    },
+    {
+      "finding_id": "finding_015",
+      "vulnerability_id": "CVE-2026-54283",
+      "component": "starlette",
+      "version": "0.41.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::aimap \u2192 backend/app/routes/scans.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::aimap",
+        "backend/app/routes/scans.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.41.3 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.465326+00:00"
+    },
+    {
+      "finding_id": "finding_016",
+      "vulnerability_id": "CVE-2026-53539",
+      "component": "python-multipart",
+      "version": "0.0.20",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.20 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.468090+00:00"
+    },
+    {
+      "finding_id": "finding_017",
+      "vulnerability_id": "CVE-2026-42349",
+      "component": "@clerk/react",
+      "version": "6.1.1",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component @clerk/react is reachable from an entry point. Path: component::aimap \u2192 frontend/src/components/ui/scroll-area.tsx \u2192 external::react",
+      "reachable": true,
+      "reachable_path": [
+        "component::aimap",
+        "frontend/src/components/ui/scroll-area.tsx",
+        "external::react"
+      ],
+      "matched_nodes": [
+        "external::@clerk/react",
+        "external::eslint-plugin-react-hooks",
+        "external::eslint-plugin-react-refresh",
+        "external::@vitejs/plugin-react",
+        "external::react-router-dom",
+        "external::react",
+        "external::react-dom",
+        "external::@tanstack/react-query",
+        "external::lucide-react"
+      ],
+      "patch_summary": "@clerk/react installation not found in repository.",
+      "timestamp": "2026-06-24T20:50:53.469805+00:00"
+    },
+    {
+      "finding_id": "finding_018",
+      "vulnerability_id": "CVE-2026-42349",
+      "component": "@clerk/shared",
+      "version": "4.3.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "@clerk/shared@4.3.1 is installed but the library is not reachable from any entry point.",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [
+        "external::pandas/pandas/core/shared_docs.py",
+        "external::pandas/pandas/core/shared_docs.py::<module>",
+        "external::pandas/pandas/core/_numba/kernels/shared.py",
+        "external::pandas/pandas/core/_numba/kernels/shared.py::<module>"
+      ],
+      "patch_summary": "@clerk/shared installation not found in repository.",
+      "timestamp": "2026-06-24T20:50:53.471691+00:00"
+    },
+    {
+      "finding_id": "finding_019",
+      "vulnerability_id": "CVE-2026-40347",
+      "component": "python-multipart",
+      "version": "0.0.20",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.20 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.474106+00:00"
+    },
+    {
+      "finding_id": "finding_020",
+      "vulnerability_id": "CVE-2026-2950",
+      "component": "lodash-es",
+      "version": "4.17.23",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "lodash-es was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "lodash-es@4.17.23 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.476564+00:00"
+    },
+    {
+      "finding_id": "finding_021",
+      "vulnerability_id": "CVE-2026-32597",
+      "component": "pyjwt",
+      "version": "2.10.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pyjwt was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pyjwt@2.10.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.479071+00:00"
+    },
+    {
+      "finding_id": "finding_022",
+      "vulnerability_id": "CVE-2026-48525",
+      "component": "pyjwt",
+      "version": "2.10.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pyjwt was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pyjwt@2.10.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.481780+00:00"
+    },
+    {
+      "finding_id": "finding_023",
+      "vulnerability_id": "CVE-2026-48526",
+      "component": "pyjwt",
+      "version": "2.10.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pyjwt was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pyjwt@2.10.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.484664+00:00"
+    },
+    {
+      "finding_id": "finding_024",
+      "vulnerability_id": "CVE-2026-28684",
+      "component": "python-dotenv",
+      "version": "1.0.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-dotenv was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-dotenv@1.0.1: buggy code present, patched code present.",
+      "timestamp": "2026-06-24T20:50:53.487658+00:00"
+    },
+    {
+      "finding_id": "finding_025",
+      "vulnerability_id": "CVE-2026-41305",
+      "component": "postcss",
+      "version": "8.5.8",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component postcss is reachable from an entry point. Path: component::aimap \u2192 frontend/postcss.config.js",
+      "reachable": true,
+      "reachable_path": [
+        "component::aimap",
+        "frontend/postcss.config.js"
+      ],
+      "matched_nodes": [
+        "frontend/postcss.config.js",
+        "frontend/postcss.config.js::<module>"
+      ],
+      "patch_summary": "postcss@8.5.8 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.491083+00:00"
+    },
+    {
+      "finding_id": "finding_026",
+      "vulnerability_id": "CVE-2026-48817",
+      "component": "starlette",
+      "version": "0.41.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::aimap \u2192 backend/app/routes/scans.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::aimap",
+        "backend/app/routes/scans.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.41.3 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.493169+00:00"
+    },
+    {
+      "finding_id": "finding_027",
+      "vulnerability_id": "CVE-2026-1703",
+      "component": "pip",
+      "version": "24.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component pip is reachable from an entry point. Path: component::aimap \u2192 presentation/aimap_slides.py \u2192 presentation/aimap_slides.py::<module> \u2192 presentation/aimap_slides.py::DiscoverySlide \u2192 presentation/aimap_slides.py::DiscoverySlide.construct \u2192 external::pipeline",
+      "reachable": true,
+      "reachable_path": [
+        "component::aimap",
+        "presentation/aimap_slides.py",
+        "presentation/aimap_slides.py::<module>",
+        "presentation/aimap_slides.py::DiscoverySlide",
+        "presentation/aimap_slides.py::DiscoverySlide.construct",
+        "external::pipeline"
+      ],
+      "matched_nodes": [
+        "external::pipeline",
+        "external::prompt-toolkit/prompt_toolkit/input/win32_pipe.py",
+        "external::prompt-toolkit/prompt_toolkit/input/win32_pipe.py::<module>",
+        "external::prompt-toolkit/prompt_toolkit/input/posix_pipe.py",
+        "external::prompt-toolkit/prompt_toolkit/input/posix_pipe.py::<module>"
+      ],
+      "patch_summary": "pip@24.0: buggy code present.",
+      "timestamp": "2026-06-24T20:50:53.495621+00:00"
+    },
+    {
+      "finding_id": "finding_028",
+      "vulnerability_id": "CVE-2026-40181",
+      "component": "react-router",
+      "version": "6.30.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component react-router is reachable from an entry point. Path: component::aimap \u2192 frontend/src/components/GlobeVisualization.tsx \u2192 external::react-router-dom",
+      "reachable": true,
+      "reachable_path": [
+        "component::aimap",
+        "frontend/src/components/GlobeVisualization.tsx",
+        "external::react-router-dom"
+      ],
+      "matched_nodes": [
+        "external::react-router-dom"
+      ],
+      "patch_summary": "react-router@6.30.3 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.497316+00:00"
+    },
+    {
+      "finding_id": "finding_029",
+      "vulnerability_id": "CVE-2026-48522",
+      "component": "pyjwt",
+      "version": "2.10.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pyjwt was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pyjwt@2.10.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.500023+00:00"
+    },
+    {
+      "finding_id": "finding_030",
+      "vulnerability_id": "CVE-2025-71176",
+      "component": "pytest",
+      "version": "8.3.4",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component pytest is reachable from an entry point. Path: component::aimap \u2192 presentation/aimap_slides.py \u2192 external::numpy/numpy/__init__.py \u2192 external::numpy/numpy/_pytesttester.py",
+      "reachable": true,
+      "reachable_path": [
+        "component::aimap",
+        "presentation/aimap_slides.py",
+        "external::numpy/numpy/__init__.py",
+        "external::numpy/numpy/_pytesttester.py"
+      ],
+      "matched_nodes": [
+        "external::pytest",
+        "external::-pytest",
+        "external::ipython/IPython/testing/plugin/pytest_ipdoctest.py",
+        "external::ipython/IPython/testing/plugin/pytest_ipdoctest.py::<module>",
+        "external::anyio/anyio/pytest_plugin.py",
+        "external::anyio/anyio/pytest_plugin.py::<module>",
+        "external::debugpy/debugpy/_vendored/pydevd/_pydev_runfiles/pydev_runfiles_pytest2.py",
+        "external::debugpy/debugpy/_vendored/pydevd/_pydev_runfiles/pydev_runfiles_pytest2.py::<module>",
+        "external::executing/executing/_pytest_utils.py",
+        "external::executing/executing/_pytest_utils.py::<module>",
+        "external::-pytest-utils",
+        "external::jedi/jedi/plugins/pytest.py",
+        "external::jedi/jedi/plugins/pytest.py::<module>",
+        "external::jupyter-events/jupyter_events/pytest_plugin.py",
+        "external::jupyter-events/jupyter_events/pytest_plugin.py::<module>",
+        "external::jupyter-server/jupyter_server/pytest_plugin.py",
+        "external::jupyter-server/jupyter_server/pytest_plugin.py::<module>",
+        "external::jupyterlab/jupyterlab/pytest_plugin.py",
+        "external::jupyterlab/jupyterlab/pytest_plugin.py::<module>",
+        "external::jupyterlab-server/jupyterlab_server/pytest_plugin.py",
+        "external::jupyterlab-server/jupyterlab_server/pytest_plugin.py::<module>",
+        "external::pytest-run-parallel",
+        "external::numpy/numpy/_pytesttester.py",
+        "external::numpy/numpy/_pytesttester.py::<module>"
+      ],
+      "patch_summary": "pytest@8.3.4 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.502016+00:00"
+    },
+    {
+      "finding_id": "finding_031",
+      "vulnerability_id": "CVE-2026-48524",
+      "component": "pyjwt",
+      "version": "2.10.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pyjwt was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pyjwt@2.10.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.504797+00:00"
+    },
+    {
+      "finding_id": "finding_032",
+      "vulnerability_id": "CVE-2026-53540",
+      "component": "python-multipart",
+      "version": "0.0.20",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.20 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.507303+00:00"
+    },
+    {
+      "finding_id": "finding_033",
+      "vulnerability_id": "CVE-2026-6357",
+      "component": "pip",
+      "version": "24.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component pip is reachable from an entry point. Path: component::aimap \u2192 presentation/aimap_slides.py \u2192 presentation/aimap_slides.py::<module> \u2192 presentation/aimap_slides.py::DiscoverySlide \u2192 presentation/aimap_slides.py::DiscoverySlide.construct \u2192 external::pipeline",
+      "reachable": true,
+      "reachable_path": [
+        "component::aimap",
+        "presentation/aimap_slides.py",
+        "presentation/aimap_slides.py::<module>",
+        "presentation/aimap_slides.py::DiscoverySlide",
+        "presentation/aimap_slides.py::DiscoverySlide.construct",
+        "external::pipeline"
+      ],
+      "matched_nodes": [
+        "external::pipeline",
+        "external::prompt-toolkit/prompt_toolkit/input/win32_pipe.py",
+        "external::prompt-toolkit/prompt_toolkit/input/win32_pipe.py::<module>",
+        "external::prompt-toolkit/prompt_toolkit/input/posix_pipe.py",
+        "external::prompt-toolkit/prompt_toolkit/input/posix_pipe.py::<module>"
+      ],
+      "patch_summary": "pip@24.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.509409+00:00"
+    },
+    {
+      "finding_id": "finding_034",
+      "vulnerability_id": "CVE-2026-3219",
+      "component": "pip",
+      "version": "24.0",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component pip is reachable from an entry point. Path: component::aimap \u2192 presentation/aimap_slides.py \u2192 presentation/aimap_slides.py::<module> \u2192 presentation/aimap_slides.py::DiscoverySlide \u2192 presentation/aimap_slides.py::DiscoverySlide.construct \u2192 external::pipeline",
+      "reachable": true,
+      "reachable_path": [
+        "component::aimap",
+        "presentation/aimap_slides.py",
+        "presentation/aimap_slides.py::<module>",
+        "presentation/aimap_slides.py::DiscoverySlide",
+        "presentation/aimap_slides.py::DiscoverySlide.construct",
+        "external::pipeline"
+      ],
+      "matched_nodes": [
+        "external::pipeline",
+        "external::prompt-toolkit/prompt_toolkit/input/win32_pipe.py",
+        "external::prompt-toolkit/prompt_toolkit/input/win32_pipe.py::<module>",
+        "external::prompt-toolkit/prompt_toolkit/input/posix_pipe.py",
+        "external::prompt-toolkit/prompt_toolkit/input/posix_pipe.py::<module>"
+      ],
+      "patch_summary": "pip@24.0 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.511412+00:00"
+    },
+    {
+      "finding_id": "finding_035",
+      "vulnerability_id": "CVE-2026-48523",
+      "component": "pyjwt",
+      "version": "2.10.1",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "pyjwt was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "pyjwt@2.10.1 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.514063+00:00"
+    },
+    {
+      "finding_id": "finding_036",
+      "vulnerability_id": "CVE-2026-54282",
+      "component": "starlette",
+      "version": "0.41.3",
+      "status": "AFFECTED",
+      "justification": null,
+      "impact_statement": "Component starlette is reachable from an entry point. Path: component::aimap \u2192 backend/app/routes/scans.py \u2192 external::starlette",
+      "reachable": true,
+      "reachable_path": [
+        "component::aimap",
+        "backend/app/routes/scans.py",
+        "external::starlette"
+      ],
+      "matched_nodes": [
+        "external::starlette"
+      ],
+      "patch_summary": "starlette@0.41.3 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.515800+00:00"
+    },
+    {
+      "finding_id": "finding_037",
+      "vulnerability_id": "CVE-2026-53538",
+      "component": "python-multipart",
+      "version": "0.0.20",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.20 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.518328+00:00"
+    },
+    {
+      "finding_id": "finding_038",
+      "vulnerability_id": "CVE-2026-53537",
+      "component": "python-multipart",
+      "version": "0.0.20",
+      "status": "NOT_AFFECTED",
+      "justification": "vulnerable_code_not_in_execute_path",
+      "impact_statement": "python-multipart was not found in the call graph \u2014 not reachable",
+      "reachable": false,
+      "reachable_path": [],
+      "matched_nodes": [],
+      "patch_summary": "python-multipart@0.0.20 installed but no fix commit found; cannot determine buggy/patched code.",
+      "timestamp": "2026-06-24T20:50:53.520853+00:00"
+    }
+  ]
+}
